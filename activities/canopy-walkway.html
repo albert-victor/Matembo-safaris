@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Canopy Walkway in Tanzania — safari packages and day trips from Matembo Safari & Tours, Iringa." />
+    <title>Canopy Walkway | Matembo Safari & Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/src/styles/buttons.css" />
+    <link rel="stylesheet" href="/src/styles/cards.css" />
+    <link rel="stylesheet" href="/src/styles/site.css" />
+    <link rel="stylesheet" href="/src/styles/footer.css" />
+    <link rel="stylesheet" href="/src/styles/nav.css" />
+    <link rel="stylesheet" href="/src/styles/destinations.css" />
+  </head>
+  <body data-activity-slug="canopy-walkway">
+    <div id="site-nav-root"></div>
+
+    <main>
+      <header class="dest-listing-hero">
+        <div class="container dest-listing-hero__inner section-reveal">
+          <span class="home-section__label" data-activity-label>Things to Do</span>
+          <h1 class="dest-listing-hero__title" data-activity-title>Canopy Walkway</h1>
+          <span class="dest-listing-hero__script">Safari Packages</span>
+          <p class="dest-listing-hero__lead" data-activity-lead>
+            Safari packages and day trips that include canopy walkway — sourced from Tanzania Tourism and ready to tailor.
+          </p>
+        </div>
+      </header>
+
+      <section class="dest-listing-grid-section" aria-labelledby="activity-packages-title">
+        <div class="container">
+          <header class="home-section__header section-reveal">
+            <span class="home-section__label">Packages</span>
+            <h2 id="activity-packages-title" class="home-section__title">Matching Itineraries</h2>
+            <p class="home-section__desc">
+              Routes filtered by activity from
+              <a href="https://www.tanzaniatourism.com/activities" target="_blank" rel="noopener noreferrer">tanzaniatourism.com</a>.
+            </p>
+          </header>
+          <div id="activity-packages-grid" class="safari-cards-grid"></div>
+          <p class="home-section__desc" data-activity-empty hidden>
+            No packages tagged with this activity yet — contact us to build a custom route.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script type="module" src="/src/js/activity-listing-main.js"></script>
+  </body>
+</html>

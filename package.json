@@ -1,0 +1,24 @@
+{
+  "name": "matembo-safaris",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "import:northern": "node scripts/import-northern-circuit.mjs",
+    "import:southern": "node scripts/import-southern-circuit.mjs",
+    "import:oceanic": "node scripts/import-oceanic-circuits.mjs",
+    "import:safaris": "node scripts/import-safari-packages.mjs",
+    "import:experiences": "node scripts/import-experiences.mjs",
+    "import:trekkings": "node scripts/import-trekkings.mjs",
+    "import:curated": "node scripts/import-curated-safaris.mjs",
+    "generate:packages": "node scripts/generate-package-pages.mjs",
+    "generate:circuits": "node scripts/generate-circuit-pages.mjs",
+    "trim:galleries": "node scripts/trim-galleries.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.0.7"
+  }
+}

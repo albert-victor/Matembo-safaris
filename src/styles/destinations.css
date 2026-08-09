@@ -1,0 +1,841 @@
+/* ============================================================
+   Shared slideshow + destination card alternatives
+   ============================================================ */
+
+@import "./cards.css";
+
+/* ── Slideshow core ───────────────────────────────────────── */
+
+[data-slideshow] {
+  position: relative;
+}
+
+.dest-slideshow__track {
+  position: absolute;
+  inset: 0;
+}
+
+.dest-slideshow__track--cinema,
+.dest-slideshow__track--hero {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.dest-slideshow__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.9s var(--ease-reveal);
+}
+
+.dest-slideshow__slide.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.dest-slideshow__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.dest-slideshow__slide--motion.is-active img {
+  animation: ken-burns-drift var(--ken-burns-duration) var(--ease-in-out) infinite;
+}
+
+.dest-slideshow__controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.dest-slideshow__controls--hero {
+  bottom: 1rem;
+}
+
+.dest-slideshow__arrow {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  color: var(--color-white);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.dest-slideshow__arrow:hover,
+.dest-slideshow__arrow:focus-visible {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.dest-slideshow__dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.dest-slideshow__dot {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  transition:
+    transform var(--duration-fast) var(--ease-out),
+    background var(--duration-fast) var(--ease-out);
+}
+
+.dest-slideshow__dot.is-active {
+  background: var(--color-gold);
+  transform: scale(1.25);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35);
+}
+
+.dest-slideshow__dots--compact {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  z-index: 4;
+}
+
+.dest-slideshow__dots--overlay {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+/* Shared destination overlays (reuse naming from cards) */
+.dest-card__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity var(--duration-normal) var(--ease-out);
+}
+
+.dest-card__overlay--gold {
+  background: linear-gradient(
+    165deg,
+    rgba(201, 169, 98, 0.08) 0%,
+    rgba(220, 201, 138, 0.25) 50%,
+    rgba(201, 169, 98, 0.42) 100%
+  );
+  opacity: 0.72;
+}
+
+.dest-card__overlay--green {
+  background: linear-gradient(
+    188deg,
+    transparent 20%,
+    rgba(38, 136, 72, 0.1) 55%,
+    rgba(38, 136, 72, 0.5) 100%
+  );
+  opacity: 0.45;
+}
+
+.dest-card:hover .dest-card__overlay--gold,
+.dest-card:focus-within .dest-card__overlay--gold {
+  opacity: 0.92;
+}
+
+.dest-card:hover .dest-card__overlay--green,
+.dest-card:focus-within .dest-card__overlay--green {
+  opacity: 0.78;
+}
+
+.dest-card__script {
+  font-family: var(--font-signature);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1;
+  text-shadow: 0 2px 10px rgba(38, 136, 72, 0.35);
+}
+
+.dest-card__script--on-image {
+  color: rgba(255, 255, 255, 0.96);
+  text-shadow: 0 2px 12px rgba(38, 136, 72, 0.5);
+}
+
+.dest-card__script--on-light {
+  color: var(--color-brand-dark);
+  text-shadow: none;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.dest-card__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.5vw, 1.35rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--color-white);
+  text-shadow: 0 2px 14px rgba(38, 136, 72, 0.35);
+}
+
+.dest-card__highlight {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  color: var(--color-muted);
+}
+
+.dest-card__highlight::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-brand);
+  box-shadow: 0 0 0 1.5px rgba(201, 169, 98, 0.55);
+  transform: translateY(-50%);
+}
+
+.dest-card__highlights {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.dest-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16.5rem), 1fr));
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+/* ── Style A — Expedition craft + slideshow ───────────────── */
+
+.dest-card--a .dest-card__frame {
+  padding: 1.5px;
+  border-radius: 14px 12px 16px 11px;
+  background: linear-gradient(
+    128deg,
+    rgba(201, 169, 98, 0.45) 0%,
+    rgba(38, 136, 72, 0.25) 50%,
+    rgba(201, 169, 98, 0.35) 100%
+  );
+  box-shadow: 0 10px 28px rgba(38, 136, 72, 0.07);
+  transition: transform 0.45s var(--ease-reveal), box-shadow var(--duration-normal);
+  transform-style: preserve-3d;
+}
+
+.dest-card--a .dest-card__inner {
+  position: relative;
+  border-radius: 12px 10px 14px 9px;
+  overflow: hidden;
+  background: var(--color-cream);
+}
+
+.dest-card--a .dest-card__index {
+  position: absolute;
+  top: 42%;
+  right: 0.35rem;
+  z-index: 2;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: rgba(38, 136, 72, 0.07);
+  pointer-events: none;
+}
+
+.dest-card--a .dest-card__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+.dest-card--a .dest-card__bracket {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  z-index: 4;
+  border: 1.5px solid rgba(201, 169, 98, 0.9);
+}
+
+.dest-card--a .dest-card__bracket--tl {
+  top: 0.625rem;
+  left: 0.625rem;
+  border-right: none;
+  border-bottom: none;
+}
+
+.dest-card--a .dest-card__bracket--br {
+  right: 0.625rem;
+  bottom: 1.1rem;
+  border-left: none;
+  border-top: none;
+}
+
+.dest-card--a .dest-card__season {
+  position: absolute;
+  top: 0.5rem;
+  left: 2rem;
+  z-index: 4;
+  padding: 0.25rem 0.5rem;
+  background: rgba(255, 255, 255, 0.93);
+  border: 1px solid rgba(38, 136, 72, 0.2);
+  border-radius: 2px 8px 2px 8px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-brand-dark);
+}
+
+.dest-card--a .dest-card__caption {
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 2rem;
+  z-index: 3;
+}
+
+.dest-card--a .dest-card__perforation {
+  height: 7px;
+  background-color: rgba(201, 169, 98, 0.12);
+  background-image: radial-gradient(
+    circle at 5px 50%,
+    var(--color-cream) 2.5px,
+    transparent 2.6px
+  );
+  background-size: 10px 7px;
+}
+
+.dest-card--a .dest-card__body {
+  padding: 0.65rem 0.875rem 0.875rem 1rem;
+  background: var(--color-cream);
+}
+
+.dest-card--a .dest-card__region {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+  margin-bottom: 0.25rem;
+}
+
+.dest-card--a .dest-card__tagline {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--color-muted);
+  margin-bottom: 0.35rem;
+}
+
+.dest-card--a .dest-card__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding-top: 0.45rem;
+  border-top: 1px dashed rgba(201, 169, 98, 0.32);
+}
+
+/* ── Style B — Cinematic strip ────────────────────────────── */
+
+.dest-cards-grid--b {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14.5rem), 1fr));
+  gap: clamp(0.85rem, 2vw, 1.25rem);
+}
+
+.dest-card--b {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-cream);
+  border: 1px solid rgba(201, 169, 98, 0.22);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.62) inset,
+    0 2px 6px rgba(38, 136, 72, 0.05),
+    0 10px 28px rgba(38, 136, 72, 0.09),
+    0 18px 42px rgba(201, 169, 98, 0.07);
+  transition:
+    transform var(--duration-normal) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out),
+    border-color var(--duration-normal) var(--ease-out);
+}
+
+.dest-card--b::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 5;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.dest-card--b:hover,
+.dest-card--b:focus-within {
+  transform: translateY(-4px);
+  border-color: rgba(201, 169, 98, 0.38);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.72) inset,
+    0 4px 10px rgba(38, 136, 72, 0.07),
+    0 14px 36px rgba(38, 136, 72, 0.13),
+    0 26px 52px rgba(201, 169, 98, 0.11);
+}
+
+.dest-card--b .dest-card__cinema {
+  position: relative;
+  box-shadow: 0 6px 16px rgba(38, 136, 72, 0.1);
+}
+
+.dest-card--b .dest-card__cinema::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 8, 8, 0.08) 0%,
+    transparent 35%,
+    rgba(8, 8, 8, 0.55) 100%
+  );
+}
+
+.dest-card--b .dest-card__cinema-caption {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 2.25rem;
+  z-index: 3;
+}
+
+.dest-card--b .dest-card__region {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 0.25rem;
+}
+
+.dest-slideshow__filmstrip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  display: flex;
+  gap: 3px;
+  padding: 0.35rem;
+  background: linear-gradient(transparent, rgba(38, 136, 72, 0.35));
+}
+
+.dest-slideshow__frame-mark {
+  flex: 1;
+  height: 3px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: background var(--duration-fast);
+}
+
+.dest-slideshow__frame-mark.is-active {
+  background: var(--color-gold);
+}
+
+.dest-slideshow__arrow--cinema {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  left: 0.5rem;
+}
+
+.dest-slideshow__arrow--next {
+  left: auto;
+  right: 0.5rem;
+}
+
+.dest-card--b .dest-card__cinema-body {
+  padding: 0.875rem 1rem 1rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, var(--color-cream) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.dest-card--b .dest-card__tagline {
+  font-size: 0.8125rem;
+  color: var(--color-muted);
+  margin-bottom: 0.4rem;
+}
+
+.dest-card--b .dest-card__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-brand-dark);
+  text-decoration: none;
+  transition: color var(--duration-fast);
+}
+
+.dest-card--b .dest-card__link:hover {
+  color: var(--color-brand);
+}
+
+/* ── Teaser cards (listing — minimal copy) ── */
+.dest-card--teaser .dest-card__cinema-body--teaser {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.dest-card__tags {
+  list-style: none;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.dest-card__tags li {
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-brand-dark);
+  background: var(--color-brand-soft);
+  border: 1px solid rgba(38, 136, 72, 0.14);
+  border-radius: 999px;
+  padding: 0.3rem 0.55rem;
+}
+
+.dest-card--teaser .dest-card__cinema {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.dest-card--teaser .dest-card__cinema-body {
+  padding: 0.9rem 1rem 1.05rem;
+}
+
+.dest-card--teaser .dest-card__link {
+  margin-top: 0.5rem;
+  font-size: 0.6875rem;
+}
+
+.dest-card--teaser .dest-slideshow__track--cinema {
+  position: absolute;
+  inset: 0;
+  aspect-ratio: unset;
+  max-height: none;
+}
+
+/* ── Style C — Atlas compact ──────────────────────────────── */
+
+.dest-cards-grid--c {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 0.875rem;
+}
+
+.dest-card--c .dest-card__atlas {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(201, 169, 98, 0.25);
+  background: var(--color-white);
+  box-shadow: 0 6px 20px rgba(38, 136, 72, 0.06);
+  transition: box-shadow var(--duration-normal), transform var(--duration-normal);
+}
+
+.dest-card--c:hover .dest-card__atlas {
+  box-shadow: 0 12px 32px rgba(38, 136, 72, 0.1);
+  transform: translateY(-3px);
+}
+
+.dest-card--c .dest-card__atlas-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+}
+
+.dest-card--c .dest-card__compass {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  z-index: 3;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: grid;
+  place-items: center;
+  font-size: 0.65rem;
+  color: var(--color-gold);
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 50%;
+  border: 1px solid rgba(201, 169, 98, 0.4);
+}
+
+.dest-card--c .dest-card__atlas-body {
+  padding: 0.65rem 0.75rem 0.75rem;
+}
+
+.dest-card__script--small {
+  font-size: 0.95rem;
+  color: var(--color-brand);
+  text-shadow: none;
+}
+
+.dest-card__name--compact {
+  font-size: 1rem;
+  color: var(--color-black);
+  text-shadow: none;
+  margin: 0.15rem 0;
+}
+
+.dest-card__meta-line {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin-bottom: 0.25rem;
+}
+
+.dest-card__tagline--compact {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+
+.dest-card__actions--single {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .dest-card--a .dest-card__actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dest-slideshow__slide--motion.is-active img {
+    animation: none;
+  }
+}
+
+/* ── Journeys meta ── */
+.dest-card__journeys {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin: 0 0 0.35rem;
+}
+
+/* ── See This Place gallery ── */
+.see-this-place {
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.see-this-place:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.see-this-place__header {
+  max-width: 42rem;
+  margin-bottom: 1.25rem;
+}
+
+.see-this-place__circuit {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin-bottom: 0.35rem;
+}
+
+.see-this-place__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--color-black);
+}
+
+.see-this-place__desc {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--color-muted);
+  margin: 0 0 0.5rem;
+}
+
+.see-this-place__meta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin: 0;
+}
+
+.see-this-place__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .see-this-place__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.see-this-place__figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0.35rem;
+  aspect-ratio: 4 / 3;
+  background: var(--color-sand, #f5f0e8);
+}
+
+.see-this-place__figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.see-this-place__credit {
+  margin: 0.75rem 0 0;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+.see-this-place__credit a {
+  color: var(--color-brand);
+}
+
+/* ── Destinations listing page ── */
+.dest-listing-hero {
+  padding: calc(3.75rem + clamp(2rem, 5vw, 3rem)) 0 clamp(1.75rem, 3vw, 2.25rem);
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(38, 136, 72, 0.07) 0%, transparent 50%),
+    linear-gradient(180deg, var(--color-white) 0%, var(--color-cream) 100%);
+  border-bottom: 1px solid rgba(201, 169, 98, 0.18);
+}
+
+.dest-listing-hero__inner {
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.dest-listing-hero__script {
+  display: block;
+  margin: 0.35rem 0 0.85rem;
+  font-family: var(--font-signature);
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  line-height: 1.2;
+  color: var(--color-brand);
+}
+
+.dest-listing-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.06;
+  margin: 0.2rem 0 0;
+  color: var(--color-black);
+}
+
+.dest-listing-hero__lead {
+  font-size: 1.05rem;
+  line-height: 1.72;
+  color: var(--color-muted);
+  margin: 0 auto;
+  max-width: 36rem;
+}
+
+.dest-listing-grid-section {
+  padding: clamp(2rem, 4vw, 3rem) 0 clamp(3rem, 6vw, 4.5rem);
+}
+
+.dest-listing-grid-section--alt {
+  background: var(--color-white);
+  border-top: 1px solid rgba(201, 169, 98, 0.15);
+}
+
+.dest-listing-grid-section .home-section__header {
+  max-width: 42rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.things-to-do-index {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.things-to-do-index__col {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.things-to-do-index__link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-ink);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition:
+    background var(--duration-fast),
+    color var(--duration-fast);
+}
+
+.things-to-do-index__link:hover,
+.things-to-do-index__link:focus-visible {
+  background: rgba(38, 136, 72, 0.08);
+  color: var(--color-brand-dark);
+}
+
+.things-to-do-index__thumb {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .things-to-do-index {
+    grid-template-columns: 1fr;
+  }
+}

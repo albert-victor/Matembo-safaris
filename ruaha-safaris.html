@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ruaha National Park safaris from Iringa — 2 to 10 day game drives on the Great Ruaha River with Matembo Safari & Tours."
+    />
+    <title>Ruaha Safaris | Matembo Safari & Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/src/styles/buttons.css" />
+    <link rel="stylesheet" href="/src/styles/cards.css" />
+    <link rel="stylesheet" href="/src/styles/site.css" />
+    <link rel="stylesheet" href="/src/styles/footer.css" />
+    <link rel="stylesheet" href="/src/styles/nav.css" />
+    <link rel="stylesheet" href="/src/styles/destinations.css" />
+  </head>
+  <body>
+    <div id="site-nav-root"></div>
+
+    <main>
+      <header class="dest-listing-hero dest-listing-hero--ruaha">
+        <div class="container dest-listing-hero__inner section-reveal">
+          <span class="home-section__label">Southern Circuit</span>
+          <h1 class="dest-listing-hero__title">Ruaha National Park</h1>
+          <span class="dest-listing-hero__script">From Iringa · 108 km</span>
+          <p class="dest-listing-hero__lead">
+            Tanzania's largest park — wild dogs, elephant herds and lion prides along the Great Ruaha River. Matembo is based in Iringa, at Ruaha's doorstep.
+          </p>
+        </div>
+      </header>
+
+      <section class="dest-listing-grid-section" id="ruaha-only" aria-labelledby="ruaha-only-title">
+        <div class="container">
+          <header class="home-section__header section-reveal">
+            <span class="home-section__label">Ruaha Only</span>
+            <h2 id="ruaha-only-title" class="home-section__title">Ruaha National Park Safaris</h2>
+            <p class="home-section__desc">Two to four days focused on river-bank game drives and predator country.</p>
+          </header>
+          <div id="ruaha-only-grid" class="safari-cards-grid"></div>
+        </div>
+      </section>
+
+      <section class="dest-listing-grid-section dest-listing-grid-section--alt" id="ruaha-combined" aria-labelledby="ruaha-combined-title">
+        <div class="container">
+          <header class="home-section__header section-reveal">
+            <span class="home-section__label">Combined Routes</span>
+            <h2 id="ruaha-combined-title" class="home-section__title">Ruaha + Southern Parks</h2>
+            <p class="home-section__desc">Mikumi, Udzungwa and Nyerere paired with Ruaha game drives.</p>
+          </header>
+          <div id="ruaha-combined-grid" class="safari-cards-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script type="module" src="/src/js/ruaha-safaris-main.js"></script>
+  </body>
+</html>

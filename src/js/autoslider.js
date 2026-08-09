@@ -1,0 +1,176 @@
+﻿/**
+ * Generic autoslider – one-card step with multi-visible viewport.
+ */
+
+function getVisibleCount(root) {
+  const custom = root.dataset.visible;
+  if (custom) return Number(custom);
+  if (window.matchMedia("(min-width: 1200px)").matches) return 3;
+  if (window.matchMedia("(min-width: 768px)").matches) return 2;
+  return 1;
+}
+
+export function initAutoslider(root = document) {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  root.querySelectorAll("[data-autoslider]").forEach((slider) => {
+    const track = slider.querySelector("[data-autoslider-track]");
+    const dotsRoot = slider.querySelector("[data-autoslider-dots]");
+    const countEl = slider.querySelector("[data-autoslider-count]");
+    const prevBtn = slider.querySelector("[data-autoslider-prev]");
+    const nextBtn = slider.querySelector("[data-autoslider-next]");
+    const slides = track ? [...track.children] : [];
+
+    if (!slides.length) return;
+
+    let index = 0;
+    let visible = 1;
+    let maxIndex = 0;
+    let timer = null;
+    let ready = false;
+    const intervalMs = Number(slider.dataset.autoplay || 5000);
+
+    const measure = () => {
+      visible = getVisibleCount(slider);
+      maxIndex = Math.max(0, slides.length - visible);
+      if (index > maxIndex) index = 0;
+      track.style.setProperty("--autoslider-visible", String(visible));
+    };
+
+    const getStepOffset = () => {
+      const gap = parseFloat(getComputedStyle(track).gap) || 16;
+      const slideWidth = slides[0]?.getBoundingClientRect().width || 0;
+      return index * (slideWidth + gap);
+    };
+
+    const renderDots = () => {
+      if (!dotsRoot) return;
+      const pages = maxIndex + 1;
+      dotsRoot.innerHTML = Array.from({ length: pages }, (_, i) => `
+        <button
+          type="button"
+          class="autoslider__dot ${i === index ? "is-active" : ""}"
+          data-autoslider-dot="${i}"
+          role="tab"
+          aria-selected="${i === index ? "true" : "false"}"
+          aria-label="Go to slide ${i + 1}"
+        ></button>
+      `).join("");
+
+      dotsRoot.querySelectorAll("[data-autoslider-dot]").forEach((dot) => {
+        dot.addEventListener("click", () => {
+          goTo(Number(dot.dataset.autosliderDot));
+          restart();
+        });
+      });
+    };
+
+    const updateCount = () => {
+      if (!countEl) return;
+      const start = index + 1;
+      const end = Math.min(index + visible, slides.length);
+      countEl.textContent = `${start}–${end} of ${slides.length}`;
+    };
+
+    const goTo = (nextIndex) => {
+      index = ((nextIndex % (maxIndex + 1)) + (maxIndex + 1)) % (maxIndex + 1);
+      track.style.transform = `translate3d(-${getStepOffset()}px, 0, 0)`;
+
+      dotsRoot?.querySelectorAll("[data-autoslider-dot]").forEach((dot, i) => {
+        const active = i === index;
+        dot.classList.toggle("is-active", active);
+        dot.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      updateCount();
+    };
+
+    const applyLayout = () => {
+      measure();
+      renderDots();
+      if (ready) requestAnimationFrame(() => goTo(index));
+    };
+
+    const next = () => goTo(index + 1);
+    const prev = () => goTo(index - 1);
+
+    const stop = () => {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+    };
+
+    const start = () => {
+      if (prefersReducedMotion || maxIndex <= 0) return;
+      stop();
+      timer = setInterval(next, intervalMs);
+    };
+
+    const restart = () => {
+      stop();
+      start();
+    };
+
+    prevBtn?.addEventListener("click", () => { prev(); restart(); });
+    nextBtn?.addEventListener("click", () => { next(); restart(); });
+
+    slider.addEventListener("mouseenter", stop);
+    slider.addEventListener("mouseleave", start);
+    slider.addEventListener("focusin", stop);
+    slider.addEventListener("focusout", start);
+
+    window.addEventListener("resize", applyLayout, { passive: true });
+
+    if ("ResizeObserver" in window) {
+      new ResizeObserver(() => applyLayout()).observe(track);
+    }
+
+    measure();
+    renderDots();
+    requestAnimationFrame(() => {
+      goTo(0);
+      ready = true;
+      setTimeout(start, 600);
+    });
+  });
+}
+
+export function renderAutosliderShell(options = {}) {
+  const {
+    id = "",
+    label = "Carousel",
+    autoplay = 5000,
+    visible = "",
+    showArrows = true,
+    showCount = true,
+    trackHtml = "",
+  } = options;
+
+  return `
+    <div
+      class="autoslider"
+      data-autoslider
+      data-autoplay="${autoplay}"
+      ${visible ? `data-visible="${visible}"` : ""}
+      ${id ? `id="${id}"` : ""}
+    >
+      ${showArrows ? `
+        <div class="autoslider__controls">
+          <button type="button" class="autoslider__arrow autoslider__arrow--prev" data-autoslider-prev aria-label="Previous">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <button type="button" class="autoslider__arrow autoslider__arrow--next" data-autoslider-next aria-label="Next">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      ` : ""}
+      <div class="autoslider__viewport" tabindex="0" aria-roledescription="carousel" aria-label="${label}">
+        <div class="autoslider__track" data-autoslider-track>${trackHtml}</div>
+      </div>
+      <div class="autoslider__footer">
+        <div class="autoslider__dots" data-autoslider-dots role="tablist" aria-label="Carousel pages"></div>
+        ${showCount ? `<p class="autoslider__count" data-autoslider-count aria-live="polite"></p>` : ""}
+      </div>
+    </div>
+  `;
+}

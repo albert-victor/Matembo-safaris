@@ -1,0 +1,366 @@
+/* Circuit listing & detail pages */
+
+@import "./destinations.css";
+
+/* ── Shared cinematic hero ── */
+.circuit-page__hero {
+  position: relative;
+  min-height: clamp(16rem, 42vw, 24rem);
+  display: flex;
+  align-items: flex-end;
+}
+
+.circuit-page__hero--index {
+  min-height: clamp(18rem, 48vw, 26rem);
+}
+
+.circuit-page__hero-media {
+  position: absolute;
+  inset: 0;
+}
+
+.circuit-page__hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.circuit-page__hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(8, 8, 8, 0.62) 0%,
+    rgba(8, 8, 8, 0.25) 55%,
+    rgba(8, 8, 8, 0.5) 100%
+  );
+}
+
+.circuit-page__hero-inner {
+  position: relative;
+  z-index: 2;
+  padding: clamp(1.75rem, 4vw, 2.75rem) 0;
+  max-width: 44rem;
+}
+
+.circuit-page__eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.circuit-page__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  font-weight: 500;
+  line-height: 1.06;
+  color: var(--color-white);
+  margin: 0 0 0.25rem;
+}
+
+.circuit-page__script {
+  font-family: var(--font-signature);
+  font-size: clamp(1.15rem, 2.8vw, 1.55rem);
+  color: var(--color-gold-light);
+  margin: 0 0 0.65rem;
+}
+
+.circuit-page__lead {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 1rem;
+  max-width: 36rem;
+}
+
+.circuit-page__stats {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+}
+
+.circuit-page__stats strong {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-right: 0.2rem;
+}
+
+.circuit-page__hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.btn--ghost-light {
+  background: transparent;
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn--ghost-light:hover,
+.btn--ghost-light:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-white);
+}
+
+/* ── All circuits grid ── */
+.circuits-index {
+  padding: clamp(2.5rem, 5vw, 3.5rem) 0 clamp(3.5rem, 7vw, 5rem);
+  background: var(--color-cream);
+}
+
+.circuits-index__head {
+  max-width: 40rem;
+  margin: 0 auto clamp(2rem, 4vw, 2.75rem);
+  text-align: center;
+}
+
+.circuits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.circuit-card {
+  border-radius: var(--radius-lg, 0.75rem);
+  overflow: hidden;
+  background: var(--color-white);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(201, 169, 98, 0.15);
+}
+
+.circuit-card__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+}
+
+.circuit-card__media {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.circuit-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.circuit-card__link:hover .circuit-card__media img,
+.circuit-card__link:focus-visible .circuit-card__media img {
+  transform: scale(1.04);
+}
+
+.circuit-card__shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+.circuit-card__body {
+  display: block;
+  padding: 1.1rem 1.15rem 1.25rem;
+}
+
+.circuit-card__label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--color-black);
+}
+
+.circuit-card__script {
+  display: block;
+  margin-top: 0.2rem;
+  font-family: var(--font-signature);
+  font-size: 1.05rem;
+  color: var(--color-brand);
+}
+
+.circuit-card__desc {
+  margin: 0.65rem 0 0.75rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.circuit-card__meta {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+}
+
+.circuit-card__cta {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+/* ── Individual circuit page ── */
+.circuit-page {
+  background: var(--color-cream);
+}
+
+.circuit-page__intro {
+  padding: clamp(1.75rem, 3vw, 2.5rem) 0;
+  background: var(--color-white);
+  border-bottom: 1px solid rgba(201, 169, 98, 0.15);
+}
+
+.circuit-page__intro-inner {
+  max-width: 44rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.circuit-page__intro-lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.5vw, 1.45rem);
+  line-height: 1.45;
+  color: var(--color-black);
+  margin: 0 0 0.85rem;
+}
+
+.circuit-page__intro-text {
+  font-size: 1rem;
+  line-height: 1.72;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.circuit-page__destinations {
+  padding: clamp(2rem, 4vw, 3rem) 0 clamp(3rem, 6vw, 4rem);
+}
+
+.circuit-page__destinations .home-section__header {
+  max-width: 42rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.circuit-page__safaris-cta {
+  padding: clamp(2rem, 4vw, 2.75rem) 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(38, 136, 72, 0.08) 0%, transparent 55%),
+    var(--color-white);
+  border-top: 1px solid rgba(201, 169, 98, 0.15);
+  border-bottom: 1px solid rgba(201, 169, 98, 0.15);
+}
+
+.circuit-page__safaris-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.circuit-page__safaris-copy {
+  max-width: 36rem;
+}
+
+.circuit-page__safaris-copy .home-section__header {
+  text-align: left;
+}
+
+.circuit-page__related {
+  padding: clamp(2rem, 4vw, 3rem) 0 clamp(3.5rem, 6vw, 4.5rem);
+}
+
+.circuit-page__related .home-section__header {
+  max-width: 42rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.circuit-page__related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.circuit-teaser {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem;
+  background: var(--color-white);
+  border: 1px solid rgba(201, 169, 98, 0.18);
+  border-radius: 0.65rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.circuit-teaser:hover,
+.circuit-teaser:focus-visible {
+  border-color: rgba(38, 136, 72, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.circuit-teaser__thumb {
+  flex: 0 0 4.5rem;
+  width: 4.5rem;
+  height: 3rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.circuit-teaser__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circuit-teaser__name {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-black);
+}
+
+.circuit-teaser__script {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-top: 0.1rem;
+}
+
+.circuit-page__empty {
+  padding: clamp(4rem, 10vw, 6rem) 0;
+  text-align: center;
+}
+
+.circuit-page__empty h1 {
+  font-family: var(--font-display);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .circuit-page__safaris-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

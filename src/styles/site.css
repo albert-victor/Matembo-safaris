@@ -1,0 +1,223 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+@import url("./footer.css");
+
+/* Site-wide base layout */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-ink);
+  background: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  width: min(100% - 2rem, var(--container-max));
+  margin-inline: auto;
+}
+
+.home-section__header {
+  max-width: 38rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.home-section__label {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+}
+
+.home-section__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.12;
+  color: var(--color-black);
+  margin: 0 0 0.5rem;
+}
+
+.home-section__desc {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+}
+
+.home-section__desc a {
+  color: var(--color-brand-dark);
+  text-underline-offset: 0.15em;
+}
+
+.home-section__desc a i {
+  margin-right: 0.25rem;
+}
+
+/* Scroll reveal (shared across site) */
+[data-reveal],
+.section-reveal,
+.reveal-on-scroll,
+.home-about__text,
+.home-about__stat,
+.home-section__title,
+.home-section__desc,
+.home-section__label,
+.home-about__script,
+.dest-page__lead,
+.dest-page__text,
+.dest-page__photo,
+.dest-slideshow,
+.dest-page__aside-block,
+.experience-card__title,
+.experience-card__text,
+.testimonial-card__quote,
+.credentials-grid__item,
+.home-contact__title,
+.home-contact__text,
+.site-footer,
+.site-footer__col,
+.site-footer__brand,
+.site-footer__social {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  filter: blur(3px);
+  transition:
+    opacity var(--duration-reveal) var(--ease-reveal),
+    transform var(--duration-reveal) var(--ease-reveal),
+    filter var(--duration-reveal) var(--ease-reveal);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+[data-reveal].is-visible,
+.section-reveal.is-visible,
+.reveal-on-scroll.is-visible,
+.home-about__text.is-visible,
+.home-about__stat.is-visible,
+.home-section__title.is-visible,
+.home-section__desc.is-visible,
+.home-section__label.is-visible,
+.home-about__script.is-visible,
+.dest-page__lead.is-visible,
+.dest-page__text.is-visible,
+.dest-page__photo.is-visible,
+.dest-slideshow.is-visible,
+.dest-page__aside-block.is-visible,
+.experience-card__title.is-visible,
+.experience-card__text.is-visible,
+.testimonial-card__quote.is-visible,
+.credentials-grid__item.is-visible,
+.home-contact__title.is-visible,
+.home-contact__text.is-visible,
+.site-footer.is-visible,
+.site-footer__col.is-visible,
+.site-footer__brand.is-visible,
+.site-footer__social.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  filter: blur(0);
+}
+
+[data-reveal-delay="1"],
+.home-about__stat:nth-child(2),
+.dest-page__photo:nth-child(3n + 2) {
+  --reveal-delay: 120ms;
+}
+
+[data-reveal-delay="2"],
+.home-about__stat:nth-child(3),
+.dest-page__photo:nth-child(3n + 3) {
+  --reveal-delay: 220ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal],
+  .section-reveal,
+  .reveal-on-scroll,
+  .home-about__text,
+  .home-about__stat,
+  .home-section__title,
+  .home-section__desc,
+  .home-section__label,
+  .home-about__script,
+  .dest-page__lead,
+  .dest-page__text,
+  .dest-page__photo,
+  .dest-slideshow,
+  .dest-page__aside-block,
+  .experience-card__title,
+  .experience-card__text,
+  .testimonial-card__quote,
+  .credentials-grid__item,
+  .home-contact__title,
+  .home-contact__text,
+  .site-footer,
+  .site-footer__col,
+  .site-footer__brand,
+  .site-footer__social {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
+
+.home-section {
+  padding: clamp(3rem, 7vw, 5rem) 0;
+}
+
+.home-section--alt {
+  background: var(--color-surface);
+}
+
+.home-section__actions {
+  margin-top: 1.25rem;
+}
+
+.home-section__actions .btn + .btn {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .home-section__actions .btn {
+    display: block;
+    width: 100%;
+    margin: 0 0 0.5rem;
+  }
+}

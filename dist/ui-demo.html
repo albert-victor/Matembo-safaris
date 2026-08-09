@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Matembo Safari & Tours — UI component demo" />
+    <title>UI Demo | Matembo Safari & Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/uiDemo-CaHcAl7c.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/buttons-DmxYQrBH.js">
+    <link rel="modulepreload" crossorigin href="/assets/paths-pBgruvT_.js">
+    <link rel="modulepreload" crossorigin href="/assets/safari-packages-Bwk-a-Z1.js">
+    <link rel="modulepreload" crossorigin href="/assets/render-cards-5dEEQBsT.js">
+    <link rel="modulepreload" crossorigin href="/assets/card-tilt-DGI_hcNQ.js">
+    <link rel="stylesheet" crossorigin href="/assets/buttons-LTXZXYpw.css">
+    <link rel="stylesheet" crossorigin href="/assets/cards-CEC92CY8.css">
+    <link rel="stylesheet" crossorigin href="/assets/demo-CLmRmRp3.css">
+  </head>
+  <body>
+    <nav class="demo-nav" aria-label="Demo navigation">
+      <div class="container demo-nav__inner">
+        <a class="demo-nav__brand" href="/">Matembo</a>
+        <div class="demo-nav__links">
+          <a href="/">Home</a>
+          <a href="/ui-demo.html" aria-current="page">UI Demo</a>
+          <a href="/destinations.html">Destinations</a>
+          <a href="/package-view.html">View Package</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="demo-header">
+      <div class="container">
+        <div class="demo-header__brand">
+          <img
+            class="demo-header__logo"
+            src="/assets/about/Matembo logo.jpg"
+            alt="Matembo Safari & Tours logo"
+            width="56"
+            height="56"
+          />
+          <div class="demo-header__brand-text">
+            <span class="demo-header__brand-name">Matembo</span>
+            <span class="demo-header__brand-tag">Safari &amp; Tours</span>
+          </div>
+        </div>
+        <p class="demo-header__eyebrow">Design review · crafted</p>
+        <h1 class="demo-header__title">Buttons &amp; Safari Packages</h1>
+        <p class="demo-header__lead">
+          Cards sasa zina expedition field-note craft — angled cut, perforation, stamp,
+          corner brackets, script circuit label, na watermark index. Si template ya kawaida.
+        </p>
+        <aside class="demo-note">
+          <strong>Scroll chini</strong> — cards zinafade-in na blur. <strong>Hover + move mouse</strong> —
+          3D tilt, shimmer, gold/green overlay, floating panel. Hakuna overlay nyeusi popote kwenye cards.
+        </aside>
+      </div>
+    </header>
+
+    <section class="demo-section demo-section--alt" aria-labelledby="buttons-title">
+      <div class="container">
+        <header class="demo-section__header section-reveal">
+          <span class="demo-section__label">Confirmed</span>
+          <h2 id="buttons-title" class="demo-section__title">Buttons — Soft Rectangle</h2>
+          <p class="demo-section__desc">
+            Option D · green laini · pembe 4px. Primary = white → brand green. Secondary = outline → black.
+          </p>
+        </header>
+
+        <div class="preview-panel preview-panel--dark section-reveal">
+          <span class="preview-panel__label">On image / dark</span>
+          <div class="preview-panel__actions">
+            <a href="#" class="btn btn--primary-dark" data-demo-link>
+              Explore Safaris
+              <svg class="btn__icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="btn btn--secondary-dark" data-demo-link>Contact Us</a>
+          </div>
+        </div>
+
+        <div class="preview-panel preview-panel--light section-reveal">
+          <span class="preview-panel__label">On light background</span>
+          <div class="preview-panel__actions">
+            <a href="#" class="btn btn--primary" data-demo-link>View Package</a>
+            <a href="#" class="btn btn--secondary" data-demo-link>Plan This Safari</a>
+          </div>
+        </div>
+
+        <dl class="btn-legend section-reveal">
+          <div class="btn-legend__item">
+            <strong>Primary</strong>
+            <span>White + black border → soft green fill</span>
+          </div>
+          <div class="btn-legend__item">
+            <strong>Secondary</strong>
+            <span>Outline black → black fill</span>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="demo-section cards-showcase" aria-labelledby="cards-title">
+      <div class="container">
+        <header class="demo-section__header section-reveal">
+          <span class="demo-section__label">Safari Packages</span>
+          <h2 id="cards-title" class="demo-section__title">Curated Itineraries</h2>
+          <p class="demo-section__desc">
+            Real Tanzania safari packages sourced from Tanzania Tourism — Northern Circuit classics,
+            Kilimanjaro treks, Southern parks, Zanzibar coast, and day trips across the country.
+          </p>
+        </header>
+
+        <div id="package-cards-root" class="safari-cards-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <div class="scroll-spacer" aria-hidden="true"></div>
+
+    <footer class="demo-footer section-reveal">
+      <div class="container">
+        <p class="demo-footer__prompt">Tuambie feedback yako</p>
+        <p class="demo-footer__hint">
+          Green, buttons, card layout, continuous motion, scroll animation — yoyote unayotaka kubadilisha
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>

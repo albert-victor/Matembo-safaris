@@ -1,0 +1,97 @@
+:root {
+  /* Brand — Matembo logo green (softened) */
+  --color-brand: #268848;
+  --color-brand-dark: #1e6d3a;
+  --color-brand-light: #32995a;
+  --color-brand-soft: rgba(38, 136, 72, 0.1);
+  --color-brand-glass: rgba(38, 136, 72, 0.7);
+
+  /* Tourism gold — warm safari sunset */
+  --color-gold: #c9a962;
+  --color-gold-light: #dcc98a;
+  --color-gold-dark: #a88842;
+  --color-gold-soft: rgba(201, 169, 98, 0.18);
+  --color-gold-glass: rgba(201, 169, 98, 0.82);
+
+  --color-black: #0a0a0a;
+  --color-ink: #1c1c1c;
+  --color-muted: #5e5e5e;
+  --color-line: rgba(10, 10, 10, 0.07);
+  --color-white: #ffffff;
+  --color-cream: #faf8f4;
+  --color-surface: #f3f1ec;
+
+  /* Typography */
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-signature: "Great Vibes", cursive;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Layout */
+  --container-max: 76rem;
+  --radius-soft: 4px;
+  --radius-card: 12px;
+  --radius-panel: 10px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.25, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 450ms;
+  --duration-slow: 900ms;
+  --duration-reveal: 1100ms;
+  --ken-burns-duration: 24s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+    --duration-reveal: 0ms;
+    --ken-burns-duration: 0s;
+  }
+}
+
+@keyframes ken-burns-drift {
+  0% {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  33% {
+    transform: scale(1.05) translate3d(-0.8%, -0.5%, 0);
+  }
+  66% {
+    transform: scale(1.04) translate3d(0.6%, 0.4%, 0);
+  }
+  100% {
+    transform: scale(1.06) translate3d(-0.4%, 0.6%, 0);
+  }
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-120%) skewX(-18deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}

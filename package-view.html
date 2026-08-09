@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Matembo Safari & Tours — Package view page demo" />
+    <title>View Package Demo | Matembo Safari & Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/src/styles/buttons.css" />
+    <link rel="stylesheet" href="/src/styles/demo.css" />
+    <link rel="stylesheet" href="/src/styles/package-view.css" />
+  </head>
+  <body>
+    <nav class="demo-nav" aria-label="Demo navigation">
+      <div class="container demo-nav__inner">
+        <a class="demo-nav__brand" href="/">Matembo</a>
+        <div class="demo-nav__links">
+          <a href="/">Home</a>
+          <a href="/ui-demo.html">UI Demo</a>
+          <a href="/destinations.html">Destinations</a>
+          <a href="/package-view.html" aria-current="page">View Package</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="demo-header">
+      <div class="container">
+        <p class="demo-header__eyebrow">View Package Page</p>
+        <h1 class="demo-header__title">Full Detail Layouts</h1>
+        <p class="demo-header__lead">
+          Gallery ndogo juu — itinerary na descriptions ndio focus kuu. Script iko green kwenye background nyeupe (contrast imerekebishwa).
+        </p>
+        <aside class="demo-note">
+          <strong>Alternative A:</strong> Itinerary-first + compact gallery &nbsp;|&nbsp;
+          <strong>Alternative B:</strong> Tabbed (Overview / Itinerary / small gallery grid)
+        </aside>
+      </div>
+    </header>
+
+    <section class="demo-section demo-section--alt" aria-labelledby="view-a-title">
+      <div class="container">
+        <header class="demo-section__header section-reveal">
+          <span class="demo-section__label">Alternative A</span>
+          <h2 id="view-a-title" class="demo-section__title">Itinerary-First Layout</h2>
+          <p class="demo-section__desc">
+            Gallery compact juu, kisha day-by-day itinerary kubwa, overview na highlights chini.
+          </p>
+        </header>
+        <div id="package-view-a" class="section-reveal"></div>
+      </div>
+    </section>
+
+    <section class="demo-section" aria-labelledby="view-b-title">
+      <div class="container">
+        <header class="demo-section__header section-reveal">
+          <span class="demo-section__label">Alternative B</span>
+          <h2 id="view-b-title" class="demo-section__title">Tabbed Journey</h2>
+          <p class="demo-section__desc">
+            Tabs kwa overview, day-by-day itinerary, na gallery grid — bora kwa mobile na content nyingi.
+          </p>
+        </header>
+        <div id="package-view-b" class="section-reveal"></div>
+      </div>
+    </section>
+
+    <footer class="demo-footer section-reveal">
+      <div class="container">
+        <p class="demo-footer__prompt">Chagua view page layout</p>
+        <p class="demo-footer__hint">
+          <a href="/destinations.html">← Rudi destination cards</a>
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/package-view-main.js"></script>
+  </body>
+</html>

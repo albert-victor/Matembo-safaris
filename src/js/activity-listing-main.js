@@ -1,0 +1,63 @@
+﻿import { renderPackageCards } from "./render-cards.js";
+import { renderSiteNav } from "./render-site-nav.js";
+import { renderSiteFooter } from "./render-home.js";
+import { initSiteNav } from "./site-nav.js";
+import { initScrollReveal } from "./scroll-reveal.js";
+import { initCardTilt } from "./card-tilt.js";
+import { safariPackages } from "../data/safari-packages.js";
+import { activityBySlug } from "../data/things-to-do-nav.js";
+import { filterPackagesByActivity } from "./package-filters.js";
+
+function getActivityFromPage() {
+  const slug = document.body.dataset.activitySlug;
+  return activityBySlug(slug);
+}
+
+function renderHero(activity) {
+  const label = document.querySelector("[data-activity-label]");
+  const title = document.querySelector("[data-activity-title]");
+  const lead = document.querySelector("[data-activity-lead]");
+
+  if (label) label.textContent = "Things to Do";
+  if (title) title.textContent = activity.label;
+  if (lead) {
+    lead.textContent = `Safari packages and day trips that include ${activity.label.toLowerCase()} – sourced from Tanzania Tourism and ready to tailor.`;
+  }
+  document.title = `${activity.label} | Matembo Safari & Tours`;
+}
+
+function renderPackages(activity) {
+  const grid = document.querySelector("#activity-packages-grid");
+  const empty = document.querySelector("[data-activity-empty]");
+  if (!grid) return;
+
+  const packages = filterPackagesByActivity(safariPackages, activity.label);
+
+  if (!packages.length) {
+    grid.innerHTML = "";
+    empty?.removeAttribute("hidden");
+    return;
+  }
+
+  empty?.setAttribute("hidden", "");
+  renderPackageCards("#activity-packages-grid", { packages, viewLabel: "View Safari" });
+}
+
+function init() {
+  const activity = getActivityFromPage();
+  if (!activity) return;
+
+  renderSiteNav();
+  renderSiteFooter();
+  renderHero(activity);
+  renderPackages(activity);
+  initSiteNav();
+  initCardTilt();
+  initScrollReveal();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
+}
