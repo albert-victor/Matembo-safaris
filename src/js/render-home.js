@@ -26,6 +26,10 @@ export function renderHero() {
   const root = document.querySelector("#home-hero");
   if (!root) return;
 
+  root.querySelector("#hero-lcp-bootstrap")?.remove();
+
+  const totalSlides = String(heroSlides.length).padStart(2, "0");
+
   const slideMarkup = heroSlides
     .map(
       (slide, i) => `
@@ -35,15 +39,21 @@ export function renderHero() {
           data-motion="${escapeHtml(slide.motion || "zoom-in")}"
         >
           <img
-            class="hero-showcase__img"
+            class="hero-showcase__img${i === 0 ? " is-loaded" : ""}"
             ${i === 0 ? `src="${escapeHtml(slide.image)}" fetchpriority="high"` : `data-src="${escapeHtml(slide.image)}" src=""`}
             alt="${escapeHtml(slide.imageAlt)}"
             width="1920"
             height="1080"
             ${i === 0 ? 'decoding="async"' : 'loading="lazy" decoding="async"'}
-            style="object-position: ${escapeHtml(slide.focus || "center bottom")}"
+            style="object-position: ${escapeHtml(slide.focus || "center")}"
           />
-          <div class="hero-showcase__overlay" aria-hidden="true"></div>
+          <div class="hero-showcase__overlay" aria-hidden="true">
+            <div class="hero-showcase__overlay-tint"></div>
+            <div class="hero-showcase__overlay-vignette"></div>
+            <div class="hero-showcase__overlay-scrim"></div>
+            <div class="hero-showcase__overlay-glow"></div>
+            <div class="hero-showcase__overlay-grain"></div>
+          </div>
         </div>
       `
     )
@@ -57,19 +67,15 @@ export function renderHero() {
         <article
           class="hero-showcase__panel${i === 0 ? " is-active" : ""}"
           data-hero-panel="${i}"
+          data-text-layout="${escapeHtml(slide.textLayout || "center")}"
           aria-hidden="${i === 0 ? "false" : "true"}"
         >
           <div class="hero-showcase__copy">
             <p class="hero-showcase__signature">${escapeHtml(slide.signature)}</p>
-            <h1 class="hero-showcase__heading">
-              <span class="hero-showcase__highlight">${escapeHtml(slide.title)}</span>
-            </h1>
+            <h1 class="hero-showcase__title">${escapeHtml(slide.title)}</h1>
             <p class="hero-showcase__lead">${escapeHtml(slide.lead)}</p>
           </div>
-          <div class="hero-showcase__actions">
-            <a href="${escapeHtml(slide.cta.href)}" class="btn btn--hero-primary hero-showcase__cta">${escapeHtml(slide.cta.label)}</a>
-            <a href="/safaris.html" class="btn btn--hero-secondary hero-showcase__cta-secondary">All Safari Packages</a>
-          </div>
+          <a href="${escapeHtml(slide.cta.href)}" class="btn btn--ghost hero-showcase__cta">${escapeHtml(slide.cta.label)}</a>
         </article>
       `
     )
@@ -91,27 +97,41 @@ export function renderHero() {
 
   root.innerHTML = `
     <section
-      class="hero-showcase"
+      class="hero-showcase hero-showcase--text-bottom"
       id="story"
       data-hero
       data-hero-slideshow
-      data-interval="8000"
+      data-interval="9000"
       aria-label="Tanzania safari highlights"
     >
       <div class="hero-showcase__stage">
         <div class="hero-showcase__slides" aria-hidden="true">${slideMarkup}</div>
-        <div class="hero-showcase__particles" aria-hidden="true">${particleMarkup}</div>
+        <div class="hero-showcase__film" aria-hidden="true">
+          <div class="hero-showcase__film-gradient"></div>
+          <div class="hero-showcase__particles">${particleMarkup}</div>
+        </div>
 
         <div class="hero-showcase__content">
           <div class="hero-showcase__panels">${panelMarkup}</div>
-        </div>
 
-        <nav class="hero-showcase__nav" aria-label="Hero slideshow navigation">
-          <button type="button" class="hero-showcase__scroll" data-hero-scroll aria-label="Scroll to next section">
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="hero-showcase__dots-bar" role="tablist" aria-label="Hero slides">${dotsMarkup}</div>
-        </nav>
+          <nav class="hero-showcase__nav" aria-label="Hero slideshow navigation">
+            <button type="button" class="hero-showcase__arrow hero-showcase__arrow--prev" data-hero-prev aria-label="Previous slide">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <div class="hero-showcase__rail">
+              <span class="hero-showcase__counter" data-hero-counter aria-live="polite">01 / ${totalSlides}</span>
+              <div class="hero-showcase__track" aria-hidden="true">
+                <span class="hero-showcase__fill" data-hero-progress style="width: ${Math.round(100 / heroSlides.length)}%"></span>
+              </div>
+              <div class="hero-showcase__dots" role="tablist" aria-label="Hero slides">${dotsMarkup}</div>
+            </div>
+
+            <button type="button" class="hero-showcase__arrow hero-showcase__arrow--next" data-hero-next aria-label="Next slide">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </nav>
+        </div>
       </div>
     </section>
   `;

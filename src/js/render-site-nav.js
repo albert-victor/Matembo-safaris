@@ -6,7 +6,7 @@
 } from "../data/nav-data.js";
 import { NAV_IMAGE_FALLBACK, bindNavImageFallbacks } from "../data/nav-images.js";
 import { initSiteSearch } from "./site-search.js";
-import { ensureImagePreconnect } from "./lazy-images.js";
+import { ensureImagePreconnect, bootstrapImagesWithSrc, prefetchMegaMenuImages } from "./lazy-images.js";
 
 function escapeHtml(text) {
   const div = document.createElement("div");
@@ -171,6 +171,8 @@ export function renderSiteNav(containerSelector = "#site-nav-root") {
 
   ensureImagePreconnect();
 
+  root.querySelector("#nav-emblem-bootstrap")?.remove();
+
   root.innerHTML = `
     <header class="site-header" data-site-header>
       <div class="site-header__bar">
@@ -178,12 +180,14 @@ export function renderSiteNav(containerSelector = "#site-nav-root") {
           <a class="site-header__brand" href="/" aria-label="${escapeHtml(siteMeta.name)} home">
             <span class="site-header__brand-emblem-wrap" aria-hidden="true">
               <img
-                class="site-header__brand-emblem"
+                class="site-header__brand-emblem is-loaded"
                 src="${escapeHtml(brandEmblemPath)}"
                 alt=""
                 width="52"
                 height="52"
                 loading="eager"
+                fetchpriority="high"
+                decoding="async"
                 data-fallback="${escapeHtml(NAV_IMAGE_FALLBACK)}"
               />
             </span>
@@ -293,4 +297,6 @@ export function renderSiteNav(containerSelector = "#site-nav-root") {
 
   bindNavImageFallbacks(root);
   initSiteSearch(root);
+  bootstrapImagesWithSrc(root);
+  prefetchMegaMenuImages();
 }

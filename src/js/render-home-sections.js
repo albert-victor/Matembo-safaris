@@ -220,20 +220,27 @@ export function renderTestimonialsSlider() {
   `;
 }
 
+function credentialsLogoClass(logoFit) {
+  return logoFit && logoFit !== "default" ? ` cred-marquee__logo--${logoFit}` : "";
+}
+
+function renderCredentialItem(item) {
+  return `
+    <a class="cred-marquee__item" href="${escapeHtml(item.href)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(item.name)}">
+      <span class="cred-marquee__slot">
+        <img class="cred-marquee__logo${credentialsLogoClass(item.logoFit)}" src="${escapeHtml(item.logo)}" alt="${escapeHtml(item.name)}" width="96" height="48" loading="lazy" decoding="async" />
+      </span>
+      <span class="cred-marquee__name">${escapeHtml(item.abbr)}</span>
+    </a>
+  `;
+}
+
 export function renderCredentialsMarquee() {
   const root = document.querySelector("#home-credentials");
   if (!root) return;
 
-  const items = [...certificationBodies, ...certificationBodies]
-    .map(
-      (item) => `
-        <a class="cred-marquee__item" href="${escapeHtml(item.href)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(item.name)}">
-          <img class="cred-marquee__logo" src="${escapeHtml(item.logo)}" alt="${escapeHtml(item.name)}" width="120" height="48" loading="lazy" />
-          <span class="cred-marquee__name">${escapeHtml(item.name)}</span>
-        </a>
-      `
-    )
-    .join("");
+  const loop = [...certificationBodies, ...certificationBodies];
+  const items = loop.map(renderCredentialItem).join("");
 
   root.innerHTML = `
     <section class="home-credentials" id="credentials" aria-labelledby="credentials-title">
@@ -243,9 +250,16 @@ export function renderCredentialsMarquee() {
           <h2 id="credentials-title" class="home-section__title">${escapeHtml(credentialsIntro.title)}</h2>
           <p class="home-section__desc">${escapeHtml(credentialsIntro.desc)}</p>
         </header>
-      </div>
-      <div class="cred-marquee section-reveal" aria-hidden="true">
-        <div class="cred-marquee__track">${items}</div>
+        <div class="cred-marquee section-reveal" aria-label="Tourism and certification partners">
+          <div class="cred-marquee__frame">
+            <div class="cred-marquee__pattern" aria-hidden="true"></div>
+            <span class="cred-marquee__corner cred-marquee__corner--tl" aria-hidden="true"></span>
+            <span class="cred-marquee__corner cred-marquee__corner--br" aria-hidden="true"></span>
+            <div class="cred-marquee__viewport">
+              <div class="cred-marquee__track">${items}</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   `;

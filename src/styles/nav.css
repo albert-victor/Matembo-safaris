@@ -892,9 +892,9 @@ html.is-nav-locked {
   object-fit: cover;
 }
 
-.mega-menu__list-thumb:not(.is-loaded),
-.mega-menu__spotlight-media img:not(.is-loaded),
-.mega-menu__aside-media img:not(.is-loaded) {
+.mega-menu__list-thumb[data-src]:not(.is-loaded),
+.mega-menu__spotlight-media img[data-src]:not(.is-loaded),
+.mega-menu__aside-media img[data-src]:not(.is-loaded) {
   opacity: 0;
   background: rgba(255, 255, 255, 0.06);
 }

@@ -16,7 +16,11 @@ import { initSlideshows } from "./slideshow.js";
 import { initCardTilt } from "./card-tilt.js";
 import { initScrollReveal } from "./scroll-reveal.js";
 import { initHeroSlideshow } from "./hero-slideshow.js";
-import { initLazyImages, loadImagesIn } from "./lazy-images.js";
+import {
+  initLazyImages,
+  loadImagesIn,
+  bootstrapImagesWithSrc,
+} from "./lazy-images.js";
 
 function initHomeContent() {
   renderServicesShowcase();
@@ -34,18 +38,22 @@ function initHomeContent() {
   initSlideshows();
   initCardTilt();
   initLazyImages();
+  bootstrapImagesWithSrc(document.getElementById("home-services-showcase"));
+  loadImagesIn(document.getElementById("home-services-showcase"), { priority: true });
   loadImagesIn(document.getElementById("home-popular-destinations"), { priority: true });
   loadImagesIn(document.getElementById("home-popular-itineraries"), { priority: true });
 }
 
 function init() {
   try {
+    renderHero();
+    bootstrapImagesWithSrc(document.getElementById("home-hero"));
+    initLazyImages(document.getElementById("home-hero"));
+    initHeroSlideshow();
+
     renderSiteNav();
     initSiteNav();
-    renderHero();
     refreshSiteHeaderState();
-    initHeroSlideshow();
-    initLazyImages(document.getElementById("home-hero"));
 
     initHomeContent();
   } catch (error) {

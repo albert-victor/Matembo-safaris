@@ -1,8 +1,8 @@
 /** Lazy-load images with priority queue */
 
-const MAX_CONCURRENT = 8;
+const MAX_CONCURRENT = 16;
 const LOAD_TIMEOUT_MS = 650;
-const VISIBLE_PRIORITY_COUNT = 12;
+const VISIBLE_PRIORITY_COUNT = 24;
 
 let activeLoads = 0;
 const pendingQueue = [];
@@ -148,8 +148,37 @@ export function waitForCardMedia(el, timeoutMs = LOAD_TIMEOUT_MS) {
   return Promise.race([loadPromise, timeoutPromise]);
 }
 
+/** Wire up images that already have a real src (eager / static markup). */
+export function bootstrapImagesWithSrc(root = document) {
+  root.querySelectorAll('img[src]:not([src=""])').forEach((img) => {
+    if (img.classList.contains("is-loaded")) return;
+    if (img.complete && img.naturalWidth > 0) {
+      markMediaReady(img);
+      return;
+    }
+    img.addEventListener("load", () => markMediaReady(img), { once: true });
+    img.addEventListener("error", () => img.classList.add("is-loaded"), { once: true });
+  });
+}
+
+/** Prefetch mega-menu thumbs during idle time so opening the menu feels instant. */
+export function prefetchMegaMenuImages() {
+  const run = () => {
+    document.querySelectorAll(".mega-menu img[data-src]").forEach((img) => {
+      requestImageLoad(img, { priority: false });
+    });
+  };
+
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(run, { timeout: 2500 });
+  } else {
+    window.setTimeout(run, 1200);
+  }
+}
+
 export function initLazyImages(root = document) {
   ensureImagePreconnect();
+  bootstrapImagesWithSrc(root);
 
   const images = [...root.querySelectorAll("img[data-src]")].filter(
     (img) => !img.getAttribute("src") && !img.closest(".mega-menu")

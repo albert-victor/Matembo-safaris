@@ -73,28 +73,6 @@ export function initSiteNav() {
       if (trigger) trigger.setAttribute("aria-expanded", isTarget ? "true" : "false");
       if (panel) panel.classList.toggle("is-visible", isTarget);
       if (isTarget && panel) {
-        const imgs = panel.querySelectorAll("img[data-src]");
-        const localEager = panel.querySelectorAll("img[src]:not([data-src])");
-        // #region agent log
-        fetch("http://127.0.0.1:7315/ingest/1b98e4f6-7f8e-4c21-a775-a6108c5ffb25", {
-          method: "POST",
-          headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "a3fd5e" },
-          body: JSON.stringify({
-            sessionId: "a3fd5e",
-            location: "site-nav.js:openMega",
-            message: "mega menu opened",
-            data: {
-              deferredCount: imgs.length,
-              localEagerCount: localEager.length,
-              localSrcs: [...localEager].slice(0, 3).map((i) => i.getAttribute("src")),
-              path: location.pathname,
-            },
-            hypothesisId: "C",
-            timestamp: Date.now(),
-            runId: "pre-fix",
-          }),
-        }).catch(() => {});
-        // #endregion
         loadImagesIn(panel, { priority: true });
       }
     });

@@ -31,6 +31,10 @@ export function renderCard(pkg, index, options = {}) {
   const objectPosition = pkg.objectPosition || "center center";
   const accent = index % 2 === 0 ? "green" : "gold";
   const indexLabel = padIndex(index);
+  const eager = index < 3;
+  const imageAttrs = eager
+    ? `src="${escapeHtml(pkg.image)}" class="safari-card__image is-loaded"${index === 0 ? ' fetchpriority="high"' : ""}`
+    : `data-src="${escapeHtml(pkg.image)}" src="" class="safari-card__image"`;
 
   return `
     <article
@@ -51,15 +55,13 @@ export function renderCard(pkg, index, options = {}) {
 
             <div class="safari-card__motion">
               <img
-                class="safari-card__image"
-                data-src="${escapeHtml(pkg.image)}"
+                ${imageAttrs}
                 data-img-preset="card"
-                src=""
                 alt="${escapeHtml(pkg.alt)}"
                 width="560"
                 height="350"
-                loading="lazy"
                 decoding="async"
+                ${eager ? "" : 'loading="lazy"'}
                 style="object-position: ${objectPosition}"
               />
             </div>

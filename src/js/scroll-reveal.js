@@ -114,22 +114,6 @@ export function initScrollReveal(root = document) {
     return;
   }
 
-  // #region agent log
-  fetch("http://127.0.0.1:7315/ingest/1b98e4f6-7f8e-4c21-a775-a6108c5ffb25", {
-    method: "POST",
-    headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "260cb5" },
-    body: JSON.stringify({
-      sessionId: "260cb5",
-      location: "scroll-reveal.js:init",
-      message: "scroll reveal init",
-      data: { count: elements.length, path: location.pathname, mode: "wow-style" },
-      hypothesisId: "EON",
-      timestamp: Date.now(),
-      runId: "eon-match",
-    }),
-  }).catch(() => {});
-  // #endregion
-
   let batchCounter = 0;
 
   const observer = new IntersectionObserver(
@@ -149,26 +133,6 @@ export function initScrollReveal(root = document) {
         batchCounter += 1;
         observer.unobserve(el);
       });
-
-      // #region agent log
-      fetch("http://127.0.0.1:7315/ingest/1b98e4f6-7f8e-4c21-a775-a6108c5ffb25", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "260cb5" },
-        body: JSON.stringify({
-          sessionId: "260cb5",
-          location: "scroll-reveal.js:intersect",
-          message: "elements revealed on scroll",
-          data: {
-            count: intersecting.length,
-            path: location.pathname,
-            scrollY: Math.round(window.scrollY),
-          },
-          hypothesisId: "EON",
-          timestamp: Date.now(),
-          runId: "eon-match",
-        }),
-      }).catch(() => {});
-      // #endregion
     },
     {
       threshold: 0,

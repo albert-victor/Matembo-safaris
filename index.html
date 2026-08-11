@@ -9,9 +9,13 @@
     />
     <title>Matembo Safari & Tours | Tanzania Wildlife Safaris</title>
     <link rel="preload" as="image" href="/assets/hero/1st slideshow.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/assets/about/descriptions.jpg" />
+    <link rel="preload" as="image" href="/assets/photos/Serengeti_National_Park_Leopard_24.jpg" />
     <link rel="preload" as="image" href="/assets/photos/Serengeti_Gnus_7765.jpg" />
     <link rel="preload" as="image" href="/assets/photos/Ngorongoro_Crater_View_NCA.jpg" />
-    <link rel="preload" as="image" href="/assets/photos/Ruaha_National_Park_Tanzania.jpg" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin /></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,10 +44,34 @@
     <link rel="stylesheet" href="/src/styles/whatsapp-float.css" />
   </head>
   <body>
-    <div id="site-nav-root"></div>
+    <div id="site-nav-root">
+      <img
+        id="nav-emblem-bootstrap"
+        src="/assets/about/descriptions.jpg"
+        fetchpriority="high"
+        decoding="async"
+        alt=""
+        width="52"
+        height="52"
+        aria-hidden="true"
+        style="position:absolute;width:0;height:0;opacity:0;pointer-events:none"
+      />
+    </div>
 
     <main id="top">
-      <div id="home-hero"></div>
+      <div id="home-hero">
+        <img
+          id="hero-lcp-bootstrap"
+          src="/assets/hero/1st slideshow.webp"
+          fetchpriority="high"
+          decoding="async"
+          alt=""
+          width="1920"
+          height="1080"
+          aria-hidden="true"
+          style="position:absolute;width:0;height:0;opacity:0;pointer-events:none"
+        />
+      </div>
       <div id="home-services-showcase"></div>
       <div id="home-popular-destinations"></div>
       <div id="home-popular-itineraries"></div>

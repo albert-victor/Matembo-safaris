@@ -7,13 +7,16 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
-function renderPanelMedia(item) {
+function renderPanelMedia(item, eager = false) {
+  const srcAttrs = eager
+    ? `src="${escapeHtml(item.image)}" class="is-loaded" fetchpriority="high"`
+    : `data-src="${escapeHtml(item.image)}" src=""`;
+
   return `
     <div class="svc-panel__media">
       <img
-        data-src="${escapeHtml(item.image)}"
+        ${srcAttrs}
         data-img-preset="card"
-        src=""
         alt="${escapeHtml(item.imageAlt)}"
         width="720"
         height="480"
@@ -50,7 +53,7 @@ export function renderServicesShowcase() {
     .map(
       (item, i) => `
         <article class="svc-panel${i === 0 ? " is-active" : ""}" data-svc-panel="${escapeHtml(item.id)}" aria-hidden="${i === 0 ? "false" : "true"}">
-          ${renderPanelMedia(item)}
+          ${renderPanelMedia(item, i === 0)}
           <div class="svc-panel__body">
             <h3 class="svc-panel__title">${escapeHtml(item.title)}</h3>
             <p class="svc-panel__desc">${escapeHtml(item.description)}</p>

@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega Dropdown — Professional Compact Mockups</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --brand: #268848;
+        --brand-dark: #1e6d3a;
+        --gold: #c9a962;
+        --gold-soft: rgba(201, 169, 98, 0.22);
+        --ink: #1c1c1c;
+        --muted: #6b6b6b;
+        --line: rgba(10, 10, 10, 0.08);
+        --cream: #faf8f4;
+        --white: #fff;
+        --font: "DM Sans", system-ui, sans-serif;
+        --display: "Cormorant Garamond", Georgia, serif;
+        --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: var(--font);
+        font-size: 14px;
+        color: var(--ink);
+        background: #eceae6;
+      }
+
+      .page {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 3rem;
+      }
+
+      .intro {
+        text-align: center;
+        margin-bottom: 1.75rem;
+      }
+
+      .intro h1 {
+        font-family: var(--display);
+        font-size: 1.75rem;
+        font-weight: 500;
+        margin: 0 0 0.35rem;
+        letter-spacing: -0.01em;
+      }
+
+      .intro p {
+        margin: 0 auto;
+        max-width: 34rem;
+        font-size: 0.8125rem;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: center;
+        gap: 0.4rem;
+        margin-bottom: 1.25rem;
+        flex-wrap: wrap;
+      }
+
+      .tab {
+        border: 1px solid var(--line);
+        background: var(--white);
+        padding: 0.45rem 0.9rem;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--muted);
+        cursor: pointer;
+        transition: all 0.2s var(--ease);
+      }
+
+      .tab.is-active {
+        background: var(--brand-dark);
+        border-color: var(--brand-dark);
+        color: var(--white);
+      }
+
+      .panel { display: none; }
+      .panel.is-active { display: block; }
+
+      .tag {
+        font-size: 0.625rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--brand);
+        margin-bottom: 0.5rem;
+      }
+
+      /* ── Preview frame (compact) ───────────────────────────── */
+      .frame {
+        border-radius: 10px;
+        overflow: hidden;
+        background: var(--white);
+        box-shadow: 0 8px 32px rgba(10, 10, 10, 0.08);
+        border: 1px solid var(--line);
+      }
+
+      .frame-hero {
+        height: 7rem;
+        background:
+          linear-gradient(180deg, rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.15)),
+          url("/assets/photos/Serengeti_Gnus_7765.jpg") center / cover;
+      }
+
+      /* ── Navbar (shared, compact) ──────────────────────────── */
+      .bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        padding: 0.65rem 1.1rem;
+        background: rgba(255, 255, 255, 0.94);
+        border-bottom: 1px solid var(--line);
+        font-size: 0.6875rem;
+      }
+
+      .bar--float {
+        margin-top: -7rem;
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(12px);
+        border-bottom: none;
+        margin-inline: 1rem;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0 -1px 0 var(--line);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: var(--ink);
+      }
+
+      .brand img {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .brand b {
+        font-family: var(--display);
+        font-size: 0.9375rem;
+        font-weight: 600;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 0.1rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav a,
+      .nav button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.2rem;
+        padding: 0.35rem 0.5rem;
+        border: 0;
+        background: none;
+        font: inherit;
+        font-size: 0.625rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .nav .is-open {
+        color: var(--brand-dark);
+      }
+
+      .nav svg {
+        width: 0.55rem;
+        height: 0.55rem;
+        opacity: 0.55;
+        transition: transform 0.25s var(--ease);
+      }
+
+      .nav .is-open svg {
+        transform: rotate(180deg);
+        opacity: 1;
+      }
+
+      .cta {
+        padding: 0.4rem 0.75rem;
+        border-radius: 4px;
+        background: var(--brand);
+        color: var(--white);
+        font-size: 0.625rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .cta--ghost {
+        background: transparent;
+        color: var(--brand-dark);
+        border: 1px solid var(--gold-soft);
+      }
+
+      .drop-wrap {
+        padding: 0 1.1rem 1rem;
+        background: var(--cream);
+      }
+
+      .note {
+        margin-top: 0.75rem;
+        font-size: 0.75rem;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .note strong { color: var(--ink); font-weight: 600; }
+
+      /* ═══ A — Compact Classic (refined 3-col, low height) ═══ */
+      .mega-a {
+        display: grid;
+        grid-template-columns: 7.5rem 1fr 9.5rem;
+        max-height: 11.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--white);
+        border: 1px solid var(--gold-soft);
+        box-shadow: 0 4px 20px rgba(10, 10, 10, 0.06);
+      }
+
+      .mega-a__spot {
+        position: relative;
+        text-decoration: none;
+        color: var(--white);
+      }
+
+      .mega-a__spot img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .mega-a__spot::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent 30%, rgba(15, 61, 34, 0.75));
+      }
+
+      .mega-a__spot span {
+        position: absolute;
+        left: 0.5rem;
+        right: 0.5rem;
+        bottom: 0.45rem;
+        z-index: 1;
+        font-family: var(--display);
+        font-size: 0.8125rem;
+        font-weight: 600;
+        line-height: 1.15;
+      }
+
+      .mega-a__core {
+        padding: 0.65rem 0.75rem;
+        border-inline: 1px solid var(--line);
+      }
+
+      .mega-a__label {
+        font-size: 0.5625rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--brand);
+        margin-bottom: 0.15rem;
+      }
+
+      .mega-a__title {
+        font-family: var(--display);
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 0 0.45rem;
+        line-height: 1.1;
+      }
+
+      .mega-a__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.15rem 0.5rem;
+      }
+
+      .mega-a__link {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.28rem 0.2rem;
+        text-decoration: none;
+        color: var(--ink);
+        border-radius: 4px;
+        font-size: 0.6875rem;
+        transition: background 0.15s;
+      }
+
+      .mega-a__link:hover { background: rgba(38, 136, 72, 0.05); }
+
+      .mega-a__link img {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 4px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .mega-a__link b {
+        display: block;
+        font-weight: 600;
+        font-size: 0.6875rem;
+        line-height: 1.2;
+      }
+
+      .mega-a__aside {
+        padding: 0.65rem;
+        background: var(--cream);
+        font-size: 0.6875rem;
+      }
+
+      .mega-a__aside img {
+        width: 100%;
+        height: 3.25rem;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 0.4rem;
+      }
+
+      .mega-a__aside p {
+        margin: 0.25rem 0 0;
+        color: var(--muted);
+        font-size: 0.625rem;
+        line-height: 1.45;
+      }
+
+      .mega-a__aside a {
+        display: inline-block;
+        margin-top: 0.4rem;
+        font-size: 0.5625rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--brand-dark);
+        text-decoration: none;
+      }
+
+      /* ═══ B — Underline Rail (minimal, single band) ═══════════ */
+      .mega-b {
+        border-radius: 8px;
+        background: var(--white);
+        border: 1px solid var(--line);
+        box-shadow: 0 4px 18px rgba(10, 10, 10, 0.05);
+        overflow: hidden;
+      }
+
+      .mega-b__head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 0.55rem 0.85rem;
+        border-bottom: 1px solid var(--line);
+        background: var(--cream);
+      }
+
+      .mega-b__head h3 {
+        margin: 0;
+        font-family: var(--display);
+        font-size: 0.9375rem;
+        font-weight: 600;
+      }
+
+      .mega-b__head span {
+        font-size: 0.5625rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .mega-b__head a {
+        font-size: 0.5625rem;
+        font-weight: 600;
+        color: var(--brand-dark);
+        text-decoration: none;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .mega-b__rail {
+        display: flex;
+        gap: 0;
+        overflow-x: auto;
+      }
+
+      .mega-b__item {
+        flex: 1 1 0;
+        min-width: 5.5rem;
+        padding: 0.6rem 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--ink);
+        border-right: 1px solid var(--line);
+        transition: background 0.15s;
+      }
+
+      .mega-b__item:last-child { border-right: 0; }
+
+      .mega-b__item:hover { background: rgba(38, 136, 72, 0.04); }
+
+      .mega-b__item img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 0.35rem;
+        display: block;
+        border: 1px solid var(--gold-soft);
+      }
+
+      .mega-b__item b {
+        display: block;
+        font-size: 0.625rem;
+        font-weight: 600;
+        line-height: 1.25;
+      }
+
+      .mega-b__item em {
+        display: block;
+        font-style: normal;
+        font-size: 0.5625rem;
+        color: var(--muted);
+        margin-top: 0.12rem;
+      }
+
+      /* ═══ C — Split Lite (2-col, no third panel) ══════════════ */
+      .mega-c {
+        display: grid;
+        grid-template-columns: 9rem 1fr;
+        max-height: 10.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--white);
+        border: 1px solid var(--line);
+        box-shadow: 0 4px 18px rgba(10, 10, 10, 0.05);
+      }
+
+      .mega-c__visual {
+        position: relative;
+      }
+
+      .mega-c__visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .mega-c__visual::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent 40%, rgba(15, 61, 34, 0.7));
+      }
+
+      .mega-c__visual div {
+        position: absolute;
+        left: 0.55rem;
+        right: 0.55rem;
+        bottom: 0.5rem;
+        z-index: 1;
+        color: var(--white);
+      }
+
+      .mega-c__visual small {
+        display: block;
+        font-size: 0.5rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 0.1rem;
+      }
+
+      .mega-c__visual strong {
+        font-family: var(--display);
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.15;
+      }
+
+      .mega-c__main {
+        padding: 0.6rem 0.75rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .mega-c__main h3 {
+        margin: 0 0 0.4rem;
+        font-family: var(--display);
+        font-size: 0.9375rem;
+        font-weight: 600;
+      }
+
+      .mega-c__rows {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.1rem 0.75rem;
+        flex: 1;
+      }
+
+      .mega-c__row {
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+        padding: 0.22rem 0;
+        text-decoration: none;
+        color: var(--ink);
+        font-size: 0.6875rem;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.15s;
+      }
+
+      .mega-c__row:hover {
+        border-bottom-color: var(--gold-soft);
+      }
+
+      .mega-c__row img {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 3px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .mega-c__foot {
+        margin-top: 0.35rem;
+        padding-top: 0.35rem;
+        border-top: 1px solid var(--line);
+        font-size: 0.5625rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .mega-c__foot a {
+        color: var(--brand-dark);
+        text-decoration: none;
+      }
+
+      @media (max-width: 640px) {
+        .nav { display: none; }
+        .mega-a, .mega-c { grid-template-columns: 1fr; max-height: none; }
+        .mega-a__spot { height: 5rem; }
+        .mega-b__rail { flex-wrap: wrap; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="intro">
+        <h1>Professional compact dropdowns</h1>
+        <p>
+          Smaller panels, tighter typography, restrained imagery — built for trust, not spectacle.
+          All three show <strong>Destinations</strong> open with chevron indicators.
+        </p>
+      </header>
+
+      <nav class="tabs">
+        <button type="button" class="tab is-active" data-panel="a">A · Compact Classic</button>
+        <button type="button" class="tab" data-panel="b">B · Minimal Rail</button>
+        <button type="button" class="tab" data-panel="c">C · Split Lite</button>
+      </nav>
+
+      <!-- A -->
+      <section class="panel is-active" id="panel-a">
+        <p class="tag">Option A — ~184px tall · 3 columns · small thumbs</p>
+        <div class="frame">
+          <div class="frame-hero"></div>
+          <header class="bar bar--float">
+            <a class="brand" href="#"><img src="/assets/about/Matembo logo.jpg" alt="" /><b>Matembo</b></a>
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+              <li><button type="button" class="is-open">Destinations <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+              <li><button type="button">Safaris <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+              <li><button type="button">Experiences <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+              <li><button type="button">About <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+            </ul>
+            <a class="cta" href="#">Plan Safari</a>
+          </header>
+          <div class="drop-wrap">
+            <div class="mega-a">
+              <a class="mega-a__spot" href="#"><img src="/assets/photos/Ngorongoro_Crater_View_NCA.jpg" alt="" /><span>Northern Circuit</span></a>
+              <div class="mega-a__core">
+                <div class="mega-a__label">Circuits</div>
+                <h3 class="mega-a__title">Explore by region</h3>
+                <div class="mega-a__list">
+                  <a class="mega-a__link" href="#"><img src="/assets/photos/Serengeti_Gnus_7765.jpg" alt="" /><b>Northern</b></a>
+                  <a class="mega-a__link" href="#"><img src="/assets/photos/Ruaha_National_Park_Tanzania.jpg" alt="" /><b>Southern</b></a>
+                  <a class="mega-a__link" href="#"><img src="/assets/photos/Zanzibar_Beach_Holiday.jpg" alt="" /><b>Coastal</b></a>
+                  <a class="mega-a__link" href="#"><img src="/assets/photos/Katavi_National_Park_Sunset_59.jpg" alt="" /><b>Western</b></a>
+                  <a class="mega-a__link" href="#"><img src="/assets/photos/Mount_Kilimanjaro_Tanzania.jpg" alt="" /><b>Highlands</b></a>
+                  <a class="mega-a__link" href="#"><img src="/assets/photos/Tarangire_National_Park_20.jpg" alt="" /><b>Eastern</b></a>
+                </div>
+              </div>
+              <aside class="mega-a__aside">
+                <img src="/assets/photos/Serengeti_National_Park_Leopard_24.jpg" alt="" />
+                <div class="mega-a__label">Index</div>
+                <b style="font-family:var(--display);font-size:0.8125rem;">141 itineraries</b>
+                <p>Grouped by circuit — north, south, coast and west.</p>
+                <a href="#">All circuits →</a>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <p class="note"><strong>Pro:</strong> Familiar luxury-travel layout, but ~40% shorter than before. Subtle shadow, 28px thumbs.</p>
+      </section>
+
+      <!-- B -->
+      <section class="panel" id="panel-b">
+        <p class="tag">Option B — ~120px tall · horizontal rail · no side columns</p>
+        <div class="frame">
+          <div class="frame-hero"></div>
+          <header class="bar bar--float">
+            <a class="brand" href="#"><img src="/assets/about/Matembo logo.jpg" alt="" /><b>Matembo</b></a>
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+              <li><button type="button" class="is-open">Destinations <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+              <li><button type="button">Safaris <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+              <li><button type="button">Experiences <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+            </ul>
+            <a class="cta cta--ghost" href="#">Enquire</a>
+          </header>
+          <div class="drop-wrap">
+            <div class="mega-b">
+              <div class="mega-b__head">
+                <div><span>Circuits · </span><h3 style="display:inline;font-size:0.8125rem;">Tanzania by region</h3></div>
+                <a href="#">View all →</a>
+              </div>
+              <div class="mega-b__rail">
+                <a class="mega-b__item" href="#"><img src="/assets/photos/Ngorongoro_Crater_View_NCA.jpg" alt="" /><b>Northern</b><em>Serengeti · Ngorongoro</em></a>
+                <a class="mega-b__item" href="#"><img src="/assets/photos/Ruaha_National_Park_Tanzania.jpg" alt="" /><b>Southern</b><em>Ruaha · Mikumi</em></a>
+                <a class="mega-b__item" href="#"><img src="/assets/photos/Zanzibar_Beach_Holiday.jpg" alt="" /><b>Coastal</b><em>Zanzibar · Mafia</em></a>
+                <a class="mega-b__item" href="#"><img src="/assets/photos/Katavi_National_Park_Sunset_59.jpg" alt="" /><b>Western</b><em>Katavi · Mahale</em></a>
+                <a class="mega-b__item" href="#"><img src="/assets/photos/Mount_Kilimanjaro_Tanzania.jpg" alt="" /><b>Highlands</b><em>Kili · Usambara</em></a>
+                <a class="mega-b__item" href="#"><img src="/assets/photos/Tarangire_National_Park_20.jpg" alt="" /><b>Eastern</b><em>Saadani</em></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="note"><strong>Pro:</strong> Lowest visual weight — one clean band, circular 40px photos, no competing columns.</p>
+      </section>
+
+      <!-- C -->
+      <section class="panel" id="panel-c">
+        <p class="tag">Option C — ~168px tall · 2 columns only · no promo aside</p>
+        <div class="frame">
+          <div class="frame-hero"></div>
+          <header class="bar bar--float">
+            <a class="brand" href="#"><img src="/assets/about/Matembo logo.jpg" alt="" /><b>Matembo</b></a>
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+              <li><button type="button" class="is-open">Destinations <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+              <li><button type="button">Safaris <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+              <li><button type="button">Experiences <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+              <li><button type="button">About <svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></li>
+            </ul>
+            <a class="cta" href="#">Contact</a>
+          </header>
+          <div class="drop-wrap">
+            <div class="mega-c">
+              <div class="mega-c__visual">
+                <img src="/assets/photos/Ngorongoro_Crater_View_NCA.jpg" alt="" />
+                <div><small>Featured</small><strong>Northern Circuit</strong></div>
+              </div>
+              <div class="mega-c__main">
+                <h3>Circuits & regions</h3>
+                <div class="mega-c__rows">
+                  <a class="mega-c__row" href="#"><img src="/assets/photos/Serengeti_Gnus_7765.jpg" alt="" />Northern Circuit</a>
+                  <a class="mega-c__row" href="#"><img src="/assets/photos/Ruaha_National_Park_Tanzania.jpg" alt="" />Southern Circuit</a>
+                  <a class="mega-c__row" href="#"><img src="/assets/photos/Zanzibar_Beach_Holiday.jpg" alt="" />Coastal & Islands</a>
+                  <a class="mega-c__row" href="#"><img src="/assets/photos/Katavi_National_Park_Sunset_59.jpg" alt="" />Western Tanzania</a>
+                  <a class="mega-c__row" href="#"><img src="/assets/photos/Mount_Kilimanjaro_Tanzania.jpg" alt="" />Central Highlands</a>
+                  <a class="mega-c__row" href="#"><img src="/assets/photos/Tarangire_National_Park_20.jpg" alt="" />Eastern Parks</a>
+                </div>
+                <div class="mega-c__foot"><a href="#">All destinations →</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="note"><strong>Pro:</strong> Balanced — one accent image, dense link grid, no third “sales” column. Reads calm and editorial.</p>
+      </section>
+    </div>
+
+    <script>
+      document.querySelectorAll(".tab").forEach((tab) => {
+        tab.addEventListener("click", () => {
+          document.querySelectorAll(".tab").forEach((t) => t.classList.toggle("is-active", t === tab));
+          document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("is-active", p.id === `panel-${tab.dataset.panel}`));
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -24,13 +24,28 @@ function sitemapPlugin() {
   };
 }
 
+const FONT_AWESOME_SNIPPET = `
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin /></noscript>`;
+
+function fontAwesomePlugin() {
+  return {
+    name: "matembo-font-awesome",
+    transformIndexHtml(html) {
+      if (html.includes("font-awesome/6.5.1")) return html;
+      return html.replace("<head>", `<head>${FONT_AWESOME_SNIPPET}`);
+    },
+  };
+}
+
 export default defineConfig({
   root: ".",
   server: {
     port: 5173,
     open: true,
   },
-  plugins: [sitemapPlugin()],
+  plugins: [sitemapPlugin(), fontAwesomePlugin()],
   build: {
     rollupOptions: {
       input: {
