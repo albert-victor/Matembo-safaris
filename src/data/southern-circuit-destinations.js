@@ -54,65 +54,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/ruaha-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Tanzania.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Tanzania.jpg",
           alt: "Ruaha National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_85.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_River_85.jpg",
           alt: "Ruaha National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_RIver_87.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_RIver_87.jpg",
           alt: "Ruaha National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Tanzania.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Tanzania.jpg",
           alt: "Ruaha National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_85.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_River_85.jpg",
           alt: "Ruaha National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_RIver_87.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_RIver_87.jpg",
           alt: "Ruaha National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Baobab_Landscape_10.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Baobab_Landscape_10.jpg",
           alt: "Ruaha National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Hippos_47.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Hippos_47.jpg",
           alt: "Ruaha National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Waterbucks_78.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Waterbucks_78.jpg",
           alt: "Ruaha National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_39.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_River_39.jpg",
           alt: "Ruaha National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Kudus_69.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudus_69.jpg",
           alt: "Ruaha National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Elephants_49.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Elephants_49.jpg",
           alt: "Ruaha National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Boat_on_the_River_86.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Boat_on_the_River_86.jpg",
           alt: "Ruaha National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Zebras_45.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Zebras_45.jpg",
           alt: "Ruaha National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_59.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_River_59.jpg",
           alt: "Ruaha National Park – view 12",
         },
       ],
@@ -148,65 +148,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/nyerere-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Selous_Game_Reserve_Aeroview.jpg",
+          src: "/assets/photos/Selous_Game_Reserve_Aeroview.jpg",
           alt: "Nyerere National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Elephants_61.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Elephants_61.jpg",
           alt: "Nyerere National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Wildebeests_20.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Wildebeests_20.jpg",
           alt: "Nyerere National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Selous_Game_Reserve_Aeroview.jpg",
+          src: "/assets/photos/Selous_Game_Reserve_Aeroview.jpg",
           alt: "Nyerere National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Elephants_61.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Elephants_61.jpg",
           alt: "Nyerere National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Wildebeests_20.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Wildebeests_20.jpg",
           alt: "Nyerere National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Elephants_25.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Elephants_25.jpg",
           alt: "Nyerere National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Giraffes_104.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Giraffes_104.jpg",
           alt: "Nyerere National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Wild_Dogs_100.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Wild_Dogs_100.jpg",
           alt: "Nyerere National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Rufiji_River_219.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Rufiji_River_219.jpg",
           alt: "Nyerere National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Sunset_115.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Sunset_115.jpg",
           alt: "Nyerere National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Lions_74.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Lions_74.jpg",
           alt: "Nyerere National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Kingfisher_218.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Kingfisher_218.jpg",
           alt: "Nyerere National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Impalas_212.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Impalas_212.jpg",
           alt: "Nyerere National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Hippos_102.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Hippos_102.jpg",
           alt: "Nyerere National Park – view 12",
         },
       ],
@@ -243,65 +243,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kitulo-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_Sea_of_Flowers.jpg",
+          src: "/assets/photos/Kitulo_National_Park_Sea_of_Flowers.jpg",
           alt: "Kitulo National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_Orchidbed.jpg",
+          src: "/assets/photos/Kitulo_National_Park_Orchidbed.jpg",
           alt: "Kitulo National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_Denhams_Bustard_01.jpg",
+          src: "/assets/photos/Kitulo_National_Park_Denhams_Bustard_01.jpg",
           alt: "Kitulo National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_Sea_of_Flowers.jpg",
+          src: "/assets/photos/Kitulo_National_Park_Sea_of_Flowers.jpg",
           alt: "Kitulo National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_Orchidbed.jpg",
+          src: "/assets/photos/Kitulo_National_Park_Orchidbed.jpg",
           alt: "Kitulo National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_Denhams_Bustard_01.jpg",
+          src: "/assets/photos/Kitulo_National_Park_Denhams_Bustard_01.jpg",
           alt: "Kitulo National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_x_28.jpg",
+          src: "/assets/photos/Kitulo_National_Park_x_28.jpg",
           alt: "Kitulo National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_Mwakipembo_Waterfalls_51.jpg",
+          src: "/assets/photos/Kitulo_National_Park_Mwakipembo_Waterfalls_51.jpg",
           alt: "Kitulo National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_x_44.jpg",
+          src: "/assets/photos/Kitulo_National_Park_x_44.jpg",
           alt: "Kitulo National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_Southern_Highlands_10.jpg",
+          src: "/assets/photos/Kitulo_National_Park_Southern_Highlands_10.jpg",
           alt: "Kitulo National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_x_43.jpg",
+          src: "/assets/photos/Kitulo_National_Park_x_43.jpg",
           alt: "Kitulo National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_x_45.jpg",
+          src: "/assets/photos/Kitulo_National_Park_x_45.jpg",
           alt: "Kitulo National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_x_53.jpg",
+          src: "/assets/photos/Kitulo_National_Park_x_53.jpg",
           alt: "Kitulo National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_x_22.jpg",
+          src: "/assets/photos/Kitulo_National_Park_x_22.jpg",
           alt: "Kitulo National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kitulo_National_Park_Walking_23.jpg",
+          src: "/assets/photos/Kitulo_National_Park_Walking_23.jpg",
           alt: "Kitulo National Park – view 12",
         },
       ],
@@ -337,65 +337,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/katavi-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_x_70.jpg",
+          src: "/assets/photos/Katavi_National_Park_x_70.jpg",
           alt: "Katavi National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Sunset_62.jpg",
+          src: "/assets/photos/Katavi_National_Park_Sunset_62.jpg",
           alt: "Katavi National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Waterbucks_21.jpg",
+          src: "/assets/photos/Katavi_National_Park_Waterbucks_21.jpg",
           alt: "Katavi National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_x_70.jpg",
+          src: "/assets/photos/Katavi_National_Park_x_70.jpg",
           alt: "Katavi National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Sunset_62.jpg",
+          src: "/assets/photos/Katavi_National_Park_Sunset_62.jpg",
           alt: "Katavi National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Waterbucks_21.jpg",
+          src: "/assets/photos/Katavi_National_Park_Waterbucks_21.jpg",
           alt: "Katavi National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Giraffes_55.jpg",
+          src: "/assets/photos/Katavi_National_Park_Giraffes_55.jpg",
           alt: "Katavi National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_x_42.jpg",
+          src: "/assets/photos/Katavi_National_Park_x_42.jpg",
           alt: "Katavi National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Hippos_28.jpg",
+          src: "/assets/photos/Katavi_National_Park_Hippos_28.jpg",
           alt: "Katavi National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Hippos_19.jpg",
+          src: "/assets/photos/Katavi_National_Park_Hippos_19.jpg",
           alt: "Katavi National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Lions_13.jpg",
+          src: "/assets/photos/Katavi_National_Park_Lions_13.jpg",
           alt: "Katavi National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Pelicans_20.jpg",
+          src: "/assets/photos/Katavi_National_Park_Pelicans_20.jpg",
           alt: "Katavi National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Crocodiles_14.jpg",
+          src: "/assets/photos/Katavi_National_Park_Crocodiles_14.jpg",
           alt: "Katavi National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Sunset_59.jpg",
+          src: "/assets/photos/Katavi_National_Park_Sunset_59.jpg",
           alt: "Katavi National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Katavi_National_Park_Entrance_17.jpg",
+          src: "/assets/photos/Katavi_National_Park_Entrance_17.jpg",
           alt: "Katavi National Park – view 12",
         },
       ],
@@ -429,65 +429,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kalambo-falls",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_43.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_43.jpg",
           alt: "Kalambo Falls",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_40.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_40.jpg",
           alt: "Kalambo Falls – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_41.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_41.jpg",
           alt: "Kalambo Falls – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_43.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_43.jpg",
           alt: "Kalambo Falls",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_40.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_40.jpg",
           alt: "Kalambo Falls – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_41.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_41.jpg",
           alt: "Kalambo Falls – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_42.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_42.jpg",
           alt: "Kalambo Falls – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_22.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_22.jpg",
           alt: "Kalambo Falls – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_23.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_23.jpg",
           alt: "Kalambo Falls – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_26.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_26.jpg",
           alt: "Kalambo Falls – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_12.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_12.jpg",
           alt: "Kalambo Falls – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Waterfalls_10.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_10.jpg",
           alt: "Kalambo Falls – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kalambo_Falls_Flowers_34.jpg",
+          src: "/assets/photos/Kalambo_Falls_Flowers_34.jpg",
           alt: "Kalambo Falls – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kalambo_Falls_Waterfalls_40_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_40_750_550shar-50brig-20_c1.jpg",
           alt: "Kalambo Falls – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kalambo_Falls_Waterfalls_43_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_43_750_550shar-50brig-20_c1.jpg",
           alt: "Kalambo Falls – view 12",
         },
       ],
@@ -520,65 +520,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mbozi-meteorite",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_05.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_05.jpg",
           alt: "Mbozi Meteorite",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_09.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_09.jpg",
           alt: "Mbozi Meteorite – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_08.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_08.jpg",
           alt: "Mbozi Meteorite – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_05.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_05.jpg",
           alt: "Mbozi Meteorite",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_09.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_09.jpg",
           alt: "Mbozi Meteorite – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_08.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_08.jpg",
           alt: "Mbozi Meteorite – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_03.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_03.jpg",
           alt: "Mbozi Meteorite – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_04.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_04.jpg",
           alt: "Mbozi Meteorite – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_06.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_06.jpg",
           alt: "Mbozi Meteorite – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_07.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_07.jpg",
           alt: "Mbozi Meteorite – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite__A_Sign_on_the_way_to_Mbozi_Site.jpg",
+          src: "/assets/photos/Mbozi_Meteorite__A_Sign_on_the_way_to_Mbozi_Site.jpg",
           alt: "Mbozi Meteorite – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbozi_Meteorite_02.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_02.jpg",
           alt: "Mbozi Meteorite – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mbozi_Meteorite_09_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_09_750_550shar-50brig-20_c1.jpg",
           alt: "Mbozi Meteorite – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mbozi_Meteorite_08_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_08_750_550shar-50brig-20_c1.jpg",
           alt: "Mbozi Meteorite – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mbozi_Meteorite_03_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mbozi_Meteorite_03_750_550shar-50brig-20_c1.jpg",
           alt: "Mbozi Meteorite – view 12",
         },
       ],
@@ -614,65 +614,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/lake-ngozi",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_22.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_22.jpg",
           alt: "Lake Ngozi",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_21.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_21.jpg",
           alt: "Lake Ngozi – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_32.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_32.jpg",
           alt: "Lake Ngozi – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_22.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_22.jpg",
           alt: "Lake Ngozi",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_21.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_21.jpg",
           alt: "Lake Ngozi – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_32.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_32.jpg",
           alt: "Lake Ngozi – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_20.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_20.jpg",
           alt: "Lake Ngozi – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_24.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_24.jpg",
           alt: "Lake Ngozi – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_25.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_25.jpg",
           alt: "Lake Ngozi – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_29.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_29.jpg",
           alt: "Lake Ngozi – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_27.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_27.jpg",
           alt: "Lake Ngozi – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_33.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_33.jpg",
           alt: "Lake Ngozi – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_34.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_34.jpg",
           alt: "Lake Ngozi – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_35.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_35.jpg",
           alt: "Lake Ngozi – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Ngozi_Ngosi_30.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_30.jpg",
           alt: "Lake Ngozi – view 12",
         },
       ],
@@ -708,65 +708,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kaporogwe-falls",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kaporogwe_Waterfalls_Mbeya_01.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_01.jpg",
           alt: "Kaporogwe Falls",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kaporogwe_Waterfalls_Mbeya_02.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_02.jpg",
           alt: "Kaporogwe Falls – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kaporogwe_Waterfalls_Mbeya_03.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_03.jpg",
           alt: "Kaporogwe Falls – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kaporogwe_Waterfalls_Mbeya_01.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_01.jpg",
           alt: "Kaporogwe Falls",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kaporogwe_Waterfalls_Mbeya_02.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_02.jpg",
           alt: "Kaporogwe Falls – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kaporogwe_Waterfalls_Mbeya_03.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_03.jpg",
           alt: "Kaporogwe Falls – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kaporogwe_Waterfalls_Mbeya_05.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_05.jpg",
           alt: "Kaporogwe Falls – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kaporogwe_Waterfalls_Mbeya_04.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_04.jpg",
           alt: "Kaporogwe Falls – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kaporogwe_Waterfalls_Mbeya_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_01_750_550shar-50brig-20_c1.jpg",
           alt: "Kaporogwe Falls – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kaporogwe_Waterfalls_Mbeya_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_02_750_550shar-50brig-20_c1.jpg",
           alt: "Kaporogwe Falls – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kaporogwe_Waterfalls_Mbeya_03_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_03_750_550shar-50brig-20_c1.jpg",
           alt: "Kaporogwe Falls – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kaporogwe_Waterfalls_Mbeya_05_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_05_750_550shar-50brig-20_c1.jpg",
           alt: "Kaporogwe Falls – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kaporogwe_Waterfalls_Mbeya_04_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kaporogwe_Waterfalls_Mbeya_04_750_550shar-50brig-20_c1.jpg",
           alt: "Kaporogwe Falls – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Lake_Ngozi_Ngosi_30_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Lake_Ngozi_Ngosi_30_286_300shar-50brig-20_c1.jpg",
           alt: "Kaporogwe Falls – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pomoda_Raha_Beach_Liuli_Lake_Nyasa_04_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Pomoda_Raha_Beach_Liuli_Lake_Nyasa_04.jpg",
           alt: "Kaporogwe Falls – view 12",
         },
       ],
@@ -802,65 +802,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/matema-beach",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Matema_Beach_Lake_Nyasa_03.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_03.jpg",
           alt: "Matema Beach",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Matema_Beach_Lake_Nyasa_Mbeya.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_Mbeya.jpg",
           alt: "Matema Beach – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Matema_Beach_Lake_Nyasa_02.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_02.jpg",
           alt: "Matema Beach – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Matema_Beach_Lake_Nyasa_03.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_03.jpg",
           alt: "Matema Beach",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Matema_Beach_Lake_Nyasa_Mbeya.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_Mbeya.jpg",
           alt: "Matema Beach – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Matema_Beach_Lake_Nyasa_02.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_02.jpg",
           alt: "Matema Beach – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Matema_Beach_Lake_Nyasa_01.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_01.jpg",
           alt: "Matema Beach – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Matema_Beach_Lake_Nyasa_04.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_04.jpg",
           alt: "Matema Beach – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Matema_Beach_Lake_Nyasa_Mbeya_02.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_Mbeya_02.jpg",
           alt: "Matema Beach – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Matema_Beach_Lake_Nyasa_Mbeya_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_Mbeya_750_550shar-50brig-20_c1.jpg",
           alt: "Matema Beach – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Matema_Beach_Lake_Nyasa_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_02_750_550shar-50brig-20_c1.jpg",
           alt: "Matema Beach – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Matema_Beach_Lake_Nyasa_03_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_03_750_550shar-50brig-20_c1.jpg",
           alt: "Matema Beach – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Matema_Beach_Lake_Nyasa_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_01_750_550shar-50brig-20_c1.jpg",
           alt: "Matema Beach – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Matema_Beach_Lake_Nyasa_04_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_04_750_550shar-50brig-20_c1.jpg",
           alt: "Matema Beach – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Matema_Beach_Lake_Nyasa_03_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_03_286_300shar-50brig-20_c1.jpg",
           alt: "Matema Beach – view 12",
         },
       ],
@@ -897,65 +897,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/lake-nyasa",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Nyasa_Shoreline_07.jpg",
+          src: "/assets/photos/Lake_Nyasa_Shoreline_07.jpg",
           alt: "Lake Nyasa",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Nyasa_Pomonda_Rock_06.jpg",
+          src: "/assets/photos/Lake_Nyasa_Pomonda_Rock_06.jpg",
           alt: "Lake Nyasa – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Nyasa_Rocks_02.jpg",
+          src: "/assets/photos/Lake_Nyasa_Rocks_02.jpg",
           alt: "Lake Nyasa – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Nyasa_Shoreline_07.jpg",
+          src: "/assets/photos/Lake_Nyasa_Shoreline_07.jpg",
           alt: "Lake Nyasa",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Nyasa_Pomonda_Rock_06.jpg",
+          src: "/assets/photos/Lake_Nyasa_Pomonda_Rock_06.jpg",
           alt: "Lake Nyasa – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Nyasa_Rocks_02.jpg",
+          src: "/assets/photos/Lake_Nyasa_Rocks_02.jpg",
           alt: "Lake Nyasa – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Nyasa_Rocks_01.jpg",
+          src: "/assets/photos/Lake_Nyasa_Rocks_01.jpg",
           alt: "Lake Nyasa – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Nyasa_Fishing_09.jpg",
+          src: "/assets/photos/Lake_Nyasa_Fishing_09.jpg",
           alt: "Lake Nyasa – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pomoda_Raha_Beach_Liuli_Lake_Nyasa_05.jpg",
+          src: "/assets/photos/Pomoda_Raha_Beach_Liuli_Lake_Nyasa_05.jpg",
           alt: "Lake Nyasa – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pomoda_Raha_Beach_Liuli_Lake_Nyasa_04.jpg",
+          src: "/assets/photos/Pomoda_Raha_Beach_Liuli_Lake_Nyasa_04.jpg",
           alt: "Lake Nyasa – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Nyasa_Rocks_03.jpg",
+          src: "/assets/photos/Lake_Nyasa_Rocks_03.jpg",
           alt: "Lake Nyasa – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Matema_Beach_Lake_Nyasa_03.jpg",
+          src: "/assets/photos/Matema_Beach_Lake_Nyasa_03.jpg",
           alt: "Lake Nyasa – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Lake_Nyasa_Shoreline_07_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Lake_Nyasa_Shoreline_07_750_550shar-50brig-20_c1.jpg",
           alt: "Lake Nyasa – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Lake_Nyasa_Pomonda_Rock_06_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Lake_Nyasa_Pomonda_Rock_06_750_550shar-50brig-20_c1.jpg",
           alt: "Lake Nyasa – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Lake_Nyasa_Rocks_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Lake_Nyasa_Rocks_02_750_550shar-50brig-20_c1.jpg",
           alt: "Lake Nyasa – view 12",
         },
       ],
@@ -991,65 +991,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mnazi-bay-ruvuma-estuary-marine-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mnazi_Bay_Ruvuma_Estuary_Marine_Park_02.jpg",
+          src: "/assets/photos/Mnazi_Bay_Ruvuma_Estuary_Marine_Park_02.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Msimbati_Beach_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_03.jpg",
+          src: "/assets/photos/Msimbati_Beach_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_03.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_04.jpg",
+          src: "/assets/photos/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_04.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mnazi_Bay_Ruvuma_Estuary_Marine_Park_02.jpg",
+          src: "/assets/photos/Mnazi_Bay_Ruvuma_Estuary_Marine_Park_02.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Msimbati_Beach_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_03.jpg",
+          src: "/assets/photos/Msimbati_Beach_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_03.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_04.jpg",
+          src: "/assets/photos/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_04.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Hawksbill_Turtles_Mnazi_Bay_Ruvuma_Estuary_Marine_Park.jpg",
+          src: "/assets/photos/Hawksbill_Turtles_Mnazi_Bay_Ruvuma_Estuary_Marine_Park.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Msimbati_Beach_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_01.jpg",
+          src: "/assets/photos/Msimbati_Beach_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_01.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_02.jpg",
+          src: "/assets/photos/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_02.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_01.jpg",
+          src: "/assets/photos/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_01.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Msimbati_Beach_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_02.jpg",
+          src: "/assets/photos/Msimbati_Beach_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_02.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_03.jpg",
+          src: "/assets/photos/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_03.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mnazi_Bay_Ruvuma_Estuary_Marine_Park_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mnazi_Bay_Ruvuma_Estuary_Marine_Park_02_750_550shar-50brig-20_c1.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Msimbati_Beach_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_03_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Msimbati_Beach_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_03_750_550shar-50brig-20_c1.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_04_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Corals_Mnazi_Bay_Ruvuma_Estuary_Marine_Park_04_750_550shar-50brig-20_c1.jpg",
           alt: "Mnazi Bay - Ruvuma Estuary Marine Park – view 12",
         },
       ],
@@ -1081,65 +1081,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/igeleke-rock-art-site",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_17.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_17.jpg",
           alt: "Igeleke Rock Art Site",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_05.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_05.jpg",
           alt: "Igeleke Rock Art Site – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_12.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_12.jpg",
           alt: "Igeleke Rock Art Site – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_17.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_17.jpg",
           alt: "Igeleke Rock Art Site",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_05.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_05.jpg",
           alt: "Igeleke Rock Art Site – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_12.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_12.jpg",
           alt: "Igeleke Rock Art Site – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_09.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_09.jpg",
           alt: "Igeleke Rock Art Site – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_06.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_06.jpg",
           alt: "Igeleke Rock Art Site – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_11.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_11.jpg",
           alt: "Igeleke Rock Art Site – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_01.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_01.jpg",
           alt: "Igeleke Rock Art Site – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_19.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_19.jpg",
           alt: "Igeleke Rock Art Site – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_22.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_22.jpg",
           alt: "Igeleke Rock Art Site – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_18.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_18.jpg",
           alt: "Igeleke Rock Art Site – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_16.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_16.jpg",
           alt: "Igeleke Rock Art Site – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_15.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_15.jpg",
           alt: "Igeleke Rock Art Site – view 12",
         },
       ],
@@ -1175,65 +1175,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/isimila-stone-age-site",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_25.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_25.jpg",
           alt: "Isimila Stone Age Site",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_24.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_24.jpg",
           alt: "Isimila Stone Age Site – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_30.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_30.jpg",
           alt: "Isimila Stone Age Site – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_25.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_25.jpg",
           alt: "Isimila Stone Age Site",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_24.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_24.jpg",
           alt: "Isimila Stone Age Site – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_30.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_30.jpg",
           alt: "Isimila Stone Age Site – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_36.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_36.jpg",
           alt: "Isimila Stone Age Site – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_Sign_01.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_Sign_01.jpg",
           alt: "Isimila Stone Age Site – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_22.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_22.jpg",
           alt: "Isimila Stone Age Site – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Sandstone_Pillars_33_2.jpg",
+          src: "/assets/photos/Isimila_Sandstone_Pillars_33_2.jpg",
           alt: "Isimila Stone Age Site – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Sandstone_Pillars_33_1.jpg",
+          src: "/assets/photos/Isimila_Sandstone_Pillars_33_1.jpg",
           alt: "Isimila Stone Age Site – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Sandstone_Pillars_21.jpg",
+          src: "/assets/photos/Isimila_Sandstone_Pillars_21.jpg",
           alt: "Isimila Stone Age Site – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_39.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_39.jpg",
           alt: "Isimila Stone Age Site – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Sandstone_Pillars_24.jpg",
+          src: "/assets/photos/Isimila_Sandstone_Pillars_24.jpg",
           alt: "Isimila Stone Age Site – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_Visitors_01.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_Visitors_01.jpg",
           alt: "Isimila Stone Age Site – view 12",
         },
       ],
@@ -1269,65 +1269,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/udzungwa-mountains-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Waterfalls_21.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Waterfalls_21.jpg",
           alt: "Udzungwa Mountains Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
           alt: "Udzungwa Mountains Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Nature_Forest_19.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Nature_Forest_19.jpg",
           alt: "Udzungwa Mountains Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Waterfalls_21.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Waterfalls_21.jpg",
           alt: "Udzungwa Mountains Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
           alt: "Udzungwa Mountains Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Nature_Forest_19.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Nature_Forest_19.jpg",
           alt: "Udzungwa Mountains Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sonjo__Natural_Pool_28.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sonjo__Natural_Pool_28.jpg",
           alt: "Udzungwa Mountains Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Udzungwa_Red_Colobus_17.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Udzungwa_Red_Colobus_17.jpg",
           alt: "Udzungwa Mountains Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Waterfalls_40.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Waterfalls_40.jpg",
           alt: "Udzungwa Mountains Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Waterfalls_20.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Waterfalls_20.jpg",
           alt: "Udzungwa Mountains Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Crested_Mangabey_Monkey_21.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Crested_Mangabey_Monkey_21.jpg",
           alt: "Udzungwa Mountains Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Black_and_White_Colobus_04.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Black_and_White_Colobus_04.jpg",
           alt: "Udzungwa Mountains Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Prince_Bernhard_Waterfalls_13.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Prince_Bernhard_Waterfalls_13.jpg",
           alt: "Udzungwa Mountains Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Moloneys_Monkey_19.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Moloneys_Monkey_19.jpg",
           alt: "Udzungwa Mountains Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Prince_Bernhard_Waterfalls_14.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Prince_Bernhard_Waterfalls_14.jpg",
           alt: "Udzungwa Mountains Park – view 12",
         },
       ],
@@ -1363,65 +1363,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/saadani-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Hippos_29.jpg",
+          src: "/assets/photos/Saadani_National_Park_Hippos_29.jpg",
           alt: "Saadani National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Wami_River_40.jpg",
+          src: "/assets/photos/Saadani_National_Park_Wami_River_40.jpg",
           alt: "Saadani National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Landscape_28.jpg",
+          src: "/assets/photos/Saadani_National_Park_Landscape_28.jpg",
           alt: "Saadani National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Hippos_29.jpg",
+          src: "/assets/photos/Saadani_National_Park_Hippos_29.jpg",
           alt: "Saadani National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Wami_River_40.jpg",
+          src: "/assets/photos/Saadani_National_Park_Wami_River_40.jpg",
           alt: "Saadani National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Landscape_28.jpg",
+          src: "/assets/photos/Saadani_National_Park_Landscape_28.jpg",
           alt: "Saadani National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Mangrove_Swamps.jpg",
+          src: "/assets/photos/Saadani_National_Park_Mangrove_Swamps.jpg",
           alt: "Saadani National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Waterbuck_26.jpg",
+          src: "/assets/photos/Saadani_National_Park_Waterbuck_26.jpg",
           alt: "Saadani National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Giraffe_30.jpg",
+          src: "/assets/photos/Saadani_National_Park_Giraffe_30.jpg",
           alt: "Saadani National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Sea_Turtle_24.jpg",
+          src: "/assets/photos/Saadani_National_Park_Sea_Turtle_24.jpg",
           alt: "Saadani National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Velvet_Monkey_38.jpg",
+          src: "/assets/photos/Saadani_National_Park_Velvet_Monkey_38.jpg",
           alt: "Saadani National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Indian_Ocean_Beach_on_the_East_20.jpg",
+          src: "/assets/photos/Saadani_National_Park_Indian_Ocean_Beach_on_the_East_20.jpg",
           alt: "Saadani National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Kingfisher_27.jpg",
+          src: "/assets/photos/Saadani_National_Park_Kingfisher_27.jpg",
           alt: "Saadani National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Minotor_Lizard_22.jpg",
+          src: "/assets/photos/Saadani_National_Park_Minotor_Lizard_22.jpg",
           alt: "Saadani National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saadani_National_Park_Hippos_23.jpg",
+          src: "/assets/photos/Saadani_National_Park_Hippos_23.jpg",
           alt: "Saadani National Park – view 12",
         },
       ],
@@ -1456,65 +1456,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mikumi-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Elephants_101.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Elephants_101.jpg",
           alt: "Mikumi National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Zebras_111.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Zebras_111.jpg",
           alt: "Mikumi National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Gate_112.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Gate_112.jpg",
           alt: "Mikumi National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Elephants_101.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Elephants_101.jpg",
           alt: "Mikumi National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Zebras_111.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Zebras_111.jpg",
           alt: "Mikumi National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Gate_112.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Gate_112.jpg",
           alt: "Mikumi National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Zebras_107.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Zebras_107.jpg",
           alt: "Mikumi National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Stocks_200.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Stocks_200.jpg",
           alt: "Mikumi National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Wildebeests_102.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Wildebeests_102.jpg",
           alt: "Mikumi National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Giraffes_117.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Giraffes_117.jpg",
           alt: "Mikumi National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Wildlife_110.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Wildlife_110.jpg",
           alt: "Mikumi National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Lions_100.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Lions_100.jpg",
           alt: "Mikumi National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Hippos_101.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Hippos_101.jpg",
           alt: "Mikumi National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Elephants_107.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Elephants_107.jpg",
           alt: "Mikumi National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mikumi_National_Park_Elephant_21.jpg",
+          src: "/assets/photos/Mikumi_National_Park_Elephant_21.jpg",
           alt: "Mikumi National Park – view 12",
         },
       ],
@@ -1551,65 +1551,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/usambara-mountains",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/West_Usambara_Mountains_08.jpg",
+          src: "/assets/photos/West_Usambara_Mountains_08.jpg",
           alt: "Usambara Mountains",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/West_Usambara_Mountains.jpg",
+          src: "/assets/photos/West_Usambara_Mountains.jpg",
           alt: "Usambara Mountains – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/West_Usambara_Mountains_06.jpg",
+          src: "/assets/photos/West_Usambara_Mountains_06.jpg",
           alt: "Usambara Mountains – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/West_Usambara_Mountains_08.jpg",
+          src: "/assets/photos/West_Usambara_Mountains_08.jpg",
           alt: "Usambara Mountains",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/West_Usambara_Mountains.jpg",
+          src: "/assets/photos/West_Usambara_Mountains.jpg",
           alt: "Usambara Mountains – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/West_Usambara_Mountains_06.jpg",
+          src: "/assets/photos/West_Usambara_Mountains_06.jpg",
           alt: "Usambara Mountains – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Usambara_Mountains_06.jpg",
+          src: "/assets/photos/Usambara_Mountains_06.jpg",
           alt: "Usambara Mountains – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Usambara_Mountains_Sunset_in_Irente_Viewpint.jpg",
+          src: "/assets/photos/Usambara_Mountains_Sunset_in_Irente_Viewpint.jpg",
           alt: "Usambara Mountains – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sigi_River_East_Usambara_2.jpg",
+          src: "/assets/photos/Sigi_River_East_Usambara_2.jpg",
           alt: "Usambara Mountains – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mombo_View_Point_Usambara_Mountains.jpg",
+          src: "/assets/photos/Mombo_View_Point_Usambara_Mountains.jpg",
           alt: "Usambara Mountains – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sigi_River_East_Usambara_1.jpg",
+          src: "/assets/photos/Sigi_River_East_Usambara_1.jpg",
           alt: "Usambara Mountains – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mombo_View_Point_Usambara_Mountains_01.jpg",
+          src: "/assets/photos/Mombo_View_Point_Usambara_Mountains_01.jpg",
           alt: "Usambara Mountains – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mtae_Village_Usambara_Mountains.jpg",
+          src: "/assets/photos/Mtae_Village_Usambara_Mountains.jpg",
           alt: "Usambara Mountains – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Irente_View_Point_Usambara_Mountains_14.jpg",
+          src: "/assets/photos/Irente_View_Point_Usambara_Mountains_14.jpg",
           alt: "Usambara Mountains – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Butterfly_Usambara_Mountains_1.jpg",
+          src: "/assets/photos/Butterfly_Usambara_Mountains_1.jpg",
           alt: "Usambara Mountains – view 12",
         },
       ],
@@ -1644,65 +1644,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/amani-nature-forest-reserves",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_02.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_02.jpg",
           alt: "Amani Nature Forest Reserves",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_01.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_01.jpg",
           alt: "Amani Nature Forest Reserves – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Nature_Forest_Reserves_05.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_05.jpg",
           alt: "Amani Nature Forest Reserves – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_02.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_02.jpg",
           alt: "Amani Nature Forest Reserves",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_01.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_01.jpg",
           alt: "Amani Nature Forest Reserves – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Nature_Forest_Reserves_05.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_05.jpg",
           alt: "Amani Nature Forest Reserves – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_03.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_03.jpg",
           alt: "Amani Nature Forest Reserves – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Colubus_Monkeys_in_Amani_Nature_Reserve_in_Usambara.jpg",
+          src: "/assets/photos/Colubus_Monkeys_in_Amani_Nature_Reserve_in_Usambara.jpg",
           alt: "Amani Nature Forest Reserves – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_04.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_04.jpg",
           alt: "Amani Nature Forest Reserves – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_06.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_06.jpg",
           alt: "Amani Nature Forest Reserves – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Nature_Reserves_04a_in_Usambara.jpg",
+          src: "/assets/photos/Amani_Nature_Reserves_04a_in_Usambara.jpg",
           alt: "Amani Nature Forest Reserves – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amani_Rain_Forest_in_Usambara.jpg",
+          src: "/assets/photos/Amani_Rain_Forest_in_Usambara.jpg",
           alt: "Amani Nature Forest Reserves – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Chamelion_in_Amani_Nature_Reserve_in_Usambara.jpg",
+          src: "/assets/photos/Chamelion_in_Amani_Nature_Reserve_in_Usambara.jpg",
           alt: "Amani Nature Forest Reserves – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_01_750_550shar-50brig-20_c1.jpg",
           alt: "Amani Nature Forest Reserves – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amani_Nature_Forest_Reserves_05_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_05_750_550shar-50brig-20_c1.jpg",
           alt: "Amani Nature Forest Reserves – view 12",
         },
       ],
@@ -1738,65 +1738,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/amboni-caves",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_14.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_14.jpg",
           alt: "Amboni Caves",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_Tanzania.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_Tanzania.jpg",
           alt: "Amboni Caves – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_13.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_13.jpg",
           alt: "Amboni Caves – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_14.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_14.jpg",
           alt: "Amboni Caves",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_Tanzania.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_Tanzania.jpg",
           alt: "Amboni Caves – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_13.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_13.jpg",
           alt: "Amboni Caves – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_15.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_15.jpg",
           alt: "Amboni Caves – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_08.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_08.jpg",
           alt: "Amboni Caves – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_07.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_07.jpg",
           alt: "Amboni Caves – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_09.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_09.jpg",
           alt: "Amboni Caves – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_11.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_11.jpg",
           alt: "Amboni Caves – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_12.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_12.jpg",
           alt: "Amboni Caves – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_05.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_05.jpg",
           alt: "Amboni Caves – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_04.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_04.jpg",
           alt: "Amboni Caves – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Amboni_Caves_Tanga_06.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_06.jpg",
           alt: "Amboni Caves – view 12",
         },
       ],
@@ -1829,65 +1829,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/uluguru-mountains",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_from_Morogoro_01.jpg",
+          src: "/assets/photos/Uluguru_Mountains_from_Morogoro_01.jpg",
           alt: "Uluguru Mountains",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_view_from_Morogoro_Town.jpg",
+          src: "/assets/photos/Uluguru_Mountains_view_from_Morogoro_Town.jpg",
           alt: "Uluguru Mountains – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_06.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Waterfalls_06.jpg",
           alt: "Uluguru Mountains – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_from_Morogoro_01.jpg",
+          src: "/assets/photos/Uluguru_Mountains_from_Morogoro_01.jpg",
           alt: "Uluguru Mountains",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_view_from_Morogoro_Town.jpg",
+          src: "/assets/photos/Uluguru_Mountains_view_from_Morogoro_Town.jpg",
           alt: "Uluguru Mountains – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_06.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Waterfalls_06.jpg",
           alt: "Uluguru Mountains – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_to_Kinole.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Hiking_to_Kinole.jpg",
           alt: "Uluguru Mountains – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_03.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Waterfalls_03.jpg",
           alt: "Uluguru Mountains – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Old_Germany_Settlement_Built_in_1911.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Old_Germany_Settlement_Built_in_1911.jpg",
           alt: "Uluguru Mountains – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_01.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Waterfalls_01.jpg",
           alt: "Uluguru Mountains – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_04.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Waterfalls_04.jpg",
           alt: "Uluguru Mountains – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_from_Morogoro_Airstrip.jpg",
+          src: "/assets/photos/Uluguru_Mountains_from_Morogoro_Airstrip.jpg",
           alt: "Uluguru Mountains – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_03.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Hiking_03.jpg",
           alt: "Uluguru Mountains – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_02.jpg",
+          src: "/assets/photos/Uluguru_Mountains_02.jpg",
           alt: "Uluguru Mountains – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_07.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Hiking_07.jpg",
           alt: "Uluguru Mountains – view 12",
         },
       ],
@@ -1917,65 +1917,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/pugu-kazimzumbwi-nature-forest-reserve",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_with_Lake_Minaki.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_with_Lake_Minaki.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_with_Lake_Minaki_2.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_with_Lake_Minaki_2.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_with_Lake_Minaki_3.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_with_Lake_Minaki_3.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_with_Lake_Minaki.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_with_Lake_Minaki.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_with_Lake_Minaki_2.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_with_Lake_Minaki_2.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_with_Lake_Minaki_3.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_with_Lake_Minaki_3.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_Hiking_4.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_Hiking_4.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_Hiking_5.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_Hiking_5.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_Hiking.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_Hiking.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_Hiking_3.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_Hiking_3.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_Hiking_2.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_Hiking_2.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_Entrance.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_Entrance.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_3.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_3.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_Millipeds_2.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_Millipeds_2.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pugu_Hill_Nature_Forest_Millipeds_3.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_Millipeds_3.jpg",
           alt: "Pugu Kazimzumbwi Nature Forest Reserve – view 12",
         },
       ],
@@ -2006,65 +2006,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/tanga-marine-park-and-reserves",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Tanga_Coelacanth_Marine_Park.jpg",
+          src: "/assets/photos/Tanga_Coelacanth_Marine_Park.jpg",
           alt: "Tanga Marine Park & Reserves",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_02.jpg",
+          src: "/assets/photos/Maziwe_Island_02.jpg",
           alt: "Tanga Marine Park & Reserves – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Sandbank.jpg",
+          src: "/assets/photos/Yambe_Sandbank.jpg",
           alt: "Tanga Marine Park & Reserves – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Tanga_Coelacanth_Marine_Park.jpg",
+          src: "/assets/photos/Tanga_Coelacanth_Marine_Park.jpg",
           alt: "Tanga Marine Park & Reserves",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_02.jpg",
+          src: "/assets/photos/Maziwe_Island_02.jpg",
           alt: "Tanga Marine Park & Reserves – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Sandbank.jpg",
+          src: "/assets/photos/Yambe_Sandbank.jpg",
           alt: "Tanga Marine Park & Reserves – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Tanga_Tanzania.jpg",
+          src: "/assets/photos/Toten_Island_Tanga_Tanzania.jpg",
           alt: "Tanga Marine Park & Reserves – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_Sea_Turtle.jpg",
+          src: "/assets/photos/Maziwe_Island_Sea_Turtle.jpg",
           alt: "Tanga Marine Park & Reserves – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_Canoeing_03.jpg",
+          src: "/assets/photos/Maziwe_Island_Canoeing_03.jpg",
           alt: "Tanga Marine Park & Reserves – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_05.jpg",
+          src: "/assets/photos/Maziwe_Island_05.jpg",
           alt: "Tanga Marine Park & Reserves – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Tanga.jpg",
+          src: "/assets/photos/Toten_Island_Tanga.jpg",
           alt: "Tanga Marine Park & Reserves – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_03.jpg",
+          src: "/assets/photos/Maziwe_Island_03.jpg",
           alt: "Tanga Marine Park & Reserves – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_Crabs_04.jpg",
+          src: "/assets/photos/Maziwe_Island_Crabs_04.jpg",
           alt: "Tanga Marine Park & Reserves – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island.jpg",
+          src: "/assets/photos/Maziwe_Island.jpg",
           alt: "Tanga Marine Park & Reserves – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Tanga_Coelacanth_Marine_Park_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Tanga_Coelacanth_Marine_Park_750_550shar-50brig-20_c1.jpg",
           alt: "Tanga Marine Park & Reserves – view 12",
         },
       ],
@@ -2100,65 +2100,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kilwa",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Old_Fort_Ruins_Seen_in_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Old_Fort_Ruins_Seen_in_Kilwa_Kisiwani.jpg",
           alt: "Kilwa",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Kilwa_Kivinje_Beach_25.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Beach_25.jpg",
           alt: "Kilwa – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Fishing_Harbour_01_Makubuli_Kilwa_Masoko.jpg",
+          src: "/assets/photos/Kilwa/Fishing_Harbour_01_Makubuli_Kilwa_Masoko.jpg",
           alt: "Kilwa – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Old_Fort_Ruins_Seen_in_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Old_Fort_Ruins_Seen_in_Kilwa_Kisiwani.jpg",
           alt: "Kilwa",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Kilwa_Kivinje_Beach_25.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Beach_25.jpg",
           alt: "Kilwa – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Fishing_Harbour_01_Makubuli_Kilwa_Masoko.jpg",
+          src: "/assets/photos/Kilwa/Fishing_Harbour_01_Makubuli_Kilwa_Masoko.jpg",
           alt: "Kilwa – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Kilwa_Kivinge_beach_28.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinge_beach_28.jpg",
           alt: "Kilwa – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Kilwa_Kivinje_Ruins_31.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Ruins_31.jpg",
           alt: "Kilwa – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Sunset_at_Kilwa_Sea_View_Beach_Hotel_02.jpg",
+          src: "/assets/photos/Kilwa/Sunset_at_Kilwa_Sea_View_Beach_Hotel_02.jpg",
           alt: "Kilwa – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Swimming_Kilwa_02.jpg",
+          src: "/assets/photos/Kilwa/Swimming_Kilwa_02.jpg",
           alt: "Kilwa – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Old_Fort_Gereza_12_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/Old_Fort_Gereza_12_Kilwa_Kisiwani.jpg",
           alt: "Kilwa – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilwa/Kilwa_Kivinje_Beach_25_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Beach_25_750_550shar-50brig-20_c1.jpg",
           alt: "Kilwa – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilwa/Fishing_Harbour_01_Makubuli_Kilwa_Masoko_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilwa/Fishing_Harbour_01_Makubuli_Kilwa_Masoko_750_550shar-50brig-20_c1.jpg",
           alt: "Kilwa – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilwa/Kilwa_Kivinge_beach_28_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinge_beach_28_750_550shar-50brig-20_c1.jpg",
           alt: "Kilwa – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilwa/Kilwa_Kivinje_Ruins_31_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Ruins_31_750_550shar-50brig-20_c1.jpg",
           alt: "Kilwa – view 12",
         },
       ],
@@ -2193,65 +2193,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kilwa-kisiwani",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Husuni_Kubwa_Sultans_Palace_14th__Century_04_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Husuni_Kubwa_Sultans_Palace_14th__Century_04_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Old_Fort_Gereza_12_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/Old_Fort_Gereza_12_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Husuni_Kubwa_Sultans_Palace_14th__Century_05_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/Husuni_Kubwa_Sultans_Palace_14th__Century_05_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Husuni_Kubwa_Sultans_Palace_14th__Century_04_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Husuni_Kubwa_Sultans_Palace_14th__Century_04_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Old_Fort_Gereza_12_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/Old_Fort_Gereza_12_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Husuni_Kubwa_Sultans_Palace_14th__Century_05_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/Husuni_Kubwa_Sultans_Palace_14th__Century_05_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Jiwe_la_Jahazi_01_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/Jiwe_la_Jahazi_01_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Small_Domed_Mosque_03_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/Small_Domed_Mosque_03_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Old_Fort_Ruins_Seen_in_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/Old_Fort_Ruins_Seen_in_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/The_Great_Mosque_06_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/The_Great_Mosque_06_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/The_Great_Mosque_11_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/The_Great_Mosque_11_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/The_Great_Mosque_14th_Century_01_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/The_Great_Mosque_14th_Century_01_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/The_Great_Mosque_14th_Century_03_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/The_Great_Mosque_14th_Century_03_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Husuni_Kubwa_Sultans_Palace_14th__Century_02_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/Husuni_Kubwa_Sultans_Palace_14th__Century_02_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Makutani_Palace_01_Kilwa_Kisiwani.jpg",
+          src: "/assets/photos/Kilwa/Makutani_Palace_01_Kilwa_Kisiwani.jpg",
           alt: "Kilwa Kisiwani – view 12",
         },
       ],
@@ -2287,65 +2287,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/songo-mnara",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/The_Palace_Ruins_02_Songo_Mnara_Kilwa.jpg",
+          src: "/assets/photos/The_Palace_Ruins_02_Songo_Mnara_Kilwa.jpg",
           alt: "Songo Mnara",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Large_House_Ruins_01_Songo_Mnara_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Large_House_Ruins_01_Songo_Mnara_Kilwa.jpg",
           alt: "Songo Mnara – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Songo_Mnara_Fisherman_01_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Songo_Mnara_Fisherman_01_Kilwa.jpg",
           alt: "Songo Mnara – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/The_Palace_Ruins_02_Songo_Mnara_Kilwa.jpg",
+          src: "/assets/photos/The_Palace_Ruins_02_Songo_Mnara_Kilwa.jpg",
           alt: "Songo Mnara",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Large_House_Ruins_01_Songo_Mnara_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Large_House_Ruins_01_Songo_Mnara_Kilwa.jpg",
           alt: "Songo Mnara – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Songo_Mnara_Fisherman_01_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Songo_Mnara_Fisherman_01_Kilwa.jpg",
           alt: "Songo Mnara – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Ruins_02_Songo_Mnara_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Ruins_02_Songo_Mnara_Kilwa.jpg",
           alt: "Songo Mnara – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Ruins_of_Songo_Mnara_01_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Ruins_of_Songo_Mnara_01_Kilwa.jpg",
           alt: "Songo Mnara – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Grilled_Fish__02_Songo_Mnara_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Grilled_Fish__02_Songo_Mnara_Kilwa.jpg",
           alt: "Songo Mnara – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Songo_Mnara_Fishing_Village_02_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Songo_Mnara_Fishing_Village_02_Kilwa.jpg",
           alt: "Songo Mnara – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Songo_Mnara_Ruins__11_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Songo_Mnara_Ruins__11_Kilwa.jpg",
           alt: "Songo Mnara – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Songo_Mnara_Ruins__09_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Songo_Mnara_Ruins__09_Kilwa.jpg",
           alt: "Songo Mnara – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Grilling_Fish_01_Songo_Mnara_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/Grilling_Fish_01_Songo_Mnara_Kilwa.jpg",
           alt: "Songo Mnara – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/The_Mosque_Mihrab_04_Songo_Mnara_Kilwa.jpg",
+          src: "/assets/photos/Kilwa/The_Mosque_Mihrab_04_Songo_Mnara_Kilwa.jpg",
           alt: "Songo Mnara – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilwa/The_Palace_Ruins_02_Songo_Mnara_Kilwa_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilwa/The_Palace_Ruins_02_Songo_Mnara_Kilwa_750_550shar-50brig-20_c1.jpg",
           alt: "Songo Mnara – view 12",
         },
       ],
@@ -2377,65 +2377,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kilwa-kivinje",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa_Kivinje_Ruins_31.jpg",
+          src: "/assets/photos/Kilwa_Kivinje_Ruins_31.jpg",
           alt: "Kilwa Kivinje",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Old_German_Admistrative_Block_03_Kilwa_Kivinje.jpg",
+          src: "/assets/photos/Kilwa/Old_German_Admistrative_Block_03_Kilwa_Kivinje.jpg",
           alt: "Kilwa Kivinje – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Fishing_Boats_in_Kilwa_Kivinje.jpg",
+          src: "/assets/photos/Kilwa/Fishing_Boats_in_Kilwa_Kivinje.jpg",
           alt: "Kilwa Kivinje – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa_Kivinje_Ruins_31.jpg",
+          src: "/assets/photos/Kilwa_Kivinje_Ruins_31.jpg",
           alt: "Kilwa Kivinje",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Old_German_Admistrative_Block_03_Kilwa_Kivinje.jpg",
+          src: "/assets/photos/Kilwa/Old_German_Admistrative_Block_03_Kilwa_Kivinje.jpg",
           alt: "Kilwa Kivinje – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Fishing_Boats_in_Kilwa_Kivinje.jpg",
+          src: "/assets/photos/Kilwa/Fishing_Boats_in_Kilwa_Kivinje.jpg",
           alt: "Kilwa Kivinje – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Kilwa_Kivinje_Beach_24.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Beach_24.jpg",
           alt: "Kilwa Kivinje – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Kilwa_Kivinje_Ruins_24.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Ruins_24.jpg",
           alt: "Kilwa Kivinje – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Kilwa_Kivinje_Beach_25.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Beach_25.jpg",
           alt: "Kilwa Kivinje – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Kilwa_Kivinje_Fishing_01.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Fishing_01.jpg",
           alt: "Kilwa Kivinje – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Kilwa_Kivinje_Beach_27.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Beach_27.jpg",
           alt: "Kilwa Kivinje – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilwa/Kilwa_Kivinje_Ruins_33.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Ruins_33.jpg",
           alt: "Kilwa Kivinje – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilwa/Old_German_Admistrative_Block_03_Kilwa_Kivinje_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilwa/Old_German_Admistrative_Block_03_Kilwa_Kivinje_750_550shar-50brig-20_c1.jpg",
           alt: "Kilwa Kivinje – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilwa/Fishing_Boats_in_Kilwa_Kivinje_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilwa/Fishing_Boats_in_Kilwa_Kivinje_750_550shar-50brig-20_c1.jpg",
           alt: "Kilwa Kivinje – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilwa/Kilwa_Kivinje_Beach_24_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilwa/Kilwa_Kivinje_Beach_24_750_550shar-50brig-20_c1.jpg",
           alt: "Kilwa Kivinje – view 12",
         },
       ],
@@ -2472,65 +2472,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/pangani",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Snorkling_in_Pangani_Beach_2.jpg",
+          src: "/assets/photos/Snorkling_in_Pangani_Beach_2.jpg",
           alt: "Pangani",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani_Tanzania.jpg",
+          src: "/assets/photos/Pangani_Tanzania.jpg",
           alt: "Pangani – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/Snorkling_in_Pangani_Beach_1.jpg",
+          src: "/assets/photos/Pangani/Snorkling_in_Pangani_Beach_1.jpg",
           alt: "Pangani – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Snorkling_in_Pangani_Beach_2.jpg",
+          src: "/assets/photos/Snorkling_in_Pangani_Beach_2.jpg",
           alt: "Pangani",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani_Tanzania.jpg",
+          src: "/assets/photos/Pangani_Tanzania.jpg",
           alt: "Pangani – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/Snorkling_in_Pangani_Beach_1.jpg",
+          src: "/assets/photos/Pangani/Snorkling_in_Pangani_Beach_1.jpg",
           alt: "Pangani – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/Historical_Buildings_in_Pangani_2.jpg",
+          src: "/assets/photos/Pangani/Historical_Buildings_in_Pangani_2.jpg",
           alt: "Pangani – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/Kayaking_in_Pangani_River_1.jpg",
+          src: "/assets/photos/Pangani/Kayaking_in_Pangani_River_1.jpg",
           alt: "Pangani – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/Kayaking_in_Pangani_River_2.jpg",
+          src: "/assets/photos/Pangani/Kayaking_in_Pangani_River_2.jpg",
           alt: "Pangani – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/King_Fisher_in_Pangani_1.jpg",
+          src: "/assets/photos/Pangani/King_Fisher_in_Pangani_1.jpg",
           alt: "Pangani – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/Pangani_Ferry.jpg",
+          src: "/assets/photos/Pangani/Pangani_Ferry.jpg",
           alt: "Pangani – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/Pangani_River_2.jpg",
+          src: "/assets/photos/Pangani/Pangani_River_2.jpg",
           alt: "Pangani – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/Pangani_River_Tour_1.jpg",
+          src: "/assets/photos/Pangani/Pangani_River_Tour_1.jpg",
           alt: "Pangani – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/Pangani_River_Tour_4.jpg",
+          src: "/assets/photos/Pangani/Pangani_River_Tour_4.jpg",
           alt: "Pangani – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangani/Pangani_Tour_Mawize_Island_1.jpg",
+          src: "/assets/photos/Pangani/Pangani_Tour_Mawize_Island_1.jpg",
           alt: "Pangani – view 12",
         },
       ],
@@ -2564,65 +2564,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/bagamoyo",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruins_of_Old_Port_in_Bagamoyo_02.jpg",
+          src: "/assets/photos/Ruins_of_Old_Port_in_Bagamoyo_02.jpg",
           alt: "Bagamoyo",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/German_Old_Colonial_Fort_in_Bagamoyo_02.jpg",
+          src: "/assets/photos/Bagamoyo/German_Old_Colonial_Fort_in_Bagamoyo_02.jpg",
           alt: "Bagamoyo – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/Bagamoyo_Historical_Town_Streets_03.jpg",
+          src: "/assets/photos/Bagamoyo/Bagamoyo_Historical_Town_Streets_03.jpg",
           alt: "Bagamoyo – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruins_of_Old_Port_in_Bagamoyo_02.jpg",
+          src: "/assets/photos/Ruins_of_Old_Port_in_Bagamoyo_02.jpg",
           alt: "Bagamoyo",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/German_Old_Colonial_Fort_in_Bagamoyo_02.jpg",
+          src: "/assets/photos/Bagamoyo/German_Old_Colonial_Fort_in_Bagamoyo_02.jpg",
           alt: "Bagamoyo – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/Bagamoyo_Historical_Town_Streets_03.jpg",
+          src: "/assets/photos/Bagamoyo/Bagamoyo_Historical_Town_Streets_03.jpg",
           alt: "Bagamoyo – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/Bagamoyo_Port_01.jpg",
+          src: "/assets/photos/Bagamoyo/Bagamoyo_Port_01.jpg",
           alt: "Bagamoyo – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/Bagamoyo_Historical_Town_Streets_02.jpg",
+          src: "/assets/photos/Bagamoyo/Bagamoyo_Historical_Town_Streets_02.jpg",
           alt: "Bagamoyo – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/German_Old_Boma_Bagamoyo_03.jpg",
+          src: "/assets/photos/Bagamoyo/German_Old_Boma_Bagamoyo_03.jpg",
           alt: "Bagamoyo – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/Kaole_Ruins_Bagamoyo_03.jpg",
+          src: "/assets/photos/Bagamoyo/Kaole_Ruins_Bagamoyo_03.jpg",
           alt: "Bagamoyo – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/Old_Arab_Tea_House_in_Bagamoyo_01.jpg",
+          src: "/assets/photos/Bagamoyo/Old_Arab_Tea_House_in_Bagamoyo_01.jpg",
           alt: "Bagamoyo – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/The_Catholic_Church_Cathedral_Bagamoyo_04.jpg",
+          src: "/assets/photos/Bagamoyo/The_Catholic_Church_Cathedral_Bagamoyo_04.jpg",
           alt: "Bagamoyo – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/Bagamoyo_Historical_Town_Streets_01.jpg",
+          src: "/assets/photos/Bagamoyo/Bagamoyo_Historical_Town_Streets_01.jpg",
           alt: "Bagamoyo – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/Bagamoyo_Port_02.jpg",
+          src: "/assets/photos/Bagamoyo/Bagamoyo_Port_02.jpg",
           alt: "Bagamoyo – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bagamoyo/Caravan_Serai_Museum_Bagamoyo_02.jpg",
+          src: "/assets/photos/Bagamoyo/Caravan_Serai_Museum_Bagamoyo_02.jpg",
           alt: "Bagamoyo – view 12",
         },
       ],
@@ -2657,65 +2657,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kunduchi-ruins",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Tombs.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tombs.jpg",
           alt: "Kunduchi Ruins",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Tombs_02.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tombs_02.jpg",
           alt: "Kunduchi Ruins – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Tomb_with_Coffin_Shape.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tomb_with_Coffin_Shape.jpg",
           alt: "Kunduchi Ruins – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Tombs.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tombs.jpg",
           alt: "Kunduchi Ruins",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Tombs_02.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tombs_02.jpg",
           alt: "Kunduchi Ruins – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Tomb_with_Coffin_Shape.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tomb_with_Coffin_Shape.jpg",
           alt: "Kunduchi Ruins – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Tombs_01.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tombs_01.jpg",
           alt: "Kunduchi Ruins – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Tombs_03.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tombs_03.jpg",
           alt: "Kunduchi Ruins – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Tomb_04.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tomb_04.jpg",
           alt: "Kunduchi Ruins – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Masjid_Pillars.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Masjid_Pillars.jpg",
           alt: "Kunduchi Ruins – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Tomb_with_Arches.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tomb_with_Arches.jpg",
           alt: "Kunduchi Ruins – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_great_Mosque.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_great_Mosque.jpg",
           alt: "Kunduchi Ruins – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Graves_Tombs_with_Pocelein_02.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Graves_Tombs_with_Pocelein_02.jpg",
           alt: "Kunduchi Ruins – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kunduchi_Ruins_Graves_Tombs_with_Pocelein_01.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Graves_Tombs_with_Pocelein_01.jpg",
           alt: "Kunduchi Ruins – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kunduchi_Ruins_Tombs_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tombs_750_550shar-50brig-20_c1.jpg",
           alt: "Kunduchi Ruins – view 12",
         },
       ],
@@ -2750,65 +2750,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/gombe-stream-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Chimp_15.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Chimp_15.jpg",
           alt: "Gombe Stream National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Boating_71.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Boating_71.jpg",
           alt: "Gombe Stream National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Boating_70.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Boating_70.jpg",
           alt: "Gombe Stream National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Chimp_15.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Chimp_15.jpg",
           alt: "Gombe Stream National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Boating_71.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Boating_71.jpg",
           alt: "Gombe Stream National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Boating_70.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Boating_70.jpg",
           alt: "Gombe Stream National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Lake_Tanganyika_Shore)line_45.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Lake_Tanganyika_Shore)line_45.jpg",
           alt: "Gombe Stream National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Kakombe_Waterfalls_39.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Kakombe_Waterfalls_39.jpg",
           alt: "Gombe Stream National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Mountain_Forest_24.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Mountain_Forest_24.jpg",
           alt: "Gombe Stream National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Entrance_34.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Entrance_34.jpg",
           alt: "Gombe Stream National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Mountain_Forest_23.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Mountain_Forest_23.jpg",
           alt: "Gombe Stream National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Lake_Tanganyika_37.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Lake_Tanganyika_37.jpg",
           alt: "Gombe Stream National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Chimp_Laying_Around_14.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Chimp_Laying_Around_14.jpg",
           alt: "Gombe Stream National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Chimp_69.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Chimp_69.jpg",
           alt: "Gombe Stream National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Gombe_Stream_National_Park_Entrance_43.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Entrance_43.jpg",
           alt: "Gombe Stream National Park – view 12",
         },
       ],
@@ -2844,65 +2844,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mahale-mountains-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountain_National_Park.jpg",
+          src: "/assets/photos/Mahale_Mountain_National_Park.jpg",
           alt: "Mahale Mountains National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_Shore_of_Lake_Tanganyika_40.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Shore_of_Lake_Tanganyika_40.jpg",
           alt: "Mahale Mountains National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_x_61.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_x_61.jpg",
           alt: "Mahale Mountains National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountain_National_Park.jpg",
+          src: "/assets/photos/Mahale_Mountain_National_Park.jpg",
           alt: "Mahale Mountains National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_Shore_of_Lake_Tanganyika_40.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Shore_of_Lake_Tanganyika_40.jpg",
           alt: "Mahale Mountains National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_x_61.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_x_61.jpg",
           alt: "Mahale Mountains National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_Shoreline_73.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Shoreline_73.jpg",
           alt: "Mahale Mountains National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_Chimp_44.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Chimp_44.jpg",
           alt: "Mahale Mountains National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_x_49.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_x_49.jpg",
           alt: "Mahale Mountains National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_Shoreline_72.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Shoreline_72.jpg",
           alt: "Mahale Mountains National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_x_45.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_x_45.jpg",
           alt: "Mahale Mountains National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_Chimp_43.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Chimp_43.jpg",
           alt: "Mahale Mountains National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_Chimp_19.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Chimp_19.jpg",
           alt: "Mahale Mountains National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mahale_Mountains_National_Park_Chimp_27.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Chimp_27.jpg",
           alt: "Mahale Mountains National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mahale_Mountain_National_Park_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mahale_Mountain_National_Park_750_550shar-50brig-20_c1.jpg",
           alt: "Mahale Mountains National Park – view 12",
         },
       ],
@@ -2938,65 +2938,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/saanane-island-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_View_05.jpg",
+          src: "/assets/photos/Saanane_Island_View_05.jpg",
           alt: "Saanane Island National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_09.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_09.jpg",
           alt: "Saanane Island National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_De_Brazzas_Monkeys.jpg",
+          src: "/assets/photos/Saanane_Island_De_Brazzas_Monkeys.jpg",
           alt: "Saanane Island National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_View_05.jpg",
+          src: "/assets/photos/Saanane_Island_View_05.jpg",
           alt: "Saanane Island National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_09.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_09.jpg",
           alt: "Saanane Island National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_De_Brazzas_Monkeys.jpg",
+          src: "/assets/photos/Saanane_Island_De_Brazzas_Monkeys.jpg",
           alt: "Saanane Island National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_Impalas_35.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_Impalas_35.jpg",
           alt: "Saanane Island National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_10.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_10.jpg",
           alt: "Saanane Island National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_x_37.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_x_37.jpg",
           alt: "Saanane Island National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_x_30.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_x_30.jpg",
           alt: "Saanane Island National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_Kingfisher_20.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_Kingfisher_20.jpg",
           alt: "Saanane Island National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_Monkey_21.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_Monkey_21.jpg",
           alt: "Saanane Island National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_View_from_Mwanza_08.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_View_from_Mwanza_08.jpg",
           alt: "Saanane Island National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_Rock_Hyrax_09.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_Rock_Hyrax_09.jpg",
           alt: "Saanane Island National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Saanane_Island_National_Park_Dikdik_10.jpg",
+          src: "/assets/photos/Saanane_Island_National_Park_Dikdik_10.jpg",
           alt: "Saanane Island National Park – view 12",
         },
       ],
@@ -3032,65 +3032,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/rubondo-island-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_x_13.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_x_13.jpg",
           alt: "Rubondo Island National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_x_32.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_x_32.jpg",
           alt: "Rubondo Island National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_x_21.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_x_21.jpg",
           alt: "Rubondo Island National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_x_13.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_x_13.jpg",
           alt: "Rubondo Island National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_x_32.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_x_32.jpg",
           alt: "Rubondo Island National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_x_21.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_x_21.jpg",
           alt: "Rubondo Island National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_Chimp_17.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_Chimp_17.jpg",
           alt: "Rubondo Island National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_x_25.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_x_25.jpg",
           alt: "Rubondo Island National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_x_15.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_x_15.jpg",
           alt: "Rubondo Island National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_Chimp_16.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_Chimp_16.jpg",
           alt: "Rubondo Island National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_x_18.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_x_18.jpg",
           alt: "Rubondo Island National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_Hippo_10.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_Hippo_10.jpg",
           alt: "Rubondo Island National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_Crocodile_23.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_Crocodile_23.jpg",
           alt: "Rubondo Island National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_Sea_Turtle_32.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_Sea_Turtle_32.jpg",
           alt: "Rubondo Island National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Rubondo_Island_National_Park_x_12.jpg",
+          src: "/assets/photos/Rubondo_Island_National_Park_x_12.jpg",
           alt: "Rubondo Island National Park – view 12",
         },
       ],
@@ -3126,65 +3126,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/ukerewe-island",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Island_in_Lake_Victoria_2.jpg",
+          src: "/assets/photos/Ukerewe_Island_in_Lake_Victoria_2.jpg",
           alt: "Ukerewe Island",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Island_Sunset.jpg",
+          src: "/assets/photos/Ukerewe_Island_Sunset.jpg",
           alt: "Ukerewe Island – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Ukara_Island_Dancing_Stone.jpg",
+          src: "/assets/photos/Ukerewe_Ukara_Island_Dancing_Stone.jpg",
           alt: "Ukerewe Island – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Island_in_Lake_Victoria_2.jpg",
+          src: "/assets/photos/Ukerewe_Island_in_Lake_Victoria_2.jpg",
           alt: "Ukerewe Island",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Island_Sunset.jpg",
+          src: "/assets/photos/Ukerewe_Island_Sunset.jpg",
           alt: "Ukerewe Island – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Ukara_Island_Dancing_Stone.jpg",
+          src: "/assets/photos/Ukerewe_Ukara_Island_Dancing_Stone.jpg",
           alt: "Ukerewe Island – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe-Rock_Site_2.jpg",
+          src: "/assets/photos/Ukerewe-Rock_Site_2.jpg",
           alt: "Ukerewe Island – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe-Rock_Site_1.jpg",
+          src: "/assets/photos/Ukerewe-Rock_Site_1.jpg",
           alt: "Ukerewe Island – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Island_in_Lake_Victoria_3.jpg",
+          src: "/assets/photos/Ukerewe_Island_in_Lake_Victoria_3.jpg",
           alt: "Ukerewe Island – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Island_Rocks_Formation_1.jpg",
+          src: "/assets/photos/Ukerewe_Island_Rocks_Formation_1.jpg",
           alt: "Ukerewe Island – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Island_Tours.jpg",
+          src: "/assets/photos/Ukerewe_Island_Tours.jpg",
           alt: "Ukerewe Island – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Island.jpg_2.jpg",
+          src: "/assets/photos/Ukerewe_Island.jpg_2.jpg",
           alt: "Ukerewe Island – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Fossilized_Footprint_2.jpg",
+          src: "/assets/photos/Ukerewe_Fossilized_Footprint_2.jpg",
           alt: "Ukerewe Island – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Fossilized_Footprint_1.jpg",
+          src: "/assets/photos/Ukerewe_Fossilized_Footprint_1.jpg",
           alt: "Ukerewe Island – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ukerewe_Island_in_Lake_Victoria_1.jpg",
+          src: "/assets/photos/Ukerewe_Island_in_Lake_Victoria_1.jpg",
           alt: "Ukerewe Island – view 12",
         },
       ],
@@ -3217,65 +3217,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/burigi-chato-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Burigi_in_Chato_National_Park_08.jpg",
+          src: "/assets/photos/Lake_Burigi_in_Chato_National_Park_08.jpg",
           alt: "Burigi-Chato National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Giraffes_07.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Giraffes_07.jpg",
           alt: "Burigi-Chato National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Entrace_03.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Entrace_03.jpg",
           alt: "Burigi-Chato National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Burigi_in_Chato_National_Park_08.jpg",
+          src: "/assets/photos/Lake_Burigi_in_Chato_National_Park_08.jpg",
           alt: "Burigi-Chato National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Giraffes_07.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Giraffes_07.jpg",
           alt: "Burigi-Chato National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Entrace_03.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Entrace_03.jpg",
           alt: "Burigi-Chato National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Impala_04.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Impala_04.jpg",
           alt: "Burigi-Chato National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Zebras_08.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Zebras_08.jpg",
           alt: "Burigi-Chato National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Impalas_02.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Impalas_02.jpg",
           alt: "Burigi-Chato National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Shoebill_Stock_08.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Shoebill_Stock_08.jpg",
           alt: "Burigi-Chato National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Wilderbeests_05.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Wilderbeests_05.jpg",
           alt: "Burigi-Chato National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Zebras_06.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Zebras_06.jpg",
           alt: "Burigi-Chato National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Giraffes_06.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Giraffes_06.jpg",
           alt: "Burigi-Chato National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Burigi_Chato_National_Park_Dikdik_01.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Dikdik_01.jpg",
           alt: "Burigi-Chato National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Burigi_Chato_National_Park_Giraffes_07_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Burigi_Chato_National_Park_Giraffes_07_750_550shar-50brig-20_c1.jpg",
           alt: "Burigi-Chato National Park – view 12",
         },
       ],
@@ -3309,65 +3309,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/ibanda-kyerwa-national-park",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Wildlife.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Wildlife.jpg",
           alt: "Ibanda-Kyerwa National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Zebras_01.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Zebras_01.jpg",
           alt: "Ibanda-Kyerwa National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Impala_02.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Impala_02.jpg",
           alt: "Ibanda-Kyerwa National Park – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Wildlife.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Wildlife.jpg",
           alt: "Ibanda-Kyerwa National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Zebras_01.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Zebras_01.jpg",
           alt: "Ibanda-Kyerwa National Park – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Impala_02.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Impala_02.jpg",
           alt: "Ibanda-Kyerwa National Park – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Waterbucks_01.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Waterbucks_01.jpg",
           alt: "Ibanda-Kyerwa National Park – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Giraffes_02.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Giraffes_02.jpg",
           alt: "Ibanda-Kyerwa National Park – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Waterbuck_02.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Waterbuck_02.jpg",
           alt: "Ibanda-Kyerwa National Park – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Kagera_River.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Kagera_River.jpg",
           alt: "Ibanda-Kyerwa National Park – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Giraffe_02.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Giraffe_02.jpg",
           alt: "Ibanda-Kyerwa National Park – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ibanda_Kyerwa_National_Park_Hippos_02.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Hippos_02.jpg",
           alt: "Ibanda-Kyerwa National Park – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Ibanda_Kyerwa_National_Park_Wildlife_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Wildlife_750_550shar-50brig-20_c1.jpg",
           alt: "Ibanda-Kyerwa National Park – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Ibanda_Kyerwa_National_Park_Zebras_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Zebras_01_750_550shar-50brig-20_c1.jpg",
           alt: "Ibanda-Kyerwa National Park – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Ibanda_Kyerwa_National_Park_Impala_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Ibanda_Kyerwa_National_Park_Impala_02_750_550shar-50brig-20_c1.jpg",
           alt: "Ibanda-Kyerwa National Park – view 12",
         },
       ],
@@ -3400,65 +3400,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/lake-tanganyika",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_sunset_12.jpg",
+          src: "/assets/photos/Lake_Tanganyika_sunset_12.jpg",
           alt: "Lake Tanganyika",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Mahale_Mountains_11.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Mahale_Mountains_11.jpg",
           alt: "Lake Tanganyika – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Mahale_Mountains_10.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Mahale_Mountains_10.jpg",
           alt: "Lake Tanganyika – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_sunset_12.jpg",
+          src: "/assets/photos/Lake_Tanganyika_sunset_12.jpg",
           alt: "Lake Tanganyika",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Mahale_Mountains_11.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Mahale_Mountains_11.jpg",
           alt: "Lake Tanganyika – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Mahale_Mountains_10.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Mahale_Mountains_10.jpg",
           alt: "Lake Tanganyika – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Saiboat_10.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Saiboat_10.jpg",
           alt: "Lake Tanganyika – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Fishing_11.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Fishing_11.jpg",
           alt: "Lake Tanganyika – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Sunset_10.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Sunset_10.jpg",
           alt: "Lake Tanganyika – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Sunset_11.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Sunset_11.jpg",
           alt: "Lake Tanganyika – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Wakeboarding_11.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Wakeboarding_11.jpg",
           alt: "Lake Tanganyika – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Wakeboarding_10.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Wakeboarding_10.jpg",
           alt: "Lake Tanganyika – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Swimming_10.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Swimming_10.jpg",
           alt: "Lake Tanganyika – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Kayaking_12.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Kayaking_12.jpg",
           alt: "Lake Tanganyika – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Tanganyika_Fishing_10.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Fishing_10.jpg",
           alt: "Lake Tanganyika – view 12",
         },
       ],
@@ -3494,65 +3494,65 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/lake-victoria",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Bismark_Rocks_2.jpg",
+          src: "/assets/photos/Lake_Victoria_Bismark_Rocks_2.jpg",
           alt: "Lake Victoria",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Bismark_Rocks_1.jpg",
+          src: "/assets/photos/Lake_Victoria_Bismark_Rocks_1.jpg",
           alt: "Lake Victoria – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Shores.jpg",
+          src: "/assets/photos/Lake_Victoria_Shores.jpg",
           alt: "Lake Victoria – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Bismark_Rocks_2.jpg",
+          src: "/assets/photos/Lake_Victoria_Bismark_Rocks_2.jpg",
           alt: "Lake Victoria",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Bismark_Rocks_1.jpg",
+          src: "/assets/photos/Lake_Victoria_Bismark_Rocks_1.jpg",
           alt: "Lake Victoria – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Shores.jpg",
+          src: "/assets/photos/Lake_Victoria_Shores.jpg",
           alt: "Lake Victoria – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Tilapia_Grilling.jpg",
+          src: "/assets/photos/Lake_Victoria_Tilapia_Grilling.jpg",
           alt: "Lake Victoria – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Cruising_2.jpg",
+          src: "/assets/photos/Lake_Victoria_Cruising_2.jpg",
           alt: "Lake Victoria – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Kingfisher_2.jpg",
+          src: "/assets/photos/Lake_Victoria_Kingfisher_2.jpg",
           alt: "Lake Victoria – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Fishing.jpg",
+          src: "/assets/photos/Lake_Victoria_Fishing.jpg",
           alt: "Lake Victoria – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Kingfisher_3.jpg",
+          src: "/assets/photos/Lake_Victoria_Kingfisher_3.jpg",
           alt: "Lake Victoria – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Nile_Perch_Catching.jpg",
+          src: "/assets/photos/Lake_Victoria_Nile_Perch_Catching.jpg",
           alt: "Lake Victoria – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Rocks_Formation_1.jpg",
+          src: "/assets/photos/Lake_Victoria_Rocks_Formation_1.jpg",
           alt: "Lake Victoria – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Canoeing_1.jpg",
+          src: "/assets/photos/Lake_Victoria_Canoeing_1.jpg",
           alt: "Lake Victoria – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Victoria_Rocks_Formation_2.jpg",
+          src: "/assets/photos/Lake_Victoria_Rocks_Formation_2.jpg",
           alt: "Lake Victoria – view 12",
         },
       ],

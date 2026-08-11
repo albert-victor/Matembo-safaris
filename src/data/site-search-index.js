@@ -69,7 +69,11 @@ export async function loadSearchIndex() {
     { title: "Game Drive Safaris", href: "/game-drives.html", type: "page", keywords: "game drives wildlife 4x4" },
     { title: "Ruaha Safaris", href: "/ruaha-safaris.html", type: "page", keywords: "ruaha national park southern iringa" },
     { title: "Climbing & Trekking", href: "/trekkings.html", type: "page", keywords: "kilimanjaro trekking climbing mountain" },
-    { title: "Things to Do", href: "/experiences.html", type: "page", keywords: "activities experiences things to do" },
+    { title: "Bird Watching Safaris", href: "/bird-watching.html", type: "page", keywords: "bird watching birding ornithology flamingo" },
+    { title: "Cultural Visits", href: "/cultural-visits.html", type: "page", keywords: "cultural visits village heritage" },
+    { title: "Beach Holiday", href: "/beach-holiday.html", type: "page", keywords: "beach zanzibar mafia coast holiday" },
+    { title: "Walking Safaris", href: "/walking-safaris.html", type: "page", keywords: "walking safari bush walk" },
+    { title: "Tourist Attractions", href: "/tourist-attractions.html", type: "page", keywords: "museum heritage attractions olduvai" },
     { title: "All Circuits", href: "/circuits.html", type: "page", keywords: "circuits regions destinations" },
     { title: "Destinations", href: "/destinations.html", type: "page", keywords: "destinations parks places" },
   ];
@@ -92,6 +96,22 @@ export async function loadSearchIndex() {
 
   cachedIndex = entries;
   return entries;
+}
+
+/** Curated quick links shown before the user types. */
+export function getPopularSearchItems() {
+  return [
+    { title: "Serengeti National Park", subtitle: "Destination", href: "/destinations/serengeti.html", image: null },
+    { title: "Ngorongoro Crater", subtitle: "Destination", href: "/destinations/ngorongoro.html", image: null },
+    { title: "3 Days Serengeti & Ngorongoro", subtitle: "Safari package", href: "/packages/3-days-to-serengeti-national-park-and-ngorongoro-crater.html", image: null },
+    { title: "Ruaha Safaris", subtitle: "From Iringa", href: "/ruaha-safaris.html", image: null },
+    { title: "Game Drive Safaris", subtitle: "Activity listing", href: "/game-drives.html", image: null },
+    { title: "Bird Watching", subtitle: "Activity listing", href: "/bird-watching.html", image: null },
+    { title: "Cultural Visits", subtitle: "Activity listing", href: "/cultural-visits.html", image: null },
+    { title: "Beach Holiday", subtitle: "Coast & islands", href: "/beach-holiday.html", image: null },
+    { title: "Kilimanjaro Treks", subtitle: "Climbing", href: "/trekkings.html", image: null },
+    { title: "Plan Your Safari", subtitle: "Contact", href: "/contact.html", image: null },
+  ];
 }
 
 export function searchSiteIndex(entries, query, limit = 12) {

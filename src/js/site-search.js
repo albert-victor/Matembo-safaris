@@ -1,4 +1,4 @@
-﻿import { loadSearchIndex, searchSiteIndex } from "../data/site-search-index.js";
+﻿import { loadSearchIndex, searchSiteIndex, getPopularSearchItems } from "../data/site-search-index.js";
 import { NAV_IMAGE_FALLBACK } from "../data/nav-images.js";
 
 function escapeHtml(text) {
@@ -14,6 +14,7 @@ export function initSiteSearch(scope = document) {
 
   const toggle = scope.querySelector("[data-search-toggle]");
   const overlay = scope.querySelector("[data-search-overlay]");
+  const form = scope.querySelector("[data-search-form]");
   const input = scope.querySelector("[data-search-input]");
   const results = scope.querySelector("[data-search-results]");
   const header = scope.querySelector("[data-site-header]");
@@ -25,26 +26,6 @@ export function initSiteSearch(scope = document) {
   function getIndex() {
     if (!indexPromise) indexPromise = loadSearchIndex();
     return indexPromise;
-  }
-
-  function openSearch() {
-    overlay.hidden = false;
-    overlay.setAttribute("aria-hidden", "false");
-    toggle.setAttribute("aria-expanded", "true");
-    header?.classList.add("is-search-open");
-    document.documentElement.classList.add("is-search-open");
-    window.requestAnimationFrame(() => input.focus());
-    getIndex();
-  }
-
-  function closeSearch() {
-    overlay.hidden = true;
-    overlay.setAttribute("aria-hidden", "true");
-    toggle.setAttribute("aria-expanded", "false");
-    header?.classList.remove("is-search-open");
-    document.documentElement.classList.remove("is-search-open");
-    input.value = "";
-    results.innerHTML = "";
   }
 
   function renderResults(items) {
@@ -78,10 +59,45 @@ export function initSiteSearch(scope = document) {
     });
   }
 
+  function renderPopular() {
+    results.innerHTML = `
+      <div class="site-search__popular">
+        ${getPopularSearchItems()
+          .map(
+            (item) => `
+              <a class="site-search__popular-link" href="${escapeHtml(item.href)}">${escapeHtml(item.title)}</a>
+            `
+          )
+          .join("")}
+      </div>
+    `;
+  }
+
+  function openSearch() {
+    overlay.hidden = false;
+    overlay.setAttribute("aria-hidden", "false");
+    toggle.setAttribute("aria-expanded", "true");
+    header?.classList.add("is-search-open");
+    document.documentElement.classList.add("is-search-open");
+    renderPopular();
+    window.requestAnimationFrame(() => input.focus());
+    getIndex();
+  }
+
+  function closeSearch() {
+    overlay.hidden = true;
+    overlay.setAttribute("aria-hidden", "true");
+    toggle.setAttribute("aria-expanded", "false");
+    header?.classList.remove("is-search-open");
+    document.documentElement.classList.remove("is-search-open");
+    input.value = "";
+    results.innerHTML = "";
+  }
+
   async function runSearch() {
     const query = input.value.trim();
     if (query.length < 2) {
-      results.innerHTML = `<p class="site-search__hint">Type at least 2 characters to search…</p>`;
+      renderPopular();
       return;
     }
     results.innerHTML = `<p class="site-search__loading">Searching…</p>`;
@@ -106,14 +122,25 @@ export function initSiteSearch(scope = document) {
     if (event.key === "Escape") {
       event.preventDefault();
       closeSearch();
+      return;
     }
     if (event.key === "Enter") {
-      const first = results.querySelector(".site-search__result");
+      const first = results.querySelector(".site-search__result, .site-search__popular-link");
       if (first) {
         event.preventDefault();
         first.click();
       }
     }
+  });
+
+  form?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const first = results.querySelector(".site-search__result, .site-search__popular-link");
+    if (first) {
+      first.click();
+      return;
+    }
+    runSearch();
   });
 
   document.addEventListener("keydown", (event) => {

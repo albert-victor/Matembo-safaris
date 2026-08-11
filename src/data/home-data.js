@@ -51,30 +51,6 @@ export const aboutIntro = {
   ],
 };
 
-export const storyPanels = [
-  {
-    signature: "The first light",
-    eyebrow: "Chapter I",
-    title: "Out before the plains wake",
-    text: "We leave camp while the air is still cool and the grass holds dew. That hour often brings cats on the move, elephants at the treeline, and a silence you cannot manufacture.",
-    cta: { label: "See destinations", href: "/destinations.html", variant: "green" },
-  },
-  {
-    signature: "On the track",
-    eyebrow: "Chapter II",
-    title: "Guides who read the bush",
-    text: "Our drivers know where a leopard might lie along a fig tree, when wildebeest are likely to cross, and how to give you time at a sighting without crowding it.",
-    cta: { label: "Browse safaris", href: "/safaris.html", variant: "cream" },
-  },
-  {
-    signature: "Your route",
-    eyebrow: "Chapter III",
-    title: "Built around your dates",
-    text: "Tell us your window, your group size, and what you want to photograph, celebrate, or simply watch. We shape the nights, the park order, and the pace from there.",
-    cta: { label: "Start an enquiry", href: "/contact.html", variant: "forest" },
-  },
-];
-
 function circuitCoverImage(circuitId, fallback = "/assets/about/main3.jpg") {
   const dest = getDestinationsByCircuit(circuitId)[0];
   return dest?.images?.[0]?.src || fallback;
@@ -265,21 +241,3 @@ export const contactCopy = {
 };
 
 export const popularDestinationIds = ["serengeti", "ngorongoro", "kilimanjaro", "tarangire", "manyara", "arusha"];
-
-export const heroMedia = {
-  video: "/assets/hero/herovideo.mp4",
-  poster: "/assets/about/main 11.jpg",
-  fallback: "/assets/about/main 11.jpg",
-  focus: "52% 68%",
-  scale: 1.22,
-  loopTrim: 1.35,
-};
-
-export const heroCopy = {
-  signature: "Wild Tanzania",
-  eyebrow: "Iringa · Tanzania",
-  titleLines: ["Real Safaris", "Real Ground"],
-  lead:
-    "Wildlife journeys across Tanzania's parks with guides who live the seasons, not just the brochure.",
-  cta: { label: "View services", href: "#services", variant: "gold" },
-};

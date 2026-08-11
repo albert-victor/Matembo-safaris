@@ -44,11 +44,6 @@
   transition: transform var(--duration-normal) var(--ease-out);
 }
 
-.btn:hover .btn__icon,
-.btn:focus-visible .btn__icon {
-  transform: translateX(3px);
-}
-
 /* Gentle center-out fill with depth */
 .btn::before {
   content: "";
@@ -90,6 +85,63 @@
   opacity: 1;
 }
 
+/* Secondary & card CTAs — gentler luxury hover */
+.btn--secondary,
+.btn--card,
+.btn--ghost,
+.btn--secondary-dark {
+  transition:
+    color 0.35s var(--ease-out),
+    border-color 0.35s var(--ease-out),
+    background 0.35s var(--ease-out),
+    box-shadow 0.35s var(--ease-out);
+}
+
+.btn--secondary::before,
+.btn--card.btn--secondary::before,
+.btn--card.btn--primary::before,
+.btn--ghost::before {
+  transition: transform 0.65s var(--ease-out), opacity 0.35s var(--ease-out);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus-visible,
+.btn--card.btn--secondary:hover,
+.btn--card.btn--secondary:focus-visible,
+.btn--card.btn--primary:hover,
+.btn--card.btn--primary:focus-visible,
+.btn--ghost:hover,
+.btn--ghost:focus-visible {
+  transform: none;
+  box-shadow: 0 4px 14px rgba(10, 10, 10, 0.08);
+}
+
+.btn--secondary:hover::after,
+.btn--secondary:focus-visible::after,
+.btn--card:hover::after,
+.btn--card:focus-visible::after,
+.btn--ghost:hover::after,
+.btn--ghost:focus-visible::after {
+  opacity: 0.55;
+}
+
+.btn--secondary-dark:hover,
+.btn--secondary-dark:focus-visible {
+  transform: none;
+  box-shadow: 0 4px 16px rgba(201, 169, 98, 0.22);
+}
+
+.btn:hover .btn__icon,
+.btn:focus-visible .btn__icon {
+  transform: translateX(2px);
+}
+
+.btn--secondary:hover .btn__icon,
+.btn--card:hover .btn__icon,
+.btn--ghost:hover .btn__icon {
+  transform: translateX(1px);
+}
+
 .btn--primary {
   background: linear-gradient(
     180deg,
@@ -118,8 +170,8 @@
   color: var(--color-white);
   border-color: var(--color-brand-dark);
   box-shadow:
-    0 10px 28px rgba(30, 109, 58, 0.38),
-    0 2px 6px rgba(10, 10, 10, 0.12);
+    0 6px 20px rgba(30, 109, 58, 0.28),
+    0 1px 3px rgba(10, 10, 10, 0.08);
 }
 
 .btn--secondary {
@@ -149,9 +201,7 @@
 .btn--secondary:focus-visible {
   color: var(--color-white);
   border-color: var(--color-gold-dark);
-  box-shadow:
-    0 10px 28px rgba(168, 136, 66, 0.36),
-    0 2px 6px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 5px 18px rgba(168, 136, 66, 0.24);
 }
 
 .btn--primary-dark {

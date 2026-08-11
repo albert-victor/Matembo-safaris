@@ -213,6 +213,16 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  background: linear-gradient(145deg, var(--color-surface) 0%, var(--color-cream) 100%);
+}
+
+.safari-card__image:not(.is-loaded) {
+  opacity: 0;
+  transition: opacity 0.35s var(--ease-out);
+}
+
+.safari-card__image.is-loaded {
+  opacity: 1;
 }
 
 .safari-card__overlay {
@@ -471,42 +481,56 @@
   }
 }
 
-/* ── Scroll reveal ────────────────────────────────────────── */
+/* ── Scroll reveal (cards — matches animate.css fadeInUp) ── */
+
+@keyframes reveal-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 [data-reveal] {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+html.js-enhanced [data-reveal]:not(.is-visible) {
   opacity: 0;
-  transform: translate3d(0, 48px, 0) scale(0.96);
-  filter: blur(4px);
-  transition:
-    opacity var(--duration-slow) var(--ease-reveal),
-    transform var(--duration-slow) var(--ease-reveal),
-    filter var(--duration-slow) var(--ease-reveal);
-  transition-delay: var(--reveal-delay, 0ms);
+  transform: translate3d(0, 20px, 0);
+  pointer-events: none;
 }
 
 [data-reveal].is-visible {
-  opacity: 1;
-  transform: translate3d(0, 0, 0) scale(1);
-  filter: blur(0);
+  pointer-events: auto;
+  animation: reveal-fade-up 0.85s var(--ease-reveal) both;
+  animation-delay: var(--reveal-delay, 0ms);
 }
 
 [data-reveal-delay="1"] { --reveal-delay: 100ms; }
 [data-reveal-delay="2"] { --reveal-delay: 200ms; }
 
 .section-reveal {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+html.js-enhanced .section-reveal:not(.is-visible) {
   opacity: 0;
-  transform: translate3d(0, 32px, 0);
-  filter: blur(3px);
-  transition:
-    opacity var(--duration-slow) var(--ease-reveal),
-    transform var(--duration-slow) var(--ease-reveal),
-    filter var(--duration-slow) var(--ease-reveal);
+  transform: translate3d(0, 20px, 0);
+  pointer-events: none;
 }
 
 .section-reveal.is-visible {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  filter: blur(0);
+  pointer-events: auto;
+  animation: reveal-fade-up 0.85s var(--ease-reveal) both;
+  animation-delay: var(--reveal-delay, 0ms);
 }
 
 @media (prefers-reduced-motion: reduce) {

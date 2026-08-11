@@ -1,6 +1,5 @@
 ﻿import {
   aboutIntro,
-  storyPanels,
   experiences,
   experiencesIntro,
   credentials,
@@ -10,9 +9,8 @@
   tripAdvisorUrl,
   siteMeta,
   socialLinks,
-  heroMedia,
-  heroCopy,
 } from "../data/home-data.js";
+import { heroSlides } from "../data/hero-slides-data.js";
 
 function escapeHtml(text) {
   const div = document.createElement("div");
@@ -28,70 +26,92 @@ export function renderHero() {
   const root = document.querySelector("#home-hero");
   if (!root) return;
 
-  const titleLines = heroCopy.titleLines
+  const slideMarkup = heroSlides
     .map(
-      (line, index) =>
-        `<span class="hero-story__title-line${index === 1 ? " hero-story__title-line--accent" : ""}">${escapeHtml(line)}</span>`
+      (slide, i) => `
+        <div
+          class="hero-showcase__slide${i === 0 ? " is-active" : ""}"
+          data-hero-slide="${i}"
+          data-motion="${escapeHtml(slide.motion || "zoom-in")}"
+        >
+          <img
+            class="hero-showcase__img"
+            ${i === 0 ? `src="${escapeHtml(slide.image)}" fetchpriority="high"` : `data-src="${escapeHtml(slide.image)}" src=""`}
+            alt="${escapeHtml(slide.imageAlt)}"
+            width="1920"
+            height="1080"
+            ${i === 0 ? 'decoding="async"' : 'loading="lazy" decoding="async"'}
+            style="object-position: ${escapeHtml(slide.focus || "center bottom")}"
+          />
+          <div class="hero-showcase__overlay" aria-hidden="true"></div>
+        </div>
+      `
     )
     .join("");
 
-  const beats = storyPanels
+  const particleMarkup = Array.from({ length: 5 }, (_, i) => `<span class="hero-showcase__particle" style="--i:${i}"></span>`).join("");
+
+  const panelMarkup = heroSlides
     .map(
-      (panel) => `
-        <article class="hero-story__beat" data-story-panel>
-          <p class="hero-story__signature">${escapeHtml(panel.signature)}</p>
-          <span class="hero-story__beat-eyebrow">${escapeHtml(panel.eyebrow)}</span>
-          <h2 class="hero-story__beat-title">${escapeHtml(panel.title)}</h2>
-          <p class="hero-story__beat-text">${escapeHtml(panel.text)}</p>
-          <a href="${escapeHtml(panel.cta.href)}" class="btn btn--hero-${escapeHtml(panel.cta.variant)} hero-story__cta">${escapeHtml(panel.cta.label)}</a>
+      (slide, i) => `
+        <article
+          class="hero-showcase__panel${i === 0 ? " is-active" : ""}"
+          data-hero-panel="${i}"
+          aria-hidden="${i === 0 ? "false" : "true"}"
+        >
+          <div class="hero-showcase__copy">
+            <p class="hero-showcase__signature">${escapeHtml(slide.signature)}</p>
+            <h1 class="hero-showcase__heading">
+              <span class="hero-showcase__highlight">${escapeHtml(slide.title)}</span>
+            </h1>
+            <p class="hero-showcase__lead">${escapeHtml(slide.lead)}</p>
+          </div>
+          <div class="hero-showcase__actions">
+            <a href="${escapeHtml(slide.cta.href)}" class="btn btn--hero-primary hero-showcase__cta">${escapeHtml(slide.cta.label)}</a>
+            <a href="/safaris.html" class="btn btn--hero-secondary hero-showcase__cta-secondary">All Safari Packages</a>
+          </div>
         </article>
+      `
+    )
+    .join("");
+
+  const dotsMarkup = heroSlides
+    .map(
+      (slide, i) => `
+        <button
+          type="button"
+          class="hero-showcase__dot${i === 0 ? " is-active" : ""}"
+          data-hero-dot="${i}"
+          aria-label="Show ${escapeHtml(slide.title)}"
+          aria-selected="${i === 0 ? "true" : "false"}"
+        ></button>
       `
     )
     .join("");
 
   root.innerHTML = `
     <section
-      class="hero-story"
+      class="hero-showcase"
       id="story"
       data-hero
-      data-hero-story
-      data-loop-trim="${heroMedia.loopTrim}"
-      aria-label="Welcome"
-      style="--hero-video-focus: ${escapeHtml(heroMedia.focus)}; --hero-video-scale: ${heroMedia.scale};"
+      data-hero-slideshow
+      data-interval="8000"
+      aria-label="Tanzania safari highlights"
     >
-      <div class="hero-story__sticky" aria-hidden="true">
-        <div class="hero-story__media">
-          <div class="hero-story__video-wrap">
-            <video
-              class="hero-story__video"
-              autoplay
-              muted
-              playsinline
-              poster="${escapeHtml(heroMedia.poster)}"
-            >
-              <source src="${escapeHtml(heroMedia.video)}" type="video/mp4" />
-            </video>
-            <img
-              class="hero-story__fallback"
-              src="${escapeHtml(heroMedia.fallback)}"
-              alt=""
-              width="1920"
-              height="1080"
-            />
-          </div>
-          <div class="hero-story__scrim"></div>
-        </div>
-      </div>
+      <div class="hero-showcase__stage">
+        <div class="hero-showcase__slides" aria-hidden="true">${slideMarkup}</div>
+        <div class="hero-showcase__particles" aria-hidden="true">${particleMarkup}</div>
 
-      <div class="hero-story__track">
-        <header class="hero-story__intro is-active" data-story-panel data-story-intro>
-          <p class="hero-story__signature">${escapeHtml(heroCopy.signature)}</p>
-          <p class="hero-story__eyebrow">${escapeHtml(heroCopy.eyebrow)}</p>
-          <h1 class="hero-story__title">${titleLines}</h1>
-          <p class="hero-story__lead">${escapeHtml(heroCopy.lead)}</p>
-          <a href="${escapeHtml(heroCopy.cta.href)}" class="btn btn--hero-${escapeHtml(heroCopy.cta.variant)} hero-story__cta">${escapeHtml(heroCopy.cta.label)}</a>
-        </header>
-        ${beats}
+        <div class="hero-showcase__content">
+          <div class="hero-showcase__panels">${panelMarkup}</div>
+        </div>
+
+        <nav class="hero-showcase__nav" aria-label="Hero slideshow navigation">
+          <button type="button" class="hero-showcase__scroll" data-hero-scroll aria-label="Scroll to next section">
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="hero-showcase__dots-bar" role="tablist" aria-label="Hero slides">${dotsMarkup}</div>
+        </nav>
       </div>
     </section>
   `;

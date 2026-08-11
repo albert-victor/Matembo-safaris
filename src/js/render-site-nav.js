@@ -6,11 +6,35 @@
 } from "../data/nav-data.js";
 import { NAV_IMAGE_FALLBACK, bindNavImageFallbacks } from "../data/nav-images.js";
 import { initSiteSearch } from "./site-search.js";
+import { ensureImagePreconnect } from "./lazy-images.js";
 
 function escapeHtml(text) {
   const div = document.createElement("div");
   div.textContent = text;
   return div.innerHTML;
+}
+
+function isRemoteImage(url) {
+  return typeof url === "string" && url.startsWith("http");
+}
+
+function renderDeferredImage(url, className, width, height, alt = "", preset = "thumb") {
+  if (!url) return "";
+
+  const presetAttr = isRemoteImage(url) ? preset : "";
+
+  return `<img
+    class="${className}"
+    data-src="${escapeHtml(url)}"
+    ${presetAttr ? `data-img-preset="${presetAttr}"` : ""}
+    src=""
+    alt="${escapeHtml(alt)}"
+    width="${width}"
+    height="${height}"
+    loading="lazy"
+    decoding="async"
+    data-fallback="${escapeHtml(NAV_IMAGE_FALLBACK)}"
+  />`;
 }
 
 function renderMegaListItems(items) {
@@ -22,7 +46,7 @@ function renderMegaListItems(items) {
             ${
               item.image
                 ? `<span class="mega-menu__list-thumb-wrap">
-                    <img class="mega-menu__list-thumb" src="${escapeHtml(item.image)}" alt="" loading="lazy" width="52" height="52" data-fallback="${escapeHtml(NAV_IMAGE_FALLBACK)}" />
+                    ${renderDeferredImage(item.image, "mega-menu__list-thumb", 52, 52, "", "thumb")}
                   </span>`
                 : ""
             }
@@ -49,7 +73,7 @@ function renderMegaAside(aside) {
       ${
         aside.image
           ? `<span class="mega-menu__aside-media">
-              <img src="${escapeHtml(aside.image)}" alt="" loading="lazy" width="280" height="120" data-fallback="${escapeHtml(NAV_IMAGE_FALLBACK)}" />
+              ${renderDeferredImage(aside.image, "", 280, 120, "", "card")}
               <span class="mega-menu__aside-shade" aria-hidden="true"></span>
             </span>`
           : ""
@@ -69,7 +93,7 @@ function renderMegaAside(aside) {
   `;
 }
 
-function renderEditorialMega(panel, variant = "full", menuClass = "") {
+function renderEditorialMega(panel, menuClass = "") {
   const { featured, heading, items, aside, footer } = panel;
   const hasSpotlight = Boolean(featured);
 
@@ -77,7 +101,7 @@ function renderEditorialMega(panel, variant = "full", menuClass = "") {
     ? `
       <a class="mega-menu__spotlight" href="${escapeHtml(featured.href)}">
         <span class="mega-menu__spotlight-media">
-          <img src="${escapeHtml(featured.image)}" alt="${escapeHtml(featured.alt || featured.name)}" loading="lazy" width="320" height="400" data-fallback="${escapeHtml(NAV_IMAGE_FALLBACK)}" />
+          ${renderDeferredImage(featured.image, "", 320, 400, featured.alt || featured.name, "card")}
           <span class="mega-menu__spotlight-shade" aria-hidden="true"></span>
         </span>
         <span class="mega-menu__spotlight-body">
@@ -90,7 +114,7 @@ function renderEditorialMega(panel, variant = "full", menuClass = "") {
     : "";
 
   return `
-    <div class="mega-menu mega-menu--editorial mega-menu--${variant}${hasSpotlight ? "" : " mega-menu--no-spotlight"}${menuClass ? ` ${menuClass}` : ""}">
+    <div class="mega-menu mega-menu--editorial${hasSpotlight ? "" : " mega-menu--no-spotlight"}${menuClass ? ` ${menuClass}` : ""}">
       <div class="mega-menu__align">
         <div class="mega-menu__shell">
           ${spotlight}
@@ -117,82 +141,13 @@ function renderEditorialMega(panel, variant = "full", menuClass = "") {
   `;
 }
 
-function renderSafariMega(panel) {
-  return renderEditorialMega(
-    {
-      ...panel,
-      featured: null,
-      aside: null,
-    },
-    "compact"
-  );
-}
-
-function renderThingsToDoMega(panel) {
-  const { featured, heading, columns, aside, footer } = panel;
-
-  const columnHtml = columns
-    .map(
-      (column) => `
-        <ul class="mega-menu__list mega-menu__list--column">
-          ${renderMegaListItems(column)}
-        </ul>
-      `
-    )
-    .join("");
-
-  return `
-    <div class="mega-menu mega-menu--editorial mega-menu--activities">
-      <div class="mega-menu__align">
-        <div class="mega-menu__shell">
-          <a class="mega-menu__spotlight" href="${escapeHtml(featured.href)}">
-            <span class="mega-menu__spotlight-media">
-              <img src="${escapeHtml(featured.image)}" alt="${escapeHtml(featured.alt || featured.name)}" loading="lazy" width="320" height="400" data-fallback="${escapeHtml(NAV_IMAGE_FALLBACK)}" />
-              <span class="mega-menu__spotlight-shade" aria-hidden="true"></span>
-            </span>
-            <span class="mega-menu__spotlight-body">
-              <span class="mega-menu__spotlight-label">${escapeHtml(featured.label)}</span>
-              <span class="mega-menu__spotlight-title">${escapeHtml(featured.name)}</span>
-              <span class="mega-menu__spotlight-desc">${escapeHtml(featured.desc)}</span>
-            </span>
-          </a>
-          <div class="mega-menu__core mega-menu__core--columns">
-            <header class="mega-menu__head">
-              <span class="mega-menu__head-label">${escapeHtml(heading.label)}</span>
-              <h3 class="mega-menu__head-title">${escapeHtml(heading.title)}</h3>
-            </header>
-            <div class="mega-menu__columns-rich">
-              ${columnHtml}
-            </div>
-            ${
-              footer
-                ? `<footer class="mega-menu__foot">
-                    <a href="${escapeHtml(footer.href)}" class="mega-menu__foot-link">${escapeHtml(footer.text)}</a>
-                  </footer>`
-                : ""
-            }
-          </div>
-          ${renderMegaAside(aside)}
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-function renderNavItem(label, megaKey, href = null, variant = "editorial") {
+function renderNavItem(label, megaKey, href = null) {
   const panel = megaMenuPanels[megaKey];
   const triggerTag = href ? "a" : "button";
   const hrefAttr = href ? ` href="${escapeHtml(href)}"` : "";
   const typeAttr = href ? "" : ` type="button"`;
-
-  let megaHtml = "";
-  if (variant === "safaris") {
-    megaHtml = renderSafariMega(panel);
-  } else if (variant === "activities") {
-    megaHtml = renderThingsToDoMega(panel);
-  } else {
-    megaHtml = renderEditorialMega(panel, "full", megaKey === "about" ? "mega-menu--about" : "");
-  }
+  const menuClass = megaKey === "about" ? "mega-menu--about" : "";
+  const megaHtml = renderEditorialMega(panel, menuClass);
 
   return `
     <li class="site-nav__item" data-mega>
@@ -213,6 +168,8 @@ function renderNavItem(label, megaKey, href = null, variant = "editorial") {
 export function renderSiteNav(containerSelector = "#site-nav-root") {
   const root = document.querySelector(containerSelector);
   if (!root) return;
+
+  ensureImagePreconnect();
 
   root.innerHTML = `
     <header class="site-header" data-site-header>
@@ -237,16 +194,32 @@ export function renderSiteNav(containerSelector = "#site-nav-root") {
           </a>
 
           <nav id="site-nav-panel" class="site-nav" aria-label="Main navigation">
+            <div class="site-nav__mobile-head">
+              <span class="site-nav__mobile-title">Menu</span>
+              <button
+                type="button"
+                class="site-nav__close"
+                data-nav-close
+                aria-label="Close menu"
+                aria-hidden="true"
+              >
+                <i class="fas fa-xmark" aria-hidden="true"></i>
+              </button>
+            </div>
             <ul class="site-nav__list">
               <li class="site-nav__item">
                 <a class="site-nav__trigger site-nav__trigger--plain" href="/">Home</a>
               </li>
               ${renderNavItem("Destinations", "destinations", "/circuits.html")}
-              ${renderNavItem("Safaris", "safaris", "/safaris.html", "safaris")}
-              ${renderNavItem("Things to Do", "thingsToDo", "/experiences.html", "activities")}
+              ${renderNavItem("Safaris", "safaris", "/safaris.html")}
+              ${renderNavItem("Things to Do", "thingsToDo", "/experiences.html")}
               ${renderNavItem("Ruaha", "ruaha", "/ruaha-safaris.html")}
               ${renderNavItem("About Us", "about")}
             </ul>
+            <div class="site-nav__mobile-cta">
+              <a href="/contact.html" class="btn btn--primary site-nav__mobile-cta-primary">Plan Your Safari</a>
+              <a href="/contact.html" class="btn btn--secondary site-nav__mobile-cta-secondary">Talk to Us</a>
+            </div>
           </nav>
 
           <div class="site-header__end">
@@ -261,7 +234,7 @@ export function renderSiteNav(containerSelector = "#site-nav-root") {
               >
                 <i class="fas fa-search" aria-hidden="true"></i>
               </button>
-              <a href="/contact.html" class="btn btn--outline-dark btn--nav site-header__cta">Talk to Us</a>
+              <a href="/contact.html" class="btn btn--primary btn--nav site-header__cta">Talk to Us</a>
             </div>
 
             <button
@@ -289,18 +262,23 @@ export function renderSiteNav(containerSelector = "#site-nav-root") {
           <i class="fas fa-xmark" aria-hidden="true"></i>
         </button>
         <label class="site-search-overlay__label" for="site-search-input">
-          <i class="fas fa-search" aria-hidden="true"></i>
-          Search safaris, parks & activities
+          Find your safari
         </label>
-        <input
-          id="site-search-input"
-          class="site-search-overlay__input"
-          type="search"
-          data-search-input
-          placeholder="Serengeti, Ruaha, game drives, Kilimanjaro…"
-          autocomplete="off"
-          spellcheck="false"
-        />
+        <form class="site-search-overlay__form" data-search-form autocomplete="off">
+          <div class="site-search-overlay__field">
+            <span class="site-search-overlay__field-icon" aria-hidden="true"><i class="fas fa-search"></i></span>
+            <input
+              id="site-search-input"
+              class="site-search-overlay__input"
+              type="search"
+              data-search-input
+              placeholder="Serengeti, Ruaha, game drives, Kilimanjaro…"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button type="submit" class="btn btn--secondary site-search-overlay__submit">Search</button>
+          </div>
+        </form>
         <div class="site-search-overlay__results" data-search-results role="listbox" aria-live="polite"></div>
       </div>
     </div>

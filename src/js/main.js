@@ -39,7 +39,9 @@ function initScrollReveal() {
 
 function init() {
   try {
-    renderPackageCards("#package-cards-root");
+    renderPackageCards("#package-cards-root").catch((error) => {
+      console.error("Package cards failed:", error);
+    });
 
     document.querySelectorAll("[data-demo-link]").forEach((link) => {
       link.addEventListener("click", (event) => event.preventDefault());

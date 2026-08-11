@@ -1,9 +1,29 @@
 ﻿import { servicesShowcase, servicesShowcaseIntro } from "../data/services-showcase-data.js";
+import { loadImagesIn } from "./lazy-images.js";
 
 function escapeHtml(text) {
   const div = document.createElement("div");
   div.textContent = text;
   return div.innerHTML;
+}
+
+function renderPanelMedia(item) {
+  return `
+    <div class="svc-panel__media">
+      <img
+        data-src="${escapeHtml(item.image)}"
+        data-img-preset="card"
+        src=""
+        alt="${escapeHtml(item.imageAlt)}"
+        width="720"
+        height="480"
+        decoding="async"
+        data-fallback="/assets/about/main3.jpg"
+      />
+      <div class="svc-panel__scrim" aria-hidden="true"></div>
+      <span class="svc-panel__script">${escapeHtml(item.title)}</span>
+    </div>
+  `;
 }
 
 export function renderServicesShowcase() {
@@ -20,7 +40,6 @@ export function renderServicesShowcase() {
           aria-selected="${i === 0 ? "true" : "false"}"
         >
           <span class="svc-rail__num">${String(i + 1).padStart(2, "0")}</span>
-          <span class="svc-rail__icon"><i class="fas ${escapeHtml(item.icon)}" aria-hidden="true"></i></span>
           <span class="svc-rail__label">${escapeHtml(item.title)}</span>
         </button>
       `
@@ -31,11 +50,7 @@ export function renderServicesShowcase() {
     .map(
       (item, i) => `
         <article class="svc-panel${i === 0 ? " is-active" : ""}" data-svc-panel="${escapeHtml(item.id)}" aria-hidden="${i === 0 ? "false" : "true"}">
-          <div class="svc-panel__media">
-            <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}" width="720" height="480" loading="${i === 0 ? "eager" : "lazy"}" />
-            <div class="svc-panel__scrim" aria-hidden="true"></div>
-            <span class="svc-panel__script">${escapeHtml(item.title)}</span>
-          </div>
+          ${renderPanelMedia(item)}
           <div class="svc-panel__body">
             <h3 class="svc-panel__title">${escapeHtml(item.title)}</h3>
             <p class="svc-panel__desc">${escapeHtml(item.description)}</p>
@@ -59,11 +74,11 @@ export function renderServicesShowcase() {
         </header>
       </div>
 
-      <div class="svc-field__wrap section-reveal" data-services-showcase data-autoplay="5500">
+      <div class="svc-field__wrap section-reveal" data-services-showcase data-autoplay="6000">
         <div class="container">
           <div class="svc-rail" role="tablist" aria-label="Safari services">${railItems}</div>
         </div>
-        <div class="svc-stage">${panels}</div>
+        <div class="container svc-stage">${panels}</div>
         <div class="svc-field__dots container" role="tablist" aria-label="Service pages">
           ${servicesShowcase.map((_, i) => `
             <button type="button" class="svc-field__dot${i === 0 ? " is-active" : ""}" data-svc-dot="${i}" aria-label="Service ${i + 1}"></button>
@@ -78,16 +93,43 @@ export function initServicesShowcase() {
   const root = document.querySelector("[data-services-showcase]");
   if (!root) return;
 
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const tabs = [...root.querySelectorAll("[data-svc-tab]")];
   const panels = [...root.querySelectorAll("[data-svc-panel]")];
   const dots = [...root.querySelectorAll("[data-svc-dot]")];
-  const intervalMs = Number(root.dataset.autoplay || 5500);
+  const rail = root.querySelector(".svc-rail");
 
+  root.querySelectorAll(".svc-panel__media img").forEach((img) => {
+    img.addEventListener("error", () => {
+      const original = img.getAttribute("data-src") || img.dataset.srcOriginal;
+      if (original && img.src.includes("/images/made/") && !img.dataset.retriedOriginal) {
+        img.dataset.retriedOriginal = "1";
+        img.dataset.srcOriginal = original;
+        img.src = original;
+        return;
+      }
+      const fallback = img.getAttribute("data-fallback");
+      if (fallback && !img.dataset.fallbackApplied && !img.src.includes(fallback.replace(/^\//, ""))) {
+        img.dataset.fallbackApplied = "1";
+        img.src = fallback;
+      }
+    });
+  });
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const intervalMs = Number(root.dataset.autoplay || 6000);
   let index = 0;
   let timer = null;
 
-  const activate = (nextIndex) => {
+  function scrollTabInRail(tab, smooth = false) {
+    if (!rail || !tab) return;
+    const targetLeft = tab.offsetLeft - rail.offsetWidth / 2 + tab.offsetWidth / 2;
+    rail.scrollTo({
+      left: Math.max(0, targetLeft),
+      behavior: smooth ? "smooth" : "instant",
+    });
+  }
+
+  const activate = (nextIndex, { scrollTab = false } = {}) => {
     index = (nextIndex + panels.length) % panels.length;
 
     tabs.forEach((tab, i) => {
@@ -100,23 +142,65 @@ export function initServicesShowcase() {
       const active = i === index;
       panel.classList.toggle("is-active", active);
       panel.setAttribute("aria-hidden", active ? "false" : "true");
+
+      if (active) {
+        const mediaImg = panel.querySelector(".svc-panel__media img");
+        if (mediaImg) {
+          mediaImg.style.animation = "none";
+          void mediaImg.offsetWidth;
+          mediaImg.style.animation = "";
+        }
+      }
     });
 
     dots.forEach((dot, i) => dot.classList.toggle("is-active", i === index));
+
+    loadImagesIn(panels[index], { priority: true });
+
+    if (scrollTab) {
+      scrollTabInRail(tabs[index], true);
+    }
   };
 
-  const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+  const stop = () => {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+  };
+
   const start = () => {
     if (prefersReducedMotion || panels.length <= 1) return;
     stop();
-    timer = setInterval(() => activate(index + 1), intervalMs);
+    timer = window.setInterval(() => activate(index + 1), intervalMs);
   };
-  const restart = () => { stop(); start(); };
 
-  tabs.forEach((tab, i) => tab.addEventListener("click", () => { activate(i); restart(); }));
-  dots.forEach((dot, i) => dot.addEventListener("click", () => { activate(i); restart(); }));
+  tabs.forEach((tab, i) => {
+    tab.addEventListener("click", () => {
+      activate(i, { scrollTab: true });
+      start();
+    });
+  });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      activate(i, { scrollTab: true });
+      start();
+    });
+  });
 
   root.addEventListener("mouseenter", stop);
   root.addEventListener("mouseleave", start);
+  root.addEventListener("focusin", stop);
+  root.addEventListener("focusout", (event) => {
+    if (root.contains(event.relatedTarget)) return;
+    start();
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    document.hidden ? stop() : start();
+  });
+
+  activate(0);
   start();
 }

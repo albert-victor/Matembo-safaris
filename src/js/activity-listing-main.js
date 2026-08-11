@@ -3,8 +3,8 @@ import { renderSiteNav } from "./render-site-nav.js";
 import { renderSiteFooter } from "./render-home.js";
 import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
+import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
-import { safariPackages } from "../data/safari-packages.js";
 import { activityBySlug } from "../data/things-to-do-nav.js";
 import { filterPackagesByActivity } from "./package-filters.js";
 
@@ -26,11 +26,12 @@ function renderHero(activity) {
   document.title = `${activity.label} | Matembo Safari & Tours`;
 }
 
-function renderPackages(activity) {
+async function renderPackages(activity) {
   const grid = document.querySelector("#activity-packages-grid");
   const empty = document.querySelector("[data-activity-empty]");
   if (!grid) return;
 
+  const { safariPackages } = await import("../data/safari-packages.js");
   const packages = filterPackagesByActivity(safariPackages, activity.label);
 
   if (!packages.length) {
@@ -40,19 +41,21 @@ function renderPackages(activity) {
   }
 
   empty?.setAttribute("hidden", "");
-  renderPackageCards("#activity-packages-grid", { packages, viewLabel: "View Safari" });
+  await renderPackageCards("#activity-packages-grid", { packages, viewLabel: "View Safari" });
 }
 
-function init() {
+async function init() {
+  renderSiteNav();
+  renderSiteFooter();
+  initSiteNav();
+
   const activity = getActivityFromPage();
   if (!activity) return;
 
-  renderSiteNav();
-  renderSiteFooter();
   renderHero(activity);
-  renderPackages(activity);
-  initSiteNav();
+  await renderPackages(activity);
   initCardTilt();
+  initLazyImages();
   initScrollReveal();
 }
 

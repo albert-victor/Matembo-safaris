@@ -260,7 +260,7 @@ export function renderDestinationPage(containerSelector, dest) {
           <p class="dest-page__script">${escapeHtml(dest.scriptLabel)}</p>
           ${renderHighlightPills(dest.highlights)}
           <div class="dest-page__hero-actions">
-            <a href="/#contact" class="btn btn--on-media">Plan Your Safari</a>
+            <a href="/contact.html" class="btn btn--on-media">Plan Your Safari</a>
             <a href="/destinations.html" class="btn btn--secondary btn--ghost-light">All Destinations</a>
           </div>
         </div>
@@ -285,7 +285,7 @@ export function renderDestinationPage(containerSelector, dest) {
               </p>
             </div>
             <div class="dest-page__plan-bar-actions">
-              <a href="/#contact" class="btn btn--primary">Plan This Destination</a>
+              <a href="/contact.html" class="btn btn--primary">Plan This Destination</a>
               <a href="/destinations.html" class="dest-page__aside-link">All destinations</a>
             </div>
           </aside>

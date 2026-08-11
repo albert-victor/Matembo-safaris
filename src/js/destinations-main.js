@@ -4,13 +4,23 @@ import { renderSiteFooter } from "./render-home.js";
 import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
 import { northernCircuitDestinations } from "../data/northern-circuit-destinations.js";
-import { getDestinationsByCircuit } from "../data/all-destinations.js";
 import { initSlideshows } from "./slideshow.js";
+import { initLazyImages, loadImagesIn } from "./lazy-images.js";
 
-function renderCircuitSection(containerSelector, circuitId) {
+const CIRCUIT_GRIDS = [
+  ["#southern-circuit-grid", "southern"],
+  ["#eastern-circuit-grid", "eastern"],
+  ["#western-circuit-grid", "western"],
+  ["#zanzibar-circuit-grid", "zanzibar"],
+  ["#mafia-circuit-grid", "mafia"],
+  ["#oceanic-circuit-grid", "oceanic"],
+];
+
+async function renderCircuitSection(containerSelector, circuitId) {
   const container = document.querySelector(containerSelector);
   if (!container) return;
 
+  const { getDestinationsByCircuit } = await import("../data/all-destinations.js");
   const destinations = getDestinationsByCircuit(circuitId);
   const section = container.closest("section");
 
@@ -21,30 +31,48 @@ function renderCircuitSection(containerSelector, circuitId) {
 
   section?.removeAttribute("hidden");
   renderDestinationCards(containerSelector, "b", { destinations });
+  loadImagesIn(section, { priority: true });
+  initSlideshows(section);
+}
+
+function initNorthernFirst() {
+  renderSiteNav();
+  renderSiteFooter();
+  initSiteNav();
+
+  renderDestinationCards("#northern-circuit-grid", "b", {
+    destinations: northernCircuitDestinations,
+  });
+
+  const northern = document.querySelector("#northern-circuit-grid")?.closest("section");
+  loadImagesIn(northern, { priority: true });
+  initSlideshows(northern);
+  initLazyImages(northern);
+  initScrollReveal();
+}
+
+async function initRemainingCircuits() {
+  for (const [selector, circuitId] of CIRCUIT_GRIDS) {
+    await renderCircuitSection(selector, circuitId);
+  }
+  initLazyImages();
 }
 
 function init() {
   try {
-    renderSiteNav();
-    renderSiteFooter();
-
-    renderDestinationCards("#northern-circuit-grid", "b", {
-      destinations: northernCircuitDestinations,
-    });
-
-    renderCircuitSection("#southern-circuit-grid", "southern");
-    renderCircuitSection("#eastern-circuit-grid", "eastern");
-    renderCircuitSection("#western-circuit-grid", "western");
-    renderCircuitSection("#zanzibar-circuit-grid", "zanzibar");
-    renderCircuitSection("#mafia-circuit-grid", "mafia");
-    renderCircuitSection("#oceanic-circuit-grid", "oceanic");
-
-    initSiteNav();
-    initSlideshows();
+    initNorthernFirst();
+    const runRest = () => {
+      initRemainingCircuits().catch((error) => {
+        console.error("Matembo circuit sections failed:", error);
+      });
+    };
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(runRest, { timeout: 500 });
+    } else {
+      setTimeout(runRest, 100);
+    }
   } catch (error) {
     console.error("Matembo destinations init failed:", error);
-  } finally {
-    initScrollReveal();
   }
 }
 

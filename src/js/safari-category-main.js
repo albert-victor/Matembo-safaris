@@ -3,8 +3,8 @@ import { renderSiteNav } from "./render-site-nav.js";
 import { renderSiteFooter } from "./render-home.js";
 import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
+import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
-import { safariPackages } from "../data/safari-packages.js";
 import { SAFARI_CATEGORIES } from "../data/safari-categories.js";
 import { filterPackagesBySafariType } from "./package-filters.js";
 
@@ -26,11 +26,12 @@ function renderHero(category) {
   document.title = `${category.label} | Matembo Safari & Tours`;
 }
 
-function renderPackages(category) {
+async function renderPackages(category) {
   const grid = document.querySelector("#safari-category-grid");
   const empty = document.querySelector("[data-category-empty]");
   if (!grid) return;
 
+  const { safariPackages } = await import("../data/safari-packages.js");
   const packages = filterPackagesBySafariType(safariPackages, category.matchType);
 
   if (!packages.length) {
@@ -40,19 +41,22 @@ function renderPackages(category) {
   }
 
   empty?.setAttribute("hidden", "");
-  renderPackageCards("#safari-category-grid", { packages, viewLabel: "View Safari" });
+  await renderPackageCards("#safari-category-grid", { packages, viewLabel: "View Safari" });
 }
 
-function init() {
+async function init() {
   const category = getCategory();
-  if (!category) return;
 
   renderSiteNav();
   renderSiteFooter();
-  renderHero(category);
-  renderPackages(category);
   initSiteNav();
+
+  if (!category) return;
+
+  renderHero(category);
+  await renderPackages(category);
   initCardTilt();
+  initLazyImages();
   initScrollReveal();
 }
 

@@ -3,6 +3,7 @@ import { renderSiteNav } from "./render-site-nav.js";
 import { renderSiteFooter } from "./render-home.js";
 import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
+import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
 import { ruahaSafariPackages, ruahaSectionOrder } from "../data/ruaha-safari-packages.js";
 
@@ -11,7 +12,7 @@ const GRID_BY_SECTION = {
   "ruaha-combined": "#ruaha-combined-grid",
 };
 
-function renderSections() {
+async function renderSections() {
   for (const sectionId of ruahaSectionOrder) {
     const selector = GRID_BY_SECTION[sectionId];
     if (!selector) continue;
@@ -25,16 +26,18 @@ function renderSections() {
     }
 
     section?.removeAttribute("hidden");
-    renderPackageCards(selector, { packages, viewLabel: "View Safari" });
+    await renderPackageCards(selector, { packages, viewLabel: "View Safari" });
   }
 }
 
-function init() {
+async function init() {
   renderSiteNav();
   renderSiteFooter();
-  renderSections();
   initSiteNav();
+
+  await renderSections();
   initCardTilt();
+  initLazyImages();
   initScrollReveal();
 }
 

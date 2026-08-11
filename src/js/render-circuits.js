@@ -13,7 +13,9 @@ function renderCircuitCard(circuit, index) {
       <a class="circuit-card__link" href="${escapeHtml(circuit.pageHref)}">
         <span class="circuit-card__media">
           <img
-            src="${escapeHtml(circuit.hero.src)}"
+            data-src="${escapeHtml(circuit.hero.src)}"
+            data-img-preset="card"
+            src=""
             alt="${escapeHtml(circuit.hero.alt)}"
             width="640"
             height="400"
@@ -54,7 +56,9 @@ export function renderAllCircuitsPage() {
       <header class="circuit-page__hero circuit-page__hero--index" data-hero>
         <div class="circuit-page__hero-media">
           <img
-            src="${escapeHtml(meta.hero.src)}"
+            data-src="${escapeHtml(meta.hero.src)}"
+            data-img-preset="hero"
+            src=""
             alt="${escapeHtml(meta.hero.alt)}"
             width="1600"
             height="680"

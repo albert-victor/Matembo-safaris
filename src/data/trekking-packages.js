@@ -175,43 +175,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mandara_Huts_02.jpg",
+      image: "/assets/photos/Mount_Kilimanjaro_Mandara_Huts_02.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mandara_Huts_02.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mandara_Huts_02.jpg",
           alt: "Day Hike Mount Kilimanjaro via Marangu Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Hiking_Marangu_Route.jpg",
+          src: "/assets/photos/Kilimanjaro_Hiking_Marangu_Route.jpg",
           alt: "Day Hike Mount Kilimanjaro via Marangu Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Marangu_Gate_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Marangu_Gate_03.jpg",
           alt: "Day Hike Mount Kilimanjaro via Marangu Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Marangu_Gate__Hans_Meyer_Memorial.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Marangu_Gate__Hans_Meyer_Memorial.jpg",
           alt: "Day Hike Mount Kilimanjaro via Marangu Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilimanjaro_Hiking_Marangu_Route_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilimanjaro_Hiking_Marangu_Route_750_550shar-50brig-20_c1.jpg",
           alt: "Day Hike Mount Kilimanjaro via Marangu Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilimanjaro_Climb_Marangu_Gate_03_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Marangu_Gate_03_750_550shar-50brig-20_c1.jpg",
           alt: "Day Hike Mount Kilimanjaro via Marangu Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilimanjaro_Climb_Marangu_Gate__Hans_Meyer_Memorial_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Marangu_Gate__Hans_Meyer_Memorial_750_550shar-50brig-20_c1.jpg",
           alt: "Day Hike Mount Kilimanjaro via Marangu Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_Mandara_Huts_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mandara_Huts_02_750_550shar-50brig-20_c1.jpg",
           alt: "Day Hike Mount Kilimanjaro via Marangu Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-day-hikes",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mandara_Huts_02.jpg",
+      listingImage: "/assets/photos/Mount_Kilimanjaro_Mandara_Huts_02.jpg",
       listingOrder: 0,
     },
     {
@@ -285,43 +285,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_03.jpg",
+      image: "/assets/photos/Kilimanjaro_Climb_Machame_Route_03.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_03.jpg",
           alt: "Day Hike Mount Kilimanjaro via Machame Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_04.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_04.jpg",
           alt: "Day Hike Mount Kilimanjaro via Machame Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Machame_Route_Stops.jpg",
+          src: "/assets/photos/Kilimanjaro_Machame_Route_Stops.jpg",
           alt: "Day Hike Mount Kilimanjaro via Machame Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_02.jpg",
           alt: "Day Hike Mount Kilimanjaro via Machame Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_01.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_01.jpg",
           alt: "Day Hike Mount Kilimanjaro via Machame Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilimanjaro_Climb_04_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_04_750_550shar-50brig-20_c1.jpg",
           alt: "Day Hike Mount Kilimanjaro via Machame Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilimanjaro_Machame_Route_Stops_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilimanjaro_Machame_Route_Stops_750_550shar-50brig-20_c1.jpg",
           alt: "Day Hike Mount Kilimanjaro via Machame Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilimanjaro_Climb_Machame_Route_03_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_03_750_550shar-50brig-20_c1.jpg",
           alt: "Day Hike Mount Kilimanjaro via Machame Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-day-hikes",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_03.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Climb_Machame_Route_03.jpg",
       listingOrder: 1,
     },
     {
@@ -389,43 +389,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Shira_Plateau_02.jpg",
+      image: "/assets/photos/Kilimanjaro_Climb_Shira_Plateau_02.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Shira_Plateau_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Shira_Plateau_02.jpg",
           alt: "Day Hike Kilimanjaro Shira Plateau – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Shira_Plateau_Kilimanjaro_01.jpg",
+          src: "/assets/photos/Shira_Plateau_Kilimanjaro_01.jpg",
           alt: "Day Hike Kilimanjaro Shira Plateau",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Shira_Plateau_Kilimanjaro_02.jpg",
+          src: "/assets/photos/Shira_Plateau_Kilimanjaro_02.jpg",
           alt: "Day Hike Kilimanjaro Shira Plateau – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Shira_Plateau_Kilimanjaro_03.jpg",
+          src: "/assets/photos/Shira_Plateau_Kilimanjaro_03.jpg",
           alt: "Day Hike Kilimanjaro Shira Plateau – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Shira_Plateau_Kilimanjaro_04.jpg",
+          src: "/assets/photos/Shira_Plateau_Kilimanjaro_04.jpg",
           alt: "Day Hike Kilimanjaro Shira Plateau – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Shira_Plateau_04.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Shira_Plateau_04.jpg",
           alt: "Day Hike Kilimanjaro Shira Plateau – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Shira_Plateau_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Shira_Plateau_03.jpg",
           alt: "Day Hike Kilimanjaro Shira Plateau – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Shira_Plateau_06.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Shira_Plateau_06.jpg",
           alt: "Day Hike Kilimanjaro Shira Plateau – photo 8",
         },
       ],
       sectionId: "kilimanjaro-day-hikes",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Shira_Plateau_02.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Climb_Shira_Plateau_02.jpg",
       listingOrder: 2,
     },
     {
@@ -525,43 +525,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_the_Crater_01.jpg",
+      image: "/assets/photos/Mount_Kilimanjaro_the_Crater_01.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_the_Crater_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_the_Crater_01.jpg",
           alt: "4 Days Kilimanjaro Trek via Machame Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
           alt: "4 Days Kilimanjaro Trek via Machame Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_10.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_10.jpg",
           alt: "4 Days Kilimanjaro Trek via Machame Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Camping_09.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Camping_09.jpg",
           alt: "4 Days Kilimanjaro Trek via Machame Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_02.jpg",
           alt: "4 Days Kilimanjaro Trek via Machame Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_01.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_01.jpg",
           alt: "4 Days Kilimanjaro Trek via Machame Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_Endemic_Plants_Senecio_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Endemic_Plants_Senecio_750_550shar-50brig-20_c1.jpg",
           alt: "4 Days Kilimanjaro Trek via Machame Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_the_Crater_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_the_Crater_01_750_550shar-50brig-20_c1.jpg",
           alt: "4 Days Kilimanjaro Trek via Machame Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-4-5-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_the_Crater_01.jpg",
+      listingImage: "/assets/photos/Mount_Kilimanjaro_the_Crater_01.jpg",
       listingOrder: 3,
     },
     {
@@ -666,43 +666,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
+      image: "/assets/photos/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_3a.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_3a.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mountain_Landscape_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Landscape_01.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mawenzi_Peak_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mawenzi_Peak_01.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_09.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_09.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_08.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_08.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_07.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_07.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-4-5-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
+      listingImage: "/assets/photos/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
       listingOrder: 4,
     },
     {
@@ -812,43 +812,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Marangu-Route_the_Saddle_01.jpg",
+      image: "/assets/photos/Mount_Kilimanjaro_Marangu-Route_the_Saddle_01.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Marangu-Route_the_Saddle_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Marangu-Route_the_Saddle_01.jpg",
           alt: "5-6 Days Kilimanjaro Trek via Marangu Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_the_Saddle_02.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_the_Saddle_02.jpg",
           alt: "5-6 Days Kilimanjaro Trek via Marangu Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Marangu_Gate_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Marangu_Gate_03.jpg",
           alt: "5-6 Days Kilimanjaro Trek via Marangu Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mandara_Huts_02.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mandara_Huts_02.jpg",
           alt: "5-6 Days Kilimanjaro Trek via Marangu Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Horombo_Huts_06.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Horombo_Huts_06.jpg",
           alt: "5-6 Days Kilimanjaro Trek via Marangu Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Horombo_Huts_11.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Horombo_Huts_11.jpg",
           alt: "5-6 Days Kilimanjaro Trek via Marangu Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_the_Saddle_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_the_Saddle_02_750_550shar-50brig-20_c1.jpg",
           alt: "5-6 Days Kilimanjaro Trek via Marangu Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilimanjaro_Climb_Marangu_Gate_03_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Marangu_Gate_03_750_550shar-50brig-20_c1.jpg",
           alt: "5-6 Days Kilimanjaro Trek via Marangu Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-6-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Marangu-Route_the_Saddle_01.jpg",
+      listingImage: "/assets/photos/Mount_Kilimanjaro_Marangu-Route_the_Saddle_01.jpg",
       listingOrder: 5,
     },
     {
@@ -958,43 +958,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Rongai_Route_02.jpg",
+      image: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_02.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Rongai_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_02.jpg",
           alt: "6 Days Kilimanjaro Trek via Rongai Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Rongai_Route_01.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_01.jpg",
           alt: "6 Days Kilimanjaro Trek via Rongai Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Campsite_Tarn_Hut.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Campsite_Tarn_Hut.jpg",
           alt: "6 Days Kilimanjaro Trek via Rongai Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
           alt: "6 Days Kilimanjaro Trek via Rongai Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mountain_Landscape_02.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Landscape_02.jpg",
           alt: "6 Days Kilimanjaro Trek via Rongai Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_01.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_01.jpg",
           alt: "6 Days Kilimanjaro Trek via Rongai Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilimanjaro_Climb_Rongai_Route_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_01_750_550shar-50brig-20_c1.jpg",
           alt: "6 Days Kilimanjaro Trek via Rongai Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilimanjaro_Climb_Rongai_Route_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_02_750_550shar-50brig-20_c1.jpg",
           alt: "6 Days Kilimanjaro Trek via Rongai Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-6-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Rongai_Route_02.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_02.jpg",
       listingOrder: 6,
     },
     {
@@ -1104,43 +1104,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
+      image: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_View_from_Lemosho_Route_02.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_View_from_Lemosho_Route_02.jpg",
           alt: "6 Days Kilimanjaro Trek via Umbwe Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_03.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_03.jpg",
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_02.jpg",
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_4b.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_4b.jpg",
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_05.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_05.jpg",
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-6-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
       listingOrder: 7,
     },
     {
@@ -1250,43 +1250,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_4a.jpg",
+      image: "/assets/photos/Kilimanjaro_Climb_4a.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_4a.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_4a.jpg",
           alt: "6 Days Kilimanjaro Trek via Machame Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mountain_Landscape_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Landscape_01.jpg",
           alt: "6 Days Kilimanjaro Trek via Machame Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mountain_Summit.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Summit.jpg",
           alt: "6 Days Kilimanjaro Trek via Machame Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Camping_09.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Camping_09.jpg",
           alt: "6 Days Kilimanjaro Trek via Machame Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_03.jpg",
           alt: "6 Days Kilimanjaro Trek via Machame Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_02.jpg",
           alt: "6 Days Kilimanjaro Trek via Machame Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_01.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_01.jpg",
           alt: "6 Days Kilimanjaro Trek via Machame Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_Mountain_Landscape_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Landscape_01_750_550shar-50brig-20_c1.jpg",
           alt: "6 Days Kilimanjaro Trek via Machame Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-6-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_4a.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Climb_4a.jpg",
       listingOrder: 8,
     },
     {
@@ -1401,43 +1401,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Camping_09.jpg",
+      image: "/assets/photos/Kilimanjaro_Climb_Camping_09.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Camping_09.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Camping_09.jpg",
           alt: "7 Days Kilimanjaro Trek via Shira Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_10.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_10.jpg",
           alt: "7 Days Kilimanjaro Trek via Shira Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Shira_Plateau_Kilimanjaro_01.jpg",
+          src: "/assets/photos/Shira_Plateau_Kilimanjaro_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Shira Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_4b.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_4b.jpg",
           alt: "7 Days Kilimanjaro Trek via Shira Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Shira_Plateau_Kilimanjaro_02.jpg",
+          src: "/assets/photos/Shira_Plateau_Kilimanjaro_02.jpg",
           alt: "7 Days Kilimanjaro Trek via Shira Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Shira_Plateau_Kilimanjaro_03.jpg",
+          src: "/assets/photos/Shira_Plateau_Kilimanjaro_03.jpg",
           alt: "7 Days Kilimanjaro Trek via Shira Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Shira_Plateau_Kilimanjaro_04.jpg",
+          src: "/assets/photos/Shira_Plateau_Kilimanjaro_04.jpg",
           alt: "7 Days Kilimanjaro Trek via Shira Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_10_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_10_750_550shar-50brig-20_c1.jpg",
           alt: "7 Days Kilimanjaro Trek via Shira Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-7-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Camping_09.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Climb_Camping_09.jpg",
       listingOrder: 9,
     },
     {
@@ -1552,43 +1552,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Rongai_Route_01.jpg",
+      image: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_01.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Rongai_Route_01.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Rongai Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mountain_Landscape_02.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Landscape_02.jpg",
           alt: "7 Days Kilimanjaro Trek via Rongai Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Campsite_Tarn_Hut.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Campsite_Tarn_Hut.jpg",
           alt: "7 Days Kilimanjaro Trek via Rongai Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mawenzi_Peak_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mawenzi_Peak_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Rongai Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
           alt: "7 Days Kilimanjaro Trek via Rongai Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mountain_Summit.jpeg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Summit.jpeg",
           alt: "7 Days Kilimanjaro Trek via Rongai Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_Mountain_Landscape_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Landscape_02_750_550shar-50brig-20_c1.jpg",
           alt: "7 Days Kilimanjaro Trek via Rongai Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kilimanjaro_Climb_Rongai_Route_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_01_750_550shar-50brig-20_c1.jpg",
           alt: "7 Days Kilimanjaro Trek via Rongai Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-7-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Rongai_Route_01.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_01.jpg",
       listingOrder: 10,
     },
     {
@@ -1703,43 +1703,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Londorosi_Lemosho_01.jpg",
+      image: "/assets/photos/Mount_Kilimanjaro_Londorosi_Lemosho_01.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Londorosi_Lemosho_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Londorosi_Lemosho_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Lemosho Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_the_Glaciers_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_the_Glaciers_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Lemosho Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_02.jpg",
           alt: "7 Days Kilimanjaro Trek via Lemosho Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Machame_Route_01.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Machame_Route_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Lemosho Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_02.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_02.jpg",
           alt: "7 Days Kilimanjaro Trek via Lemosho Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_07.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_07.jpg",
           alt: "7 Days Kilimanjaro Trek via Lemosho Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_06.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_06.jpg",
           alt: "7 Days Kilimanjaro Trek via Lemosho Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_05.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_05.jpg",
           alt: "7 Days Kilimanjaro Trek via Lemosho Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-7-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Londorosi_Lemosho_01.jpg",
+      listingImage: "/assets/photos/Mount_Kilimanjaro_Londorosi_Lemosho_01.jpg",
       listingOrder: 11,
     },
     {
@@ -1854,43 +1854,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Climbers_02.jpg",
+      image: "/assets/photos/Kilimanjaro_Climb_Climbers_02.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Climbers_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Climbers_02.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 1) – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_the_Crater_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_the_Crater_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 1)",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Machame_Route_Mountain_Landscape.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Machame_Route_Mountain_Landscape.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 1) – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Hiking_Times_from_Machame_Game.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Hiking_Times_from_Machame_Game.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 1) – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Sunrise_01.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Sunrise_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 1) – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 1) – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_the_Crater_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_the_Crater_01_750_550shar-50brig-20_c1.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 1) – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_Machame_Route_Mountain_Landscape_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Machame_Route_Mountain_Landscape_750_550shar-50brig-20_c1.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 1) – photo 8",
         },
       ],
       sectionId: "kilimanjaro-7-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Climbers_02.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Climb_Climbers_02.jpg",
       listingOrder: 12,
     },
     {
@@ -2005,43 +2005,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+      image: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_02.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_02.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2)",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Hiking_Times_from_Machame_Game.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Hiking_Times_from_Machame_Game.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Machame_Route_Mountain_Landscape.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Machame_Route_Mountain_Landscape.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_the_Crater_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_the_Crater_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 8",
         },
       ],
       sectionId: "kilimanjaro-7-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
       listingOrder: 13,
     },
     {
@@ -2161,43 +2161,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Hiking_Times_from_Machame_Game.jpg",
+      image: "/assets/photos/Mount_Kilimanjaro_Hiking_Times_from_Machame_Game.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Hiking_Times_from_Machame_Game.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Hiking_Times_from_Machame_Game.jpg",
           alt: "8 Days Kilimanjaro Trek via Machame Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mountain_Landscape_02.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Landscape_02.jpg",
           alt: "8 Days Kilimanjaro Trek via Machame Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
           alt: "8 Days Kilimanjaro Trek via Machame Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Machame_Route_Mountain_Landscape.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Machame_Route_Mountain_Landscape.jpg",
           alt: "8 Days Kilimanjaro Trek via Machame Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_03.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_03.jpg",
           alt: "8 Days Kilimanjaro Trek via Machame Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_09.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_09.jpg",
           alt: "8 Days Kilimanjaro Trek via Machame Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_08.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_08.jpg",
           alt: "8 Days Kilimanjaro Trek via Machame Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_Mountain_Landscape_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Landscape_02_750_550shar-50brig-20_c1.jpg",
           alt: "8 Days Kilimanjaro Trek via Machame Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-8-9-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Hiking_Times_from_Machame_Game.jpg",
+      listingImage: "/assets/photos/Mount_Kilimanjaro_Hiking_Times_from_Machame_Game.jpg",
       listingOrder: 14,
     },
     {
@@ -2317,47 +2317,47 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
+      image: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Londorosi_Lemosho_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Londorosi_Lemosho_01.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Endemic_Plants_Senecio.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mountain_Landscape_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Landscape_01.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_05.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_05.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_09.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_09.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_08.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_08.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 8",
         },
       ],
       sectionId: "kilimanjaro-8-9-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_02.jpg",
       listingOrder: 15,
     },
     {
@@ -2482,47 +2482,47 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_12.jpg",
+      image: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_12.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_12.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_12.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1)",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Rongai_Route_01.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_01.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1)",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Rongai_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_02.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Climbers_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Climbers_02.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_the_Crater_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_the_Crater_01.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_16.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_16.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_15.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_15.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_14.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_14.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_13.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_13.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 8",
         },
       ],
       sectionId: "kilimanjaro-8-9-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_12.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_12.jpg",
       listingOrder: 16,
     },
     {
@@ -2647,43 +2647,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+      image: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2)",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climb_Rongai_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_Rongai_Route_02.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_02.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Glacier_of_Southern_Ice_Field_02.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mountain_Summit.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Summit.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_16.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_16.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_15.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_15.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_14.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_14.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Climbi_via_Northern_Circuit_Route_13.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_13.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 8",
         },
       ],
       sectionId: "kilimanjaro-8-9-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+      listingImage: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
       listingOrder: 17,
     },
     {
@@ -2751,43 +2751,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Western_Breach_Route_04.jpg",
+      image: "/assets/photos/Kilimanjaro_Western_Breach_Route_04.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Western_Breach_Route_04.jpg",
+          src: "/assets/photos/Kilimanjaro_Western_Breach_Route_04.jpg",
           alt: "Kilimanjaro Trek via Western Breach – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_Mountain_Summit.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Summit.jpg",
           alt: "Kilimanjaro Trek via Western Breach",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Kilimanjaro_the_Crater_01.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_the_Crater_01.jpg",
           alt: "Kilimanjaro Trek via Western Breach – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Western_Breach_Route_05.jpg",
+          src: "/assets/photos/Kilimanjaro_Western_Breach_Route_05.jpg",
           alt: "Kilimanjaro Trek via Western Breach – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Western_Breach_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Western_Breach_Route_03.jpg",
           alt: "Kilimanjaro Trek via Western Breach – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Western_Breach_Route_02.jpg",
+          src: "/assets/photos/Kilimanjaro_Western_Breach_Route_02.jpg",
           alt: "Kilimanjaro Trek via Western Breach – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Western_Breach_Route_01.jpg",
+          src: "/assets/photos/Kilimanjaro_Western_Breach_Route_01.jpg",
           alt: "Kilimanjaro Trek via Western Breach – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Kilimanjaro_Mountain_Summit_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Mountain_Summit_750_550shar-50brig-20_c1.jpg",
           alt: "Kilimanjaro Trek via Western Breach – photo 8",
         },
       ],
       sectionId: "kilimanjaro-7-days",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Kilimanjaro_Western_Breach_Route_04.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Western_Breach_Route_04.jpg",
       listingOrder: 18,
     },
     {
@@ -2867,43 +2867,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Streams_from_Oldoinyo_Lengai_03.jpg",
+      image: "/assets/photos/Streams_from_Oldoinyo_Lengai_03.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Streams_from_Oldoinyo_Lengai_03.jpg",
+          src: "/assets/photos/Streams_from_Oldoinyo_Lengai_03.jpg",
           alt: "2 Days Ol Doinyo Lengai Mountain Climbing – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_12.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_12.jpg",
           alt: "2 Days Ol Doinyo Lengai Mountain Climbing",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_02.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_02.jpg",
           alt: "2 Days Ol Doinyo Lengai Mountain Climbing – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_07.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_07.jpg",
           alt: "2 Days Ol Doinyo Lengai Mountain Climbing – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_10.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_10.jpg",
           alt: "2 Days Ol Doinyo Lengai Mountain Climbing – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldoinyo_Lengai_35.jpg",
+          src: "/assets/photos/Mount_Oldoinyo_Lengai_35.jpg",
           alt: "2 Days Ol Doinyo Lengai Mountain Climbing – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldoinyo_Lengai_Climbing.jpg",
+          src: "/assets/photos/Mount_Oldoinyo_Lengai_Climbing.jpg",
           alt: "2 Days Ol Doinyo Lengai Mountain Climbing – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mount_Oldonyo_Lengai_12_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_12_750_550shar-50brig-20_c1.jpg",
           alt: "2 Days Ol Doinyo Lengai Mountain Climbing – photo 8",
         },
       ],
       sectionId: "lengai-highlands",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Streams_from_Oldoinyo_Lengai_03.jpg",
+      listingImage: "/assets/photos/Streams_from_Oldoinyo_Lengai_03.jpg",
       listingOrder: 19,
     },
     {
@@ -2988,43 +2988,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_12.jpg",
+      image: "/assets/photos/Mount_Oldonyo_Lengai_12.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_12.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_12.jpg",
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_02.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_02.jpg",
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldoinyo_Lengai_41.jpg",
+          src: "/assets/photos/Mount_Oldoinyo_Lengai_41.jpg",
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldoinyo_Lengai_37.jpg",
+          src: "/assets/photos/Mount_Oldoinyo_Lengai_37.jpg",
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_06.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_06.jpg",
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_07.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_07.jpg",
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_08.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_08.jpg",
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldoinyo_Lengai_Climbing.jpg",
+          src: "/assets/photos/Mount_Oldoinyo_Lengai_Climbing.jpg",
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 8",
         },
       ],
       sectionId: "lengai-highlands",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_12.jpg",
+      listingImage: "/assets/photos/Mount_Oldonyo_Lengai_12.jpg",
       listingOrder: 20,
     },
     {
@@ -3141,43 +3141,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Empakai_Crater_Lake_NCA_4.jpg",
+      image: "/assets/photos/Empakai_Crater_Lake_NCA_4.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Empakai_Crater_Lake_NCA_4.jpg",
+          src: "/assets/photos/Empakai_Crater_Lake_NCA_4.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olmoti_Crater_Waterfalls_NCA_2.jpg",
+          src: "/assets/photos/Olmoti_Crater_Waterfalls_NCA_2.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olmoti_Crater_NCA_4.jpg",
+          src: "/assets/photos/Olmoti_Crater_NCA_4.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Empakai_Crater_NCA_Trekking.jpg",
+          src: "/assets/photos/Empakai_Crater_NCA_Trekking.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Empakai_Crater_Walks_NCA.jpg",
+          src: "/assets/photos/Empakai_Crater_Walks_NCA.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldoinyo_Lengai_37.jpg",
+          src: "/assets/photos/Mount_Oldoinyo_Lengai_37.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_08.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_08.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_12.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_12.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 8",
         },
       ],
       sectionId: "lengai-highlands",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Empakai_Crater_Lake_NCA_4.jpg",
+      listingImage: "/assets/photos/Empakai_Crater_Lake_NCA_4.jpg",
       listingOrder: 21,
     },
     {
@@ -3259,43 +3259,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Southern_Pare_Mountains.jpg",
+      image: "/assets/photos/Southern_Pare_Mountains.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Southern_Pare_Mountains.jpg",
+          src: "/assets/photos/Southern_Pare_Mountains.jpg",
           alt: "Day Trip to South Pare Mountains",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Viewpoint_South_Pare_Mountains.jpg",
+          src: "/assets/photos/Viewpoint_South_Pare_Mountains.jpg",
           alt: "Day Trip to South Pare Mountains – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Thornton_Falls_Pare_Sign.jpg",
+          src: "/assets/photos/Thornton_Falls_Pare_Sign.jpg",
           alt: "Day Trip to South Pare Mountains – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Thornton_Falls_Pare.jpg",
+          src: "/assets/photos/Thornton_Falls_Pare.jpg",
           alt: "Day Trip to South Pare Mountains – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Old_Jakob_Dannholz_House_in_Mbaga.jpg",
+          src: "/assets/photos/Old_Jakob_Dannholz_House_in_Mbaga.jpg",
           alt: "Day Trip to South Pare Mountains – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Malameni_Rock_South_Pare.jpg",
+          src: "/assets/photos/Malameni_Rock_South_Pare.jpg",
           alt: "Day Trip to South Pare Mountains – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ranzi_Dam_South_Pare_Mountains.jpg",
+          src: "/assets/photos/Ranzi_Dam_South_Pare_Mountains.jpg",
           alt: "Day Trip to South Pare Mountains – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Viewpoint_South_Pare_Mountains_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Viewpoint_South_Pare_Mountains_750_550shar-50brig-20_c1.jpg",
           alt: "Day Trip to South Pare Mountains – photo 8",
         },
       ],
       sectionId: "eastern-mountains",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Southern_Pare_Mountains.jpg",
+      listingImage: "/assets/photos/Southern_Pare_Mountains.jpg",
       listingOrder: 22,
     },
     {
@@ -3380,43 +3380,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_12.jpg",
+      image: "/assets/photos/Arusha_National_Park_Mount_Meru_12.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_12.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_12.jpg",
           alt: "3 Days Mount Meru Climb – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_165.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_165.jpg",
           alt: "3 Days Mount Meru Climb",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_02.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_02.jpg",
           alt: "3 Days Mount Meru Climb – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_06.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_06.jpg",
           alt: "3 Days Mount Meru Climb – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Girrafe_11.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Girrafe_11.jpg",
           alt: "3 Days Mount Meru Climb – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Saddle_Hut_07.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Saddle_Hut_07.jpg",
           alt: "3 Days Mount Meru Climb – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Trekking_01.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Trekking_01.jpg",
           alt: "3 Days Mount Meru Climb – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Trekking_02.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Trekking_02.jpg",
           alt: "3 Days Mount Meru Climb – photo 8",
         },
       ],
       sectionId: "mount-meru",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_12.jpg",
+      listingImage: "/assets/photos/Arusha_National_Park_Mount_Meru_12.jpg",
       listingOrder: 23,
     },
     {
@@ -3506,43 +3506,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Climbing_Saddle_Hut_Miriakamba.jpg",
+      image: "/assets/photos/Arusha_National_Park_Mount_Meru_Climbing_Saddle_Hut_Miriakamba.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Climbing_Saddle_Hut_Miriakamba.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Climbing_Saddle_Hut_Miriakamba.jpg",
           alt: "4 Days Mount Meru Climb – photo 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_01.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_01.jpg",
           alt: "4 Days Mount Meru Climb",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_11.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_11.jpg",
           alt: "4 Days Mount Meru Climb – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Trekking_02.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Trekking_02.jpg",
           alt: "4 Days Mount Meru Climb – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Saddle_Hut_07.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Saddle_Hut_07.jpg",
           alt: "4 Days Mount Meru Climb – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Trekking_01.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Trekking_01.jpg",
           alt: "4 Days Mount Meru Climb – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Trekking_03.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Trekking_03.jpg",
           alt: "4 Days Mount Meru Climb – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Trekking_10.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Trekking_10.jpg",
           alt: "4 Days Mount Meru Climb – photo 7",
         },
       ],
       sectionId: "mount-meru",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Climbing_Saddle_Hut_Miriakamba.jpg",
+      listingImage: "/assets/photos/Arusha_National_Park_Mount_Meru_Climbing_Saddle_Hut_Miriakamba.jpg",
       listingOrder: 24,
     },
     {
@@ -3620,43 +3620,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_06.jpg",
+      image: "/assets/photos/Uluguru_Mountains_Waterfalls_06.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_06.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Waterfalls_06.jpg",
           alt: "Day Trip Hiking to Uluguru Mountains & Choma Waterfalls – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_to_Kinole.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Hiking_to_Kinole.jpg",
           alt: "Day Trip Hiking to Uluguru Mountains & Choma Waterfalls",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_03.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Waterfalls_03.jpg",
           alt: "Day Trip Hiking to Uluguru Mountains & Choma Waterfalls – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_02.jpg",
+          src: "/assets/photos/Uluguru_Mountains_02.jpg",
           alt: "Day Trip Hiking to Uluguru Mountains & Choma Waterfalls – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_07.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Hiking_07.jpg",
           alt: "Day Trip Hiking to Uluguru Mountains & Choma Waterfalls – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Old_Germany_Settlement_Built_in_1911.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Old_Germany_Settlement_Built_in_1911.jpg",
           alt: "Day Trip Hiking to Uluguru Mountains & Choma Waterfalls – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Uluguru_Mountains_Hiking_to_Kinole_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Hiking_to_Kinole.jpg",
           alt: "Day Trip Hiking to Uluguru Mountains & Choma Waterfalls – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Uluguru_Mountains_Waterfalls_03_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Waterfalls_03_750_550shar-50brig-20_c1.jpg",
           alt: "Day Trip Hiking to Uluguru Mountains & Choma Waterfalls – photo 8",
         },
       ],
       sectionId: "eastern-mountains",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_06.jpg",
+      listingImage: "/assets/photos/Uluguru_Mountains_Waterfalls_06.jpg",
       listingOrder: 25,
     },
     {
@@ -3745,43 +3745,43 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_to_Kinole.jpg",
+      image: "/assets/photos/Uluguru_Mountains_Hiking_to_Kinole.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_to_Kinole.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Hiking_to_Kinole.jpg",
           alt: "3 Days Trip to Uluguru Mountains & Choma Waterfalls – photo 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_from_Morogoro_01.jpg",
+          src: "/assets/photos/Uluguru_Mountains_from_Morogoro_01.jpg",
           alt: "3 Days Trip to Uluguru Mountains & Choma Waterfalls",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_03.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Hiking_03.jpg",
           alt: "3 Days Trip to Uluguru Mountains & Choma Waterfalls – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_02.jpg",
+          src: "/assets/photos/Uluguru_Mountains_02.jpg",
           alt: "3 Days Trip to Uluguru Mountains & Choma Waterfalls – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_03.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Waterfalls_03.jpg",
           alt: "3 Days Trip to Uluguru Mountains & Choma Waterfalls – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_01.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Hiking_01.jpg",
           alt: "3 Days Trip to Uluguru Mountains & Choma Waterfalls – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Waterfalls_01.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Waterfalls_01.jpg",
           alt: "3 Days Trip to Uluguru Mountains & Choma Waterfalls – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_07.jpg",
+          src: "/assets/photos/Uluguru_Mountains_Hiking_07.jpg",
           alt: "3 Days Trip to Uluguru Mountains & Choma Waterfalls – photo 7",
         },
       ],
       sectionId: "eastern-mountains",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Uluguru_Mountains_Hiking_to_Kinole.jpg",
+      listingImage: "/assets/photos/Uluguru_Mountains_Hiking_to_Kinole.jpg",
       listingOrder: 26,
     },
   ];

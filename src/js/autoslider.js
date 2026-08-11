@@ -1,19 +1,29 @@
 ﻿/**
  * Generic autoslider – one-card step with multi-visible viewport.
  */
+import { loadImagesIn } from "./lazy-images.js";
+
+function hydrateVisibleSlides(slides, index, visible) {
+  for (let i = index; i < Math.min(index + visible, slides.length); i++) {
+    loadImagesIn(slides[i], { priority: i === index });
+  }
+}
 
 function getVisibleCount(root) {
-  const custom = root.dataset.visible;
-  if (custom) return Number(custom);
-  if (window.matchMedia("(min-width: 1200px)").matches) return 3;
-  if (window.matchMedia("(min-width: 768px)").matches) return 2;
+  const maxVisible = Number(root.dataset.visible) || 3;
+  if (window.matchMedia("(min-width: 1200px)").matches) return maxVisible;
+  if (window.matchMedia("(min-width: 768px)").matches) return Math.min(2, maxVisible);
   return 1;
 }
 
 export function initAutoslider(root = document) {
+  if (!root?.querySelectorAll) return;
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   root.querySelectorAll("[data-autoslider]").forEach((slider) => {
+    if (slider.dataset.autosliderInit === "true") return;
+    slider.dataset.autosliderInit = "true";
+
     const track = slider.querySelector("[data-autoslider-track]");
     const dotsRoot = slider.querySelector("[data-autoslider-dots]");
     const countEl = slider.querySelector("[data-autoslider-count]");
@@ -28,7 +38,12 @@ export function initAutoslider(root = document) {
     let maxIndex = 0;
     let timer = null;
     let ready = false;
+    let slideLock = false;
+    let pointerStart = null;
+    let touchStartX = null;
+    let touchDeltaX = 0;
     const intervalMs = Number(slider.dataset.autoplay || 5000);
+    const swipeThreshold = 42;
 
     const measure = () => {
       visible = getVisibleCount(slider);
@@ -74,6 +89,8 @@ export function initAutoslider(root = document) {
 
     const goTo = (nextIndex) => {
       index = ((nextIndex % (maxIndex + 1)) + (maxIndex + 1)) % (maxIndex + 1);
+      slideLock = true;
+      slider.classList.add("is-advancing");
       track.style.transform = `translate3d(-${getStepOffset()}px, 0, 0)`;
 
       dotsRoot?.querySelectorAll("[data-autoslider-dot]").forEach((dot, i) => {
@@ -82,12 +99,27 @@ export function initAutoslider(root = document) {
         dot.setAttribute("aria-selected", active ? "true" : "false");
       });
       updateCount();
+
+      hydrateVisibleSlides(slides, index, visible);
+
+      window.setTimeout(() => {
+        slideLock = false;
+        slider.classList.remove("is-advancing");
+      }, 320);
     };
 
     const applyLayout = () => {
       measure();
       renderDots();
       if (ready) requestAnimationFrame(() => goTo(index));
+    };
+
+    let resizeTimer = null;
+    const scheduleLayout = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(() => {
+        applyLayout();
+      }, 120);
     };
 
     const next = () => goTo(index + 1);
@@ -117,18 +149,79 @@ export function initAutoslider(root = document) {
     slider.addEventListener("mouseenter", stop);
     slider.addEventListener("mouseleave", start);
     slider.addEventListener("focusin", stop);
-    slider.addEventListener("focusout", start);
+    slider.addEventListener("focusout", (event) => {
+      if (slider.contains(event.relatedTarget)) return;
+      start();
+    });
 
-    window.addEventListener("resize", applyLayout, { passive: true });
+    slider.addEventListener(
+      "pointerdown",
+      (event) => {
+        pointerStart = { x: event.clientX, y: event.clientY };
+        if (event.pointerType === "touch" || event.pointerType === "pen") {
+          touchStartX = event.clientX;
+          touchDeltaX = 0;
+          stop();
+        }
+      },
+      { passive: true }
+    );
+
+    slider.addEventListener(
+      "pointermove",
+      (event) => {
+        if (touchStartX == null) return;
+        touchDeltaX = event.clientX - touchStartX;
+      },
+      { passive: true }
+    );
+
+    slider.addEventListener(
+      "pointerup",
+      (event) => {
+        if (touchStartX == null) return;
+        const delta = event.clientX - touchStartX;
+        touchStartX = null;
+        touchDeltaX = 0;
+        if (Math.abs(delta) >= swipeThreshold) {
+          delta < 0 ? next() : prev();
+          restart();
+        } else {
+          start();
+        }
+      },
+      { passive: true }
+    );
+
+    slider.addEventListener("click", (event) => {
+      if (slideLock) {
+        event.preventDefault();
+        event.stopPropagation();
+        return;
+      }
+      if (pointerStart) {
+        const moved =
+          Math.abs(event.clientX - pointerStart.x) > 8 ||
+          Math.abs(event.clientY - pointerStart.y) > 8;
+        pointerStart = null;
+        if (moved) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+      }
+    }, true);
+
+    window.addEventListener("resize", scheduleLayout, { passive: true });
 
     if ("ResizeObserver" in window) {
-      new ResizeObserver(() => applyLayout()).observe(track);
+      new ResizeObserver(scheduleLayout).observe(track);
     }
 
     measure();
     renderDots();
     requestAnimationFrame(() => {
       goTo(0);
+      hydrateVisibleSlides(slides, 0, visible);
       ready = true;
       setTimeout(start, 600);
     });

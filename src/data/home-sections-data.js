@@ -46,6 +46,6 @@ export const stickyQuoteSection = {
   quote: "Every road we drive, we know by season",
   body: "Matembo Safari & Tours is built in Iringa – Ruaha is our backyard, the southern circuit our daily work, and the northern parks our second home. We plan routes around how you travel: your dates, your pace, your reason for coming to Tanzania.",
   cta: { label: "Our Story", href: "/about.html" },
-  image: "/assets/about/main 11.jpg",
-  imageAlt: "Wildlife safari landscape in Tanzania",
+  image: "/assets/about/sticky-section.jpg",
+  imageAlt: "African elephant in the Tanzanian savanna",
 };

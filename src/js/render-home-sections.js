@@ -1,13 +1,10 @@
 ﻿import { renderAutosliderShell } from "./autoslider.js";
 import { renderCard } from "./render-cards.js";
-import { northernCircuitDestinations } from "../data/northern-circuit-destinations.js";
-import { allDestinations } from "../data/all-destinations.js";
-import { safariPackages } from "../data/safari-packages.js";
+import { homePopularDestinations } from "../data/home-popular-destinations.js";
+import { homePopularPackages } from "../data/home-popular-packages.js";
 import {
   popularDestinationsIntro,
-  popularDestinationIds,
   popularItinerariesIntro,
-  popularItineraryIds,
   stickyQuoteSection,
 } from "../data/home-sections-data.js";
 import { credentialsIntro, certificationBodies } from "../data/credentials-data.js";
@@ -28,46 +25,91 @@ function renderStars(rating) {
   return "★".repeat(rating) + "☆".repeat(Math.max(0, 5 - rating));
 }
 
-function getDestinationsByIds(ids) {
-  return ids
-    .map((id) => allDestinations.find((d) => d.id === id) || northernCircuitDestinations.find((d) => d.id === id))
-    .filter(Boolean);
+function countryFlag(code) {
+  if (!code || code.length !== 2) return "";
+  return code
+    .toUpperCase()
+    .split("")
+    .map((char) => String.fromCodePoint(127397 + char.charCodeAt(0)))
+    .join("");
 }
 
-function renderDestTeaserSlide(dest) {
-  const img = dest.images?.[0];
+function renderTeaserSlides(images, motionClass = "", cardIndex = 0) {
+  const list = images?.length ? images : [{ src: "/assets/about/main3.jpg", alt: "Safari destination" }];
+  return list
+    .map((img, i) => {
+      const eager = cardIndex < 3 && i === 0;
+      const srcAttrs = eager
+        ? `src="${escapeHtml(img.src)}"${cardIndex === 0 ? ' fetchpriority="high"' : ""}`
+        : `data-src="${escapeHtml(img.src)}" src=""`;
+      return `
+        <div class="dest-slideshow__slide ${motionClass} ${i === 0 ? "is-active" : ""}" data-slide>
+          <img
+            class="${eager ? "is-loaded" : ""}"
+            ${srcAttrs}
+            alt="${escapeHtml(img.alt || "")}"
+            width="400"
+            height="280"
+            decoding="async"
+            ${eager ? "" : 'loading="lazy"'}
+          />
+        </div>
+      `;
+    })
+    .join("");
+}
+
+function renderTeaserDots(count) {
+  if (count <= 1) return "";
+  return Array.from(
+    { length: count },
+    (_, i) =>
+      `<button type="button" class="dest-slideshow__dot ${i === 0 ? "is-active" : ""}" data-slide-dot aria-label="Show image ${i + 1}" aria-selected="${i === 0 ? "true" : "false"}"></button>`
+  ).join("");
+}
+
+function renderDestTeaserSlide(dest, cardIndex = 0) {
+  const images = dest.images?.length ? dest.images : [{ src: "/assets/about/main3.jpg", alt: dest.name }];
   const tags = dest.highlights?.slice(0, 3) || [];
+  const href = `/destinations/${encodeURIComponent(dest.id)}.html`;
   return `
     <article class="dest-teaser-slide autoslider__slide">
-      <a class="dest-teaser-slide__link" href="/destinations/${encodeURIComponent(dest.id)}.html">
-        <div class="dest-teaser-slide__media">
-          <img src="${escapeHtml(img?.src || "/assets/about/main3.jpg")}" alt="${escapeHtml(img?.alt || dest.name)}" loading="lazy" width="400" height="280" />
-          <div class="dest-teaser-slide__overlay" aria-hidden="true"></div>
-          <span class="dest-teaser-slide__script">${escapeHtml(dest.scriptLabel)}</span>
+      <div class="dest-teaser-slide__media" data-slideshow data-interval="4500">
+        <div class="dest-slideshow__track">
+          ${renderTeaserSlides(images, "dest-slideshow__slide--motion", cardIndex)}
         </div>
-        <div class="dest-teaser-slide__body">
-          <h3 class="dest-teaser-slide__name">${escapeHtml(dest.name)}</h3>
-          ${dest.journeys ? `<p class="dest-teaser-slide__journeys">${escapeHtml(dest.journeys)}</p>` : ""}
-          ${tags.length ? `<ul class="dest-teaser-slide__tags">${tags.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>` : ""}
-          <span class="dest-teaser-slide__cta">View destination →</span>
-        </div>
-      </a>
+        <div class="dest-teaser-slide__overlay" aria-hidden="true"></div>
+        <span class="dest-teaser-slide__script">${escapeHtml(dest.scriptLabel)}</span>
+        ${
+          images.length > 1
+            ? `<div class="dest-slideshow__dots dest-slideshow__dots--compact dest-teaser-slide__dots">${renderTeaserDots(images.length)}</div>`
+            : ""
+        }
+      </div>
+      <div class="dest-teaser-slide__body">
+        <h3 class="dest-teaser-slide__name">${escapeHtml(dest.name)}</h3>
+        ${dest.journeys ? `<p class="dest-teaser-slide__journeys">${escapeHtml(dest.journeys)}</p>` : ""}
+        ${tags.length ? `<ul class="dest-teaser-slide__tags">${tags.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>` : ""}
+        <a class="dest-teaser-slide__cta" href="${escapeHtml(href)}">View destination →</a>
+      </div>
     </article>
   `;
 }
 
 function renderTestimonialSlide(review) {
+  const flag = countryFlag(review.countryCode);
   return `
-    <blockquote class="testimonial-slide autoslider__slide">
-      <div class="testimonial-slide__head">
-        <img class="testimonial-slide__ta-logo" src="/assets/credentials/tripadvisor.svg" alt="TripAdvisor" width="120" height="28" loading="lazy" />
-        <div class="testimonial-slide__stars" aria-label="${review.rating} out of 5">${renderStars(review.rating)}</div>
+    <blockquote class="testimonial-card autoslider__slide">
+      <div class="testimonial-card__head">
+        <span class="testimonial-card__flag" aria-label="${escapeHtml(review.country)}" title="${escapeHtml(review.country)}">${flag}</span>
+        <div class="testimonial-card__stars" aria-label="${review.rating} out of 5">${renderStars(review.rating)}</div>
       </div>
-      <p class="testimonial-slide__quote">${escapeHtml(review.quote)}</p>
-      <footer class="testimonial-slide__footer">
-        <cite class="testimonial-slide__author">${escapeHtml(review.author)}</cite>
-        <span class="testimonial-slide__meta">${escapeHtml(review.location)} · ${escapeHtml(review.tripType || "Safari")} · ${escapeHtml(review.date || "")}</span>
+      <p class="testimonial-card__quote">"${escapeHtml(review.quote)}"</p>
+      <footer class="testimonial-card__footer">
+        <cite class="testimonial-card__author">${escapeHtml(review.author)}</cite>
+        <span class="testimonial-card__meta">${escapeHtml(review.country)} · ${escapeHtml(review.tripType || "Safari")} · ${escapeHtml(review.date || "")}</span>
       </footer>
+      <img class="testimonial-card__ta" src="/assets/credentials/tripadvisor.svg" alt="" width="88" height="18" loading="lazy" aria-hidden="true" />
     </blockquote>
   `;
 }
@@ -76,8 +118,8 @@ export function renderPopularDestinations() {
   const root = document.querySelector("#home-popular-destinations");
   if (!root) return;
 
-  const destinations = getDestinationsByIds(popularDestinationIds);
-  const trackHtml = destinations.map(renderDestTeaserSlide).join("");
+  const destinations = homePopularDestinations;
+  const trackHtml = destinations.map((dest, i) => renderDestTeaserSlide(dest, i)).join("");
 
   root.innerHTML = `
     <section class="home-section home-section--alt" id="destinations" aria-labelledby="destinations-title">
@@ -106,11 +148,9 @@ export function renderPopularItineraries() {
   const root = document.querySelector("#home-popular-itineraries");
   if (!root) return;
 
-  const packages = popularItineraryIds
-    .map((id) => safariPackages.find((p) => p.id === id))
-    .filter(Boolean);
-
-  const trackHtml = packages.map((pkg, i) => renderCard(pkg, i, { inCarousel: true })).join("");
+  const trackHtml = homePopularPackages
+    .map((pkg, i) => renderCard(pkg, i, { inCarousel: true }))
+    .join("");
 
   root.innerHTML = `
     <section class="home-section" id="itineraries" aria-labelledby="itineraries-title">
@@ -219,19 +259,18 @@ export function renderStickyQuote() {
 
   root.innerHTML = `
     <section class="sticky-quote" aria-labelledby="sticky-quote-title">
-      <div class="sticky-quote__sticky">
+      <div class="sticky-quote__panel">
         <div class="sticky-quote__media">
-          <img src="${escapeHtml(q.image)}" alt="${escapeHtml(q.imageAlt)}" width="1920" height="1080" loading="lazy" />
+          <img data-src="${escapeHtml(q.image)}" data-img-preset="hero" src="" alt="${escapeHtml(q.imageAlt)}" width="1920" height="1080" loading="lazy" decoding="async" />
           <div class="sticky-quote__scrim" aria-hidden="true"></div>
         </div>
         <div class="sticky-quote__content">
           <p class="sticky-quote__signature">${escapeHtml(q.signature)}</p>
           <h2 id="sticky-quote-title" class="sticky-quote__title">${escapeHtml(q.quote)}</h2>
           <p class="sticky-quote__body">${escapeHtml(q.body)}</p>
-          <a href="${escapeHtml(q.cta.href)}" class="btn btn--hero-cream sticky-quote__cta">${escapeHtml(q.cta.label)}</a>
+          <a href="${escapeHtml(q.cta.href)}" class="btn btn--ghost sticky-quote__cta">${escapeHtml(q.cta.label)}</a>
         </div>
       </div>
-      <div class="sticky-quote__spacer" aria-hidden="true"></div>
     </section>
   `;
 }
@@ -242,15 +281,19 @@ export function renderWhatsAppFloat() {
 
   const el = document.createElement("a");
   el.className = "wa-float";
-  el.href = "https://wa.me/255679529700";
+  el.href = "/contact.html";
   el.target = "_blank";
   el.rel = "noopener noreferrer";
   el.setAttribute("data-wa-float", "");
   el.setAttribute("aria-label", "WhatsApp safari enquiry");
   el.innerHTML = `
     <span class="wa-float__tab">
+      <span class="wa-float__pulse" aria-hidden="true"></span>
       <span class="wa-float__icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></span>
-      <span class="wa-float__text">Enquire</span>
+      <span class="wa-float__copy">
+        <span class="wa-float__label">Safari chat</span>
+        <span class="wa-float__text">Enquire</span>
+      </span>
     </span>
   `;
   document.body.appendChild(el);

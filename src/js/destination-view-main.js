@@ -8,6 +8,7 @@ import { renderSiteNav } from "./render-site-nav.js";
 import { renderSiteFooter } from "./render-home.js";
 import { initSiteNav } from "./site-nav.js";
 import { initSlideshows } from "./slideshow.js";
+import { initLazyImages } from "./lazy-images.js";
 import { initScrollReveal } from "./scroll-reveal.js";
 function resolveDestinationId() {
   const fromBody = document.body.dataset.destinationId;
@@ -79,6 +80,7 @@ function init() {
     if (!ok) return;
 
     initSiteNav();
+    initLazyImages();
     initSlideshows();
     initLightbox(getPagePhotos(dest));
   } catch (error) {

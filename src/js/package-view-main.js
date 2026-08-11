@@ -145,7 +145,7 @@ function renderViewA(pkg) {
             <p class="pkg-sidebar-card__duration">${escapeHtml(pkg.duration)}</p>
             <div class="pkg-facts">${renderQuickFacts(pkg.quickFacts)}</div>
             <div class="pkg-sidebar-card__actions">
-              <a href="/#contact" class="btn btn--primary">Plan This Safari</a>
+              <a href="/contact.html" class="btn btn--primary">Plan This Safari</a>
               <a href="/destinations.html" class="btn btn--secondary">Browse Destinations</a>
             </div>
           </div>
@@ -205,7 +205,7 @@ function renderViewB(pkg) {
       </div>
 
       <div class="pkg-view-b__cta">
-        <a href="/#contact" class="btn btn--primary">Plan This Safari</a>
+        <a href="/contact.html" class="btn btn--primary">Plan This Safari</a>
         <a href="/destinations.html" class="btn btn--secondary">Browse Destinations</a>
       </div>
     </div>

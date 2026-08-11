@@ -51,65 +51,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mbudya-island-marine-reserve",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Dar-es-Salaam_1.jpg",
+          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_1.jpg",
           alt: "Mbudya Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Boats_01.jpg",
+          src: "/assets/photos/Mbudya_Island_Boats_01.jpg",
           alt: "Mbudya Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_08.jpg",
+          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_08.jpg",
           alt: "Mbudya Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Dar-es-Salaam_1.jpg",
+          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_1.jpg",
           alt: "Mbudya Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Boats_01.jpg",
+          src: "/assets/photos/Mbudya_Island_Boats_01.jpg",
           alt: "Mbudya Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_08.jpg",
+          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_08.jpg",
           alt: "Mbudya Island Marine Reserve – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_06.jpg",
+          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_06.jpg",
           alt: "Mbudya Island Marine Reserve – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_07.jpg",
+          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_07.jpg",
           alt: "Mbudya Island Marine Reserve – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_05.jpg",
+          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_05.jpg",
           alt: "Mbudya Island Marine Reserve – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Snorkeling_01.jpg",
+          src: "/assets/photos/Mbudya_Island_Snorkeling_01.jpg",
           alt: "Mbudya Island Marine Reserve – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_03.jpg",
+          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_03.jpg",
           alt: "Mbudya Island Marine Reserve – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Dar-es-Salaam_Tanzania_11.jpg",
+          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_Tanzania_11.jpg",
           alt: "Mbudya Island Marine Reserve – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Dar-es-Salaam_05.jpg",
+          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_05.jpg",
           alt: "Mbudya Island Marine Reserve – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_01.jpg",
+          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_01.jpg",
           alt: "Mbudya Island Marine Reserve – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mbuday_Island_Historical_Site.jpg",
+          src: "/assets/photos/Mbuday_Island_Historical_Site.jpg",
           alt: "Mbudya Island Marine Reserve – view 12",
         },
       ],
@@ -146,65 +146,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/bongoyo-island-marine-reserve",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island__Aerial_View_Tanzania_01.jpg",
+          src: "/assets/photos/Bongoyo_Island__Aerial_View_Tanzania_01.jpg",
           alt: "Bongoyo Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island__Aerial_View_Tanzania_02.jpg",
+          src: "/assets/photos/Bongoyo_Island__Aerial_View_Tanzania_02.jpg",
           alt: "Bongoyo Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Snorkeling_02.jpg",
+          src: "/assets/photos/Bongoyo_Island_Snorkeling_02.jpg",
           alt: "Bongoyo Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island__Aerial_View_Tanzania_01.jpg",
+          src: "/assets/photos/Bongoyo_Island__Aerial_View_Tanzania_01.jpg",
           alt: "Bongoyo Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island__Aerial_View_Tanzania_02.jpg",
+          src: "/assets/photos/Bongoyo_Island__Aerial_View_Tanzania_02.jpg",
           alt: "Bongoyo Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Snorkeling_02.jpg",
+          src: "/assets/photos/Bongoyo_Island_Snorkeling_02.jpg",
           alt: "Bongoyo Island Marine Reserve – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Swimming.jpg",
+          src: "/assets/photos/Bongoyo_Island_Swimming.jpg",
           alt: "Bongoyo Island Marine Reserve – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_02.jpg",
+          src: "/assets/photos/Bongoyo_Island_02.jpg",
           alt: "Bongoyo Island Marine Reserve – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Crabs.jpg",
+          src: "/assets/photos/Bongoyo_Island_Crabs.jpg",
           alt: "Bongoyo Island Marine Reserve – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Migratory_Birds.jpg",
+          src: "/assets/photos/Bongoyo_Island_Migratory_Birds.jpg",
           alt: "Bongoyo Island Marine Reserve – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Snorkeling_01.jpg",
+          src: "/assets/photos/Bongoyo_Island_Snorkeling_01.jpg",
           alt: "Bongoyo Island Marine Reserve – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_01.jpg",
+          src: "/assets/photos/Bongoyo_Island_01.jpg",
           alt: "Bongoyo Island Marine Reserve – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_03.jpg",
+          src: "/assets/photos/Bongoyo_Island_03.jpg",
           alt: "Bongoyo Island Marine Reserve – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_04.jpg",
+          src: "/assets/photos/Bongoyo_Island_04.jpg",
           alt: "Bongoyo Island Marine Reserve – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Dar-es-Salaam_Tanzania_12.jpg",
+          src: "/assets/photos/Bongoyo_Island_Dar-es-Salaam_Tanzania_12.jpg",
           alt: "Bongoyo Island Marine Reserve – view 12",
         },
       ],
@@ -237,61 +237,61 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/pangavini-island-marine-reserve",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island.jpg",
+          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island.jpg",
           alt: "Pangavini Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangavini_Island_Marine_Reserve_05.jpg",
+          src: "/assets/photos/Pangavini_Island_Marine_Reserve_05.jpg",
           alt: "Pangavini Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangavini_Island_Marine_Reserve_04.jpg",
+          src: "/assets/photos/Pangavini_Island_Marine_Reserve_04.jpg",
           alt: "Pangavini Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island.jpg",
+          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island.jpg",
           alt: "Pangavini Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangavini_Island_Marine_Reserve_05.jpg",
+          src: "/assets/photos/Pangavini_Island_Marine_Reserve_05.jpg",
           alt: "Pangavini Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Pangavini_Island_Marine_Reserve_04.jpg",
+          src: "/assets/photos/Pangavini_Island_Marine_Reserve_04.jpg",
           alt: "Pangavini Island Marine Reserve – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island_750_550shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangavini_Island_Marine_Reserve_05_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Pangavini_Island_Marine_Reserve_05_750_550shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangavini_Island_Marine_Reserve_04_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Pangavini_Island_Marine_Reserve_04_750_550shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pugu_Hill_Nature_Forest_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_286_300shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kunduchi_Ruins_Tomb_with_Coffin_Shape_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tomb_with_Coffin_Shape.jpg",
           alt: "Pangavini Island Marine Reserve – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Bongoyo_Island_Snorkeling_01_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Bongoyo_Island_Snorkeling_01_286_300shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini.jpg",
           alt: "Pangavini Island Marine Reserve – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mbudya_Island_Marine_Reserve_x_08_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_08_286_300shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 11",
         },
       ],
@@ -323,65 +323,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/fungu-yasin-sand-bar",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini.jpg",
+          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini.jpg",
           alt: "Fungu Yasin Sand Bar",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02.jpg",
           alt: "Fungu Yasin Sand Bar – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_03.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_03.jpg",
           alt: "Fungu Yasin Sand Bar – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini.jpg",
+          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini.jpg",
           alt: "Fungu Yasin Sand Bar",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02.jpg",
           alt: "Fungu Yasin Sand Bar – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_03.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_03.jpg",
           alt: "Fungu Yasin Sand Bar – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_Picniking.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Picniking.jpg",
           alt: "Fungu Yasin Sand Bar – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_Dar-es-Salaam.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Dar-es-Salaam.jpg",
           alt: "Fungu Yasin Sand Bar – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_Crab.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Crab.jpg",
           alt: "Fungu Yasin Sand Bar – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02_750_550shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini_750_550shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Fungu_Yasin_Sand_Bar_03_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_03_750_550shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Fungu_Yasin_Sand_Bar_Picniking_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Picniking_750_550shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_750_550shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pugu_Hill_Canoeing_in_Lake_Minaki_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Pugu_Hill_Canoeing_in_Lake_Minaki_286_300shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 12",
         },
       ],
@@ -414,65 +414,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/sinda-island-marine-reserve",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_03.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_03.jpg",
           alt: "Sinda Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_02.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_02.jpg",
           alt: "Sinda Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_05.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_05.jpg",
           alt: "Sinda Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_03.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_03.jpg",
           alt: "Sinda Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_02.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_02.jpg",
           alt: "Sinda Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_05.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_05.jpg",
           alt: "Sinda Island Marine Reserve – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_01.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_01.jpg",
           alt: "Sinda Island Marine Reserve – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_04.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_04.jpg",
           alt: "Sinda Island Marine Reserve – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_59.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_59.jpg",
           alt: "Sinda Island Marine Reserve – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_60.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_60.jpg",
           alt: "Sinda Island Marine Reserve – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_56.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_56.jpg",
           alt: "Sinda Island Marine Reserve – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_57.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_57.jpg",
           alt: "Sinda Island Marine Reserve – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_58.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_58.jpg",
           alt: "Sinda Island Marine Reserve – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_54.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_54.jpg",
           alt: "Sinda Island Marine Reserve – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_52.jpg",
+          src: "/assets/photos/Sinda_Island_Marine_Reserve_52.jpg",
           alt: "Sinda Island Marine Reserve – view 12",
         },
       ],
@@ -508,65 +508,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/maziwe-island-marine-reserve",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_02.jpg",
+          src: "/assets/photos/Maziwe_Island_02.jpg",
           alt: "Maziwe Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_18.jpg",
+          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_18.jpg",
           alt: "Maziwe Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_12.jpg",
+          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_12.jpg",
           alt: "Maziwe Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_02.jpg",
+          src: "/assets/photos/Maziwe_Island_02.jpg",
           alt: "Maziwe Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_18.jpg",
+          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_18.jpg",
           alt: "Maziwe Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_12.jpg",
+          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_12.jpg",
           alt: "Maziwe Island Marine Reserve – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_15.jpg",
+          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_15.jpg",
           alt: "Maziwe Island Marine Reserve – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_03.jpg",
+          src: "/assets/photos/Maziwe_Island_03.jpg",
           alt: "Maziwe Island Marine Reserve – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_Canoeing_03.jpg",
+          src: "/assets/photos/Maziwe_Island_Canoeing_03.jpg",
           alt: "Maziwe Island Marine Reserve – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island.jpg",
+          src: "/assets/photos/Maziwe_Island.jpg",
           alt: "Maziwe Island Marine Reserve – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_05.jpg",
+          src: "/assets/photos/Maziwe_Island_05.jpg",
           alt: "Maziwe Island Marine Reserve – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_Crabs_04.jpg",
+          src: "/assets/photos/Maziwe_Island_Crabs_04.jpg",
           alt: "Maziwe Island Marine Reserve – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_Sea_Turtle.jpg",
+          src: "/assets/photos/Maziwe_Island_Sea_Turtle.jpg",
           alt: "Maziwe Island Marine Reserve – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_14.jpg",
+          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_14.jpg",
           alt: "Maziwe Island Marine Reserve – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_11.jpg",
+          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_11.jpg",
           alt: "Maziwe Island Marine Reserve – view 12",
         },
       ],
@@ -597,61 +597,61 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/ulenge-island-marine-reserve",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_022.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_022.jpg",
           alt: "Ulenge Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Egret_in_Marine_Reserves_2.jpg",
+          src: "/assets/photos/Egret_in_Marine_Reserves_2.jpg",
           alt: "Ulenge Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_022_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_022_750_550shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_022.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_022.jpg",
           alt: "Ulenge Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Egret_in_Marine_Reserves_2.jpg",
+          src: "/assets/photos/Egret_in_Marine_Reserves_2.jpg",
           alt: "Ulenge Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_022_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_022_750_550shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Egret_in_Marine_Reserves_2_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Egret_in_Marine_Reserves_2.jpg",
           alt: "Ulenge Island Marine Reserve – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_071_Mangroves_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_071_Mangroves.jpg",
           alt: "Ulenge Island Marine Reserve – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Egret_in_Marine_Reserves_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Egret_in_Marine_Reserves.jpg",
           alt: "Ulenge Island Marine Reserve – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amani_Nature_Forest_Reserves_05_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_05.jpg",
           alt: "Ulenge Island Marine Reserve – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amboni_Caves_Tanga_01_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_01.jpg",
           alt: "Ulenge Island Marine Reserve – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangani_Tanzania_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Pangani_Tanzania.jpg",
           alt: "Ulenge Island Marine Reserve – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Maziwe_Island_Canoeing_03_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Maziwe_Island_Canoeing_03_286_300shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_072_Mangroves_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_072_Mangroves.jpg",
           alt: "Ulenge Island Marine Reserve – view 11",
         },
       ],
@@ -683,65 +683,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kwale-island-marine-reserve",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_011.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_011.jpg",
           alt: "Kwale Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Egret_in_Marine_Reserves.jpg",
+          src: "/assets/photos/Egret_in_Marine_Reserves.jpg",
           alt: "Kwale Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_011_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_011_750_550shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_011.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_011.jpg",
           alt: "Kwale Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Egret_in_Marine_Reserves.jpg",
+          src: "/assets/photos/Egret_in_Marine_Reserves.jpg",
           alt: "Kwale Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_011_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_011_750_550shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Egret_in_Marine_Reserves_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Egret_in_Marine_Reserves_750_550shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Maziwe_Island_05_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Maziwe_Island_05_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amboni_Caves_Tanga_09_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Amboni_Caves_Tanga_09.jpg",
           alt: "Kwale Island Marine Reserve – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_2_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab_2.jpg",
           alt: "Kwale Island Marine Reserve – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Chamelion_in_Amani_Nature_Reserve_in_Usambara_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Chamelion_in_Amani_Nature_Reserve_in_Usambara.jpg",
           alt: "Kwale Island Marine Reserve – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangani/King_Fisher_in_Pangani_1_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Pangani/King_Fisher_in_Pangani_1_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Reserve_Tanga_07_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Toten_Island_Reserve_Tanga_07.jpg",
           alt: "Kwale Island Marine Reserve – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Egret_in_Marine_Reserves_2_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Egret_in_Marine_Reserves_2_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Maziwe_Island_02_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Maziwe_Island_02_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 12",
         },
       ],
@@ -773,65 +773,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kirui-island-marine-reserve",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_071_Mangroves.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_071_Mangroves.jpg",
           alt: "Kirui Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserves_Crab_2.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab_2.jpg",
           alt: "Kirui Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_071_Mangroves_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_071_Mangroves_750_550shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_071_Mangroves.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_071_Mangroves.jpg",
           alt: "Kirui Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserves_Crab_2.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab_2.jpg",
           alt: "Kirui Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_071_Mangroves_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_071_Mangroves_750_550shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_2_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab_2_750_550shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_06_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_06.jpg",
           alt: "Kirui Island Marine Reserve – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangani/Pangani_River_Tour_4_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Pangani/Pangani_River_Tour_4_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Yambe_Island_Tanga_01_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Yambe_Island_Tanga_01.jpg",
           alt: "Kirui Island Marine Reserve – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Maziwe_Island_Crabs_04_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Maziwe_Island_Crabs_04_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_022_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_022_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Egret_in_Marine_Reserves_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Egret_in_Marine_Reserves.jpg",
           alt: "Kirui Island Marine Reserve – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab.jpg",
           alt: "Kirui Island Marine Reserve – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Irente_View_Point_Usambara_Mountains_14_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Irente_View_Point_Usambara_Mountains_14.jpg",
           alt: "Kirui Island Marine Reserve – view 12",
         },
       ],
@@ -861,65 +861,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/yambe-island",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Island_Tanga_01.jpg",
+          src: "/assets/photos/Yambe_Island_Tanga_01.jpg",
           alt: "Yambe Island",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Island_Tanga_02.jpg",
+          src: "/assets/photos/Yambe_Island_Tanga_02.jpg",
           alt: "Yambe Island – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sandbank_in_Yambe_Island_Tanga_05.jpg",
+          src: "/assets/photos/Sandbank_in_Yambe_Island_Tanga_05.jpg",
           alt: "Yambe Island – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Island_Tanga_01.jpg",
+          src: "/assets/photos/Yambe_Island_Tanga_01.jpg",
           alt: "Yambe Island",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Island_Tanga_02.jpg",
+          src: "/assets/photos/Yambe_Island_Tanga_02.jpg",
           alt: "Yambe Island – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sandbank_in_Yambe_Island_Tanga_05.jpg",
+          src: "/assets/photos/Sandbank_in_Yambe_Island_Tanga_05.jpg",
           alt: "Yambe Island – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Sandbank_in_Yambe_Island_Tanga_03.jpg",
+          src: "/assets/photos/Sandbank_in_Yambe_Island_Tanga_03.jpg",
           alt: "Yambe Island – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Island_Marine_Reserve_Crab.jpg",
+          src: "/assets/photos/Yambe_Island_Marine_Reserve_Crab.jpg",
           alt: "Yambe Island – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Yambe_Island_Tanga_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Yambe_Island_Tanga_01_750_550shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Yambe_Island_Tanga_02_550_309shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Yambe_Island_Tanga_02_550_309shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Yambe_Island_Marine_Reserve_Crab_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Yambe_Island_Marine_Reserve_Crab_750_550shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_04_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_04.jpg",
           alt: "Yambe Island – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Bangala_River_Usambara_Mountains_1_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Bangala_River_Usambara_Mountains_1_286_300shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Reserve_Tanga_01_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Toten_Island_Reserve_Tanga_01.jpg",
           alt: "Yambe Island – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Tanga_Coelacanth_Marine_Park_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Tanga_Coelacanth_Marine_Park.jpg",
           alt: "Yambe Island – view 12",
         },
       ],
@@ -949,65 +949,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mwewe-island-marine-reserve",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_072_Mangroves.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_072_Mangroves.jpg",
           alt: "Mwewe Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserver_044.jpg",
+          src: "/assets/photos/Marine_Island_Reserver_044.jpg",
           alt: "Mwewe Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserves_Crab.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab.jpg",
           alt: "Mwewe Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_072_Mangroves.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_072_Mangroves.jpg",
           alt: "Mwewe Island Marine Reserve",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserver_044.jpg",
+          src: "/assets/photos/Marine_Island_Reserver_044.jpg",
           alt: "Mwewe Island Marine Reserve – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserves_Crab.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab.jpg",
           alt: "Mwewe Island Marine Reserve – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_072_Mangroves_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_072_Mangroves_750_550shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserver_044_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserver_044_750_550shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab_750_550shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_2_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab_2.jpg",
           alt: "Mwewe Island Marine Reserve – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_011_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_011_286_300shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Birdslife_Common_Bulbul_Usambara_Mountains_1_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Birdslife_Common_Bulbul_Usambara_Mountains_1_286_300shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Yambe_Island_Tanga_02_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Yambe_Island_Tanga_02_286_300shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Maziwe_Island_05_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Maziwe_Island_05_286_300shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_06_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_06.jpg",
           alt: "Mwewe Island Marine Reserve – view 12",
         },
       ],
@@ -1038,65 +1038,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/toten-island",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Tanga.jpg",
+          src: "/assets/photos/Toten_Island_Tanga.jpg",
           alt: "Toten Island",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Reserve_Tanga_01.jpg",
+          src: "/assets/photos/Toten_Island_Reserve_Tanga_01.jpg",
           alt: "Toten Island – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Tanga_Tanzania.jpg",
+          src: "/assets/photos/Toten_Island_Tanga_Tanzania.jpg",
           alt: "Toten Island – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Tanga.jpg",
+          src: "/assets/photos/Toten_Island_Tanga.jpg",
           alt: "Toten Island",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Reserve_Tanga_01.jpg",
+          src: "/assets/photos/Toten_Island_Reserve_Tanga_01.jpg",
           alt: "Toten Island – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Tanga_Tanzania.jpg",
+          src: "/assets/photos/Toten_Island_Tanga_Tanzania.jpg",
           alt: "Toten Island – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Reserve_Tanga_06.jpg",
+          src: "/assets/photos/Toten_Island_Reserve_Tanga_06.jpg",
           alt: "Toten Island – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserves_Crab.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab.jpg",
           alt: "Toten Island – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Reserve_Tanga_02.jpg",
+          src: "/assets/photos/Toten_Island_Reserve_Tanga_02.jpg",
           alt: "Toten Island – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Reserve_Tanga_07.jpg",
+          src: "/assets/photos/Toten_Island_Reserve_Tanga_07.jpg",
           alt: "Toten Island – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Tanga_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Toten_Island_Tanga_750_550shar-50brig-20_c1.jpg",
           alt: "Toten Island – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Reserve_Tanga_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Toten_Island_Reserve_Tanga_01_750_550shar-50brig-20_c1.jpg",
           alt: "Toten Island – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Tanga_Tanzania_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Toten_Island_Tanga_Tanzania_750_550shar-50brig-20_c1.jpg",
           alt: "Toten Island – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Reserve_Tanga_06_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Toten_Island_Reserve_Tanga_06_750_550shar-50brig-20_c1.jpg",
           alt: "Toten Island – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Marine_Island_Reserves_Crab_750_550shar-50brig-20_c1.jpg",
           alt: "Toten Island – view 12",
         },
       ],
@@ -1130,65 +1130,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/chumbe-island-marine-sanctuary",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_03.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_03.jpg",
           alt: "Chumbe Island Marine Sanctuary",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_01.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_01.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_Coral_Reefs_01.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_Coral_Reefs_01.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_03.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_03.jpg",
           alt: "Chumbe Island Marine Sanctuary",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_01.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_01.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_Coral_Reefs_01.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_Coral_Reefs_01.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Dhow_Safari_01.jpg",
+          src: "/assets/photos/Zanzibar_Dhow_Safari_01.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Coconut_Crab_03.jpg",
+          src: "/assets/photos/Zanzibar_Coconut_Crab_03.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_Oriental__Sweetlips.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_Oriental__Sweetlips.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_Porcelain_Crab_and_Anemone_Frida_Lanshammar.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_Porcelain_Crab_and_Anemone_Frida_Lanshammar.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_02.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_02.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Chumbe_Island_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_01_750_550shar-50brig-20_c1.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Chumbe_Island_03_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_03_750_550shar-50brig-20_c1.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Chumbe_Island_Coral_Reefs_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Zanzibar_Chumbe_Island_Coral_Reefs_01_750_550shar-50brig-20_c1.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Dhow_Safari_01_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Zanzibar_Dhow_Safari_01_750_550shar-50brig-20_c1.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 12",
         },
       ],
@@ -1225,65 +1225,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mnemba-island-conservation-area",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Mnemba_Island.jpg",
+          src: "/assets/photos/Zanzibar_Island_Mnemba_Island.jpg",
           alt: "Mnemba Island Conservation Area",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Mnemba_Island_Coloful_Fish.jpg",
+          src: "/assets/photos/Zanzibar_Mnemba_Island_Coloful_Fish.jpg",
           alt: "Mnemba Island Conservation Area – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Prestine_Beach_02.jpg",
+          src: "/assets/photos/Zanzibar_Prestine_Beach_02.jpg",
           alt: "Mnemba Island Conservation Area – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Mnemba_Island.jpg",
+          src: "/assets/photos/Zanzibar_Island_Mnemba_Island.jpg",
           alt: "Mnemba Island Conservation Area",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Mnemba_Island_Coloful_Fish.jpg",
+          src: "/assets/photos/Zanzibar_Mnemba_Island_Coloful_Fish.jpg",
           alt: "Mnemba Island Conservation Area – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Prestine_Beach_02.jpg",
+          src: "/assets/photos/Zanzibar_Prestine_Beach_02.jpg",
           alt: "Mnemba Island Conservation Area – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Skul_of_Fish_03.jpg",
+          src: "/assets/photos/Zanzibar_Skul_of_Fish_03.jpg",
           alt: "Mnemba Island Conservation Area – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Prestine_Beach_03.jpg",
+          src: "/assets/photos/Zanzibar_Prestine_Beach_03.jpg",
           alt: "Mnemba Island Conservation Area – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Snorkeling_in_Mnemba_Island.jpg",
+          src: "/assets/photos/Zanzibar_Snorkeling_in_Mnemba_Island.jpg",
           alt: "Mnemba Island Conservation Area – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Corals_04.jpg",
+          src: "/assets/photos/Zanzibar_Corals_04.jpg",
           alt: "Mnemba Island Conservation Area – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Hermit_Crab_on_the_Beach.jpg",
+          src: "/assets/photos/Zanzibar_Hermit_Crab_on_the_Beach.jpg",
           alt: "Mnemba Island Conservation Area – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Mnemba_Island_Clown_Fish.jpg",
+          src: "/assets/photos/Zanzibar_Mnemba_Island_Clown_Fish.jpg",
           alt: "Mnemba Island Conservation Area – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Island_Mnemba_Island_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Zanzibar_Island_Mnemba_Island_750_550shar-50brig-20_c1.jpg",
           alt: "Mnemba Island Conservation Area – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Mnemba_Island_Coloful_Fish_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Zanzibar_Mnemba_Island_Coloful_Fish_750_550shar-50brig-20_c1.jpg",
           alt: "Mnemba Island Conservation Area – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Prestine_Beach_02_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Zanzibar_Prestine_Beach_02_750_550shar-50brig-20_c1.jpg",
           alt: "Mnemba Island Conservation Area – view 12",
         },
       ],
@@ -1317,65 +1317,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/zanzibar-island",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_01.jpg",
+          src: "/assets/photos/Zanzibar_Stone_Town_01.jpg",
           alt: "Zanzibar Island",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town_02.jpg",
+          src: "/assets/photos/Zanzibar_Island_Stone_Town_02.jpg",
           alt: "Zanzibar Island – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Prestine_Beach_04.jpg",
+          src: "/assets/photos/Zanzibar_Prestine_Beach_04.jpg",
           alt: "Zanzibar Island – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_01.jpg",
+          src: "/assets/photos/Zanzibar_Stone_Town_01.jpg",
           alt: "Zanzibar Island",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town_02.jpg",
+          src: "/assets/photos/Zanzibar_Island_Stone_Town_02.jpg",
           alt: "Zanzibar Island – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Prestine_Beach_04.jpg",
+          src: "/assets/photos/Zanzibar_Prestine_Beach_04.jpg",
           alt: "Zanzibar Island – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town_03.jpg",
+          src: "/assets/photos/Zanzibar_Island_Stone_Town_03.jpg",
           alt: "Zanzibar Island – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_02.jpg",
+          src: "/assets/photos/Zanzibar_Stone_Town_02.jpg",
           alt: "Zanzibar Island – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town_01.jpg",
+          src: "/assets/photos/Zanzibar_Island_Stone_Town_01.jpg",
           alt: "Zanzibar Island – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_03.jpg",
+          src: "/assets/photos/Zanzibar_Stone_Town_03.jpg",
           alt: "Zanzibar Island – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_Tour_01.jpg",
+          src: "/assets/photos/Zanzibar_Stone_Town_Tour_01.jpg",
           alt: "Zanzibar Island – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Beach_Holiday.jpg",
+          src: "/assets/photos/Zanzibar_Beach_Holiday.jpg",
           alt: "Zanzibar Island – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nakupenda_Sandbank_Zanzibar.jpg",
+          src: "/assets/photos/Nakupenda_Sandbank_Zanzibar.jpg",
           alt: "Zanzibar Island – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town.jpg",
+          src: "/assets/photos/Zanzibar_Island_Stone_Town.jpg",
           alt: "Zanzibar Island – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Beach_Holidays_01.jpg",
+          src: "/assets/photos/Zanzibar_Beach_Holidays_01.jpg",
           alt: "Zanzibar Island – view 12",
         },
       ],
@@ -1412,65 +1412,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mafia-island",
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Chole_Mjini.jpg",
+          src: "/assets/photos/Mafia_Island_Chole_Mjini.jpg",
           alt: "Mafia Island",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Diving_01.jpg",
+          src: "/assets/photos/Mafia_Island_Diving_01.jpg",
           alt: "Mafia Island – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Tanzania_01.jpg",
+          src: "/assets/photos/Mafia_Island_Tanzania_01.jpg",
           alt: "Mafia Island – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Chole_Mjini.jpg",
+          src: "/assets/photos/Mafia_Island_Chole_Mjini.jpg",
           alt: "Mafia Island",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Diving_01.jpg",
+          src: "/assets/photos/Mafia_Island_Diving_01.jpg",
           alt: "Mafia Island – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Tanzania_01.jpg",
+          src: "/assets/photos/Mafia_Island_Tanzania_01.jpg",
           alt: "Mafia Island – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Whale_Shark_04.jpg",
+          src: "/assets/photos/Mafia_Island_Whale_Shark_04.jpg",
           alt: "Mafia Island – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/School_of_yellow-spot_emperors_swarm_over_fire_coral_on_reefs_in_Chole_Bay_Mafia_Islan.jpg",
+          src: "/assets/photos/School_of_yellow-spot_emperors_swarm_over_fire_coral_on_reefs_in_Chole_Bay_Mafia_Islan.jpg",
           alt: "Mafia Island – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Underwater_Corals_Mafia_Island_Marine_Park_01.jpg",
+          src: "/assets/photos/Underwater_Corals_Mafia_Island_Marine_Park_01.jpg",
           alt: "Mafia Island – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Marine_Reserve_Sea_Turtle_01.jpg",
+          src: "/assets/photos/Mafia_Island_Marine_Reserve_Sea_Turtle_01.jpg",
           alt: "Mafia Island – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Tanzania_02.jpg",
+          src: "/assets/photos/Mafia_Island_Tanzania_02.jpg",
           alt: "Mafia Island – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Humpback_Whale_01.jpg",
+          src: "/assets/photos/Mafia_Island_Humpback_Whale_01.jpg",
           alt: "Mafia Island – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Coral_Bommie_in_the_Mafia_Island_Marine_Park.jpg",
+          src: "/assets/photos/Coral_Bommie_in_the_Mafia_Island_Marine_Park.jpg",
           alt: "Mafia Island – view 10",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Anemonefish_hidden_in_bubble_anemone_in_Chole_Bay_Mafia_Island.jpg",
+          src: "/assets/photos/Anemonefish_hidden_in_bubble_anemone_in_Chole_Bay_Mafia_Island.jpg",
           alt: "Mafia Island – view 11",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Ancient_Hindu_Temple_Built_in_1890_Under_Ficus_Roots_02.jpg",
+          src: "/assets/photos/Mafia_Island_Ancient_Hindu_Temple_Built_in_1890_Under_Ficus_Roots_02.jpg",
           alt: "Mafia Island – view 12",
         },
       ],

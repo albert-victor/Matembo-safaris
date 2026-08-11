@@ -89,9 +89,8 @@ export const navAboutLinks = [
   },
 ];
 
-/** Safari types – site pages only, with real photography. */
+/** Safari types – curated for mega menu (full index on safaris.html). */
 export const navSafariTypes = [
-  navItem("Tanzania Safaris", "All circuits & packages", "/safaris.html", IMG.serengeti5d),
   navItem("Adventure Safaris", "Wildlife game drives", "/game-drives.html", IMG.serengeti3d),
   navItem("Mountain Climbing", "Kilimanjaro & highlands", "/trekkings.html", IMG.lemosho7d),
   navItem("Beach Holiday", "Zanzibar & coast", "/beach-holiday.html", IMG.zanzibar),
@@ -99,16 +98,30 @@ export const navSafariTypes = [
   navItem("Tourist Attractions", "Museums & heritage", "/tourist-attractions.html", IMG.olduvai),
 ];
 
+/** Things to Do – compact mega menu list (full index on experiences.html). */
+export const navThingsToDoItems = [
+  navItem("Game Drives", "46 private 4×4 routes", "/game-drives.html", IMG.serengeti3d),
+  experienceNavItem("great-migration", "Great Migration"),
+  navItem("Cultural Visits", "13 village & heritage routes", "/cultural-visits.html", "/assets/about/cultural visits.jpg"),
+  navItem("Bird Watching", "15 birding routes", "/bird-watching.html", experiences.find((e) => e.id === "bird-watching")?.images?.[0]?.src || IMG.serengeti3d),
+  navItem("Chimpanzee Watching", "Gombe & Mahale", "/activities/chimpanzee-watching.html", experiences.find((e) => e.id === "bird-watching")?.images?.[0]?.src || IMG.serengeti3d),
+  navItem("Night Game Drives", "After-dark wildlife", "/night-game-drives.html", IMG.serengeti3d),
+  experienceNavItem("museums", "Museums & Heritage"),
+  experienceNavItem("hiking", "Walking / Hiking"),
+].filter(Boolean);
+
 /** Things to Do – existing experiences & listings only (3 columns). */
 export const navThingsToDoColumns = [
   [
     navItem("Game Drives", "46 private 4×4 routes", "/game-drives.html", IMG.serengeti3d),
     experienceNavItem("great-migration", "Great Migration"),
-    experienceNavItem("bird-watching", "Bird Watching"),
+    navItem("Bird Watching", "15 birding routes", "/bird-watching.html", experiences.find((e) => e.id === "bird-watching")?.images?.[0]?.src || IMG.serengeti3d),
+    navItem("Night Game Drives", "After-dark wildlife", "/night-game-drives.html", IMG.serengeti3d),
     experienceNavItem("hiking", "Walking / Hiking"),
   ].filter(Boolean),
   [
-    experienceNavItem("cultural-visits", "Cultural Visits"),
+    navItem("Cultural Visits", "13 village & heritage routes", "/cultural-visits.html", "/assets/about/cultural visits.jpg"),
+    navItem("Chimpanzee Watching", "Gombe & Mahale", "/activities/chimpanzee-watching.html", experiences.find((e) => e.id === "bird-watching")?.images?.[0]?.src || IMG.serengeti3d),
     experienceNavItem("waterfalls", "Waterfalls"),
     experienceNavItem("rock-climbing", "Rock Climbing"),
     navItem("Climbing / Trekking", "Kilimanjaro routes", "/trekkings.html", IMG.machame8d),
@@ -144,9 +157,26 @@ export const megaMenuPanels = {
     footer: { text: "View all circuits →", href: "/circuits.html" },
   },
   safaris: {
+    featured: {
+      name: "Northern Circuit",
+      label: "Featured safari",
+      desc: "Serengeti, Ngorongoro & Tarangire — the classic wildlife route.",
+      href: "/safaris.html#northern-circuit",
+      image: IMG.serengeti5d,
+      alt: "Northern Circuit Tanzania safari",
+    },
     heading: { label: "Safari types", title: "Browse by experience" },
     items: navSafariTypes,
-    footer: { text: "All safari packages →", href: "/safaris.html" },
+    aside: {
+      label: "Every circuit",
+      title: "141 real itineraries",
+      tags: "North · South · East · West",
+      quote: "Wildlife, coast, mountains and culture — grouped by circuit on the full index.",
+      ctaText: "Game drives catalog",
+      ctaHref: "/game-drives.html",
+      image: IMG.ruaha4d,
+    },
+    footer: { text: "View all safaris →", href: "/safaris.html" },
   },
   thingsToDo: {
     featured: {
@@ -158,14 +188,14 @@ export const megaMenuPanels = {
       alt: "Great Migration Tanzania",
     },
     heading: { label: "Things to do", title: "Activities on your route" },
-    columns: navThingsToDoColumns,
+    items: navThingsToDoItems,
     aside: {
       label: "Matembo add-ons",
       title: "Pair with wildlife days",
       tags: "Culture · Hiking · Coast",
       quote: "Build migration focus, museum stops, or highland hikes into your safari.",
-      ctaText: "View all activities",
-      ctaHref: "/experiences.html",
+      ctaText: "Plan your route",
+      ctaHref: "/contact.html",
       image: IMG.udzungwa,
     },
     footer: { text: "View all activities →", href: "/experiences.html" },

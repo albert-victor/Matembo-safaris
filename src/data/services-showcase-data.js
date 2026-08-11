@@ -2,13 +2,21 @@
  * "What we do best" – contextual wildlife imagery from TTB / experiences data.
  */
 import { experiences } from "./experiences-data.js";
+import { NAV_IMAGES } from "./nav-images.js";
+import { allDestinations } from "./all-destinations.js";
 
-const TTB = "https://www.tanzaniatourism.com/images/uploads";
+const LOCAL = "/assets/photos";
 
 function expImage(id, fallback) {
   const exp = experiences.find((e) => e.id === id);
   return exp?.images?.[0]?.src || fallback;
 }
+
+function destImage(id, imageIndex = 0, fallback = "") {
+  const dest = allDestinations.find((d) => d.id === id);
+  return dest?.images?.[imageIndex]?.src || dest?.images?.[0]?.src || fallback;
+}
+
 
 export const servicesShowcaseIntro = {
   label: "What We Do Best",
@@ -23,7 +31,7 @@ export const servicesShowcase = [
     icon: "fa-binoculars",
     description: "Private 4×4 days across Tanzania's great parks – dawn starts, patient guides, and time at every sighting.",
     highlights: ["Serengeti & Ngorongoro", "Ruaha river bends", "Mikumi plains"],
-    image: expImage("game-drives", `${TTB}/Serengeti_National_Park_Leopard_24.jpg`),
+    image: expImage("game-drives", `${LOCAL}/Serengeti_National_Park_Leopard_24.jpg`),
     imageAlt: "Leopard on a Serengeti game drive",
     href: "/game-drives.html",
   },
@@ -33,7 +41,7 @@ export const servicesShowcase = [
     icon: "fa-person-hiking",
     description: "Guided bush walks and forest trails – read tracks, birds and smaller life up close with licensed walking guides.",
     highlights: ["Udzungwa forest", "Crater rim hikes", "Bush foot safaris"],
-    image: expImage("hiking", `${TTB}/Arusha_National_Park_01.jpg`),
+    image: expImage("hiking", NAV_IMAGES.shiraDay),
     imageAlt: "Walking safari in Tanzania highlands",
     href: "/walking-safaris.html",
   },
@@ -45,7 +53,7 @@ export const servicesShowcase = [
     highlights: ["Maasai villages", "Handicrafts", "Traditional ceremonies"],
     image: "/assets/about/cultural visits.jpg",
     imageAlt: "Cultural visit with local community in Tanzania",
-    href: "/experiences/cultural-visits.html",
+    href: "/cultural-visits.html",
   },
   {
     id: "migration",
@@ -53,7 +61,7 @@ export const servicesShowcase = [
     icon: "fa-route",
     description: "Follow wildebeest herds and river crossings on the Serengeti corridor – timed to the season you travel.",
     highlights: ["River crossings", "Calving season", "Private positioning"],
-    image: expImage("great-migration", `${TTB}/Serengeti_Wildebeests_03.jpg`),
+    image: expImage("great-migration", NAV_IMAGES.migration),
     imageAlt: "Wildebeest migration on the Serengeti plains",
     href: "/experiences/great-migration.html",
   },
@@ -63,7 +71,7 @@ export const servicesShowcase = [
     icon: "fa-mountain",
     description: "Kilimanjaro summit routes, Mount Meru and highland treks – porters, camps and guides who know every ridge.",
     highlights: ["Kilimanjaro routes", "Mount Meru", "Highland hikes"],
-    image: `${TTB}/Kilimanjaro_Machame_Route_01.jpg`,
+    image: NAV_IMAGES.machame8d,
     imageAlt: "Kilimanjaro mountain trekking",
     href: "/trekkings.html",
   },
@@ -73,8 +81,8 @@ export const servicesShowcase = [
     icon: "fa-umbrella-beach",
     description: "Stone Town escapes, spice tours and Indian Ocean relaxation – the perfect bush-and-beach finish.",
     highlights: ["Zanzibar beaches", "Spice tours", "Island day trips"],
-    image: `${TTB}/Zanzibar_Beach_01.jpg`,
-    imageAlt: "Zanzibar Indian Ocean coast",
+    image: destImage("zanzibar", 2, `${LOCAL}/Zanzibar_Prestine_Beach_04.jpg`),
+    imageAlt: "Pristine beach on Zanzibar Island",
     href: "/beach-holiday.html",
   },
   {
@@ -93,7 +101,7 @@ export const servicesShowcase = [
     icon: "fa-calendar-days",
     description: "Week-long routes across north and south – lodges matched to your budget, pace shaped around your group.",
     highlights: ["Northern circuit", "Southern icons", "Bush & beach combos"],
-    image: `${TTB}/Ruaha_National_Park_Elephants_01.jpg`,
+    image: NAV_IMAGES.ruaha3d,
     imageAlt: "Elephants on a multi-day Ruaha safari",
     href: "/safaris.html",
   },
@@ -103,8 +111,8 @@ export const servicesShowcase = [
     icon: "fa-feather",
     description: "Specialist birding days with guides who know every call – from flamingo lakes to forest endemics.",
     highlights: ["Lake Manyara", "Ruaha raptors", "Forest species"],
-    image: expImage("bird-watching", `${TTB}/Arusha_National_Park_Momella_Lake_Flamingos_66.jpg`),
+    image: expImage("bird-watching", `${LOCAL}/Arusha_National_Park_Momella_Lake_Flamingos_65.jpg`),
     imageAlt: "Flamingos at Momella Lake, Arusha National Park",
-    href: "/experiences/bird-watching.html",
+    href: "/bird-watching.html",
   },
 ];

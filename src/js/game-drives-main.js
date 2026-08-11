@@ -3,6 +3,7 @@ import { renderSiteNav } from "./render-site-nav.js";
 import { renderSiteFooter } from "./render-home.js";
 import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
+import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
 import { gameDrivePackages, gameDriveSectionOrder } from "../data/game-drive-packages.js";
 
@@ -12,7 +13,7 @@ const GRID_BY_SECTION = {
   "eastern-circuit": "#game-drive-eastern-grid",
 };
 
-function renderSections() {
+async function renderSections() {
   for (const sectionId of gameDriveSectionOrder) {
     const selector = GRID_BY_SECTION[sectionId];
     if (!selector) continue;
@@ -26,16 +27,18 @@ function renderSections() {
     }
 
     section?.removeAttribute("hidden");
-    renderPackageCards(selector, { packages, viewLabel: "View Safari" });
+    await renderPackageCards(selector, { packages, viewLabel: "View Safari" });
   }
 }
 
-function init() {
+async function init() {
   renderSiteNav();
   renderSiteFooter();
-  renderSections();
   initSiteNav();
+
+  await renderSections();
   initCardTilt();
+  initLazyImages();
   initScrollReveal();
 }
 

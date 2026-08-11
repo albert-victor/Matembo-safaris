@@ -188,7 +188,7 @@ export function renderPackagePage(containerSelector, pkg) {
             ${pkg.highlights.slice(0, 3).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
           </ul>
           <div class="pkg-page__hero-actions">
-            <a href="/#contact" class="btn btn--on-media">Enquire</a>
+            <a href="/contact.html" class="btn btn--on-media">Enquire</a>
             <a href="/safaris.html" class="btn btn--secondary btn--ghost-light">All Safaris</a>
           </div>
         </div>
@@ -232,7 +232,7 @@ export function renderPackagePage(containerSelector, pkg) {
               <p class="pkg-sidebar-card__duration">${escapeHtml(pkg.duration)}</p>
               <div class="pkg-facts">${renderQuickFacts(pkg.quickFacts)}</div>
               <div class="pkg-sidebar-card__actions">
-                <a href="/#contact" class="btn btn--primary">Enquire</a>
+                <a href="/contact.html" class="btn btn--primary">Enquire</a>
                 <a href="/safaris.html" class="btn btn--secondary">Browse Safaris</a>
               </div>
             </div>
@@ -279,7 +279,7 @@ export function renderPackageNotFound(containerSelector) {
   container.innerHTML = `
     <div class="container pkg-page-empty">
       <h1 class="pkg-page__title">Safari package not found</h1>
-      <p class="pkg-section__text">Browse our <a href="/safaris.html">safari packages</a> or <a href="/#contact">send an enquiry</a>.</p>
+      <p class="pkg-section__text">Browse our <a href="/safaris.html">safari packages</a> or <a href="/contact.html">send an enquiry</a>.</p>
     </div>
   `;
 }

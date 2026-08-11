@@ -1,5 +1,4 @@
 ﻿import { packagePageUrl } from "./paths.js";
-import { safariPackages } from "../data/safari-packages.js";
 
 function escapeHtml(text) {
   const div = document.createElement("div");
@@ -53,7 +52,9 @@ export function renderCard(pkg, index, options = {}) {
             <div class="safari-card__motion">
               <img
                 class="safari-card__image"
-                src="${escapeHtml(pkg.image)}"
+                data-src="${escapeHtml(pkg.image)}"
+                data-img-preset="card"
+                src=""
                 alt="${escapeHtml(pkg.alt)}"
                 width="560"
                 height="350"
@@ -86,7 +87,7 @@ export function renderCard(pkg, index, options = {}) {
 
             <div class="safari-card__actions">
               <a href="${packagePageUrl(pkg)}" class="btn btn--primary btn--card">${escapeHtml(viewLabel)}</a>
-              <a href="/#contact" class="btn btn--secondary btn--card">Enquire</a>
+              <a href="/contact.html" class="btn btn--secondary btn--card">Enquire</a>
             </div>
           </div>
         </div>
@@ -95,14 +96,23 @@ export function renderCard(pkg, index, options = {}) {
   `;
 }
 
-export function renderPackageCards(containerSelector, options = {}) {
-  const container = document.querySelector(containerSelector);
+export async function renderPackageCards(containerTarget, options = {}) {
+  const container =
+    typeof containerTarget === "string"
+      ? document.querySelector(containerTarget)
+      : containerTarget;
   if (!container) return;
 
   const { ids, packages: customPackages, viewLabel } = options;
-  let packages = customPackages || safariPackages;
+  let packages = customPackages;
+
+  if (!packages?.length) {
+    const { safariPackages } = await import("../data/safari-packages.js");
+    packages = safariPackages;
+  }
 
   if (ids?.length) {
+    const { safariPackages } = await import("../data/safari-packages.js");
     packages = ids
       .map((id) => safariPackages.find((pkg) => pkg.id === id))
       .filter(Boolean);

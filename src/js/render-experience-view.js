@@ -166,8 +166,14 @@ export function renderExperiencePage(containerSelector, exp) {
           <p class="dest-page__script">${escapeHtml(exp.scriptLabel)}</p>
           ${renderHighlightPills(exp.highlights)}
           <div class="dest-page__hero-actions">
-            <a href="/#contact" class="btn btn--on-media">Plan Your Safari</a>
-            <a href="/experiences.html" class="btn btn--secondary btn--ghost-light">All Experiences</a>
+            <a href="/contact.html" class="btn btn--on-media">Plan Your Safari</a>
+            ${
+              exp.id === "bird-watching"
+                ? `<a href="/bird-watching.html" class="btn btn--secondary btn--ghost-light">Birding Packages</a>`
+                : exp.id === "cultural-visits"
+                  ? `<a href="/cultural-visits.html" class="btn btn--secondary btn--ghost-light">Cultural Packages</a>`
+                  : `<a href="/experiences.html" class="btn btn--secondary btn--ghost-light">All Experiences</a>`
+            }
           </div>
         </div>
       </header>
@@ -197,7 +203,7 @@ export function renderExperiencePage(containerSelector, exp) {
               </p>
             </div>
             <div class="dest-page__plan-bar-actions">
-              <a href="/#contact" class="btn btn--primary">Plan This Experience</a>
+              <a href="/contact.html" class="btn btn--primary">Plan This Experience</a>
               <a href="/experiences.html" class="dest-page__aside-link">All experiences</a>
             </div>
           </aside>

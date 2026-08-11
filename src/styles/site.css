@@ -90,7 +90,18 @@ main {
   margin-right: 0.25rem;
 }
 
-/* Scroll reveal (shared across site) */
+/* Scroll reveal — WOW.js / animate.css fadeInUp style (see eon.co.tz) */
+@keyframes reveal-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 [data-reveal],
 .section-reveal,
 .reveal-on-scroll,
@@ -115,14 +126,48 @@ main {
 .site-footer__col,
 .site-footer__brand,
 .site-footer__social {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+html.js-enhanced [data-reveal]:not(.is-visible),
+html.js-enhanced .section-reveal:not(.is-visible),
+html.js-enhanced .reveal-on-scroll:not(.is-visible),
+html.js-enhanced .home-about__text:not(.is-visible),
+html.js-enhanced .home-about__stat:not(.is-visible),
+html.js-enhanced .home-section__title:not(.is-visible),
+html.js-enhanced .home-section__desc:not(.is-visible),
+html.js-enhanced .home-section__label:not(.is-visible),
+html.js-enhanced .home-about__script:not(.is-visible),
+html.js-enhanced .dest-page__lead:not(.is-visible),
+html.js-enhanced .dest-page__text:not(.is-visible),
+html.js-enhanced .dest-page__photo:not(.is-visible),
+html.js-enhanced .dest-slideshow:not(.is-visible),
+html.js-enhanced .dest-page__aside-block:not(.is-visible),
+html.js-enhanced .experience-card__title:not(.is-visible),
+html.js-enhanced .experience-card__text:not(.is-visible),
+html.js-enhanced .testimonial-card__quote:not(.is-visible),
+html.js-enhanced .credentials-grid__item:not(.is-visible),
+html.js-enhanced .home-contact__title:not(.is-visible),
+html.js-enhanced .home-contact__text:not(.is-visible),
+html.js-enhanced .site-footer:not(.is-visible),
+html.js-enhanced .site-footer__col:not(.is-visible),
+html.js-enhanced .site-footer__brand:not(.is-visible),
+html.js-enhanced .site-footer__social:not(.is-visible) {
   opacity: 0;
-  transform: translate3d(0, 28px, 0);
-  filter: blur(3px);
-  transition:
-    opacity var(--duration-reveal) var(--ease-reveal),
-    transform var(--duration-reveal) var(--ease-reveal),
-    filter var(--duration-reveal) var(--ease-reveal);
-  transition-delay: var(--reveal-delay, 0ms);
+  transform: translate3d(0, 20px, 0);
+  pointer-events: none;
+}
+
+html.js-enhanced .section-reveal.is-visible .home-section__label,
+html.js-enhanced .section-reveal.is-visible .home-section__title,
+html.js-enhanced .section-reveal.is-visible .home-section__desc,
+html.js-enhanced .section-reveal.is-visible .home-about__text,
+html.js-enhanced .section-reveal.is-visible .home-about__stat {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
 }
 
 [data-reveal].is-visible,
@@ -149,9 +194,9 @@ main {
 .site-footer__col.is-visible,
 .site-footer__brand.is-visible,
 .site-footer__social.is-visible {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  filter: blur(0);
+  pointer-events: auto;
+  animation: reveal-fade-up 0.85s var(--ease-reveal) both;
+  animation-delay: var(--reveal-delay, 0ms);
 }
 
 [data-reveal-delay="1"],
@@ -194,6 +239,8 @@ main {
     opacity: 1;
     transform: none;
     filter: none;
+    visibility: visible;
+    animation: none !important;
     transition: none;
   }
 }

@@ -8,6 +8,7 @@ import { renderSiteFooter } from "./render-home.js";
 import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
 import { initSlideshows } from "./slideshow.js";
+import { initLazyImages } from "./lazy-images.js";
 
 function resolveCircuitId() {
   const fromBody = document.body.dataset.circuitId;
@@ -30,6 +31,7 @@ function init() {
     }
 
     initSiteNav();
+    initLazyImages();
     initSlideshows();
   } catch (error) {
     console.error("Matembo circuit page init failed:", error);

@@ -25,6 +25,8 @@
   --font-body: "DM Sans", system-ui, sans-serif;
   --font-display: "Cormorant Garamond", "Times New Roman", serif;
   --font-signature: "Great Vibes", cursive;
+  --font-script: var(--font-signature);
+  --font-serif: var(--font-display);
 
   /* Spacing */
   --space-xs: 0.5rem;
@@ -49,7 +51,7 @@
   --duration-normal: 450ms;
   --duration-slow: 900ms;
   --duration-reveal: 1100ms;
-  --ken-burns-duration: 24s;
+  --ken-burns-duration: 28s;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -94,4 +96,16 @@
   50% {
     opacity: 0.85;
   }
+}
+
+/* Gold accent labels — display serif (site-wide guard) */
+.mega-menu__spotlight-label,
+.home-about__stat dt,
+.dest-card__meta-line,
+.dest-card__journeys,
+.see-this-place__circuit,
+.autoslider__count,
+.pkg-page__script,
+.pkg-view-a__head-meta {
+  font-family: var(--font-display);
 }

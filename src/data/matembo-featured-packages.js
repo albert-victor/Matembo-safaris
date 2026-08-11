@@ -92,42 +92,42 @@ export const matemboFeaturedPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_42.jpg",
+      image: "/assets/photos/Ruaha_National_Park_Ruaha_River_42.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_42.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_River_42.jpg",
           alt: "2 Days Safari to Ruaha National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Boat_on_the_River_86.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Boat_on_the_River_86.jpg",
           alt: "2 Days Safari to Ruaha National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Hippos_47.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Hippos_47.jpg",
           alt: "2 Days Safari to Ruaha National Park – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Leopard_72.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Leopard_72.jpg",
           alt: "2 Days Safari to Ruaha National Park – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Lioness_81.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Lioness_81.jpg",
           alt: "2 Days Safari to Ruaha National Park – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Sunset_15.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Sunset_15.jpg",
           alt: "2 Days Safari to Ruaha National Park – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_RIver_87.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_RIver_87.jpg",
           alt: "2 Days Safari to Ruaha National Park – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Waterbucks_78.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Waterbucks_78.jpg",
           alt: "2 Days Safari to Ruaha National Park – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Zebras_45.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Zebras_45.jpg",
           alt: "2 Days Safari to Ruaha National Park – photo 8",
         },
       ],
@@ -137,7 +137,7 @@ export const matemboFeaturedPackages = [
       ttbSlug: "2-days-safari-to-ruaha-national-park",
       listingOrder: 0,
       listingTitle: "2 Days Safari to Ruaha National Park",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_42.jpg",
+      listingImage: "/assets/photos/Ruaha_National_Park_Ruaha_River_42.jpg",
     },
     {
       id: "3-days-safari-to-ruaha-national-park",
@@ -223,42 +223,42 @@ export const matemboFeaturedPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_39.jpg",
+      image: "/assets/photos/Ruaha_National_Park_Ruaha_River_39.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_39.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_River_39.jpg",
           alt: "3 Days Safari to Ruaha National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Waterbucks_78.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Waterbucks_78.jpg",
           alt: "3 Days Safari to Ruaha National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Elephants_41.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Elephants_41.jpg",
           alt: "3 Days Safari to Ruaha National Park – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Buffalos_45.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Buffalos_45.jpg",
           alt: "3 Days Safari to Ruaha National Park – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Kudu_22.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudu_22.jpg",
           alt: "3 Days Safari to Ruaha National Park – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Kudus_69.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudus_69.jpg",
           alt: "3 Days Safari to Ruaha National Park – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Kudus_44.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudus_44.jpg",
           alt: "3 Days Safari to Ruaha National Park – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_42.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_River_42.jpg",
           alt: "3 Days Safari to Ruaha National Park – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Sunset_30.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Sunset_30.jpg",
           alt: "3 Days Safari to Ruaha National Park – photo 8",
         },
       ],
@@ -268,7 +268,7 @@ export const matemboFeaturedPackages = [
       ttbSlug: "3-days-safari-to-ruaha-national-park",
       listingOrder: 1,
       listingTitle: "3 Days Safari to Ruaha National Park",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_39.jpg",
+      listingImage: "/assets/photos/Ruaha_National_Park_Ruaha_River_39.jpg",
     },
     {
       id: "4-days-safari-in-ruaha-national-park",
@@ -358,38 +358,38 @@ export const matemboFeaturedPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Hippos_47.jpg",
+      image: "/assets/photos/Ruaha_National_Park_Hippos_47.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Hippos_47.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Hippos_47.jpg",
           alt: "4 Days Safari in Ruaha National Park – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Kudus_32.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudus_32.jpg",
           alt: "4 Days Safari in Ruaha National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Kudu_22.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudu_22.jpg",
           alt: "4 Days Safari in Ruaha National Park – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Elephants_49.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Elephants_49.jpg",
           alt: "4 Days Safari in Ruaha National Park – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Kudus_69.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudus_69.jpg",
           alt: "4 Days Safari in Ruaha National Park – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Kudus_44.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudus_44.jpg",
           alt: "4 Days Safari in Ruaha National Park – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_85.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_River_85.jpg",
           alt: "4 Days Safari in Ruaha National Park – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Ruaha_National_Park_Kudus_32_750_550shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudus_32_750_550shar-50brig-20_c1.jpg",
           alt: "4 Days Safari in Ruaha National Park – photo 8",
         },
       ],
@@ -399,7 +399,7 @@ export const matemboFeaturedPackages = [
       ttbSlug: "4-days-safari-in-ruaha-national-park",
       listingOrder: 2,
       listingTitle: "4 Days Safari in Ruaha National Park",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Hippos_47.jpg",
+      listingImage: "/assets/photos/Ruaha_National_Park_Hippos_47.jpg",
     },
     {
       id: "5-days-safari-to-mikumi-ruaha-national-parks",
@@ -499,38 +499,38 @@ export const matemboFeaturedPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Elephants_49.jpg",
+      image: "/assets/photos/Ruaha_National_Park_Elephants_49.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Elephants_49.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Elephants_49.jpg",
           alt: "5 Days Safari to Mikumi & Ruaha National Parks – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Elephants_41.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Elephants_41.jpg",
           alt: "5 Days Safari to Mikumi & Ruaha National Parks",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Kudu_22.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudu_22.jpg",
           alt: "5 Days Safari to Mikumi & Ruaha National Parks – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Leopard_72.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Leopard_72.jpg",
           alt: "5 Days Safari to Mikumi & Ruaha National Parks – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Sandstone_Pillars_21.jpg",
+          src: "/assets/photos/Isimila_Sandstone_Pillars_21.jpg",
           alt: "5 Days Safari to Mikumi & Ruaha National Parks – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_22.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_22.jpg",
           alt: "5 Days Safari to Mikumi & Ruaha National Parks – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_25.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_25.jpg",
           alt: "5 Days Safari to Mikumi & Ruaha National Parks – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_30.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_30.jpg",
           alt: "5 Days Safari to Mikumi & Ruaha National Parks – photo 8",
         },
       ],
@@ -540,7 +540,7 @@ export const matemboFeaturedPackages = [
       ttbSlug: "5-days-safari-to-mikumi-ruaha-national-parks",
       listingOrder: 3,
       listingTitle: "5 Days Safari to Mikumi & Ruaha National Parks",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Elephants_49.jpg",
+      listingImage: "/assets/photos/Ruaha_National_Park_Elephants_49.jpg",
     },
     {
       id: "7-days-safari-to-ruaha-udzungwa-and-mikumi-national-parks",
@@ -650,38 +650,38 @@ export const matemboFeaturedPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Crested_Mangabey_Monkey_22.jpg",
+      image: "/assets/photos/Udzungwa_National_Park_Sanje_Crested_Mangabey_Monkey_22.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Crested_Mangabey_Monkey_22.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Crested_Mangabey_Monkey_22.jpg",
           alt: "7 Days Safari to Ruaha, Udzungwa and Mikumi National Parks – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Hippos_47.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Hippos_47.jpg",
           alt: "7 Days Safari to Ruaha, Udzungwa and Mikumi National Parks",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Kudus_69.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Kudus_69.jpg",
           alt: "7 Days Safari to Ruaha, Udzungwa and Mikumi National Parks – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Leopard_72.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Leopard_72.jpg",
           alt: "7 Days Safari to Ruaha, Udzungwa and Mikumi National Parks – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Ruaha_River_39.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Ruaha_River_39.jpg",
           alt: "7 Days Safari to Ruaha, Udzungwa and Mikumi National Parks – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Waterbucks_78.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Waterbucks_78.jpg",
           alt: "7 Days Safari to Ruaha, Udzungwa and Mikumi National Parks – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Moloneys_Monkey_18.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Moloneys_Monkey_18.jpg",
           alt: "7 Days Safari to Ruaha, Udzungwa and Mikumi National Parks – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sonjo__Natural_Pool_28.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sonjo__Natural_Pool_28.jpg",
           alt: "7 Days Safari to Ruaha, Udzungwa and Mikumi National Parks – photo 8",
         },
       ],
@@ -691,7 +691,7 @@ export const matemboFeaturedPackages = [
       ttbSlug: "7-days-safari-to-ruaha-udzungwa-and-mikumi-national-parks",
       listingOrder: 4,
       listingTitle: "7 Days Safari to Ruaha, Udzungwa and Mikumi National Parks",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Crested_Mangabey_Monkey_22.jpg",
+      listingImage: "/assets/photos/Udzungwa_National_Park_Sanje_Crested_Mangabey_Monkey_22.jpg",
     },
     {
       id: "10-days-safari-to-nyerere-mikumi-udzungwa-ruaha-national-parks",
@@ -817,38 +817,38 @@ export const matemboFeaturedPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Black_and_White_Colobus_04.jpg",
+      image: "/assets/photos/Udzungwa_National_Park_Black_and_White_Colobus_04.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Black_and_White_Colobus_04.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Black_and_White_Colobus_04.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Elephants_58.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Elephants_58.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Hippo_42.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Hippo_42.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Nyerere_National_Park_Lions_102.jpg",
+          src: "/assets/photos/Nyerere_National_Park_Lions_102.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Crested_Mangabey_Monkey_21.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Crested_Mangabey_Monkey_21.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Viewpoint_112.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_112.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Sanje_Waterfalls_40.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Waterfalls_40.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ruaha_National_Park_Buffalos_45.jpg",
+          src: "/assets/photos/Ruaha_National_Park_Buffalos_45.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 8",
         },
       ],
@@ -858,7 +858,7 @@ export const matemboFeaturedPackages = [
       ttbSlug: "10-days-safari-to-nyerere-mikumi-udzungwa-ruaha-national-parks",
       listingOrder: 5,
       listingTitle: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Udzungwa_National_Park_Black_and_White_Colobus_04.jpg",
+      listingImage: "/assets/photos/Udzungwa_National_Park_Black_and_White_Colobus_04.jpg",
     },
     {
       id: "2-days-to-tarangire-national-park-ngorongoro-crater",
@@ -939,38 +939,38 @@ export const matemboFeaturedPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_01_NCA.jpg",
+      image: "/assets/photos/Ngorongoro_Crater_01_NCA.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_01_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_01_NCA.jpg",
           alt: "2 Days to Tarangire National Park & Ngorongoro Crater",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Black_Rhinos_NCA_03.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Black_Rhinos_NCA_03.jpg",
           alt: "2 Days to Tarangire National Park & Ngorongoro Crater – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Buffalos_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Buffalos_NCA.jpg",
           alt: "2 Days to Tarangire National Park & Ngorongoro Crater – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Elephant_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Elephant_NCA.jpg",
           alt: "2 Days to Tarangire National Park & Ngorongoro Crater – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Hyenas_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Hyenas_NCA.jpg",
           alt: "2 Days to Tarangire National Park & Ngorongoro Crater – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Ostrich_20.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Ostrich_20.jpg",
           alt: "2 Days to Tarangire National Park & Ngorongoro Crater – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Lion_23.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Lion_23.jpg",
           alt: "2 Days to Tarangire National Park & Ngorongoro Crater – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Swamps_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Swamps_NCA.jpg",
           alt: "2 Days to Tarangire National Park & Ngorongoro Crater – photo 8",
         },
       ],
@@ -980,7 +980,7 @@ export const matemboFeaturedPackages = [
       ttbSlug: "2-days-to-tarangire-national-park-ngorongoro-crater",
       listingOrder: 6,
       listingTitle: "2 Days to Tarangire National Park & Ngorongoro Crater",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_01_NCA.jpg",
+      listingImage: "/assets/photos/Ngorongoro_Crater_01_NCA.jpg",
     },
     {
       id: "3-days-to-serengeti-national-park-and-ngorongoro-crater",
@@ -1068,38 +1068,38 @@ export const matemboFeaturedPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Wildebeests_20.jpg",
+      image: "/assets/photos/Serengeti_National_Park_Wildebeests_20.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Wildebeests_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Wildebeests_20.jpg",
           alt: "3 Days to Serengeti National Park and Ngorongoro Crater – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_Kopjes_7980.jpg",
+          src: "/assets/photos/Serengeti_Kopjes_7980.jpg",
           alt: "3 Days to Serengeti National Park and Ngorongoro Crater",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_Migration_P103.jpg",
+          src: "/assets/photos/Serengeti_Migration_P103.jpg",
           alt: "3 Days to Serengeti National Park and Ngorongoro Crater – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Jackal_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Jackal_20.jpg",
           alt: "3 Days to Serengeti National Park and Ngorongoro Crater – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Leopard_23.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Leopard_23.jpg",
           alt: "3 Days to Serengeti National Park and Ngorongoro Crater – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Lions_24.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Lions_24.jpg",
           alt: "3 Days to Serengeti National Park and Ngorongoro Crater – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Valture_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Valture_20.jpg",
           alt: "3 Days to Serengeti National Park and Ngorongoro Crater – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Black_Rhinos_NCA_02.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Black_Rhinos_NCA_02.jpg",
           alt: "3 Days to Serengeti National Park and Ngorongoro Crater – photo 8",
         },
       ],
@@ -1109,7 +1109,7 @@ export const matemboFeaturedPackages = [
       ttbSlug: "3-days-to-serengeti-national-park-and-ngorongoro-crater",
       listingOrder: 7,
       listingTitle: "3 Days to Serengeti National Park and Ngorongoro Crater",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Wildebeests_20.jpg",
+      listingImage: "/assets/photos/Serengeti_National_Park_Wildebeests_20.jpg",
     },
     {
       id: "5-days-serengeti-and-ngorongoro-crater-safari",
@@ -1207,42 +1207,42 @@ export const matemboFeaturedPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Elephant_NCA.jpg",
+      image: "/assets/photos/Ngorongoro_Crater_Elephant_NCA.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Elephant_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Elephant_NCA.jpg",
           alt: "5 Days Serengeti and Ngorongoro Crater Safari",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Leopard_24.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Leopard_24.jpg",
           alt: "5 Days Serengeti and Ngorongoro Crater Safari",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Lions_22.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Lions_22.jpg",
           alt: "5 Days Serengeti and Ngorongoro Crater Safari – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Ostriches_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Ostriches_20.jpg",
           alt: "5 Days Serengeti and Ngorongoro Crater Safari – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Valture_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Valture_20.jpg",
           alt: "5 Days Serengeti and Ngorongoro Crater Safari – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Waterbuck_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Waterbuck_20.jpg",
           alt: "5 Days Serengeti and Ngorongoro Crater Safari – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Wildebeests_22.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Wildebeests_22.jpg",
           alt: "5 Days Serengeti and Ngorongoro Crater Safari – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Zebras_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Zebras_20.jpg",
           alt: "5 Days Serengeti and Ngorongoro Crater Safari – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_Wildebeests_03.jpg",
+          src: "/assets/photos/Serengeti_Wildebeests_03.jpg",
           alt: "5 Days Serengeti and Ngorongoro Crater Safari – photo 8",
         },
       ],
@@ -1252,7 +1252,7 @@ export const matemboFeaturedPackages = [
       ttbSlug: "5-days-serengeti-and-ngorongoro-crater-safari",
       listingOrder: 8,
       listingTitle: "5 Days Serengeti and Ngorongoro Crater Safari",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Elephant_NCA.jpg",
+      listingImage: "/assets/photos/Ngorongoro_Crater_Elephant_NCA.jpg",
     },
     {
       id: "day-trip-to-ngorongoro-crater",
@@ -1326,42 +1326,42 @@ export const matemboFeaturedPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Wildlife_24.jpg",
+      image: "/assets/photos/Ngorongoro_Crater_Wildlife_24.jpg",
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Wildlife_24.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Wildlife_24.jpg",
           alt: "Day Trip to Ngorongoro Crater",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Black_Rhinos_NCA_02.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Black_Rhinos_NCA_02.jpg",
           alt: "Day Trip to Ngorongoro Crater",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Elephants_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Elephants_NCA.jpg",
           alt: "Day Trip to Ngorongoro Crater – photo 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Flamingos_10_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Flamingos_10_NCA.jpg",
           alt: "Day Trip to Ngorongoro Crater – photo 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Floor_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Floor_NCA.jpg",
           alt: "Day Trip to Ngorongoro Crater – photo 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Hyenas_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Hyenas_NCA.jpg",
           alt: "Day Trip to Ngorongoro Crater – photo 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Hyenas_Pack_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Hyenas_Pack_NCA.jpg",
           alt: "Day Trip to Ngorongoro Crater – photo 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Lion_20.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Lion_20.jpg",
           alt: "Day Trip to Ngorongoro Crater – photo 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Lion_23.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Lion_23.jpg",
           alt: "Day Trip to Ngorongoro Crater – photo 8",
         },
       ],
@@ -1371,7 +1371,7 @@ export const matemboFeaturedPackages = [
       ttbSlug: "day-trip-to-ngorongoro-crater",
       listingOrder: 9,
       listingTitle: "Day Trip to Ngorongoro Crater",
-      listingImage: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Wildlife_24.jpg",
+      listingImage: "/assets/photos/Ngorongoro_Crater_Wildlife_24.jpg",
     },
   ];
 

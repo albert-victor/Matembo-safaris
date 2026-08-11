@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tanzania cultural visit safaris — village tours, coffee experiences, Swahili coast heritage and Maasai rift routes from Matembo Safari & Tours."
+    />
+    <title>Cultural Visit Safaris | Matembo Safari & Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/src/styles/buttons.css" />
+    <link rel="stylesheet" href="/src/styles/cards.css" />
+    <link rel="stylesheet" href="/src/styles/site.css" />
+    <link rel="stylesheet" href="/src/styles/footer.css" />
+    <link rel="stylesheet" href="/src/styles/nav.css" />
+    <link rel="stylesheet" href="/src/styles/destinations.css" />
+  </head>
+  <body data-activity-collection="cultural-visits">
+    <div id="site-nav-root"></div>
+
+    <main>
+      <header class="dest-listing-hero">
+        <div class="container dest-listing-hero__inner section-reveal">
+          <span class="home-section__label" data-activity-label>Cultural Visits</span>
+          <h1 class="dest-listing-hero__title" data-activity-title>Culture & Community</h1>
+          <span class="dest-listing-hero__script" data-activity-script>Villages, Coast & Heritage</span>
+          <p class="dest-listing-hero__lead" data-activity-lead>
+            Thirteen cultural itineraries from Tanzania Tourism — coffee tours and highland villages to Stone Town, Bagamoyo and Maasai rift-valley routes.
+          </p>
+          <p class="home-section__desc" style="margin-top: 1rem">
+            <a href="/experiences/cultural-visits.html">About cultural travel in Tanzania →</a>
+          </p>
+        </div>
+      </header>
+
+      <section class="dest-listing-grid-section" id="highlands-villages" aria-labelledby="cv-highlands-title">
+        <div class="container">
+          <header class="home-section__header section-reveal">
+            <span class="home-section__label">Highlands</span>
+            <h2 id="cv-highlands-title" class="home-section__title">Highland Villages & Coffee</h2>
+            <p class="home-section__desc">Materuni coffee tours, Pare and Uluguru mountain hikes with local community encounters.</p>
+          </header>
+          <div data-activity-section="highlands-villages" class="safari-cards-grid"></div>
+        </div>
+      </section>
+
+      <section class="dest-listing-grid-section dest-listing-grid-section--alt" id="rift-maasai" aria-labelledby="cv-rift-title">
+        <div class="container">
+          <header class="home-section__header section-reveal">
+            <span class="home-section__label">Rift Valley</span>
+            <h2 id="cv-rift-title" class="home-section__title">Maasai Land & Rift Safaris</h2>
+            <p class="home-section__desc">Lake Natron, Engaruka ruins and multi-day routes through Maasai country and the Great Rift.</p>
+          </header>
+          <div data-activity-section="rift-maasai" class="safari-cards-grid"></div>
+        </div>
+      </section>
+
+      <section class="dest-listing-grid-section" id="coast-heritage" aria-labelledby="cv-coast-title">
+        <div class="container">
+          <header class="home-section__header section-reveal">
+            <span class="home-section__label">Coast & Heritage</span>
+            <h2 id="cv-coast-title" class="home-section__title">Swahili Coast & Heritage</h2>
+            <p class="home-section__desc">Stone Town walks, Bagamoyo history, Tongoni ruins and island cultural experiences.</p>
+          </header>
+          <div data-activity-section="coast-heritage" class="safari-cards-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script type="module" src="/src/js/activity-packages-main.js"></script>
+  </body>
+</html>

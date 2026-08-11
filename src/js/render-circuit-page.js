@@ -16,7 +16,7 @@ function renderOtherCircuits(currentId) {
       (circuit) => `
         <a class="circuit-teaser" href="${escapeHtml(circuit.pageHref)}" data-reveal>
           <span class="circuit-teaser__thumb">
-            <img src="${escapeHtml(circuit.hero.src)}" alt="" loading="lazy" width="120" height="80" />
+            <img data-src="${escapeHtml(circuit.hero.src)}" data-img-preset="thumb" src="" alt="" loading="lazy" width="120" height="80" decoding="async" />
           </span>
           <span class="circuit-teaser__text">
             <span class="circuit-teaser__name">${escapeHtml(circuit.name)}</span>
@@ -59,7 +59,9 @@ export function renderCircuitPage(containerSelector, circuitId) {
       <header class="circuit-page__hero" data-hero>
         <div class="circuit-page__hero-media">
           <img
-            src="${escapeHtml(circuit.hero.src)}"
+            data-src="${escapeHtml(circuit.hero.src)}"
+            data-img-preset="hero"
+            src=""
             alt="${escapeHtml(circuit.hero.alt)}"
             width="1600"
             height="680"

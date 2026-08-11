@@ -41,57 +41,57 @@ export const experiences = [
       ],
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_2_1.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_2_1.jpg",
           alt: "Museums & Heritage",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_2_2.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_2_2.jpg",
           alt: "Museums & Heritage – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_2.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_2.jpg",
           alt: "Museums & Heritage – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_2_1.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_2_1.jpg",
           alt: "Museums & Heritage",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_2_2.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_2_2.jpg",
           alt: "Museums & Heritage – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_2.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_2.jpg",
           alt: "Museums & Heritage – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_1.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_1.jpg",
           alt: "Museums & Heritage – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_3.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_3.jpg",
           alt: "Museums & Heritage – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_9.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_9.jpg",
           alt: "Museums & Heritage – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_View_Point.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_View_Point.jpg",
           alt: "Museums & Heritage – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Gorge_NCA_Entrance.jpg",
+          src: "/assets/photos/Olduvai_Gorge_NCA_Entrance.jpg",
           alt: "Museums & Heritage – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Museum_NCA_10.jpg",
+          src: "/assets/photos/Olduvai_Museum_NCA_10.jpg",
           alt: "Museums & Heritage – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Olduvai_Museum_NCA_11.jpg",
+          src: "/assets/photos/Olduvai_Museum_NCA_11.jpg",
           alt: "Museums & Heritage – view 10",
         },
       ],
@@ -127,57 +127,57 @@ export const experiences = [
       ],
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Leopard_24.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Leopard_24.jpg",
           alt: "Game Drives",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Lions_22.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Lions_22.jpg",
           alt: "Game Drives – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Ostriches_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Ostriches_20.jpg",
           alt: "Game Drives – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Leopard_24.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Leopard_24.jpg",
           alt: "Game Drives",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Lions_22.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Lions_22.jpg",
           alt: "Game Drives – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Ostriches_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Ostriches_20.jpg",
           alt: "Game Drives – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Valture_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Valture_20.jpg",
           alt: "Game Drives – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Waterbuck_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Waterbuck_20.jpg",
           alt: "Game Drives – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Wildebeests_22.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Wildebeests_22.jpg",
           alt: "Game Drives – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Zebras_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Zebras_20.jpg",
           alt: "Game Drives – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_Wildebeests_03.jpg",
+          src: "/assets/photos/Serengeti_Wildebeests_03.jpg",
           alt: "Game Drives – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Elephant_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Elephant_NCA.jpg",
           alt: "Game Drives – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Ngorongoro_Crater_Hyenas_NCA.jpg",
+          src: "/assets/photos/Ngorongoro_Crater_Hyenas_NCA.jpg",
           alt: "Game Drives – view 10",
         },
       ],
@@ -214,57 +214,57 @@ export const experiences = [
       ],
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_19.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_19.jpg",
           alt: "Cultural Visits",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_22.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_22.jpg",
           alt: "Cultural Visits – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_16.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_16.jpg",
           alt: "Cultural Visits – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_19.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_19.jpg",
           alt: "Cultural Visits",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_22.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_22.jpg",
           alt: "Cultural Visits – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_16.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_16.jpg",
           alt: "Cultural Visits – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_12.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_12.jpg",
           alt: "Cultural Visits – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_15.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_15.jpg",
           alt: "Cultural Visits – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_05.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_05.jpg",
           alt: "Cultural Visits – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Igeleke_Rock_Paintings_Iringa_06.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_06.jpg",
           alt: "Cultural Visits – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Sandstone_Pillars_21.jpg",
+          src: "/assets/photos/Isimila_Sandstone_Pillars_21.jpg",
           alt: "Cultural Visits – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Sandstone_Pillars_24.jpg",
+          src: "/assets/photos/Isimila_Sandstone_Pillars_24.jpg",
           alt: "Cultural Visits – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Isimila_Stone_Age_Site_22.jpg",
+          src: "/assets/photos/Isimila_Stone_Age_Site_22.jpg",
           alt: "Cultural Visits – view 10",
         },
       ],
@@ -300,37 +300,37 @@ export const experiences = [
       ],
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_Wildebeests_03.jpg",
+          src: "/assets/photos/Serengeti_Wildebeests_03.jpg",
           alt: "Great Migration wildebeest herds",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Wildebeests_22.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Wildebeests_22.jpg",
           alt: "Great Migration – gnu river",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_Migration_P103.jpg",
+          src: "/assets/photos/Serengeti_Migration_P103.jpg",
           alt: "Great Migration – plains crossing",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_Wildebeests_03.jpg",
+          src: "/assets/photos/Serengeti_Wildebeests_03.jpg",
           alt: "Great Migration wildebeest herds",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Wildebeests_22.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Wildebeests_22.jpg",
           alt: "Great Migration – gnu river",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_Migration_P103.jpg",
+          src: "/assets/photos/Serengeti_Migration_P103.jpg",
           alt: "Great Migration – plains crossing",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_Gnus_7765.jpg",
+          src: "/assets/photos/Serengeti_Gnus_7765.jpg",
           alt: "Great Migration – gnu herds",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Serengeti_National_Park_Zebras_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Zebras_20.jpg",
           alt: "Great Migration – zebra alongside wildebeest",
         },
       ],
@@ -367,57 +367,57 @@ export const experiences = [
       ],
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Black_and_White_Colobus_67.jpg",
+          src: "/assets/photos/Arusha_National_Park_Black_and_White_Colobus_67.jpg",
           alt: "Hiking & Walking Safaris",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Blue_Monkey_73.jpg",
+          src: "/assets/photos/Arusha_National_Park_Blue_Monkey_73.jpg",
           alt: "Hiking & Walking Safaris – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Directions_86.jpg",
+          src: "/assets/photos/Arusha_National_Park_Directions_86.jpg",
           alt: "Hiking & Walking Safaris – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Black_and_White_Colobus_67.jpg",
+          src: "/assets/photos/Arusha_National_Park_Black_and_White_Colobus_67.jpg",
           alt: "Hiking & Walking Safaris",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Blue_Monkey_73.jpg",
+          src: "/assets/photos/Arusha_National_Park_Blue_Monkey_73.jpg",
           alt: "Hiking & Walking Safaris – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Directions_86.jpg",
+          src: "/assets/photos/Arusha_National_Park_Directions_86.jpg",
           alt: "Hiking & Walking Safaris – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Fig_Tree_Arch_63.jpg",
+          src: "/assets/photos/Arusha_National_Park_Fig_Tree_Arch_63.jpg",
           alt: "Hiking & Walking Safaris – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Giraffes_102.jpg",
+          src: "/assets/photos/Arusha_National_Park_Giraffes_102.jpg",
           alt: "Hiking & Walking Safaris – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_65.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_65.jpg",
           alt: "Hiking & Walking Safaris – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Giraffes_103.jpg",
+          src: "/assets/photos/Arusha_National_Park_Giraffes_103.jpg",
           alt: "Hiking & Walking Safaris – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_66.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_66.jpg",
           alt: "Hiking & Walking Safaris – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_83.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_83.jpg",
           alt: "Hiking & Walking Safaris – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Ngurdoto_Crater_167.jpg",
+          src: "/assets/photos/Arusha_National_Park_Ngurdoto_Crater_167.jpg",
           alt: "Hiking & Walking Safaris – view 10",
         },
       ],
@@ -454,33 +454,33 @@ export const experiences = [
       ],
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_66.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_66.jpg",
           alt: "Flamingos on Momella Lake",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_83.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_83.jpg",
           alt: "Bird watching at Momella Lake",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_65.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_65.jpg",
           alt: "Pink flamingos in Arusha National Park",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_66.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_66.jpg",
           alt: "Flamingos on Momella Lake",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_83.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_83.jpg",
           alt: "Bird watching at Momella Lake",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_65.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_65.jpg",
           alt: "Pink flamingos in Arusha National Park",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Lake_Manyara_Flamingos_01.jpg",
+          src: "/assets/photos/Lake_Manyara_Flamingos_01.jpg",
           alt: "Lake Manyara flamingos",
         },
       ],
@@ -516,57 +516,57 @@ export const experiences = [
       ],
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_02.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_02.jpg",
           alt: "Waterfalls",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_Walking_Path_14.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_Walking_Path_14.jpg",
           alt: "Waterfalls – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_03.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_03.jpg",
           alt: "Waterfalls – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_02.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_02.jpg",
           alt: "Waterfalls",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_Walking_Path_14.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_Walking_Path_14.jpg",
           alt: "Waterfalls – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_03.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_03.jpg",
           alt: "Waterfalls – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_04.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_04.jpg",
           alt: "Waterfalls – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_05.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_05.jpg",
           alt: "Waterfalls – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_15.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_15.jpg",
           alt: "Waterfalls – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_16.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_16.jpg",
           alt: "Waterfalls – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_Walking_Path.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_Walking_Path.jpg",
           alt: "Waterfalls – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_Walking_Path_06.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_Walking_Path_06.jpg",
           alt: "Waterfalls – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Materuni_Waterfalls_Walking_Path_07.jpg",
+          src: "/assets/photos/Materuni_Waterfalls_Walking_Path_07.jpg",
           alt: "Waterfalls – view 10",
         },
       ],
@@ -603,57 +603,57 @@ export const experiences = [
       ],
       images: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Fig_Tree_Arch_63.jpg",
+          src: "/assets/photos/Arusha_National_Park_Fig_Tree_Arch_63.jpg",
           alt: "Rock Climbing & Ascents",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_83.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_83.jpg",
           alt: "Rock Climbing & Ascents – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Tululusia_Waterfalls_33.jpg",
+          src: "/assets/photos/Arusha_National_Park_Tululusia_Waterfalls_33.jpg",
           alt: "Rock Climbing & Ascents – view 3",
         },
       ],
       gallery: [
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Fig_Tree_Arch_63.jpg",
+          src: "/assets/photos/Arusha_National_Park_Fig_Tree_Arch_63.jpg",
           alt: "Rock Climbing & Ascents",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Momella_Lake_Flamingos_83.jpg",
+          src: "/assets/photos/Arusha_National_Park_Momella_Lake_Flamingos_83.jpg",
           alt: "Rock Climbing & Ascents – view 2",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Tululusia_Waterfalls_33.jpg",
+          src: "/assets/photos/Arusha_National_Park_Tululusia_Waterfalls_33.jpg",
           alt: "Rock Climbing & Ascents – view 3",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Mount_Meru_Trekking_02.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_Trekking_02.jpg",
           alt: "Rock Climbing & Ascents – view 4",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Arusha_National_Park_Giraffes_104.jpg",
+          src: "/assets/photos/Arusha_National_Park_Giraffes_104.jpg",
           alt: "Rock Climbing & Ascents – view 5",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_12.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_12.jpg",
           alt: "Rock Climbing & Ascents – view 6",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_02.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_02.jpg",
           alt: "Rock Climbing & Ascents – view 7",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_07.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_07.jpg",
           alt: "Rock Climbing & Ascents – view 8",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Mount_Oldonyo_Lengai_10.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_10.jpg",
           alt: "Rock Climbing & Ascents – view 9",
         },
         {
-          src: "https://www.tanzaniatourism.com/images/uploads/Streams_from_Oldoinyo_Lengai_03.jpg",
+          src: "/assets/photos/Streams_from_Oldoinyo_Lengai_03.jpg",
           alt: "Rock Climbing & Ascents – view 10",
         },
       ],
@@ -665,5 +665,6 @@ export function getExperienceById(id) {
 }
 
 export function experiencePageUrl(exp) {
+  if (exp.id === "bird-watching") return "/bird-watching.html";
   return `/experiences/${encodeURIComponent(exp.id)}.html`;
 }

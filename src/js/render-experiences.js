@@ -13,11 +13,13 @@ function renderSlides(images) {
       (img, i) => `
         <div class="dest-slideshow__slide dest-slideshow__slide--motion ${i === 0 ? "is-active" : ""}" data-slide>
           <img
-            src="${escapeHtml(img.src)}"
+            data-src="${escapeHtml(img.src)}"
+            data-img-preset="card"
+            src=""
             alt="${escapeHtml(img.alt)}"
             width="640"
             height="400"
-            loading="${i === 0 ? "eager" : "lazy"}"
+            loading="lazy"
             decoding="async"
           />
         </div>
@@ -45,7 +47,9 @@ function renderExperienceCard(exp, index) {
         <div class="dest-slideshow__track dest-slideshow__track--cinema">
           <div class="dest-slideshow__slide is-active" data-slide>
             <img
-              src="${escapeHtml(cover.src)}"
+              data-src="${escapeHtml(cover.src)}"
+              data-img-preset="card"
+              src=""
               alt="${escapeHtml(cover.alt || exp.name)}"
               width="640"
               height="400"

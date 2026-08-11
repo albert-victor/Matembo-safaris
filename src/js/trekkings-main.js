@@ -3,6 +3,7 @@ import { renderSiteNav } from "./render-site-nav.js";
 import { renderSiteFooter } from "./render-home.js";
 import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
+import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
 import { trekkingPackages, trekkingSectionOrder } from "../data/trekking-packages.js";
 
@@ -17,7 +18,7 @@ const GRID_BY_SECTION = {
   "eastern-mountains": "#trek-eastern-mountains-grid",
 };
 
-function renderTrekkingSections() {
+async function renderTrekkingSections() {
   for (const sectionId of trekkingSectionOrder) {
     const selector = GRID_BY_SECTION[sectionId];
     if (!selector) continue;
@@ -31,16 +32,18 @@ function renderTrekkingSections() {
     }
 
     section?.removeAttribute("hidden");
-    renderPackageCards(selector, { packages, viewLabel: "View Trek" });
+    await renderPackageCards(selector, { packages, viewLabel: "View Trek" });
   }
 }
 
-function init() {
+async function init() {
   renderSiteNav();
   renderSiteFooter();
-  renderTrekkingSections();
   initSiteNav();
+
+  await renderTrekkingSections();
   initCardTilt();
+  initLazyImages();
   initScrollReveal();
 }
 

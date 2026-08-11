@@ -3,6 +3,7 @@ import { renderSiteNav } from "./render-site-nav.js";
 import { renderSiteFooter } from "./render-home.js";
 import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
+import { initLazyImages } from "./lazy-images.js";
 
 function init() {
   try {
@@ -10,6 +11,7 @@ function init() {
     renderSiteFooter();
     renderAllCircuitsPage();
     initSiteNav();
+    initLazyImages();
   } catch (error) {
     console.error("Matembo circuits page init failed:", error);
   } finally {

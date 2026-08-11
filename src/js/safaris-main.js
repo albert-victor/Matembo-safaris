@@ -3,8 +3,8 @@ import { renderSiteNav } from "./render-site-nav.js";
 import { renderSiteFooter } from "./render-home.js";
 import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
+import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
-import { safariPackages, safariCircuitOrder } from "../data/safari-packages.js";
 
 const GRID_BY_CIRCUIT = {
   "Northern Circuit": "#safari-northern-circuit-grid",
@@ -17,7 +17,8 @@ const GRID_BY_CIRCUIT = {
   "Ocean Islands": "#safari-ocean-islands-grid",
 };
 
-function renderCircuitSections() {
+async function renderCircuitSections() {
+  const { safariPackages, safariCircuitOrder } = await import("../data/safari-packages.js");
   const circuits =
     safariCircuitOrder?.length > 0
       ? safariCircuitOrder
@@ -36,16 +37,18 @@ function renderCircuitSections() {
     }
 
     section?.removeAttribute("hidden");
-    renderPackageCards(selector, { packages });
+    await renderPackageCards(selector, { packages });
   }
 }
 
-function init() {
+async function init() {
   renderSiteNav();
   renderSiteFooter();
-  renderCircuitSections();
   initSiteNav();
+
+  await renderCircuitSections();
   initCardTilt();
+  initLazyImages();
   initScrollReveal();
 }
 

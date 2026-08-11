@@ -1,14 +1,16 @@
-/* Sticky parallax quote section */
+/* Sticky quote — single full-viewport panel (100vh) */
 
 .sticky-quote {
   position: relative;
   isolation: isolate;
+  height: 100svh;
+  max-height: 100svh;
+  overflow: hidden;
 }
 
-.sticky-quote__sticky {
-  position: sticky;
-  top: 0;
-  min-height: 100svh;
+.sticky-quote__panel {
+  position: relative;
+  height: 100%;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -17,70 +19,96 @@
 .sticky-quote__media {
   position: absolute;
   inset: 0;
+  background: #1a2e1f;
 }
 
 .sticky-quote__media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 38%;
 }
 
 .sticky-quote__scrim {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    135deg,
-    rgba(10, 10, 10, 0.72) 0%,
-    rgba(10, 10, 10, 0.45) 45%,
-    rgba(10, 10, 10, 0.65) 100%
+    160deg,
+    rgba(10, 10, 10, 0.52) 0%,
+    rgba(22, 61, 40, 0.35) 42%,
+    rgba(10, 10, 10, 0.58) 100%
   );
 }
 
 .sticky-quote__content {
   position: relative;
   z-index: 1;
-  max-width: 38rem;
-  padding: 2rem 1.5rem;
+  width: min(100% - 2.5rem, 58rem);
+  padding: clamp(1.25rem, 4vw, 2.5rem) clamp(1rem, 3vw, 2rem);
   text-align: center;
   color: var(--color-white);
 }
 
 .sticky-quote__signature {
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.5rem;
   font-family: var(--font-signature);
-  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-size: clamp(1.5rem, 3.6vw, 2.35rem);
+  line-height: 1.1;
   color: var(--color-gold-light);
-  text-shadow: 0 2px 16px rgba(10, 10, 10, 0.4);
+  text-shadow: 0 2px 20px rgba(10, 10, 10, 0.45);
 }
 
 .sticky-quote__title {
-  margin: 0 0 0.85rem;
-  font-family: var(--font-display);
-  font-size: clamp(1.75rem, 4vw, 2.75rem);
-  font-weight: 500;
-  line-height: 1.15;
-  font-style: italic;
+  margin: 0 0 clamp(1rem, 2.5vw, 1.35rem);
+  font-family: var(--font-signature);
+  font-size: clamp(2rem, 5.2vw, 3.35rem);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  text-shadow: 0 3px 24px rgba(10, 10, 10, 0.42);
 }
 
 .sticky-quote__body {
-  margin: 0 0 1.25rem;
-  font-size: 0.9375rem;
-  line-height: 1.65;
-  color: rgba(255, 255, 255, 0.88);
+  margin: 0 auto clamp(1.25rem, 3vw, 1.75rem);
+  max-width: min(52rem, 100%);
+  font-family: var(--font-body);
+  font-size: clamp(0.9375rem, 1.65vw, 1.0625rem);
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 14px rgba(10, 10, 10, 0.35);
+  text-wrap: pretty;
 }
 
 .sticky-quote__cta {
   margin-inline: auto;
+  min-height: 2.75rem;
+  padding: 0.7rem 2rem;
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  border-color: rgba(255, 255, 255, 0.82);
+  background: rgba(10, 10, 10, 0.18);
 }
 
-.sticky-quote__spacer {
-  height: 30vh;
-  pointer-events: none;
+.sticky-quote__cta:hover,
+.sticky-quote__cta:focus-visible {
+  color: var(--color-ink);
+  border-color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 6px 22px rgba(10, 10, 10, 0.2);
 }
 
 @media (max-width: 640px) {
-  .sticky-quote__spacer {
-    height: 15vh;
+  .sticky-quote__content {
+    width: min(100% - 1.75rem, 58rem);
+    padding-inline: 0.85rem;
+  }
+
+  .sticky-quote__title {
+    font-size: clamp(1.65rem, 8vw, 2.35rem);
+  }
+
+  .sticky-quote__body {
+    font-size: 0.9rem;
+    line-height: 1.68;
   }
 }

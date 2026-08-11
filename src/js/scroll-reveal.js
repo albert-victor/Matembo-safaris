@@ -25,34 +25,158 @@
   ".site-footer__social",
 ].join(", ");
 
+/** Match eon.co.tz WOW.js stagger steps (40ms increments) */
+import { waitForCardMedia } from "./lazy-images.js";
+
+const STAGGER_MS = 40;
+const STAGGER_CAP_MS = 240;
+/** Trigger animation before element fully enters view (like AOS offset: 120) */
+const SCROLL_OFFSET_PX = 120;
+
+function collectRevealTargets(root) {
+  const seen = new Set();
+  const elements = [];
+
+  root.querySelectorAll(REVEAL_SELECTORS).forEach((el) => {
+    if (seen.has(el) || el.classList.contains("is-visible")) return;
+    seen.add(el);
+    elements.push(el);
+  });
+
+  const topLevel = elements.filter(
+    (el) => !elements.some((other) => other !== el && other.contains(el))
+  );
+
+  return topLevel.sort(
+    (a, b) =>
+      a.getBoundingClientRect().top - b.getBoundingClientRect().top ||
+      (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1)
+  );
+}
+
+function cascadeRevealTargets(el) {
+  el.querySelectorAll(REVEAL_SELECTORS).forEach((child) => {
+    if (child !== el) child.classList.add("is-visible");
+  });
+}
+
+function getRevealDelay(el, batchIndex) {
+  const attr = el.getAttribute("data-reveal-delay");
+  if (attr === "1") return 100;
+  if (attr === "2") return 200;
+  const wowDelay = el.getAttribute("data-wow-delay");
+  if (wowDelay && wowDelay.endsWith("ms")) {
+    const parsed = Number.parseInt(wowDelay, 10);
+    if (!Number.isNaN(parsed)) return parsed;
+  }
+  return Math.min(batchIndex * STAGGER_MS, STAGGER_CAP_MS);
+}
+
+function revealElement(el, batchIndex = 0) {
+  if (!el || el.classList.contains("is-visible")) return;
+
+  const delay = getRevealDelay(el, batchIndex);
+  el.style.setProperty("--reveal-delay", `${delay}ms`);
+
+  window.setTimeout(() => {
+    if (el.classList.contains("is-visible")) return;
+    el.classList.add("is-visible");
+    cascadeRevealTargets(el);
+  }, delay);
+}
+
+function isCardReveal(el) {
+  return el.matches(".dest-card, .safari-card") || el.querySelector("img[data-src], .safari-card__image");
+}
+
+function revealWhenReady(el, batchIndex = 0) {
+  revealElement(el, batchIndex);
+  if (isCardReveal(el)) {
+    waitForCardMedia(el);
+  }
+}
+
 export function initScrollReveal(root = document) {
+  document.documentElement.classList.add("js-enhanced");
+
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   ).matches;
 
-  const elements = root.querySelectorAll(REVEAL_SELECTORS);
+  const elements = collectRevealTargets(root);
+  if (!elements.length) return;
 
   if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-    elements.forEach((el) => el.classList.add("is-visible"));
+    elements.forEach((el) => {
+      el.classList.add("is-visible");
+      cascadeRevealTargets(el);
+    });
     return;
   }
 
+  // #region agent log
+  fetch("http://127.0.0.1:7315/ingest/1b98e4f6-7f8e-4c21-a775-a6108c5ffb25", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "260cb5" },
+    body: JSON.stringify({
+      sessionId: "260cb5",
+      location: "scroll-reveal.js:init",
+      message: "scroll reveal init",
+      data: { count: elements.length, path: location.pathname, mode: "wow-style" },
+      hypothesisId: "EON",
+      timestamp: Date.now(),
+      runId: "eon-match",
+    }),
+  }).catch(() => {});
+  // #endregion
+
+  let batchCounter = 0;
+
   const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        obs.unobserve(entry.target);
+    (entries) => {
+      const intersecting = entries
+        .filter((entry) => entry.isIntersecting)
+        .map((entry) => entry.target)
+        .sort(
+          (a, b) =>
+            a.getBoundingClientRect().top - b.getBoundingClientRect().top
+        );
+
+      if (!intersecting.length) return;
+
+      intersecting.forEach((el) => {
+        revealWhenReady(el, batchCounter);
+        batchCounter += 1;
+        observer.unobserve(el);
       });
+
+      // #region agent log
+      fetch("http://127.0.0.1:7315/ingest/1b98e4f6-7f8e-4c21-a775-a6108c5ffb25", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "260cb5" },
+        body: JSON.stringify({
+          sessionId: "260cb5",
+          location: "scroll-reveal.js:intersect",
+          message: "elements revealed on scroll",
+          data: {
+            count: intersecting.length,
+            path: location.pathname,
+            scrollY: Math.round(window.scrollY),
+          },
+          hypothesisId: "EON",
+          timestamp: Date.now(),
+          runId: "eon-match",
+        }),
+      }).catch(() => {});
+      // #endregion
     },
-    { threshold: 0.08, rootMargin: "0px 0px -4% 0px" }
+    {
+      threshold: 0,
+      rootMargin: `0px 0px ${SCROLL_OFFSET_PX}px 0px`,
+    }
   );
 
-  elements.forEach((el) => {
-    if (!el.classList.contains("is-visible")) {
-      observer.observe(el);
-    }
+  requestAnimationFrame(() => {
+    elements.forEach((el) => observer.observe(el));
   });
-
-  return observer;
 }

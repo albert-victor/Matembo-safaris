@@ -12,22 +12,26 @@ function destinationHref(dest) {
   return `/destinations/${encodeURIComponent(dest.id)}.html`;
 }
 
-function renderSlides(images, motionClass = "") {
+function renderSlides(images, motionClass = "", cardIndex = 0) {
+  const eagerFirst = cardIndex < 8;
   return images
-    .map(
-      (img, i) => `
+    .map((img, i) => {
+      const eager = eagerFirst && i === 0;
+      const srcAttrs = eager
+        ? `src="${escapeHtml(img.src)}" decoding="async"`
+        : `data-src="${escapeHtml(img.src)}" src="" loading="lazy" decoding="async"`;
+      return `
         <div class="dest-slideshow__slide ${motionClass} ${i === 0 ? "is-active" : ""}" data-slide>
           <img
-            src="${escapeHtml(img.src)}"
+            class="${eager ? "is-loaded" : ""}"
+            ${srcAttrs}
             alt="${escapeHtml(img.alt)}"
             width="640"
             height="400"
-            loading="${i === 0 ? "eager" : "lazy"}"
-            decoding="async"
           />
         </div>
-      `
-    )
+      `;
+    })
     .join("");
 }
 
@@ -67,7 +71,7 @@ function renderStyleA(dest, index) {
             <span class="dest-card__bracket dest-card__bracket--tl" aria-hidden="true"></span>
             <span class="dest-card__bracket dest-card__bracket--br" aria-hidden="true"></span>
             <div class="dest-slideshow__track">
-              ${renderSlides(dest.images, "dest-slideshow__slide--motion")}
+              ${renderSlides(dest.images, "dest-slideshow__slide--motion", index)}
             </div>
             <div class="dest-card__overlay dest-card__overlay--gold" aria-hidden="true"></div>
             <div class="dest-card__overlay dest-card__overlay--green" aria-hidden="true"></div>
@@ -109,7 +113,7 @@ function renderStyleB(dest, index) {
     <article class="dest-card dest-card--b dest-card--teaser" id="${escapeHtml(dest.id)}" data-reveal ${delay ? `data-reveal-delay="${delay}"` : ""}>
       <div class="dest-card__cinema" data-slideshow data-interval="5200">
         <div class="dest-slideshow__track dest-slideshow__track--cinema">
-          ${renderSlides(dest.images)}
+          ${renderSlides(dest.images, "", index)}
         </div>
         <div class="dest-card__overlay dest-card__overlay--gold" aria-hidden="true"></div>
         <div class="dest-card__overlay dest-card__overlay--green" aria-hidden="true"></div>
@@ -150,7 +154,7 @@ function renderStyleC(dest, index) {
       <div class="dest-card__atlas">
         <div class="dest-card__atlas-media" data-slideshow data-interval="6000">
           <div class="dest-slideshow__track">
-            ${renderSlides(dest.images, "dest-slideshow__slide--motion")}
+            ${renderSlides(dest.images, "dest-slideshow__slide--motion", index)}
           </div>
           <div class="dest-card__overlay dest-card__overlay--gold" aria-hidden="true"></div>
           <div class="dest-card__compass" aria-hidden="true">✦</div>
