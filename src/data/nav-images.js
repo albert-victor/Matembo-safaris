@@ -15,6 +15,7 @@ export const NAV_IMAGES = {
   lemosho7d: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_04.jpg",
   machame8d: "/assets/photos/Kilimanjaro_Climb_Machame_Route_03.jpg",
   shiraDay: "/assets/photos/Kilimanjaro_Climb_Shira_Plateau_02.jpg",
+  walkingSafaris: "/assets/about/walking safaris.jpg",
   migration: "/assets/photos/Serengeti_Wildebeests_03.jpg",
   olduvai: "/assets/photos/Olduvai_Gorge_NCA_2_1.jpg",
   udzungwa: "/assets/photos/Udzungwa_Mountains_National_Park_01.jpg",

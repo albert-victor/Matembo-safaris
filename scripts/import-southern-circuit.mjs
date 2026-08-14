@@ -14,7 +14,7 @@ const MAX_GALLERY = 12;
 const MIN_GALLERY = 4;
 const CARD_IMAGES = 3;
 
-/** Matembo is based in Iringa — import all non-northern TTB circuits we operate from the south. */
+/** Matembo is based in Iringa – import all non-northern TTB circuits we operate from the south. */
 const LISTING_SOURCES = [
   {
     name: "Southern Circuit",
@@ -453,13 +453,13 @@ for (const { card, source } of listing) {
   const verifiedUrls = await buildVerifiedGallery(rawUrls, urlCache, MAX_GALLERY);
 
   if (verifiedUrls.length < MIN_GALLERY) {
-    console.warn(`⚠ ${card.name}: only ${verifiedUrls.length} working images (need ${MIN_GALLERY}) — skipped`);
+    console.warn(`⚠ ${card.name}: only ${verifiedUrls.length} working images (need ${MIN_GALLERY}) – skipped`);
     continue;
   }
 
   const imageEntries = verifiedUrls.map((src, i) => ({
     src,
-    alt: `${card.name}${i ? ` — view ${i + 1}` : ""}`,
+    alt: `${card.name}${i ? ` – view ${i + 1}` : ""}`,
   }));
 
   const uniqueForCards = pickCardImages(imageEntries);
@@ -490,17 +490,17 @@ for (const { card, source } of listing) {
     gallery: imageEntries,
   });
 
-  console.log(`  ✓ [${source.circuitLabel}] ${card.name} — ${imageEntries.length} photos kept`);
+  console.log(`  ✓ [${source.circuitLabel}] ${card.name} – ${imageEntries.length} photos kept`);
 }
 
-const file = `/** Auto-generated from tanzaniatourism.com — run: npm run import:southern */
+const file = `/** Auto-generated from tanzaniatourism.com – run: npm run import:southern */
 export const TTB_COM_ORIGIN = ${JSON.stringify(BASE)};
 export const TTB_SOUTHERN_CIRCUIT_URL = ${JSON.stringify(SOURCE_PAGE)};
 
 export const southernCircuitMeta = {
   id: "southern",
   name: "Southern Tanzania",
-  description: "Ruaha, Mikumi, Udzungwa, Nyerere, Katavi, Kilwa, Mahale & more — guided from Iringa",
+  description: "Ruaha, Mikumi, Udzungwa, Nyerere, Katavi, Kilwa, Mahale & more – guided from Iringa",
   sourceUrl: ${JSON.stringify(SOURCE_PAGE)},
 };
 

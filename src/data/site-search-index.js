@@ -98,22 +98,6 @@ export async function loadSearchIndex() {
   return entries;
 }
 
-/** Curated quick links shown before the user types. */
-export function getPopularSearchItems() {
-  return [
-    { title: "Serengeti National Park", subtitle: "Destination", href: "/destinations/serengeti.html", image: null },
-    { title: "Ngorongoro Crater", subtitle: "Destination", href: "/destinations/ngorongoro.html", image: null },
-    { title: "3 Days Serengeti & Ngorongoro", subtitle: "Safari package", href: "/packages/3-days-to-serengeti-national-park-and-ngorongoro-crater.html", image: null },
-    { title: "Ruaha Safaris", subtitle: "From Iringa", href: "/ruaha-safaris.html", image: null },
-    { title: "Game Drive Safaris", subtitle: "Activity listing", href: "/game-drives.html", image: null },
-    { title: "Bird Watching", subtitle: "Activity listing", href: "/bird-watching.html", image: null },
-    { title: "Cultural Visits", subtitle: "Activity listing", href: "/cultural-visits.html", image: null },
-    { title: "Beach Holiday", subtitle: "Coast & islands", href: "/beach-holiday.html", image: null },
-    { title: "Kilimanjaro Treks", subtitle: "Climbing", href: "/trekkings.html", image: null },
-    { title: "Plan Your Safari", subtitle: "Contact", href: "/contact.html", image: null },
-  ];
-}
-
 export function searchSiteIndex(entries, query, limit = 12) {
   const q = query.trim().toLowerCase();
   if (!q || q.length < 2) return [];

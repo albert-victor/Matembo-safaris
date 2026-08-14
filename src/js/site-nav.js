@@ -1,14 +1,27 @@
 ﻿import { loadImagesIn } from "./lazy-images.js";
 
+let syncMegaModeFn = null;
+
+function getMegaItems(header) {
+  return header.querySelectorAll("[data-mega]");
+}
+
+export function refreshMegaNavHandlers() {
+  syncMegaModeFn?.();
+}
+
 export function initSiteNav() {
   const header = document.querySelector("[data-site-header]");
-  if (!header) return;
+  if (!header || header.dataset.navReady) {
+    refreshMegaNavHandlers();
+    return;
+  }
+  header.dataset.navReady = "1";
 
   const navPanel = header.querySelector("#site-nav-panel");
   const toggle = header.querySelector("[data-nav-toggle]");
   const closeBtn = header.querySelector("[data-nav-close]");
   const backdrop = document.querySelector("[data-nav-backdrop]");
-  const megaItems = header.querySelectorAll("[data-mega]");
   const desktopQuery = window.matchMedia("(min-width: 901px)");
   let lastScrollY = window.scrollY;
   let closeTimer = null;
@@ -64,7 +77,7 @@ export function initSiteNav() {
 
   function openMega(item) {
     clearTimeout(closeTimer);
-    megaItems.forEach((entry) => {
+    getMegaItems(header).forEach((entry) => {
       const trigger = entry.querySelector(".site-nav__trigger");
       const panel = entry.querySelector(".mega-menu");
       const isTarget = entry === item;
@@ -85,7 +98,7 @@ export function initSiteNav() {
 
   function closeAllMega() {
     clearTimeout(closeTimer);
-    megaItems.forEach((item) => {
+    getMegaItems(header).forEach((item) => {
       const trigger = item.querySelector(".site-nav__trigger");
       const panel = item.querySelector(".mega-menu");
       item.classList.remove("is-open");
@@ -101,11 +114,8 @@ export function initSiteNav() {
 
   function toggleMega(item) {
     const willOpen = !item.classList.contains("is-open");
-    if (willOpen) {
-      openMega(item);
-    } else {
-      closeAllMega();
-    }
+    if (willOpen) openMega(item);
+    else closeAllMega();
   }
 
   function scheduleClose() {
@@ -117,9 +127,8 @@ export function initSiteNav() {
   function bindMegaHover(item) {
     if (megaHandlers.has(item)) return;
 
-    const trigger = item.querySelector(".site-nav__trigger");
     const panel = item.querySelector(".mega-menu");
-    if (!trigger || !panel) return;
+    if (!panel) return;
 
     const onEnter = () => openMega(item);
     const onLeave = () => scheduleClose();
@@ -146,12 +155,14 @@ export function initSiteNav() {
   }
 
   function syncMegaMode() {
-    megaItems.forEach((item) => {
+    getMegaItems(header).forEach((item) => {
       if (isDesktop()) bindMegaHover(item);
       else unbindMegaHover(item);
     });
     if (!isDesktop()) closeAllMega();
   }
+
+  syncMegaModeFn = syncMegaMode;
 
   toggle?.addEventListener("click", (event) => {
     event.stopPropagation();
@@ -165,30 +176,43 @@ export function initSiteNav() {
 
   backdrop?.addEventListener("click", () => setMobileOpen(false));
 
-  megaItems.forEach((item) => {
-    const trigger = item.querySelector(".site-nav__trigger");
+  navPanel?.addEventListener("click", (event) => {
+    const trigger = event.target.closest(".site-nav__trigger");
+    if (!trigger) return;
+
+    const item = trigger.closest("[data-mega]");
+    if (!item) return;
+
     const panel = item.querySelector(".mega-menu");
-    if (!trigger || !panel) return;
+    if (!panel) return;
 
-    trigger.addEventListener("click", (event) => {
-      if (isDesktop() && trigger.tagName === "A") return;
+    if (isDesktop() && trigger.tagName === "A") return;
 
-      event.preventDefault();
-      event.stopPropagation();
-      toggleMega(item);
-    });
+    event.preventDefault();
+    event.stopPropagation();
+    toggleMega(item);
+  });
 
-    panel.addEventListener("click", (event) => {
-      event.stopPropagation();
-    });
+  navPanel?.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
 
-    trigger.addEventListener("keydown", (event) => {
-      if (event.key !== "Enter" && event.key !== " ") return;
-      if (isDesktop() && trigger.tagName === "A") return;
+    const trigger = event.target.closest(".site-nav__trigger");
+    if (!trigger) return;
 
-      event.preventDefault();
-      toggleMega(item);
-    });
+    const item = trigger.closest("[data-mega]");
+    if (!item) return;
+
+    const panel = item.querySelector(".mega-menu");
+    if (!panel) return;
+
+    if (isDesktop() && trigger.tagName === "A") return;
+
+    event.preventDefault();
+    toggleMega(item);
+  });
+
+  navPanel?.addEventListener("click", (event) => {
+    if (event.target.closest(".mega-menu")) event.stopPropagation();
   });
 
   document.addEventListener("click", (event) => {

@@ -26,7 +26,7 @@ export const aboutPageData = {
     signature: "Matembo Safari & Tours",
     title: "People who know the road",
     lead: "A Tanzanian operator built on field knowledge – from Gangilonga, Iringa, across every circuit you can name.",
-    image: "/assets/about/descriptions.jpg",
+    image: "/assets/about/about hero.jpg",
   },
   story: {
     label: "Our Story",

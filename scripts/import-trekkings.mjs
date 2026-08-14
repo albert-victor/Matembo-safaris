@@ -26,7 +26,7 @@ const SECTIONS = [
     id: "kilimanjaro-day-hikes",
     label: "Day Hikes",
     title: "Kilimanjaro Day Hikes",
-    desc: "Single-day ascents on Marangu, Machame and the Shira Plateau — ideal acclimatisation before a summit trek.",
+    desc: "Single-day ascents on Marangu, Machame and the Shira Plateau – ideal acclimatisation before a summit trek.",
   },
   {
     id: "kilimanjaro-4-5-days",
@@ -44,7 +44,7 @@ const SECTIONS = [
     id: "kilimanjaro-7-days",
     label: "7 Days",
     title: "7 Day Kilimanjaro Routes",
-    desc: "Shira, Rongai, Lemosho, Machame variants and the Western Breach — extra days for acclimatisation.",
+    desc: "Shira, Rongai, Lemosho, Machame variants and the Western Breach – extra days for acclimatisation.",
   },
   {
     id: "kilimanjaro-8-9-days",
@@ -268,7 +268,7 @@ async function main() {
   const missing = listings.filter((item) => !byId.has(item.slug));
   if (missing.length) {
     console.warn(
-      `⚠ Missing ${missing.length} packages in safari-packages.js — run npm run import:safaris first:`
+      `⚠ Missing ${missing.length} packages in safari-packages.js – run npm run import:safaris first:`
     );
     missing.forEach((item) => console.warn(`  - ${item.slug}`));
   }
@@ -290,7 +290,7 @@ async function main() {
     packageIds: trekkingPackages.filter((pkg) => pkg.sectionId === section.id).map((pkg) => pkg.id),
   })).filter((section) => section.packageIds.length > 0);
 
-  const file = `/** Auto-generated from tanzaniatourism.com — run: npm run import:trekkings */
+  const file = `/** Auto-generated from tanzaniatourism.com – run: npm run import:trekkings */
 export const TTB_TREKKING_URLS = ${JSON.stringify(LISTINGS)};
 
 export const trekkingPackagesMeta = {

@@ -1,6 +1,6 @@
 ﻿/** Homepage section copy & IDs */
 export const popularDestinationsIntro = {
-  label: "Popular Destinations",
+  label: "Destinations Inspiration",
   title: "Tanzania's Wild Places",
   desc: "Serengeti, Ruaha, Mikumi and the parks guests request most – each with journeys ready to tailor.",
 };

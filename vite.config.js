@@ -15,9 +15,6 @@ function getHtmlInputsFromDir(dir, prefix) {
 function sitemapPlugin() {
   return {
     name: "matembo-sitemap",
-    buildStart() {
-      generateSitemap("public");
-    },
     closeBundle() {
       generateSitemap("dist");
     },

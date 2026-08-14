@@ -1,4 +1,4 @@
-﻿import { loadSearchIndex, searchSiteIndex, getPopularSearchItems } from "../data/site-search-index.js";
+﻿import { loadSearchIndex, searchSiteIndex } from "../data/site-search-index.js";
 import { NAV_IMAGE_FALLBACK } from "../data/nav-images.js";
 
 function escapeHtml(text) {
@@ -59,18 +59,8 @@ export function initSiteSearch(scope = document) {
     });
   }
 
-  function renderPopular() {
-    results.innerHTML = `
-      <div class="site-search__popular">
-        ${getPopularSearchItems()
-          .map(
-            (item) => `
-              <a class="site-search__popular-link" href="${escapeHtml(item.href)}">${escapeHtml(item.title)}</a>
-            `
-          )
-          .join("")}
-      </div>
-    `;
+  function renderIdleState() {
+    results.innerHTML = "";
   }
 
   function openSearch() {
@@ -79,7 +69,7 @@ export function initSiteSearch(scope = document) {
     toggle.setAttribute("aria-expanded", "true");
     header?.classList.add("is-search-open");
     document.documentElement.classList.add("is-search-open");
-    renderPopular();
+    renderIdleState();
     window.requestAnimationFrame(() => input.focus());
     getIndex();
   }
@@ -97,7 +87,7 @@ export function initSiteSearch(scope = document) {
   async function runSearch() {
     const query = input.value.trim();
     if (query.length < 2) {
-      renderPopular();
+      renderIdleState();
       return;
     }
     results.innerHTML = `<p class="site-search__loading">Searching…</p>`;
@@ -125,7 +115,7 @@ export function initSiteSearch(scope = document) {
       return;
     }
     if (event.key === "Enter") {
-      const first = results.querySelector(".site-search__result, .site-search__popular-link");
+      const first = results.querySelector(".site-search__result");
       if (first) {
         event.preventDefault();
         first.click();
@@ -135,7 +125,7 @@ export function initSiteSearch(scope = document) {
 
   form?.addEventListener("submit", (event) => {
     event.preventDefault();
-    const first = results.querySelector(".site-search__result, .site-search__popular-link");
+    const first = results.querySelector(".site-search__result");
     if (first) {
       first.click();
       return;

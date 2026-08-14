@@ -11,20 +11,117 @@
   socialLinks,
 } from "../data/home-data.js";
 import { heroSlides } from "../data/hero-slides-data.js";
+import { formatCopy, escapeHtml } from "./content-utils.js";
 
-function escapeHtml(text) {
-  const div = document.createElement("div");
-  div.textContent = text;
-  return div.innerHTML;
+function escapeHtmlAttr(text) {
+  return escapeHtml(text);
+}
+
+function heroImgVars(slide) {
+  const focus = slide.focus || "center center";
+  const mobile = slide.mobileFocus || focus;
+  return `--hero-focus: ${focus}; --hero-focus-mobile: ${mobile}`;
 }
 
 function renderStars(rating) {
   return "★".repeat(rating) + "☆".repeat(Math.max(0, 5 - rating));
 }
 
+function buildHeroSlideMarkup(slide, i) {
+  return `
+    <div
+      class="hero-showcase__slide${i === 0 ? " is-active" : ""}"
+      data-hero-slide="${i}"
+      data-motion="${escapeHtml(slide.motion || "zoom-in")}"
+    >
+      <img
+        class="hero-showcase__img"
+        ${i === 0 ? `src="${escapeHtml(slide.image)}" fetchpriority="high"` : `data-src="${escapeHtml(slide.image)}" src="" loading="lazy"`}
+        alt="${escapeHtml(slide.imageAlt)}"
+        width="1920"
+        height="1080"
+        decoding="async"
+        style="${heroImgVars(slide)}"
+      />
+      <div class="hero-showcase__overlay" aria-hidden="true">
+        <div class="hero-showcase__overlay-tint"></div>
+        <div class="hero-showcase__overlay-vignette"></div>
+        <div class="hero-showcase__overlay-scrim"></div>
+        <div class="hero-showcase__overlay-glow"></div>
+        <div class="hero-showcase__overlay-grain"></div>
+      </div>
+    </div>
+  `;
+}
+
+function buildHeroPanelMarkup(slide, i) {
+  return `
+    <article
+      class="hero-showcase__panel${i === 0 ? " is-active" : ""}"
+      data-hero-panel="${i}"
+      data-text-layout="${escapeHtml(slide.textLayout || "center")}"
+      aria-hidden="${i === 0 ? "false" : "true"}"
+    >
+      <div class="hero-showcase__copy">
+        <p class="hero-showcase__signature">${formatCopy(slide.signature)}</p>
+        <h1 class="hero-showcase__title">${formatCopy(slide.title)}</h1>
+        <p class="hero-showcase__lead">${formatCopy(slide.lead)}</p>
+      </div>
+      <a href="${escapeHtmlAttr(slide.cta.href)}" class="btn btn--ghost hero-showcase__cta">${formatCopy(slide.cta.label)}</a>
+    </article>
+  `;
+}
+
+function buildHeroDotMarkup(slide, i) {
+  return `
+    <button
+      type="button"
+      class="hero-showcase__dot${i === 0 ? " is-active" : ""}"
+      data-hero-dot="${i}"
+      aria-label="Show ${escapeHtml(slide.title)}"
+      aria-selected="${i === 0 ? "true" : "false"}"
+    ></button>
+  `;
+}
+
+export function enhanceHeroSlideshow(root = document.querySelector("#home-hero")) {
+  const section = root?.querySelector("[data-hero-slideshow]");
+  if (!section) return;
+
+  const slidesEl = section.querySelector(".hero-showcase__slides");
+  const panelsEl = section.querySelector(".hero-showcase__panels");
+  const dotsEl = section.querySelector(".hero-showcase__dots");
+  const counterEl = section.querySelector("[data-hero-counter]");
+  const progressEl = section.querySelector("[data-hero-progress]");
+  if (!slidesEl || !panelsEl || !dotsEl) return;
+
+  const existing = slidesEl.querySelectorAll("[data-hero-slide]").length;
+  if (existing >= heroSlides.length) return;
+
+  const totalSlides = String(heroSlides.length).padStart(2, "0");
+
+  for (let i = existing; i < heroSlides.length; i++) {
+    slidesEl.insertAdjacentHTML("beforeend", buildHeroSlideMarkup(heroSlides[i], i));
+    panelsEl.insertAdjacentHTML("beforeend", buildHeroPanelMarkup(heroSlides[i], i));
+    dotsEl.insertAdjacentHTML("beforeend", buildHeroDotMarkup(heroSlides[i], i));
+  }
+
+  if (counterEl) {
+    counterEl.textContent = `01 / ${totalSlides}`;
+  }
+  if (progressEl) {
+    progressEl.style.width = `${Math.round(100 / heroSlides.length)}%`;
+  }
+}
+
 export function renderHero() {
   const root = document.querySelector("#home-hero");
   if (!root) return;
+
+  if (root.querySelector("[data-hero-slideshow]")) {
+    enhanceHeroSlideshow(root);
+    return;
+  }
 
   root.querySelector("#hero-lcp-bootstrap")?.remove();
 
@@ -45,7 +142,7 @@ export function renderHero() {
             width="1920"
             height="1080"
             ${i === 0 ? 'decoding="async"' : 'loading="lazy" decoding="async"'}
-            style="object-position: ${escapeHtml(slide.focus || "center")}"
+            style="${heroImgVars(slide)}"
           />
           <div class="hero-showcase__overlay" aria-hidden="true">
             <div class="hero-showcase__overlay-tint"></div>
@@ -71,11 +168,11 @@ export function renderHero() {
           aria-hidden="${i === 0 ? "false" : "true"}"
         >
           <div class="hero-showcase__copy">
-            <p class="hero-showcase__signature">${escapeHtml(slide.signature)}</p>
-            <h1 class="hero-showcase__title">${escapeHtml(slide.title)}</h1>
-            <p class="hero-showcase__lead">${escapeHtml(slide.lead)}</p>
+            <p class="hero-showcase__signature">${formatCopy(slide.signature)}</p>
+            <h1 class="hero-showcase__title">${formatCopy(slide.title)}</h1>
+            <p class="hero-showcase__lead">${formatCopy(slide.lead)}</p>
           </div>
-          <a href="${escapeHtml(slide.cta.href)}" class="btn btn--ghost hero-showcase__cta">${escapeHtml(slide.cta.label)}</a>
+          <a href="${escapeHtmlAttr(slide.cta.href)}" class="btn btn--ghost hero-showcase__cta">${formatCopy(slide.cta.label)}</a>
         </article>
       `
     )
@@ -148,7 +245,7 @@ export function renderAbout() {
           <img
             class="reveal-on-scroll"
             src="${escapeHtml(aboutIntro.image)}"
-            alt="${escapeHtml(aboutIntro.imageAlt)}"
+            alt="${formatCopy(aboutIntro.imageAlt)}"
             width="480"
             height="560"
             loading="lazy"
@@ -159,12 +256,12 @@ export function renderAbout() {
 
         <div class="home-about__content section-reveal">
           <span class="home-section__label">About Matembo</span>
-          <span class="home-about__script">${escapeHtml(aboutIntro.scriptLabel)}</span>
-          <h2 id="about-title" class="home-section__title">${escapeHtml(aboutIntro.title)}</h2>
+          <span class="home-about__script">${formatCopy(aboutIntro.scriptLabel)}</span>
+          <h2 id="about-title" class="home-section__title">${formatCopy(aboutIntro.title)}</h2>
           ${aboutIntro.paragraphs
             .map(
               (p, index) =>
-                `<p class="home-about__text"${index ? ` data-reveal-delay="${Math.min(index, 2)}"` : ""}>${escapeHtml(p)}</p>`
+                `<p class="home-about__text"${index ? ` data-reveal-delay="${Math.min(index, 2)}"` : ""}>${formatCopy(p)}</p>`
             )
             .join("")}
           <dl class="home-about__stats">
@@ -172,8 +269,8 @@ export function renderAbout() {
               .map(
                 (stat, index) => `
                   <div class="home-about__stat"${index ? ` data-reveal-delay="${Math.min(index, 2)}"` : ""}>
-                    <dt>${escapeHtml(stat.label)}</dt>
-                    <dd>${escapeHtml(stat.value)}</dd>
+                    <dt>${formatCopy(stat.label)}</dt>
+                    <dd>${formatCopy(stat.value)}</dd>
                   </div>
                 `
               )
@@ -195,7 +292,7 @@ export function renderExperiences() {
         <header class="home-section__header section-reveal">
           <span class="home-section__label">What We Offer</span>
           <h2 id="experiences-title" class="home-section__title">Safari Experiences</h2>
-          <p class="home-section__desc">${escapeHtml(experiencesIntro)}</p>
+          <p class="home-section__desc">${formatCopy(experiencesIntro)}</p>
         </header>
 
         <div class="home-experiences__grid">
@@ -204,8 +301,8 @@ export function renderExperiences() {
               (item, index) => `
                 <article class="experience-card" data-reveal ${index % 3 ? `data-reveal-delay="${index % 3}"` : ""}>
                   <span class="experience-card__icon" aria-hidden="true">${escapeHtml(item.icon)}</span>
-                  <h3 class="experience-card__title">${escapeHtml(item.title)}</h3>
-                  <p class="experience-card__text">${escapeHtml(item.text)}</p>
+                  <h3 class="experience-card__title">${formatCopy(item.title)}</h3>
+                  <p class="experience-card__text">${formatCopy(item.text)}</p>
                   ${
                     item.href
                       ? `<a href="${escapeHtml(item.href)}" class="experience-card__link">Explore →</a>`
@@ -238,12 +335,12 @@ export function renderCredentials() {
             .map(
               (item, index) => `
                 <div class="credentials-grid__item" data-reveal ${index % 3 ? `data-reveal-delay="${index % 3}"` : ""}>
-                  <dt>${escapeHtml(item.label)}</dt>
+                  <dt>${formatCopy(item.label)}</dt>
                   <dd>
                     ${
                       item.href
-                        ? `<a href="${escapeHtml(item.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.value)}</a>`
-                        : escapeHtml(item.value)
+                        ? `<a href="${escapeHtml(item.href)}" target="_blank" rel="noopener noreferrer">${formatCopy(item.value)}</a>`
+                        : formatCopy(item.value)
                     }
                   </dd>
                 </div>
@@ -266,7 +363,7 @@ export function renderTestimonials() {
         <header class="home-section__header section-reveal">
           <span class="home-section__label">Guest Voices</span>
           <h2 id="testimonials-title" class="home-section__title">What Travellers Say</h2>
-          <p class="home-section__desc">${escapeHtml(testimonialsIntro)} <a href="${escapeHtml(tripAdvisorUrl)}" target="_blank" rel="noopener noreferrer"><i class="fab fa-tripadvisor" aria-hidden="true"></i> TripAdvisor</a>.</p>
+          <p class="home-section__desc">${formatCopy(testimonialsIntro)} <a href="${escapeHtml(tripAdvisorUrl)}" target="_blank" rel="noopener noreferrer"><i class="fab fa-tripadvisor" aria-hidden="true"></i> TripAdvisor</a>.</p>
         </header>
 
         <div class="testimonials-grid">
@@ -275,10 +372,10 @@ export function renderTestimonials() {
               (item, index) => `
                 <blockquote class="testimonial-card" data-reveal ${index ? `data-reveal-delay="${index}"` : ""}>
                   <div class="testimonial-card__stars" aria-label="${item.rating} out of 5 stars">${renderStars(item.rating)}</div>
-                  <p class="testimonial-card__quote">“${escapeHtml(item.quote)}”</p>
+                  <p class="testimonial-card__quote">“${formatCopy(item.quote)}”</p>
                   <footer class="testimonial-card__footer">
-                    <cite class="testimonial-card__author">${escapeHtml(item.author)}</cite>
-                    <span class="testimonial-card__meta">${escapeHtml(item.location)} · ${escapeHtml(item.source)}</span>
+                    <cite class="testimonial-card__author">${formatCopy(item.author)}</cite>
+                    <span class="testimonial-card__meta">${formatCopy(item.location)} · ${formatCopy(item.source)}</span>
                   </footer>
                 </blockquote>
               `
@@ -297,14 +394,14 @@ export function renderContactCta() {
   root.innerHTML = `
     <section class="home-contact" id="contact" aria-labelledby="contact-title">
       <div class="container home-contact__inner section-reveal">
-        <span class="home-contact__script">${escapeHtml(contactCopy.signature)}</span>
-        <h2 id="contact-title" class="home-contact__title">${escapeHtml(contactCopy.title)}</h2>
-        <p class="home-contact__text">${escapeHtml(contactCopy.text)}</p>
+        <span class="home-contact__script">${formatCopy(contactCopy.signature)}</span>
+        <h2 id="contact-title" class="home-contact__title">${formatCopy(contactCopy.title)}</h2>
+        <p class="home-contact__text">${formatCopy(contactCopy.text)}</p>
         <div class="home-contact__actions">
-          <a href="${escapeHtml(contactCopy.ctaPrimary.href)}" class="btn btn--primary">${escapeHtml(contactCopy.ctaPrimary.label)}</a>
-          <a href="${escapeHtml(contactCopy.ctaSecondary.href)}" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">${escapeHtml(contactCopy.ctaSecondary.label)}</a>
+          <a href="${escapeHtml(contactCopy.ctaPrimary.href)}" class="btn btn--primary">${formatCopy(contactCopy.ctaPrimary.label)}</a>
+          <a href="${escapeHtml(contactCopy.ctaSecondary.href)}" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">${formatCopy(contactCopy.ctaSecondary.label)}</a>
         </div>
-        <p class="home-contact__meta">${escapeHtml(siteMeta.location)} · ${escapeHtml(siteMeta.phone)}</p>
+        <p class="home-contact__meta">${formatCopy(siteMeta.location)} · ${formatCopy(siteMeta.phone)}</p>
       </div>
     </section>
   `;
@@ -322,7 +419,7 @@ export function renderSiteFooter() {
           href="${escapeHtml(item.href)}"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="${escapeHtml(item.label)}"
+          aria-label="${formatCopy(item.label)}"
         >
           <i class="${escapeHtml(item.icon)}" aria-hidden="true"></i>
         </a>
@@ -336,11 +433,11 @@ export function renderSiteFooter() {
         <div class="container site-footer__grid">
           <div class="site-footer__brand">
             <span class="site-footer__monogram" aria-hidden="true">M</span>
-            <p class="site-footer__name">${escapeHtml(siteMeta.name)}</p>
+            <p class="site-footer__name">${formatCopy(siteMeta.name)}</p>
             <p class="site-footer__tagline">Private wildlife journeys across Tanzania – from Serengeti plains to crater rim and coast.</p>
             <p class="site-footer__location">
               <i class="fas fa-location-dot" aria-hidden="true"></i>
-              ${escapeHtml(siteMeta.location)}
+              ${formatCopy(siteMeta.location)}
             </p>
           </div>
 
@@ -388,11 +485,11 @@ export function renderSiteFooter() {
             <span class="site-footer__col-label">Contact</span>
             <a class="site-footer__link" href="tel:+255679529700">
               <i class="fas fa-phone" aria-hidden="true"></i>
-              ${escapeHtml(siteMeta.phone)}
+              ${formatCopy(siteMeta.phone)}
             </a>
             <a class="site-footer__link" href="mailto:${escapeHtml(siteMeta.email)}">
               <i class="fas fa-envelope" aria-hidden="true"></i>
-              ${escapeHtml(siteMeta.email)}
+              ${formatCopy(siteMeta.email)}
             </a>
             <a class="site-footer__link" href="https://wa.me/255679529700" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-whatsapp" aria-hidden="true"></i>
@@ -408,7 +505,7 @@ export function renderSiteFooter() {
             ${socialHtml}
           </div>
           <p class="site-footer__copyright">
-            © ${new Date().getFullYear()} ${escapeHtml(siteMeta.name)}. Wildlife safaris across Tanzania.
+            © ${new Date().getFullYear()} ${formatCopy(siteMeta.name)}. Wildlife safaris across Tanzania.
           </p>
         </div>
       </div>

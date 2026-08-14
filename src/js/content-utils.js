@@ -1,5 +1,22 @@
 ﻿/** Shared content formatting – readable copy, unique photos */
 
+export function escapeHtml(text) {
+  const div = document.createElement("div");
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+/** Prose uses en dash (\u2013); em dash (\u2014) only when kept intentionally in source. */
+export function normalizeProseDashes(text) {
+  if (text == null || typeof text !== "string") return text;
+  return text.replace(/\u2014/g, "\u2013");
+}
+
+/** Escape HTML and normalize dashes for visible copy. */
+export function formatCopy(text) {
+  return escapeHtml(normalizeProseDashes(text));
+}
+
 export function imageKey(url = "") {
   const file = url.split("/").pop()?.split("?")[0] || url;
   return file

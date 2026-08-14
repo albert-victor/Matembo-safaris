@@ -2,35 +2,26 @@
   "[data-reveal]:not([data-story-panel])",
   ".section-reveal",
   ".reveal-on-scroll",
-  ".site-footer",
   ".home-about__text",
   ".home-about__stat",
-  ".home-section__title",
-  ".home-section__desc",
-  ".home-section__label",
   ".home-about__script",
   ".dest-page__lead",
   ".dest-page__text",
   ".dest-page__photo",
-  ".dest-slideshow",
   ".dest-page__aside-block",
   ".experience-card__title",
   ".experience-card__text",
   ".testimonial-card__quote",
   ".credentials-grid__item",
-  ".home-contact__title",
-  ".home-contact__text",
   ".site-footer__col",
   ".site-footer__brand",
   ".site-footer__social",
 ].join(", ");
 
-/** Match eon.co.tz WOW.js stagger steps (40ms increments) */
 import { waitForCardMedia } from "./lazy-images.js";
 
 const STAGGER_MS = 40;
 const STAGGER_CAP_MS = 240;
-/** Trigger animation before element fully enters view (like AOS offset: 120) */
 const SCROLL_OFFSET_PX = 120;
 
 function collectRevealTargets(root) {
@@ -52,6 +43,12 @@ function collectRevealTargets(root) {
       a.getBoundingClientRect().top - b.getBoundingClientRect().top ||
       (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1)
   );
+}
+
+function isAboveFold(el, margin = 80) {
+  const rect = el.getBoundingClientRect();
+  const vh = window.innerHeight || document.documentElement.clientHeight;
+  return rect.top < vh - margin;
 }
 
 function cascadeRevealTargets(el) {
@@ -97,14 +94,14 @@ function revealWhenReady(el, batchIndex = 0) {
 }
 
 export function initScrollReveal(root = document) {
-  document.documentElement.classList.add("js-enhanced");
-
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   ).matches;
 
   const elements = collectRevealTargets(root);
   if (!elements.length) return;
+
+  document.documentElement.classList.add("js-reveal-ready");
 
   if (prefersReducedMotion || !("IntersectionObserver" in window)) {
     elements.forEach((el) => {
@@ -114,7 +111,13 @@ export function initScrollReveal(root = document) {
     return;
   }
 
+  elements.filter(isAboveFold).forEach((el) => {
+    el.classList.add("is-visible");
+    cascadeRevealTargets(el);
+  });
+
   let batchCounter = 0;
+  const pending = elements.filter((el) => !el.classList.contains("is-visible"));
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -141,6 +144,6 @@ export function initScrollReveal(root = document) {
   );
 
   requestAnimationFrame(() => {
-    elements.forEach((el) => observer.observe(el));
+    pending.forEach((el) => observer.observe(el));
   });
 }

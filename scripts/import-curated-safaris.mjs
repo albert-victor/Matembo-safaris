@@ -40,13 +40,13 @@ const GAME_DRIVE_SECTIONS = [
     id: "northern-circuit",
     label: "Northern Circuit",
     title: "Northern Game Drives",
-    desc: "Serengeti, Ngorongoro, Tarangire, Manyara and Arusha day trips — Tanzania's classic wildlife routes.",
+    desc: "Serengeti, Ngorongoro, Tarangire, Manyara and Arusha day trips – Tanzania's classic wildlife routes.",
   },
   {
     id: "southern-circuit",
     label: "Southern Circuit",
     title: "Southern Game Drives",
-    desc: "Ruaha, Nyerere, Mikumi and Katavi — wild southern parks best reached from Iringa and Dar es Salaam.",
+    desc: "Ruaha, Nyerere, Mikumi and Katavi – wild southern parks best reached from Iringa and Dar es Salaam.",
   },
   {
     id: "eastern-circuit",
@@ -157,10 +157,10 @@ async function main() {
   console.log("Checking TripAdvisor listing…");
   const tripAdvisor = await tryTripAdvisorFetch();
   if (tripAdvisor.ok) {
-    console.log(`  TripAdvisor reachable (${tripAdvisor.html.length} bytes) — using seed mapping for packages.`);
+    console.log(`  TripAdvisor reachable (${tripAdvisor.html.length} bytes) – using seed mapping for packages.`);
   } else {
     console.warn(
-      `  TripAdvisor returned HTTP ${tripAdvisor.status || "error"} — using scripts/data/matembo-tripadvisor-seeds.json`
+      `  TripAdvisor returned HTTP ${tripAdvisor.status || "error"} – using scripts/data/matembo-tripadvisor-seeds.json`
     );
   }
 
@@ -193,7 +193,7 @@ async function main() {
   for (const listing of gameDriveListings) {
     const base = byId.get(listing.slug);
     if (!base) {
-      console.warn(`  ⚠ Missing TTB detail for ${listing.slug} — run npm run import:safaris`);
+      console.warn(`  ⚠ Missing TTB detail for ${listing.slug} – run npm run import:safaris`);
       continue;
     }
     const sectionId = circuitToSectionId(base.circuit);
@@ -245,7 +245,7 @@ async function main() {
   const gameDriveOut = join(ROOT, "src/data/game-drive-packages.js");
   writeDataFile(
     gameDriveOut,
-    `/** Auto-generated — run: npm run import:curated */`,
+    `/** Auto-generated – run: npm run import:curated */`,
     `export const TTB_GAME_DRIVES_URLS = ${JSON.stringify(GAME_DRIVE_LISTINGS)};
 
 export const gameDrivePackagesMeta = {
@@ -269,7 +269,7 @@ export function getGameDrivePackageById(id) {
   const ruahaOut = join(ROOT, "src/data/ruaha-safari-packages.js");
   writeDataFile(
     ruahaOut,
-    `/** Auto-generated — run: npm run import:curated */`,
+    `/** Auto-generated – run: npm run import:curated */`,
     `export const TTB_RUAHA_URLS = ${JSON.stringify(RUAHA_LISTINGS)};
 
 export const ruahaSafariPackagesMeta = {
@@ -293,7 +293,7 @@ export function getRuahaSafariPackageById(id) {
   const matemboOut = join(ROOT, "src/data/matembo-featured-packages.js");
   writeDataFile(
     matemboOut,
-    `/** Auto-generated — run: npm run import:curated */`,
+    `/** Auto-generated – run: npm run import:curated */`,
     `export const TRIPADVISOR_URL = ${JSON.stringify(TRIPADVISOR_URL)};
 
 export const matemboFeaturedMeta = {

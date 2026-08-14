@@ -4,46 +4,46 @@
 
 @keyframes hero-kb-zoom-in {
   0% {
-    transform: scale(1.04) translate3d(0, 0, 0);
+    transform: scale(1.02) translate3d(0, 0.6%, 0);
   }
   100% {
-    transform: scale(1.15) translate3d(0, 0, 0);
+    transform: scale(1.18) translate3d(0, -0.6%, 0);
   }
 }
 
 @keyframes hero-kb-zoom-out {
   0% {
-    transform: scale(1.16) translate3d(0, 0, 0);
+    transform: scale(1.18) translate3d(0, -0.4%, 0);
   }
   100% {
-    transform: scale(1.05) translate3d(0, 0, 0);
+    transform: scale(1.04) translate3d(0, 0.5%, 0);
   }
 }
 
 @keyframes hero-kb-pan-left {
   0% {
-    transform: scale(1.11) translate3d(1.8%, 0.45%, 0);
+    transform: scale(1.12) translate3d(2.4%, 0.65%, 0);
   }
   100% {
-    transform: scale(1.11) translate3d(-1.8%, -0.45%, 0);
+    transform: scale(1.12) translate3d(-2.4%, -0.65%, 0);
   }
 }
 
 @keyframes hero-kb-pan-right {
   0% {
-    transform: scale(1.11) translate3d(-1.8%, 0.45%, 0);
+    transform: scale(1.12) translate3d(-2.4%, 0.65%, 0);
   }
   100% {
-    transform: scale(1.11) translate3d(1.8%, -0.45%, 0);
+    transform: scale(1.12) translate3d(2.4%, -0.65%, 0);
   }
 }
 
 @keyframes hero-kb-drift-up {
   0% {
-    transform: scale(1.08) translate3d(0, 1.5%, 0);
+    transform: scale(1.06) translate3d(0, 2%, 0);
   }
   100% {
-    transform: scale(1.14) translate3d(0, -1.5%, 0);
+    transform: scale(1.16) translate3d(0, -2%, 0);
   }
 }
 
@@ -149,7 +149,7 @@
   height: 115%;
   min-height: 115%;
   object-fit: cover;
-  object-position: center center;
+  object-position: var(--hero-focus, center center);
   will-change: transform;
   transform: scale(1.06);
   transform-origin: center center;
@@ -567,9 +567,15 @@
     padding-bottom: clamp(6.25rem, 13vh, 7.5rem);
   }
 
-  /* Ruaha slide — full-bleed cover; nudge crop so both elephants stay in frame */
-  .hero-showcase__slide[data-hero-slide="0"] .hero-showcase__img {
-    object-position: center 52%;
+  .hero-showcase__img {
+    height: 100%;
+    min-height: 100%;
+    transform: scale(1);
+    object-position: var(--hero-focus-mobile, var(--hero-focus, center center));
+  }
+
+  .hero-showcase__slide.is-active[data-motion] .hero-showcase__img {
+    animation: hero-kb-mobile-drift var(--ken-burns-duration, 9s) cubic-bezier(0.19, 1, 0.22, 1) forwards;
   }
 
   .hero-showcase__particle {

@@ -54,7 +54,7 @@ const EXPERIENCE_SEEDS = [
     region: "Iringa · Maasai · Coast",
     category: "Cultural Visits",
     bestSeason: "Year-round",
-    desc: "Respectful community days — Hehe history near Iringa, Chagga coffee villages, Maasai and Hadzabe encounters.",
+    desc: "Respectful community days – Hehe history near Iringa, Chagga coffee villages, Maasai and Hadzabe encounters.",
     sourceUrls: [
       `${BASE}/safari/day-trip-to-isimila-stone-age-and-igeleke-rock-art-sites`,
       `${BASE}/safari/day-trip-to-materuni-waterfalls-and-coffee-tour`,
@@ -378,12 +378,12 @@ for (const seed of EXPERIENCE_SEEDS) {
   const verifiedUrls = await buildVerifiedGallery(allRawImages, urlCache, MAX_GALLERY);
 
   if (verifiedUrls.length < MIN_GALLERY) {
-    console.warn(`  ⚠ Only ${verifiedUrls.length} images — using fallback set`);
+    console.warn(`  ⚠ Only ${verifiedUrls.length} images – using fallback set`);
   }
 
   const galleryEntries = verifiedUrls.map((src, i) => ({
     src,
-    alt: `${seed.fullName}${i ? ` — view ${i + 1}` : ""}`,
+    alt: `${seed.fullName}${i ? ` – view ${i + 1}` : ""}`,
   }));
 
   const description = uniqueParagraphs[0] || seed.desc;
@@ -410,7 +410,7 @@ for (const seed of EXPERIENCE_SEEDS) {
   console.log(`  ✓ ${galleryEntries.length} photos · ${uniqueParagraphs.length} paragraphs`);
 }
 
-const file = `/** Auto-generated from tanzaniatourism.com — run: npm run import:experiences */
+const file = `/** Auto-generated from tanzaniatourism.com – run: npm run import:experiences */
 export const TTB_COM_ORIGIN = ${JSON.stringify(BASE)};
 
 export const experiencesMeta = {

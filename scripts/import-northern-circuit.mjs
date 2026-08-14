@@ -100,7 +100,7 @@ function decodeEntities(text = "") {
   return stripHtml(text);
 }
 
-/** Strip only EE crop/resize suffixes — keep original filename IDs like _7765 */
+/** Strip only EE crop/resize suffixes – keep original filename IDs like _7765 */
 function cleanUploadFilename(filename) {
   return filename
     .replace(/_550_550[^.]*(?=\.(?:jpg|jpeg|png|webp))/i, "")
@@ -362,13 +362,13 @@ for (const card of listing) {
   totalVerified += verifiedUrls.length;
 
   if (verifiedUrls.length < MIN_GALLERY) {
-    console.warn(`⚠ ${card.name}: only ${verifiedUrls.length} working images (need ${MIN_GALLERY}) — skipped`);
+    console.warn(`⚠ ${card.name}: only ${verifiedUrls.length} working images (need ${MIN_GALLERY}) – skipped`);
     continue;
   }
 
   const imageEntries = verifiedUrls.map((src, i) => ({
     src,
-    alt: `${card.name}${i ? ` — view ${i + 1}` : ""}`,
+    alt: `${card.name}${i ? ` – view ${i + 1}` : ""}`,
   }));
 
   const uniqueForCards = pickCardImages(imageEntries);
@@ -399,12 +399,12 @@ for (const card of listing) {
     gallery: imageEntries,
   });
 
-  console.log(`  ✓ ${card.name} — ${imageEntries.length} photos kept`);
+  console.log(`  ✓ ${card.name} – ${imageEntries.length} photos kept`);
 }
 
 console.log(`\nVerified ${totalVerified} URLs (${totalRejected} broken/rejected)`);
 
-const file = `/** Auto-generated from tanzaniatourism.com — run: npm run import:northern */
+const file = `/** Auto-generated from tanzaniatourism.com – run: npm run import:northern */
 export const TTB_COM_ORIGIN = ${JSON.stringify(BASE)};
 export const TTB_NORTHERN_CIRCUIT_URL = ${JSON.stringify(SOURCE_PAGE)};
 

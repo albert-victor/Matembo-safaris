@@ -1,8 +1,8 @@
 /**
  * Curated activity collections from TTB activity pages:
  * - Bird Watching (15)
- * - Chimpanzee Watching (10 — TTB lists 5; supplemented with primate forest routes)
- * - Night Game Drives (5 — TTB lists 1; supplemented from night/evening drive itineraries)
+ * - Chimpanzee Watching (10 – TTB lists 5; supplemented with primate forest routes)
+ * - Night Game Drives (5 – TTB lists 1; supplemented from night/evening drive itineraries)
  * - Cultural Visits (13 from TTB cultural-visits listing)
  *
  * Run: npm run import:activities
@@ -57,7 +57,7 @@ const COLLECTION_META = {
     heroTitle: "Tanzania Birding Safaris",
     heroScript: "Forest Endemics to Flamingo Lakes",
     heroLead:
-      "Fifteen curated bird-watching itineraries from Tanzania Tourism — day trips through multi-day routes across northern parks, crater highlands and western lakes.",
+      "Fifteen curated bird-watching itineraries from Tanzania Tourism – day trips through multi-day routes across northern parks, crater highlands and western lakes.",
     pagePath: "/bird-watching.html",
   },
   "chimpanzee-watching": {
@@ -65,7 +65,7 @@ const COLLECTION_META = {
     heroTitle: "Chimp & Primate Safaris",
     heroScript: "Gombe, Mahale & Forest Treks",
     heroLead:
-      "Track wild chimpanzees on Lake Tanganyika shores and combine with Tanzania's best primate forest routes — sourced from Tanzania Tourism.",
+      "Track wild chimpanzees on Lake Tanganyika shores and combine with Tanzania's best primate forest routes – sourced from Tanzania Tourism.",
     pagePath: "/activities/chimpanzee-watching.html",
   },
   "night-game-drives": {
@@ -73,7 +73,7 @@ const COLLECTION_META = {
     heroTitle: "After-Dark Wildlife",
     heroScript: "Nocturnal Predators & Bush Nights",
     heroLead:
-      "Five safaris with night or extended evening game drives — from Serengeti corridors to Ruaha's predator nights.",
+      "Five safaris with night or extended evening game drives – from Serengeti corridors to Ruaha's predator nights.",
     pagePath: "/night-game-drives.html",
   },
   "cultural-visits": {
@@ -81,7 +81,7 @@ const COLLECTION_META = {
     heroTitle: "Culture & Community",
     heroScript: "Villages, Coast & Heritage",
     heroLead:
-      "Thirteen cultural itineraries from Tanzania Tourism — coffee tours and highland villages to Stone Town, Bagamoyo and Maasai rift-valley routes.",
+      "Thirteen cultural itineraries from Tanzania Tourism – coffee tours and highland villages to Stone Town, Bagamoyo and Maasai rift-valley routes.",
     pagePath: "/cultural-visits.html",
   },
 };
@@ -92,7 +92,7 @@ const SECTIONS = {
       id: "northern-day-trips",
       label: "Day Trips",
       title: "Northern Park Birding Days",
-      desc: "Crater rims, Momella lakes, Tarangire baobabs and highland forest — compact days rich in species.",
+      desc: "Crater rims, Momella lakes, Tarangire baobabs and highland forest – compact days rich in species.",
     },
     {
       id: "northern-safaris",
@@ -104,7 +104,7 @@ const SECTIONS = {
       id: "lakes-western",
       label: "Lakes & Western",
       title: "Lakes & Western Circuit",
-      desc: "Gombe streams, Lake Jipe wetlands and volcanic Lake Chala — specialty birding beyond the northern loop.",
+      desc: "Gombe streams, Lake Jipe wetlands and volcanic Lake Chala – specialty birding beyond the northern loop.",
     },
   ],
   "chimpanzee-watching": [
@@ -212,7 +212,7 @@ function packageNightScore(pkg) {
 async function buildFromListing(listing, byId, imageCache, assignSection) {
   const base = byId.get(listing.slug);
   if (!base) {
-    console.warn(`  ⚠ Missing TTB detail for ${listing.slug} — run npm run import:safaris`);
+    console.warn(`  ⚠ Missing TTB detail for ${listing.slug} – run npm run import:safaris`);
     return null;
   }
   const sectionId = assignSection(base, listing.order);
@@ -425,7 +425,7 @@ async function main() {
     cultural.packages,
   ]);
 
-  const body = `/** Auto-generated — run: npm run import:activities */
+  const body = `/** Auto-generated – run: npm run import:activities */
 
 export const ACTIVITY_SOURCE_URLS = ${JSON.stringify(SOURCES, null, 2)};
 

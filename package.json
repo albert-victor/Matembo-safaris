@@ -23,6 +23,7 @@
     "replace:ttb": "node scripts/replace-ttb-urls.mjs",
     "localize:images": "node scripts/mirror-ttb-images.mjs && node scripts/rebuild-manifest.mjs && node scripts/replace-ttb-urls.mjs",
     "rebuild:manifest": "node scripts/rebuild-manifest.mjs",
+    "normalize:dashes": "node scripts/normalize-dashes.mjs",
     "generate:home-destinations": "node --input-type=module -e \"import { writeFileSync } from 'fs'; import { allDestinations } from './src/data/all-destinations.js'; import { popularDestinationIds } from './src/data/home-sections-data.js'; const picks = popularDestinationIds.map((id) => { const d = allDestinations.find((x) => x.id === id); if (!d) return null; return { id: d.id, name: d.name, scriptLabel: d.scriptLabel, journeys: d.journeys, highlights: (d.highlights || []).slice(0, 3), images: (d.images || []).slice(0, 2).map(({ src, alt }) => ({ src, alt })) }; }).filter(Boolean); writeFileSync('src/data/home-popular-destinations.js', '/** Lightweight home teaser data */\\nexport const homePopularDestinations = ' + JSON.stringify(picks, null, 2) + ';\\n');\""
   },
   "devDependencies": {

@@ -1,13 +1,14 @@
-/** Homepage hero — premium park showcase slides */
+/** Homepage hero – premium park showcase slides */
 export const heroSlides = [
   {
     id: "ruaha",
     signature: "Before the River Cools",
     title: "Ruaha",
     lead: "Elephant herds drift through the Great Ruaha – wild dogs on the sand, lions beneath the fever trees.",
-    image: "/assets/hero/1st slideshow.webp",
+    image: "/assets/hero/new hero.jpg",
     imageAlt: "Elephant herds moving through Ruaha National Park",
     focus: "center 52%",
+    mobileFocus: "54% 50%",
     motion: "drift-up",
     textLayout: "bottom",
     cta: { label: "Ruaha Safaris", href: "/ruaha-safaris.html" },

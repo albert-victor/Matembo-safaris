@@ -155,7 +155,7 @@ function isTtbImage(url) {
   return typeof url === "string" && url.startsWith(`${BASE}/images/`);
 }
 
-/** Strip only EE crop/resize suffixes — keep original filename IDs like _7765 */
+/** Strip only EE crop/resize suffixes – keep original filename IDs like _7765 */
 function cleanUploadFilename(filename) {
   return filename
     .replace(/_550_550[^.]*(?=\.(?:jpg|jpeg|png|webp))/i, "")
@@ -335,7 +335,7 @@ async function finalizePackage(parsed, imageCache) {
   const verified = await buildVerifiedGallery(parsed.imageUrls, imageCache, MAX_GALLERY);
   const gallery = verified.map((src, i) => ({
     src,
-    alt: `${parsed.title}${i ? ` — photo ${i + 1}` : ""}`,
+    alt: `${parsed.title}${i ? ` – photo ${i + 1}` : ""}`,
   }));
 
   const { imageUrls, ...rest } = parsed;
@@ -496,7 +496,7 @@ async function main() {
       const parsed = parseDetail(html, url);
       const pkg = await finalizePackage(parsed, imageCache);
       if (!pkg.title || !pkg.image) {
-        console.warn(`⚠ Skipped ${url} — missing title or image`);
+        console.warn(`⚠ Skipped ${url} – missing title or image`);
         failed++;
         return;
       }
@@ -527,7 +527,7 @@ async function main() {
     .slice(0, 6)
     .map((p) => p.id);
 
-  const file = `/** Auto-generated from tanzaniatourism.com — run: npm run import:safaris */
+  const file = `/** Auto-generated from tanzaniatourism.com – run: npm run import:safaris */
 export const TTB_COM_ORIGIN = ${JSON.stringify(BASE)};
 export const TTB_SAFARIS_URL = ${JSON.stringify(`${BASE}/safaris`)};
 

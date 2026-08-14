@@ -51,8 +51,10 @@ main {
 }
 
 .home-section__header {
-  max-width: 38rem;
+  max-width: 42rem;
+  margin-inline: auto;
   margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+  text-align: center;
 }
 
 .home-section__label {
@@ -93,11 +95,11 @@ main {
 @keyframes reveal-fade-up {
   from {
     opacity: 0;
-    transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 36px, 0) scale(0.985);
   }
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
@@ -130,38 +132,31 @@ main {
   filter: none;
 }
 
-html.js-enhanced [data-reveal]:not(.is-visible),
-html.js-enhanced .section-reveal:not(.is-visible),
-html.js-enhanced .reveal-on-scroll:not(.is-visible),
-html.js-enhanced .home-about__text:not(.is-visible),
-html.js-enhanced .home-about__stat:not(.is-visible),
-html.js-enhanced .home-section__title:not(.is-visible),
-html.js-enhanced .home-section__desc:not(.is-visible),
-html.js-enhanced .home-section__label:not(.is-visible),
-html.js-enhanced .home-about__script:not(.is-visible),
-html.js-enhanced .dest-page__lead:not(.is-visible),
-html.js-enhanced .dest-page__text:not(.is-visible),
-html.js-enhanced .dest-page__photo:not(.is-visible),
-html.js-enhanced .dest-slideshow:not(.is-visible),
-html.js-enhanced .dest-page__aside-block:not(.is-visible),
-html.js-enhanced .experience-card__title:not(.is-visible),
-html.js-enhanced .experience-card__text:not(.is-visible),
-html.js-enhanced .testimonial-card__quote:not(.is-visible),
-html.js-enhanced .credentials-grid__item:not(.is-visible),
-html.js-enhanced .home-contact__title:not(.is-visible),
-html.js-enhanced .home-contact__text:not(.is-visible),
-html.js-enhanced .site-footer:not(.is-visible),
-html.js-enhanced .site-footer__col:not(.is-visible),
-html.js-enhanced .site-footer__brand:not(.is-visible),
-html.js-enhanced .site-footer__social:not(.is-visible) {
+html.js-reveal-ready [data-reveal]:not(.is-visible),
+html.js-reveal-ready .section-reveal:not(.is-visible),
+html.js-reveal-ready .reveal-on-scroll:not(.is-visible),
+html.js-reveal-ready .home-about__text:not(.is-visible),
+html.js-reveal-ready .home-about__stat:not(.is-visible),
+html.js-reveal-ready .home-about__script:not(.is-visible),
+html.js-reveal-ready .dest-page__lead:not(.is-visible),
+html.js-reveal-ready .dest-page__text:not(.is-visible),
+html.js-reveal-ready .dest-page__photo:not(.is-visible),
+html.js-reveal-ready .dest-page__aside-block:not(.is-visible),
+html.js-reveal-ready .experience-card__title:not(.is-visible),
+html.js-reveal-ready .experience-card__text:not(.is-visible),
+html.js-reveal-ready .testimonial-card__quote:not(.is-visible),
+html.js-reveal-ready .credentials-grid__item:not(.is-visible),
+html.js-reveal-ready .site-footer__col:not(.is-visible),
+html.js-reveal-ready .site-footer__brand:not(.is-visible),
+html.js-reveal-ready .site-footer__social:not(.is-visible) {
   opacity: 0;
-  transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 36px, 0) scale(0.985);
   pointer-events: none;
 }
 
-html.js-enhanced .section-reveal.is-visible .home-section__label,
-html.js-enhanced .section-reveal.is-visible .home-section__title,
-html.js-enhanced .section-reveal.is-visible .home-section__desc,
+html.js-reveal-ready .section-reveal.is-visible .home-section__label,
+html.js-reveal-ready .section-reveal.is-visible .home-section__title,
+html.js-reveal-ready .section-reveal.is-visible .home-section__desc,
 html.js-enhanced .section-reveal.is-visible .home-about__text,
 html.js-enhanced .section-reveal.is-visible .home-about__stat {
   opacity: 1;
@@ -194,7 +189,7 @@ html.js-enhanced .section-reveal.is-visible .home-about__stat {
 .site-footer__brand.is-visible,
 .site-footer__social.is-visible {
   pointer-events: auto;
-  animation: reveal-fade-up 0.85s var(--ease-reveal) both;
+  animation: reveal-fade-up 0.95s cubic-bezier(0.19, 1, 0.22, 1) both;
   animation-delay: var(--reveal-delay, 0ms);
 }
 
@@ -254,10 +249,14 @@ html.js-enhanced .section-reveal.is-visible .home-about__stat {
 
 .home-section__actions {
   margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .home-section__actions .btn + .btn {
-  margin-left: 0.5rem;
+  margin-left: 0;
 }
 
 @media (max-width: 600px) {

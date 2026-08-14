@@ -1,4 +1,4 @@
-/** Lightweight home teaser data — auto-generated */
+/** Lightweight home teaser data – auto-generated */
 export const homePopularDestinations = [
   {
     "id": "serengeti",

@@ -37,7 +37,7 @@ const PAGE_SHELL = `<!DOCTYPE html>
           <h1 class="dest-listing-hero__title" data-activity-title>{{LABEL}}</h1>
           <span class="dest-listing-hero__script">Safari Packages</span>
           <p class="dest-listing-hero__lead" data-activity-lead>
-            Safari packages and day trips that include {{LABEL_LOWER}} — sourced from Tanzania Tourism and ready to tailor.
+            Safari packages and day trips that include {{LABEL_LOWER}} – sourced from Tanzania Tourism and ready to tailor.
           </p>
         </div>
       </header>
@@ -54,7 +54,7 @@ const PAGE_SHELL = `<!DOCTYPE html>
           </header>
           <div id="activity-packages-grid" class="safari-cards-grid"></div>
           <p class="home-section__desc" data-activity-empty hidden>
-            No packages tagged with this activity yet — contact us to build a custom route.
+            No packages tagged with this activity yet – contact us to build a custom route.
           </p>
         </div>
       </section>
@@ -78,7 +78,7 @@ for (const activity of ACTIVITY_DEFINITIONS) {
     .replace(/\{\{TITLE\}\}/g, activity.label)
     .replace(
       /\{\{DESCRIPTION\}\}/g,
-      `${activity.label} in Tanzania — safari packages and day trips from Matembo Safari & Tours, Iringa.`
+      `${activity.label} in Tanzania – safari packages and day trips from Matembo Safari & Tours, Iringa.`
     );
 
   writeFileSync(resolve(outDir, `${activity.slug}.html`), html, "utf8");

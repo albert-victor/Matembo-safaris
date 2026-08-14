@@ -135,11 +135,20 @@ export function initServicesShowcase() {
   const activate = (nextIndex, { scrollTab = false } = {}) => {
     index = (nextIndex + panels.length) % panels.length;
 
+    root.style.setProperty("--svc-autoplay", `${intervalMs}ms`);
+
     tabs.forEach((tab, i) => {
       const active = i === index;
       tab.classList.toggle("is-active", active);
       tab.setAttribute("aria-selected", active ? "true" : "false");
     });
+
+    const activeTab = tabs[index];
+    if (activeTab) {
+      activeTab.classList.remove("is-active");
+      void activeTab.offsetWidth;
+      activeTab.classList.add("is-active");
+    }
 
     panels.forEach((panel, i) => {
       const active = i === index;
@@ -204,6 +213,7 @@ export function initServicesShowcase() {
     document.hidden ? stop() : start();
   });
 
-  activate(0);
+  activate(0, { scrollTab: false });
+  scrollTabInRail(tabs[0], false);
   start();
 }

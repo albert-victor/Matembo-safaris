@@ -1,4 +1,4 @@
-/** Auto-generated — run: npm run import:activities */
+/** Auto-generated – run: npm run import:activities */
 
 export const ACTIVITY_SOURCE_URLS = {
   "bird-watching": "https://www.tanzaniatourism.com/activities/bird-watching",
@@ -23,7 +23,7 @@ export const activityCollections = {
     "label": "Bird Watching",
     "heroTitle": "Tanzania Birding Safaris",
     "heroScript": "Forest Endemics to Flamingo Lakes",
-    "heroLead": "Fifteen curated bird-watching itineraries from Tanzania Tourism — day trips through multi-day routes across northern parks, crater highlands and western lakes.",
+    "heroLead": "Fifteen curated bird-watching itineraries from Tanzania Tourism – day trips through multi-day routes across northern parks, crater highlands and western lakes.",
     "pagePath": "/bird-watching.html",
     "sourceUrl": "https://www.tanzaniatourism.com/activities/bird-watching",
     "targetCount": 15,
@@ -38,7 +38,7 @@ export const activityCollections = {
         "id": "northern-day-trips",
         "label": "Day Trips",
         "title": "Northern Park Birding Days",
-        "desc": "Crater rims, Momella lakes, Tarangire baobabs and highland forest — compact days rich in species.",
+        "desc": "Crater rims, Momella lakes, Tarangire baobabs and highland forest – compact days rich in species.",
         "packageIds": [
           "day-trip-to-mkomazi-national-park",
           "day-trip-to-arusha-national-park",
@@ -65,7 +65,7 @@ export const activityCollections = {
         "id": "lakes-western",
         "label": "Lakes & Western",
         "title": "Lakes & Western Circuit",
-        "desc": "Gombe streams, Lake Jipe wetlands and volcanic Lake Chala — specialty birding beyond the northern loop.",
+        "desc": "Gombe streams, Lake Jipe wetlands and volcanic Lake Chala – specialty birding beyond the northern loop.",
         "packageIds": [
           "day-trip-to-gombe-national-park",
           "3-4-days-safari-to-gombe-stream-national-parks",
@@ -97,7 +97,7 @@ export const activityCollections = {
     "label": "Chimpanzee Watching",
     "heroTitle": "Chimp & Primate Safaris",
     "heroScript": "Gombe, Mahale & Forest Treks",
-    "heroLead": "Track wild chimpanzees on Lake Tanganyika shores and combine with Tanzania's best primate forest routes — sourced from Tanzania Tourism.",
+    "heroLead": "Track wild chimpanzees on Lake Tanganyika shores and combine with Tanzania's best primate forest routes – sourced from Tanzania Tourism.",
     "pagePath": "/activities/chimpanzee-watching.html",
     "sourceUrl": "https://www.tanzaniatourism.com/activities/chimpazee-watching",
     "targetCount": 10,
@@ -152,7 +152,7 @@ export const activityCollections = {
     "label": "Night Game Drives",
     "heroTitle": "After-Dark Wildlife",
     "heroScript": "Nocturnal Predators & Bush Nights",
-    "heroLead": "Five safaris with night or extended evening game drives — from Serengeti corridors to Ruaha's predator nights.",
+    "heroLead": "Five safaris with night or extended evening game drives – from Serengeti corridors to Ruaha's predator nights.",
     "pagePath": "/night-game-drives.html",
     "sourceUrl": "https://www.tanzaniatourism.com/activities/night-game-drives",
     "targetCount": 5,
@@ -197,7 +197,7 @@ export const activityCollections = {
     "label": "Cultural Visits",
     "heroTitle": "Culture & Community",
     "heroScript": "Villages, Coast & Heritage",
-    "heroLead": "Thirteen cultural itineraries from Tanzania Tourism — coffee tours and highland villages to Stone Town, Bagamoyo and Maasai rift-valley routes.",
+    "heroLead": "Thirteen cultural itineraries from Tanzania Tourism – coffee tours and highland villages to Stone Town, Bagamoyo and Maasai rift-valley routes.",
     "pagePath": "/cultural-visits.html",
     "sourceUrl": "https://www.tanzaniatourism.com/activities/cultural-visits",
     "targetCount": 13,

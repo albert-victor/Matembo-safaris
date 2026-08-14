@@ -14,12 +14,7 @@ import {
   tripAdvisorListingUrl,
 } from "../data/tripadvisor-reviews.js";
 import { tripAdvisorUrl, contactCopy, siteMeta } from "../data/home-data.js";
-
-function escapeHtml(text) {
-  const div = document.createElement("div");
-  div.textContent = text;
-  return div.innerHTML;
-}
+import { formatCopy } from "./content-utils.js";
 
 function renderStars(rating) {
   return "★".repeat(rating) + "☆".repeat(Math.max(0, 5 - rating));
@@ -40,14 +35,14 @@ function renderTeaserSlides(images, motionClass = "", cardIndex = 0) {
     .map((img, i) => {
       const eager = cardIndex < 3 && i === 0;
       const srcAttrs = eager
-        ? `src="${escapeHtml(img.src)}"${cardIndex === 0 ? ' fetchpriority="high"' : ""}`
-        : `data-src="${escapeHtml(img.src)}" src=""`;
+        ? `src="${formatCopy(img.src)}"${cardIndex === 0 ? ' fetchpriority="high"' : ""}`
+        : `data-src="${formatCopy(img.src)}" src=""`;
       return `
         <div class="dest-slideshow__slide ${motionClass} ${i === 0 ? "is-active" : ""}" data-slide>
           <img
             class="${eager ? "is-loaded" : ""}"
             ${srcAttrs}
-            alt="${escapeHtml(img.alt || "")}"
+            alt="${formatCopy(img.alt || "")}"
             width="400"
             height="280"
             decoding="async"
@@ -79,7 +74,7 @@ function renderDestTeaserSlide(dest, cardIndex = 0) {
           ${renderTeaserSlides(images, "dest-slideshow__slide--motion", cardIndex)}
         </div>
         <div class="dest-teaser-slide__overlay" aria-hidden="true"></div>
-        <span class="dest-teaser-slide__script">${escapeHtml(dest.scriptLabel)}</span>
+        <span class="dest-teaser-slide__script">${formatCopy(dest.scriptLabel)}</span>
         ${
           images.length > 1
             ? `<div class="dest-slideshow__dots dest-slideshow__dots--compact dest-teaser-slide__dots">${renderTeaserDots(images.length)}</div>`
@@ -87,10 +82,10 @@ function renderDestTeaserSlide(dest, cardIndex = 0) {
         }
       </div>
       <div class="dest-teaser-slide__body">
-        <h3 class="dest-teaser-slide__name">${escapeHtml(dest.name)}</h3>
-        ${dest.journeys ? `<p class="dest-teaser-slide__journeys">${escapeHtml(dest.journeys)}</p>` : ""}
-        ${tags.length ? `<ul class="dest-teaser-slide__tags">${tags.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>` : ""}
-        <a class="dest-teaser-slide__cta" href="${escapeHtml(href)}">View destination →</a>
+        <h3 class="dest-teaser-slide__name">${formatCopy(dest.name)}</h3>
+        ${dest.journeys ? `<p class="dest-teaser-slide__journeys">${formatCopy(dest.journeys)}</p>` : ""}
+        ${tags.length ? `<ul class="dest-teaser-slide__tags">${tags.map((t) => `<li>${formatCopy(t)}</li>`).join("")}</ul>` : ""}
+        <a class="dest-teaser-slide__cta" href="${formatCopy(href)}">View destination →</a>
       </div>
     </article>
   `;
@@ -101,13 +96,13 @@ function renderTestimonialSlide(review) {
   return `
     <blockquote class="testimonial-card autoslider__slide">
       <div class="testimonial-card__head">
-        <span class="testimonial-card__flag" aria-label="${escapeHtml(review.country)}" title="${escapeHtml(review.country)}">${flag}</span>
+        <span class="testimonial-card__flag" aria-label="${formatCopy(review.country)}" title="${formatCopy(review.country)}">${flag}</span>
         <div class="testimonial-card__stars" aria-label="${review.rating} out of 5">${renderStars(review.rating)}</div>
       </div>
-      <p class="testimonial-card__quote">"${escapeHtml(review.quote)}"</p>
+      <p class="testimonial-card__quote">"${formatCopy(review.quote)}"</p>
       <footer class="testimonial-card__footer">
-        <cite class="testimonial-card__author">${escapeHtml(review.author)}</cite>
-        <span class="testimonial-card__meta">${escapeHtml(review.country)} · ${escapeHtml(review.tripType || "Safari")} · ${escapeHtml(review.date || "")}</span>
+        <cite class="testimonial-card__author">${formatCopy(review.author)}</cite>
+        <span class="testimonial-card__meta">${formatCopy(review.country)} · ${formatCopy(review.tripType || "Safari")} · ${formatCopy(review.date || "")}</span>
       </footer>
       <img class="testimonial-card__ta" src="/assets/credentials/tripadvisor.svg" alt="" width="88" height="18" loading="lazy" aria-hidden="true" />
     </blockquote>
@@ -125,12 +120,12 @@ export function renderPopularDestinations() {
     <section class="home-section home-section--alt" id="destinations" aria-labelledby="destinations-title">
       <div class="container">
         <header class="home-section__header section-reveal">
-          <span class="home-section__label">${escapeHtml(popularDestinationsIntro.label)}</span>
-          <h2 id="destinations-title" class="home-section__title">${escapeHtml(popularDestinationsIntro.title)}</h2>
-          <p class="home-section__desc">${escapeHtml(popularDestinationsIntro.desc)}</p>
+          <span class="home-section__label">${formatCopy(popularDestinationsIntro.label)}</span>
+          <h2 id="destinations-title" class="home-section__title">${formatCopy(popularDestinationsIntro.title)}</h2>
+          <p class="home-section__desc">${formatCopy(popularDestinationsIntro.desc)}</p>
         </header>
         ${renderAutosliderShell({
-          label: "Popular destinations",
+          label: "Destinations inspiration",
           autoplay: 5000,
           visible: "3",
           trackHtml,
@@ -156,9 +151,9 @@ export function renderPopularItineraries() {
     <section class="home-section" id="itineraries" aria-labelledby="itineraries-title">
       <div class="container">
         <header class="home-section__header section-reveal">
-          <span class="home-section__label">${escapeHtml(popularItinerariesIntro.label)}</span>
-          <h2 id="itineraries-title" class="home-section__title">${escapeHtml(popularItinerariesIntro.title)}</h2>
-          <p class="home-section__desc">${escapeHtml(popularItinerariesIntro.desc)}</p>
+          <span class="home-section__label">${formatCopy(popularItinerariesIntro.label)}</span>
+          <h2 id="itineraries-title" class="home-section__title">${formatCopy(popularItinerariesIntro.title)}</h2>
+          <p class="home-section__desc">${formatCopy(popularItinerariesIntro.desc)}</p>
         </header>
         ${renderAutosliderShell({
           label: "Popular itineraries",
@@ -186,14 +181,14 @@ export function renderTestimonialsSlider() {
     <section class="home-testimonials" id="testimonials" aria-labelledby="testimonials-title">
       <div class="container">
         <header class="home-section__header section-reveal">
-          <span class="home-section__label">${escapeHtml(tripAdvisorReviewsIntro.label)}</span>
-          <h2 id="testimonials-title" class="home-section__title">${escapeHtml(tripAdvisorReviewsIntro.title)}</h2>
-          <p class="home-section__desc">${escapeHtml(tripAdvisorReviewsIntro.desc)}</p>
+          <span class="home-section__label">${formatCopy(tripAdvisorReviewsIntro.label)}</span>
+          <h2 id="testimonials-title" class="home-section__title">${formatCopy(tripAdvisorReviewsIntro.title)}</h2>
+          <p class="home-section__desc">${formatCopy(tripAdvisorReviewsIntro.desc)}</p>
         </header>
 
         <div class="testimonials-ta-bar section-reveal">
           <img class="testimonials-ta-bar__logo" src="/assets/credentials/tripadvisor.svg" alt="TripAdvisor" width="140" height="32" loading="lazy" />
-          <a href="${escapeHtml(tripAdvisorListingUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn--secondary testimonials-ta-bar__link">
+          <a href="${formatCopy(tripAdvisorListingUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn--secondary testimonials-ta-bar__link">
             Read all reviews on TripAdvisor
           </a>
         </div>
@@ -226,11 +221,11 @@ function credentialsLogoClass(logoFit) {
 
 function renderCredentialItem(item) {
   return `
-    <a class="cred-marquee__item" href="${escapeHtml(item.href)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(item.name)}">
+    <a class="cred-marquee__item" href="${formatCopy(item.href)}" target="_blank" rel="noopener noreferrer" title="${formatCopy(item.name)}">
       <span class="cred-marquee__slot">
-        <img class="cred-marquee__logo${credentialsLogoClass(item.logoFit)}" src="${escapeHtml(item.logo)}" alt="${escapeHtml(item.name)}" width="96" height="48" loading="lazy" decoding="async" />
+        <img class="cred-marquee__logo${credentialsLogoClass(item.logoFit)}" src="${formatCopy(item.logo)}" alt="${formatCopy(item.name)}" width="96" height="48" loading="lazy" decoding="async" />
       </span>
-      <span class="cred-marquee__name">${escapeHtml(item.abbr)}</span>
+      <span class="cred-marquee__name">${formatCopy(item.abbr)}</span>
     </a>
   `;
 }
@@ -246,9 +241,9 @@ export function renderCredentialsMarquee() {
     <section class="home-credentials" id="credentials" aria-labelledby="credentials-title">
       <div class="container">
         <header class="home-section__header section-reveal">
-          <span class="home-section__label">${escapeHtml(credentialsIntro.label)}</span>
-          <h2 id="credentials-title" class="home-section__title">${escapeHtml(credentialsIntro.title)}</h2>
-          <p class="home-section__desc">${escapeHtml(credentialsIntro.desc)}</p>
+          <span class="home-section__label">${formatCopy(credentialsIntro.label)}</span>
+          <h2 id="credentials-title" class="home-section__title">${formatCopy(credentialsIntro.title)}</h2>
+          <p class="home-section__desc">${formatCopy(credentialsIntro.desc)}</p>
         </header>
         <div class="cred-marquee section-reveal" aria-label="Tourism and certification partners">
           <div class="cred-marquee__frame">
@@ -275,14 +270,14 @@ export function renderStickyQuote() {
     <section class="sticky-quote" aria-labelledby="sticky-quote-title">
       <div class="sticky-quote__panel">
         <div class="sticky-quote__media">
-          <img data-src="${escapeHtml(q.image)}" data-img-preset="hero" src="" alt="${escapeHtml(q.imageAlt)}" width="1920" height="1080" loading="lazy" decoding="async" />
+          <img src="${formatCopy(q.image)}" alt="${formatCopy(q.imageAlt)}" width="1920" height="1080" loading="eager" decoding="async" fetchpriority="low" />
           <div class="sticky-quote__scrim" aria-hidden="true"></div>
         </div>
         <div class="sticky-quote__content">
-          <p class="sticky-quote__signature">${escapeHtml(q.signature)}</p>
-          <h2 id="sticky-quote-title" class="sticky-quote__title">${escapeHtml(q.quote)}</h2>
-          <p class="sticky-quote__body">${escapeHtml(q.body)}</p>
-          <a href="${escapeHtml(q.cta.href)}" class="btn btn--ghost sticky-quote__cta">${escapeHtml(q.cta.label)}</a>
+          <p class="sticky-quote__signature">${formatCopy(q.signature)}</p>
+          <h2 id="sticky-quote-title" class="sticky-quote__title">${formatCopy(q.quote)}</h2>
+          <p class="sticky-quote__body">${formatCopy(q.body)}</p>
+          <a href="${formatCopy(q.cta.href)}" class="btn btn--ghost sticky-quote__cta">${formatCopy(q.cta.label)}</a>
         </div>
       </div>
     </section>
@@ -320,14 +315,14 @@ export function renderHomeContact() {
   root.innerHTML = `
     <section class="home-contact" id="contact" aria-labelledby="contact-title">
       <div class="container home-contact__inner section-reveal">
-        <span class="home-contact__script">${escapeHtml(contactCopy.signature)}</span>
-        <h2 id="contact-title" class="home-contact__title">${escapeHtml(contactCopy.title)}</h2>
-        <p class="home-contact__text">${escapeHtml(contactCopy.text)}</p>
+        <span class="home-contact__script">${formatCopy(contactCopy.signature)}</span>
+        <h2 id="contact-title" class="home-contact__title">${formatCopy(contactCopy.title)}</h2>
+        <p class="home-contact__text">${formatCopy(contactCopy.text)}</p>
         <div class="home-contact__actions">
-          <a href="/contact.html" class="btn btn--primary">${escapeHtml(contactCopy.ctaPrimary.label.replace("Email enquiry", "Plan your safari"))}</a>
-          <a href="${escapeHtml(contactCopy.ctaSecondary.href)}" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">${escapeHtml(contactCopy.ctaSecondary.label)}</a>
+          <a href="/contact.html" class="btn btn--primary">${formatCopy(contactCopy.ctaPrimary.label.replace("Email enquiry", "Plan your safari"))}</a>
+          <a href="${formatCopy(contactCopy.ctaSecondary.href)}" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">${formatCopy(contactCopy.ctaSecondary.label)}</a>
         </div>
-        <p class="home-contact__meta">${escapeHtml(siteMeta.location)} · ${escapeHtml(siteMeta.phone)}</p>
+        <p class="home-contact__meta">${formatCopy(siteMeta.location)} · ${formatCopy(siteMeta.phone)}</p>
       </div>
     </section>
   `;

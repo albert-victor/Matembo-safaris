@@ -51,15 +51,15 @@ export const navCircuitDestinations = DESTINATION_CIRCUITS.map((circuit) => ({
   image: circuitCoverImage(circuit.id),
 }));
 
-/** Verified /assets/about/main* photography for About mega menu. */
+/** Verified /assets/about photography for About mega menu. */
 export const ABOUT_MAIN_IMAGES = {
-  hero: "/assets/about/main.jpg",
-  story: "/assets/about/main 11.jpg",
-  gallery: "/assets/about/main 5.jpg",
-  moments: "/assets/about/main 7.jpg",
-  coast: "/assets/about/main 8.jpg",
-  team: "/assets/about/descriptions.jpg",
-  plains: "/assets/about/main 1.jpg",
+  hero: "/assets/about/about hero.jpg",
+  story: "/assets/about/moments.jpg",
+  gallery: "/assets/about/sticky-section.jpg",
+  moments: "/assets/about/moments.jpg",
+  coast: "/assets/about/walking safaris.jpg",
+  team: "/assets/about/main 11.jpg",
+  plains: "/assets/about/sticky-section.jpg",
 };
 
 export const navAboutLinks = [
@@ -67,7 +67,7 @@ export const navAboutLinks = [
     name: "Our Story",
     href: "/about.html",
     desc: "George & the field team in Iringa",
-    image: ABOUT_MAIN_IMAGES.story,
+    image: "/assets/about/main 11.jpg",
   },
   {
     name: "Gallery & Moments",
@@ -94,7 +94,7 @@ export const navSafariTypes = [
   navItem("Adventure Safaris", "Wildlife game drives", "/game-drives.html", IMG.serengeti3d),
   navItem("Mountain Climbing", "Kilimanjaro & highlands", "/trekkings.html", IMG.lemosho7d),
   navItem("Beach Holiday", "Zanzibar & coast", "/beach-holiday.html", IMG.zanzibar),
-  navItem("Walking Safaris", "Guided bush walks", "/walking-safaris.html", IMG.shiraDay),
+  navItem("Walking Safaris", "Guided bush walks", "/walking-safaris.html", IMG.walkingSafaris),
   navItem("Tourist Attractions", "Museums & heritage", "/tourist-attractions.html", IMG.olduvai),
 ];
 
@@ -160,7 +160,7 @@ export const megaMenuPanels = {
     featured: {
       name: "Northern Circuit",
       label: "Featured safari",
-      desc: "Serengeti, Ngorongoro & Tarangire — the classic wildlife route.",
+      desc: "Serengeti, Ngorongoro & Tarangire – the classic wildlife route.",
       href: "/safaris.html#northern-circuit",
       image: IMG.serengeti5d,
       alt: "Northern Circuit Tanzania safari",
@@ -171,7 +171,7 @@ export const megaMenuPanels = {
       label: "Every circuit",
       title: "141 real itineraries",
       tags: "North · South · East · West",
-      quote: "Wildlife, coast, mountains and culture — grouped by circuit on the full index.",
+      quote: "Wildlife, coast, mountains and culture – grouped by circuit on the full index.",
       ctaText: "Game drives catalog",
       ctaHref: "/game-drives.html",
       image: IMG.ruaha4d,

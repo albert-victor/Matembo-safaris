@@ -88,7 +88,7 @@ async function renderExperiencePackages(experienceId) {
         <span class="home-section__label">Safari Packages</span>
         <h2 id="experience-packages-title" class="home-section__title">Curated ${collection.label} Itineraries</h2>
         <p class="home-section__desc">
-          Real routes from Tanzania Tourism — view full details or enquire to tailor dates and lodges.
+          Real routes from Tanzania Tourism – view full details or enquire to tailor dates and lodges.
         </p>
       </header>
       <div id="experience-packages-grid" class="safari-cards-grid"></div>

@@ -26,6 +26,16 @@ export const servicesShowcaseIntro = {
 
 export const servicesShowcase = [
   {
+    id: "walking-safaris",
+    title: "Walking Safaris",
+    icon: "fa-person-hiking",
+    description: "Guided bush walks and forest trails – read tracks, birds and smaller life up close with licensed walking guides.",
+    highlights: ["Udzungwa forest", "Crater rim hikes", "Bush foot safaris"],
+    image: "/assets/about/walking safaris.jpg",
+    imageAlt: "Walking safari in Tanzania highlands",
+    href: "/walking-safaris.html",
+  },
+  {
     id: "game-drives",
     title: "Game Drives",
     icon: "fa-binoculars",
@@ -34,16 +44,6 @@ export const servicesShowcase = [
     image: expImage("game-drives", `${LOCAL}/Serengeti_National_Park_Leopard_24.jpg`),
     imageAlt: "Leopard on a Serengeti game drive",
     href: "/game-drives.html",
-  },
-  {
-    id: "walking-safaris",
-    title: "Walking Safaris",
-    icon: "fa-person-hiking",
-    description: "Guided bush walks and forest trails – read tracks, birds and smaller life up close with licensed walking guides.",
-    highlights: ["Udzungwa forest", "Crater rim hikes", "Bush foot safaris"],
-    image: expImage("hiking", NAV_IMAGES.shiraDay),
-    imageAlt: "Walking safari in Tanzania highlands",
-    href: "/walking-safaris.html",
   },
   {
     id: "cultural",

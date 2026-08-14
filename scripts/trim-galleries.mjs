@@ -79,12 +79,12 @@ for (const dest of northernCircuitDestinations) {
     seen.add(key);
     kept.push({
       src: img.src,
-      alt: img.alt?.replace(/\s*[—–-]\s*Tanzania Tourism.*$/i, "") || `${dest.fullName} — view ${kept.length + 1}`,
+      alt: img.alt?.replace(/\s*[––-]\s*Tanzania Tourism.*$/i, "") || `${dest.fullName} – view ${kept.length + 1}`,
     });
   }
 
   if (kept.length < MIN_GALLERY) {
-    console.warn(`⚠ ${dest.id}: only ${kept.length} working — kept as-is`);
+    console.warn(`⚠ ${dest.id}: only ${kept.length} working – kept as-is`);
   } else {
     console.log(`  ✓ ${dest.id}: ${pool.length} → ${kept.length} photos`);
   }
@@ -96,7 +96,7 @@ for (const dest of northernCircuitDestinations) {
   });
 }
 
-const file = `/** Auto-generated from tanzaniatourism.com — run: npm run import:northern */
+const file = `/** Auto-generated from tanzaniatourism.com – run: npm run import:northern */
 export const TTB_COM_ORIGIN = ${JSON.stringify(BASE)};
 export const TTB_NORTHERN_CIRCUIT_URL = "https://www.tanzaniatourism.com/destinations/northern-circuit";
 

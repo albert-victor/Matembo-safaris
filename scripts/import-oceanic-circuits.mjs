@@ -418,13 +418,13 @@ for (const { card, source } of listing) {
   const verifiedUrls = await buildVerifiedGallery(rawUrls, urlCache, MAX_GALLERY);
 
   if (verifiedUrls.length < MIN_GALLERY) {
-    console.warn(`⚠ ${card.name}: only ${verifiedUrls.length} working images (need ${MIN_GALLERY}) — skipped`);
+    console.warn(`⚠ ${card.name}: only ${verifiedUrls.length} working images (need ${MIN_GALLERY}) – skipped`);
     continue;
   }
 
   const imageEntries = verifiedUrls.map((src, i) => ({
     src,
-    alt: `${card.name}${i ? ` — view ${i + 1}` : ""}`,
+    alt: `${card.name}${i ? ` – view ${i + 1}` : ""}`,
   }));
 
   const uniqueForCards = pickCardImages(imageEntries);
@@ -456,16 +456,16 @@ for (const { card, source } of listing) {
     gallery: imageEntries,
   });
 
-  console.log(`  ✓ [${source.circuitLabel}] ${card.name} — ${imageEntries.length} photos kept`);
+  console.log(`  ✓ [${source.circuitLabel}] ${card.name} – ${imageEntries.length} photos kept`);
 }
 
-const file = `/** Auto-generated from tanzaniatourism.com — run: npm run import:oceanic */
+const file = `/** Auto-generated from tanzaniatourism.com – run: npm run import:oceanic */
 export const TTB_OCEANIC_ORIGIN = ${JSON.stringify(BASE)};
 
 export const oceanicCircuitMeta = {
   id: "oceanic",
   name: "Ocean Islands",
-  description: "Pemba, Misali, Fanjove & Indian Ocean islets — reefs, dhows & barefoot luxury",
+  description: "Pemba, Misali, Fanjove & Indian Ocean islets – reefs, dhows & barefoot luxury",
   sourceUrl: ${JSON.stringify(`${BASE}/destinations/ocean-islands`)},
 };
 

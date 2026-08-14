@@ -1,64 +1,82 @@
-﻿import { renderHero, renderSiteFooter } from "./render-home.js";
+﻿import { renderHero } from "./render-home.js";
 import { renderSiteNav } from "./render-site-nav.js";
 import { initSiteNav, refreshSiteHeaderState } from "./site-nav.js";
-import { renderServicesShowcase, initServicesShowcase } from "./services-showcase.js";
-import {
-  renderPopularDestinations,
-  renderPopularItineraries,
-  renderTestimonialsSlider,
-  renderCredentialsMarquee,
-  renderStickyQuote,
-  renderHomeContact,
-  renderWhatsAppFloat,
-} from "./render-home-sections.js";
-import { initAutoslider } from "./autoslider.js";
-import { initSlideshows } from "./slideshow.js";
-import { initCardTilt } from "./card-tilt.js";
-import { initScrollReveal } from "./scroll-reveal.js";
+import { initServicesShowcase } from "./services-showcase.js";
 import { initHeroSlideshow } from "./hero-slideshow.js";
-import {
-  initLazyImages,
-  loadImagesIn,
-  bootstrapImagesWithSrc,
-} from "./lazy-images.js";
+import { initScrollReveal } from "./scroll-reveal.js";
+import { initLazyImages } from "./lazy-images.js";
 
-function initHomeContent() {
-  renderServicesShowcase();
-  renderPopularDestinations();
-  renderPopularItineraries();
-  renderTestimonialsSlider();
-  renderCredentialsMarquee();
-  renderStickyQuote();
-  renderHomeContact();
-  renderSiteFooter();
-  renderWhatsAppFloat();
+function initCritical() {
+  renderSiteNav();
+  initSiteNav();
+  refreshSiteHeaderState();
 
-  initServicesShowcase();
-  initAutoslider();
-  initSlideshows();
-  initCardTilt();
-  initLazyImages();
-  bootstrapImagesWithSrc(document.getElementById("home-services-showcase"));
-  loadImagesIn(document.getElementById("home-services-showcase"), { priority: true });
-  loadImagesIn(document.getElementById("home-popular-destinations"), { priority: true });
-  loadImagesIn(document.getElementById("home-popular-itineraries"), { priority: true });
+  renderHero();
+  initHeroSlideshow();
+  initLazyImages(document.getElementById("home-hero"));
+
+  if (document.querySelector("[data-services-showcase]")) {
+    initServicesShowcase();
+  }
+
+  initScrollReveal();
+}
+
+function initDeferredHome() {
+  import("./render-home-sections.js")
+    .then((sections) => {
+      import("./services-showcase.js").then((svc) => {
+        if (document.querySelector("[data-services-static]")) {
+          svc.renderServicesShowcase();
+        } else if (!document.querySelector("#home-services-showcase .svc-field")) {
+          svc.renderServicesShowcase();
+        }
+        if (document.querySelector("[data-services-showcase]")) {
+          svc.initServicesShowcase();
+        }
+      });
+
+      sections.renderPopularDestinations();
+      sections.renderPopularItineraries();
+      sections.renderTestimonialsSlider();
+      sections.renderCredentialsMarquee();
+      sections.renderStickyQuote();
+      sections.renderHomeContact();
+      sections.renderWhatsAppFloat();
+
+      return Promise.all([
+        import("./autoslider.js"),
+        import("./slideshow.js"),
+        import("./card-tilt.js"),
+        import("./render-home.js"),
+      ]).then(([autoslider, slideshow, cardTilt, homeRender]) => {
+        autoslider.initAutoslider();
+        slideshow.initSlideshows();
+        cardTilt.initCardTilt();
+        homeRender.renderSiteFooter();
+        initLazyImages(document.getElementById("home-popular-destinations"));
+        initLazyImages(document.getElementById("home-popular-itineraries"));
+        initLazyImages(document.getElementById("home-sticky-quote"));
+        initScrollReveal();
+      });
+    })
+    .catch((error) => {
+      console.error("Matembo deferred home init failed:", error);
+    });
 }
 
 function init() {
   try {
-    renderHero();
-    bootstrapImagesWithSrc(document.getElementById("home-hero"));
-    initLazyImages(document.getElementById("home-hero"));
-    initHeroSlideshow();
+    initCritical();
 
-    renderSiteNav();
-    initSiteNav();
-    refreshSiteHeaderState();
-
-    initHomeContent();
+    const runDeferred = () => initDeferredHome();
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(runDeferred, { timeout: 2500 });
+    } else {
+      window.setTimeout(runDeferred, 800);
+    }
   } catch (error) {
     console.error("Matembo home init failed:", error);
-  } finally {
     initScrollReveal();
   }
 }

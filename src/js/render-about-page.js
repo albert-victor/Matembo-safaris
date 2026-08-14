@@ -1,11 +1,6 @@
 ﻿import { aboutPageData } from "../data/about-page-data.js";
 import { socialLinks, siteMeta } from "../data/home-data.js";
-
-function escapeHtml(text) {
-  const div = document.createElement("div");
-  div.textContent = text;
-  return div.innerHTML;
-}
+import { formatCopy, escapeHtml } from "./content-utils.js";
 
 export function renderAboutPage() {
   const hero = document.querySelector("#about-hero");
@@ -18,16 +13,40 @@ export function renderAboutPage() {
   const d = aboutPageData;
 
   if (hero) {
+    const particles = Array.from(
+      { length: 5 },
+      (_, i) => `<span class="about-hero__particle" style="--i:${i}"></span>`
+    ).join("");
+
     hero.innerHTML = `
       <section class="about-hero">
         <div class="about-hero__media">
-          <img src="${escapeHtml(d.hero.image)}" alt="" width="1200" height="600" loading="eager" />
-          <div class="about-hero__scrim" aria-hidden="true"></div>
+          <div class="about-hero__media-motion">
+            <img
+              src="${escapeHtml(d.hero.image)}"
+              alt="${escapeHtml(d.hero.title)}"
+              width="1920"
+              height="1080"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+        <div class="about-hero__overlay" aria-hidden="true">
+          <div class="about-hero__overlay-tint"></div>
+          <div class="about-hero__overlay-vignette"></div>
+          <div class="about-hero__overlay-scrim"></div>
+          <div class="about-hero__overlay-glow"></div>
+        </div>
+        <div class="about-hero__film" aria-hidden="true">
+          <div class="about-hero__film-gradient"></div>
+          <div class="about-hero__particles">${particles}</div>
         </div>
         <div class="container about-hero__content">
-          <p class="about-hero__signature">${escapeHtml(d.hero.signature)}</p>
-          <h1 class="about-hero__title">${escapeHtml(d.hero.title)}</h1>
-          <p class="about-hero__lead">${escapeHtml(d.hero.lead)}</p>
+          <p class="about-hero__signature">${formatCopy(d.hero.signature)}</p>
+          <h1 class="about-hero__title">${formatCopy(d.hero.title)}</h1>
+          <p class="about-hero__lead">${formatCopy(d.hero.lead)}</p>
         </div>
       </section>
     `;
@@ -41,14 +60,14 @@ export function renderAboutPage() {
             <img src="${escapeHtml(d.story.image)}" alt="Matembo Safari team in Tanzania" loading="lazy" width="520" height="600" />
           </div>
           <div class="about-story__content section-reveal">
-            <span class="home-section__label">${escapeHtml(d.story.label)}</span>
-            <h2 id="about-story-title" class="home-section__title">${escapeHtml(d.story.title)}</h2>
-            ${d.story.paragraphs.map((p) => `<p class="about-story__text">${escapeHtml(p)}</p>`).join("")}
+            <span class="home-section__label">${formatCopy(d.story.label)}</span>
+            <h2 id="about-story-title" class="home-section__title">${formatCopy(d.story.title)}</h2>
+            ${d.story.paragraphs.map((p) => `<p class="about-story__text">${formatCopy(p)}</p>`).join("")}
             <dl class="home-about__stats">
               ${d.story.stats.map((s) => `
                 <div class="home-about__stat">
-                  <dt>${escapeHtml(s.label)}</dt>
-                  <dd>${escapeHtml(s.value)}</dd>
+                  <dt>${formatCopy(s.label)}</dt>
+                  <dd>${formatCopy(s.value)}</dd>
                 </div>
               `).join("")}
             </dl>
@@ -63,14 +82,14 @@ export function renderAboutPage() {
       <section class="about-moments home-section home-section--alt" aria-labelledby="about-moments-title">
         <div class="container">
           <header class="home-section__header section-reveal">
-            <span class="home-section__label">${escapeHtml(d.moments.label)}</span>
-            <h2 id="about-moments-title" class="home-section__title">${escapeHtml(d.moments.title)}</h2>
-            <p class="home-section__desc">${escapeHtml(d.moments.desc)}</p>
+            <span class="home-section__label">${formatCopy(d.moments.label)}</span>
+            <h2 id="about-moments-title" class="home-section__title">${formatCopy(d.moments.title)}</h2>
+            <p class="home-section__desc">${formatCopy(d.moments.desc)}</p>
           </header>
           <div class="about-moments__grid">
             ${d.moments.images.map((img, i) => `
               <figure class="about-moments__item" data-reveal ${i % 3 ? `data-reveal-delay="${i % 3}"` : ""}>
-                <img src="${escapeHtml(img.src)}" alt="${escapeHtml(img.alt)}" loading="lazy" width="400" height="300" />
+                <img src="${escapeHtml(img.src)}" alt="${formatCopy(img.alt)}" loading="lazy" width="400" height="300" />
               </figure>
             `).join("")}
           </div>
@@ -84,14 +103,14 @@ export function renderAboutPage() {
       <section class="about-gallery home-section" id="about-gallery" aria-labelledby="about-gallery-title">
         <div class="container">
           <header class="home-section__header section-reveal">
-            <span class="home-section__label">${escapeHtml(d.gallery.label)}</span>
-            <h2 id="about-gallery-title" class="home-section__title">${escapeHtml(d.gallery.title)}</h2>
-            <p class="home-section__desc">${escapeHtml(d.gallery.desc)}</p>
+            <span class="home-section__label">${formatCopy(d.gallery.label)}</span>
+            <h2 id="about-gallery-title" class="home-section__title">${formatCopy(d.gallery.title)}</h2>
+            <p class="home-section__desc">${formatCopy(d.gallery.desc)}</p>
           </header>
           <div class="about-gallery__grid">
             ${d.gallery.images.map((img, i) => `
               <figure class="about-gallery__item${i % 5 === 0 ? " about-gallery__item--wide" : ""}" data-reveal ${i % 4 ? `data-reveal-delay="${i % 4}"` : ""}>
-                <img src="${escapeHtml(img.src)}" alt="${escapeHtml(img.alt)}" loading="lazy" width="360" height="280" />
+                <img src="${escapeHtml(img.src)}" alt="${formatCopy(img.alt)}" loading="lazy" width="360" height="280" />
               </figure>
             `).join("")}
           </div>
@@ -104,13 +123,13 @@ export function renderAboutPage() {
     team.innerHTML = `
       <section class="about-team home-section home-section--alt" aria-labelledby="about-team-title">
         <div class="container about-team__inner section-reveal">
-          <span class="home-section__label">${escapeHtml(d.team.label)}</span>
-          <h2 id="about-team-title" class="home-section__title">${escapeHtml(d.team.title)}</h2>
-          <p class="about-team__text">${escapeHtml(d.team.text)}</p>
+          <span class="home-section__label">${formatCopy(d.team.label)}</span>
+          <h2 id="about-team-title" class="home-section__title">${formatCopy(d.team.title)}</h2>
+          <p class="about-team__text">${formatCopy(d.team.text)}</p>
           <dl class="about-team__contact">
-            <div><dt>Location</dt><dd>${escapeHtml(d.team.contact.location)}</dd></div>
-            <div><dt>Phone</dt><dd><a href="tel:+255679529700">${escapeHtml(d.team.contact.phone)}</a></dd></div>
-            <div><dt>Email</dt><dd><a href="mailto:${escapeHtml(d.team.contact.email)}">${escapeHtml(d.team.contact.email)}</a></dd></div>
+            <div><dt>Location</dt><dd>${formatCopy(d.team.contact.location)}</dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:+255679529700">${formatCopy(d.team.contact.phone)}</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:${escapeHtml(d.team.contact.email)}">${formatCopy(d.team.contact.email)}</a></dd></div>
           </dl>
           <a href="/contact.html" class="btn btn--primary">Plan your safari</a>
         </div>
