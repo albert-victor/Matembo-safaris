@@ -293,7 +293,7 @@ export const southernCircuitDestinations = [
           alt: "Kitulo National Park – view 9",
         },
         {
-          src: "/assets/photos/Kitulo_National_Park_x_53.jpg",
+          src: "/assets/photos/Kitulo_National_Park_x_22.jpg",
           alt: "Kitulo National Park – view 10",
         },
         {
@@ -455,7 +455,7 @@ export const southernCircuitDestinations = [
           alt: "Kalambo Falls – view 3",
         },
         {
-          src: "/assets/photos/Kalambo_Falls_Waterfalls_42.jpg",
+          src: "/assets/photos/Kalambo_Falls_Waterfalls_10.jpg",
           alt: "Kalambo Falls – view 4",
         },
         {
@@ -1119,7 +1119,7 @@ export const southernCircuitDestinations = [
           alt: "Igeleke Rock Art Site – view 6",
         },
         {
-          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_01.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_05.jpg",
           alt: "Igeleke Rock Art Site – view 7",
         },
         {
@@ -1131,7 +1131,7 @@ export const southernCircuitDestinations = [
           alt: "Igeleke Rock Art Site – view 9",
         },
         {
-          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_18.jpg",
+          src: "/assets/photos/Igeleke_Rock_Paintings_Iringa_05.jpg",
           alt: "Igeleke Rock Art Site – view 10",
         },
         {
@@ -1581,7 +1581,7 @@ export const southernCircuitDestinations = [
           alt: "Usambara Mountains – view 4",
         },
         {
-          src: "/assets/photos/Usambara_Mountains_Sunset_in_Irente_Viewpint.jpg",
+          src: "/assets/photos/Usambara_Mountains_06.jpg",
           alt: "Usambara Mountains – view 5",
         },
         {
@@ -2472,7 +2472,7 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/pangani",
       images: [
         {
-          src: "/assets/photos/Snorkling_in_Pangani_Beach_2.jpg",
+          src: "/assets/photos/Pangani/Snorkling_in_Pangani_Beach_1.jpg",
           alt: "Pangani",
         },
         {
@@ -2486,7 +2486,7 @@ export const southernCircuitDestinations = [
       ],
       gallery: [
         {
-          src: "/assets/photos/Snorkling_in_Pangani_Beach_2.jpg",
+          src: "/assets/photos/Pangani/Snorkling_in_Pangani_Beach_1.jpg",
           alt: "Pangani",
         },
         {
@@ -2530,7 +2530,7 @@ export const southernCircuitDestinations = [
           alt: "Pangani – view 11",
         },
         {
-          src: "/assets/photos/Pangani/Pangani_Tour_Mawize_Island_1.jpg",
+          src: "/assets/photos/Pangani",
           alt: "Pangani – view 12",
         },
       ],
@@ -2657,7 +2657,7 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kunduchi-ruins",
       images: [
         {
-          src: "/assets/photos/Kunduchi_Ruins_Tombs.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tombs_01.jpg",
           alt: "Kunduchi Ruins",
         },
         {
@@ -2671,7 +2671,7 @@ export const southernCircuitDestinations = [
       ],
       gallery: [
         {
-          src: "/assets/photos/Kunduchi_Ruins_Tombs.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tombs_01.jpg",
           alt: "Kunduchi Ruins",
         },
         {
@@ -2691,7 +2691,7 @@ export const southernCircuitDestinations = [
           alt: "Kunduchi Ruins – view 5",
         },
         {
-          src: "/assets/photos/Kunduchi_Ruins_Tomb_04.jpg",
+          src: "/assets/photos/Kunduchi_Ruins_Tombs_01.jpg",
           alt: "Kunduchi Ruins – view 6",
         },
         {
@@ -2776,7 +2776,7 @@ export const southernCircuitDestinations = [
           alt: "Gombe Stream National Park – view 3",
         },
         {
-          src: "/assets/photos/Gombe_Stream_National_Park_Lake_Tanganyika_Shore)line_45.jpg",
+          src: "/assets/photos/Gombe_Stream_National_Park_Chimp_Laying_Around_14.jpg)line_45.jpg",
           alt: "Gombe Stream National Park – view 4",
         },
         {
@@ -2894,7 +2894,7 @@ export const southernCircuitDestinations = [
           alt: "Mahale Mountains National Park – view 9",
         },
         {
-          src: "/assets/photos/Mahale_Mountains_National_Park_Chimp_19.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Chimp_16.jpg",
           alt: "Mahale Mountains National Park – view 10",
         },
         {
@@ -3400,7 +3400,7 @@ export const southernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/lake-tanganyika",
       images: [
         {
-          src: "/assets/photos/Lake_Tanganyika_sunset_12.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Sunset_10.jpg",
           alt: "Lake Tanganyika",
         },
         {
@@ -3414,7 +3414,7 @@ export const southernCircuitDestinations = [
       ],
       gallery: [
         {
-          src: "/assets/photos/Lake_Tanganyika_sunset_12.jpg",
+          src: "/assets/photos/Lake_Tanganyika_Sunset_10.jpg",
           alt: "Lake Tanganyika",
         },
         {

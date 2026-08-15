@@ -317,7 +317,7 @@ export const safariPackages = [
           alt: "Jozani Chwaka Bay National Park – photo 4",
         },
         {
-          src: "/assets/photos/Zanzibar_Jozani_Forest_Red_Colobus_Monkey_05.jpg",
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Red_Colobus_Monkey_01.jpg",
           alt: "Jozani Chwaka Bay National Park – photo 5",
         },
         {
@@ -515,7 +515,7 @@ export const safariPackages = [
           alt: "Mbudya Island Day Trip – photo 2",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Snorkeling_01.jpg",
+          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_05.jpg",
           alt: "Mbudya Island Day Trip – photo 3",
         },
         {
@@ -1177,7 +1177,7 @@ export const safariPackages = [
           alt: "Dhow Sunset Cruise",
         },
         {
-          src: "/assets/photos/Zanzibar_Dhow_Sunset_Cruise_03.jpg",
+          src: "/assets/photos/Zanzibar_Dhow_Sunset_Cruise_01.jpg",
           alt: "Dhow Sunset Cruise – photo 2",
         },
         {
@@ -2218,10 +2218,10 @@ export const safariPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "/assets/photos/Mahale_Mountains_National_Park_Chimp_19.jpg",
+      image: "/assets/photos/Mahale_Mountains_National_Park_Chimp_16.jpg",
       gallery: [
         {
-          src: "/assets/photos/Mahale_Mountains_National_Park_Chimp_19.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Chimp_16.jpg",
           alt: "5 - 6 Days Safari to Mahale National Park",
         },
         {
@@ -3764,7 +3764,7 @@ export const safariPackages = [
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking",
         },
         {
-          src: "/assets/photos/Olmoti_Crater_NCA_4.jpg",
+          src: "/assets/photos/Olmoti_Crater_NCA_2.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 2",
         },
         {
@@ -3784,7 +3784,7 @@ export const safariPackages = [
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 6",
         },
         {
-          src: "/assets/photos/Mount_Oldonyo_Lengai_08.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_02.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 7",
         },
         {
@@ -4276,10 +4276,10 @@ export const safariPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "/assets/photos/Zanzibar_Stone_Town_Market_03.jpg",
+      image: "/assets/photos/Zanzibar_Stone_Town_Market_05.jpg",
       gallery: [
         {
-          src: "/assets/photos/Zanzibar_Stone_Town_Market_03.jpg",
+          src: "/assets/photos/Zanzibar_Stone_Town_Market_05.jpg",
           alt: "Slave Trade Tour",
         },
         {
@@ -6539,7 +6539,7 @@ export const safariPackages = [
           alt: "Day Hike to North Pare Mountains",
         },
         {
-          src: "/assets/photos/North_Pare_Mountains_Kindoroko_Forest.jpg",
+          src: "/assets/photos/Northern_Pare.jpg",
           alt: "Day Hike to North Pare Mountains – photo 2",
         },
         {
@@ -7457,7 +7457,7 @@ export const safariPackages = [
           alt: "4 Days to Lake Manyara, Serengeti National Parks and Ngorongoro Crater – photo 2",
         },
         {
-          src: "/assets/photos/Serengeti_National_Park_Leopard_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Leopard_21.jpg",
           alt: "4 Days to Lake Manyara, Serengeti National Parks and Ngorongoro Crater – photo 3",
         },
         {
@@ -8786,7 +8786,7 @@ export const safariPackages = [
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 5",
         },
         {
-          src: "/assets/photos/Mount_Oldonyo_Lengai_08.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_02.jpg",
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 6",
         },
         {
@@ -9360,7 +9360,7 @@ export const safariPackages = [
           alt: "Mange Sandbank, Mafia Island – photo 4",
         },
         {
-          src: "/assets/photos/Mange_Sandbank_Swimming_Mafia_Island_2.jpg",
+          src: "/assets/photos/Mange_Sandbank_Swimming_Mafia_Island.jpg",
           alt: "Mange Sandbank, Mafia Island – photo 5",
         },
         {
@@ -9943,7 +9943,7 @@ export const safariPackages = [
           alt: "3 Days Safari to Udzungwa & Mikumi National Parks – photo 3",
         },
         {
-          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_112.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
           alt: "3 Days Safari to Udzungwa & Mikumi National Parks – photo 4",
         },
         {
@@ -10051,10 +10051,10 @@ export const safariPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "/assets/photos/Arusha_National_Park_Mount_Meru_01.jpg",
+      image: "/assets/photos/Arusha_National_Park_Mount_Meru_02.jpg",
       gallery: [
         {
-          src: "/assets/photos/Arusha_National_Park_Mount_Meru_01.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_02.jpg",
           alt: "4 Days Mount Meru Climb",
         },
         {
@@ -10573,10 +10573,10 @@ export const safariPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "/assets/photos/Kilimanjaro_Climb_3a.jpg",
+      image: "/assets/photos/Kilimanjaro_Climb_02.jpg",
       gallery: [
         {
-          src: "/assets/photos/Kilimanjaro_Climb_3a.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_02.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route",
         },
         {
@@ -10588,7 +10588,7 @@ export const safariPackages = [
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 3",
         },
         {
-          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 4",
         },
         {
@@ -11301,7 +11301,7 @@ export const safariPackages = [
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 4",
         },
         {
-          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_112.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 5",
         },
         {
@@ -11398,10 +11398,10 @@ export const safariPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "/assets/photos/Saadani_National_Park_Hippos_36.jpg",
+      image: "/assets/photos/Saadani_National_Park_Hippos_23.jpg",
       gallery: [
         {
-          src: "/assets/photos/Saadani_National_Park_Hippos_36.jpg",
+          src: "/assets/photos/Saadani_National_Park_Hippos_23.jpg",
           alt: "2 Days Safari to Saadani National Park",
         },
         {
@@ -11533,7 +11533,7 @@ export const safariPackages = [
           alt: "2 Days to Udzungwa Mountains National Park – photo 4",
         },
         {
-          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_112.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
           alt: "2 Days to Udzungwa Mountains National Park – photo 5",
         },
         {
@@ -13380,7 +13380,7 @@ export const safariPackages = [
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 6",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_01.jpg",
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 7",
         },
         {
@@ -13508,7 +13508,7 @@ export const safariPackages = [
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2)",
         },
         {
-          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 2",
         },
         {
@@ -13528,7 +13528,7 @@ export const safariPackages = [
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 6",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 7",
         },
         {
@@ -13665,7 +13665,7 @@ export const safariPackages = [
           alt: "8 Days Kilimanjaro Trek via Machame Route – photo 2",
         },
         {
-          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
           alt: "8 Days Kilimanjaro Trek via Machame Route – photo 3",
         },
         {
@@ -13839,7 +13839,7 @@ export const safariPackages = [
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 6",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_14.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_12.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 7",
         },
         {
@@ -14231,7 +14231,7 @@ export const safariPackages = [
           alt: "Kilimanjaro Trek via Western Breach – photo 2",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Western_Breach_Route_05.jpg",
+          src: "/assets/photos/Kilimanjaro_Western_Breach_Route_01.jpg",
           alt: "Kilimanjaro Trek via Western Breach – photo 3",
         },
         {
@@ -14701,7 +14701,7 @@ export const safariPackages = [
           alt: "3 Days Safari to Saadani National Park – photo 4",
         },
         {
-          src: "/assets/photos/Saadani_National_Park_Hippos_36.jpg",
+          src: "/assets/photos/Saadani_National_Park_Hippos_23.jpg",
           alt: "3 Days Safari to Saadani National Park – photo 5",
         },
         {
@@ -15539,7 +15539,7 @@ export const safariPackages = [
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 7",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_01.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 8",
         },
       ],
@@ -15666,10 +15666,10 @@ export const safariPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+      image: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
       gallery: [
         {
-          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2)",
         },
         {
@@ -15693,7 +15693,7 @@ export const safariPackages = [
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 6",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_14.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_12.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 7",
         },
         {
@@ -16434,7 +16434,7 @@ export const safariPackages = [
           alt: "Day Trip to Chemka Hot Springs – photo 6",
         },
         {
-          src: "/assets/photos/Rundugai_Hotsprings_Tour_17.jpg",
+          src: "/assets/photos/Rundugai_Hotsprings_Tour.jpg",
           alt: "Day Trip to Chemka Hot Springs – photo 7",
         },
         {

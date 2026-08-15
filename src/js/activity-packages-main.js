@@ -5,6 +5,7 @@ import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
 import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
+import { initCardMotion } from "./card-motion.js";
 import { getActivityCollection, getActivityPackagesForCollection } from "../data/activity-packages.js";
 import { perfLog, auditPageImages, measureDomWeight } from "./perf-debug.js";
 
@@ -64,6 +65,7 @@ async function init() {
     renderHero(collection);
     await renderSections(collection);
     initCardTilt();
+    initCardMotion();
     initLazyImages();
     initScrollReveal();
     perfLog("activity-packages-main.js:done", "activity page ready", {

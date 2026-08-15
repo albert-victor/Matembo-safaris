@@ -89,7 +89,7 @@ export const oceanicCircuitDestinations = [
           alt: "Mbudya Island Marine Reserve – view 6",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Snorkeling_01.jpg",
+          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_05.jpg",
           alt: "Mbudya Island Marine Reserve – view 7",
         },
         {
@@ -381,7 +381,7 @@ export const oceanicCircuitDestinations = [
           alt: "Fungu Yasin Sand Bar – view 11",
         },
         {
-          src: "/assets/photos/Pugu_Hill_Canoeing_in_Lake_Minaki_286_300shar-50brig-20_c1.jpg",
+          src: "/assets/photos/Pugu_Hill_Nature_Forest_with_Lake_Minaki.jpg",
           alt: "Fungu Yasin Sand Bar – view 12",
         },
       ],
@@ -516,7 +516,7 @@ export const oceanicCircuitDestinations = [
           alt: "Maziwe Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_12.jpg",
+          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_11.jpg",
           alt: "Maziwe Island Marine Reserve – view 3",
         },
       ],
@@ -530,7 +530,7 @@ export const oceanicCircuitDestinations = [
           alt: "Maziwe Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_12.jpg",
+          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_11.jpg",
           alt: "Maziwe Island Marine Reserve – view 3",
         },
         {
@@ -597,7 +597,7 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/ulenge-island-marine-reserve",
       images: [
         {
-          src: "/assets/photos/Marine_Island_Reserve_022.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_011.jpg",
           alt: "Ulenge Island Marine Reserve",
         },
         {
@@ -611,7 +611,7 @@ export const oceanicCircuitDestinations = [
       ],
       gallery: [
         {
-          src: "/assets/photos/Marine_Island_Reserve_022.jpg",
+          src: "/assets/photos/Marine_Island_Reserve_011.jpg",
           alt: "Ulenge Island Marine Reserve",
         },
         {
@@ -1233,7 +1233,7 @@ export const oceanicCircuitDestinations = [
           alt: "Mnemba Island Conservation Area – view 2",
         },
         {
-          src: "/assets/photos/Zanzibar_Prestine_Beach_02.jpg",
+          src: "/assets/photos/Zanzibar_Prestine_Beach_03.jpg",
           alt: "Mnemba Island Conservation Area – view 3",
         },
       ],
@@ -1247,7 +1247,7 @@ export const oceanicCircuitDestinations = [
           alt: "Mnemba Island Conservation Area – view 2",
         },
         {
-          src: "/assets/photos/Zanzibar_Prestine_Beach_02.jpg",
+          src: "/assets/photos/Zanzibar_Prestine_Beach_03.jpg",
           alt: "Mnemba Island Conservation Area – view 3",
         },
         {
@@ -1267,7 +1267,7 @@ export const oceanicCircuitDestinations = [
           alt: "Mnemba Island Conservation Area – view 7",
         },
         {
-          src: "/assets/photos/Zanzibar_Hermit_Crab_on_the_Beach.jpg",
+          src: "/assets/photos/Zanzibar_Coconut_Crab_03.jpg",
           alt: "Mnemba Island Conservation Area – view 8",
         },
         {

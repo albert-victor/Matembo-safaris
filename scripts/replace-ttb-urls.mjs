@@ -89,6 +89,16 @@ function main() {
   const srcResult = scanAndReplace(join(ROOT, "src"), lookup);
   console.log(`src/: ${srcResult.filesChanged} files, ~${srcResult.replacements} replacements`);
 
+  const htmlDirs = ["destinations", "packages", "activities", "circuits", "experiences"];
+  let htmlChanged = 0;
+  for (const dir of htmlDirs) {
+    const full = join(ROOT, dir);
+    if (!existsSync(full)) continue;
+    const result = scanAndReplace(full, lookup);
+    htmlChanged += result.filesChanged;
+    if (result.filesChanged) console.log(`${dir}/: ${result.filesChanged} files updated`);
+  }
+
   // Also update root HTML templates that preconnect to TTB
   for (const file of ["index.html", "about.html", "safaris.html", "destinations.html"]) {
     const p = join(ROOT, file);

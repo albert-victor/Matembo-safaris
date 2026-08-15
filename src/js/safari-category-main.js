@@ -5,6 +5,7 @@ import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
 import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
+import { initCardMotion } from "./card-motion.js";
 import { SAFARI_CATEGORIES } from "../data/safari-categories.js";
 import { filterPackagesBySafariType } from "./package-filters.js";
 
@@ -56,6 +57,7 @@ async function init() {
   renderHero(category);
   await renderPackages(category);
   initCardTilt();
+  initCardMotion();
   initLazyImages();
   initScrollReveal();
 }

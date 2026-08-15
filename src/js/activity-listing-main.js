@@ -5,6 +5,7 @@ import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
 import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
+import { initCardMotion } from "./card-motion.js";
 import { activityBySlug } from "../data/things-to-do-nav.js";
 import { filterPackagesByActivity } from "./package-filters.js";
 
@@ -55,6 +56,7 @@ async function init() {
   renderHero(activity);
   await renderPackages(activity);
   initCardTilt();
+  initCardMotion();
   initLazyImages();
   initScrollReveal();
 }

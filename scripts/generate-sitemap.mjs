@@ -7,9 +7,15 @@ const EXCLUDE = new Set([
   "package-view.html",
   "ui-demo.html",
   "tmp-northern.html",
+  "mega-dropdown-mockups.html",
 ]);
 
-const EXCLUDE_DIRS = new Set(["node_modules", "dist", "scripts", ".git"]);
+const EXCLUDE_DIRS = new Set(["node_modules", "dist", "scripts", ".git", ".cursor"]);
+
+const EXCLUDE_PATHS = new Set([
+  "/experiences/game-drives.html",
+  "/experiences/cultural-visits.html",
+]);
 
 function walkHtml(dir, urls = []) {
   if (!existsSync(dir)) return urls;
@@ -33,7 +39,9 @@ function walkHtml(dir, urls = []) {
 }
 
 export function generateSitemap(outDir = "public") {
-  const urls = walkHtml(".").sort();
+  const urls = walkHtml(".")
+    .filter((path) => !EXCLUDE_PATHS.has(path === "/index.html" ? "/" : path))
+    .sort();
   const unique = [...new Set(urls.map((u) => (u === "/index.html" ? "/" : u)))];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

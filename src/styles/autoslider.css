@@ -66,6 +66,9 @@
   display: flex;
   gap: 1.15rem;
   transition: transform 0.55s var(--ease-out);
+}
+
+.autoslider.is-advancing .autoslider__track {
   will-change: transform;
 }
 

@@ -5,7 +5,7 @@ import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
 import { northernCircuitDestinations } from "../data/northern-circuit-destinations.js";
 import { initSlideshows } from "./slideshow.js";
-import { initLazyImages, loadImagesIn } from "./lazy-images.js";
+import { initLazyImages } from "./lazy-images.js";
 
 const CIRCUIT_GRIDS = [
   ["#southern-circuit-grid", "southern"],
@@ -31,7 +31,7 @@ async function renderCircuitSection(containerSelector, circuitId) {
 
   section?.removeAttribute("hidden");
   renderDestinationCards(containerSelector, "b", { destinations });
-  loadImagesIn(section, { priority: true });
+  initLazyImages(section);
   initSlideshows(section);
 }
 
@@ -45,9 +45,8 @@ function initNorthernFirst() {
   });
 
   const northern = document.querySelector("#northern-circuit-grid")?.closest("section");
-  loadImagesIn(northern, { priority: true });
-  initSlideshows(northern);
   initLazyImages(northern);
+  initSlideshows(northern);
   initScrollReveal();
 }
 

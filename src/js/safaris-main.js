@@ -5,6 +5,7 @@ import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
 import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
+import { initCardMotion } from "./card-motion.js";
 
 const GRID_BY_CIRCUIT = {
   "Northern Circuit": "#safari-northern-circuit-grid",
@@ -48,6 +49,7 @@ async function init() {
 
   await renderCircuitSections();
   initCardTilt();
+  initCardMotion();
   initLazyImages();
   initScrollReveal();
 }

@@ -6,7 +6,7 @@ export const NAV_IMAGES = {
   ruaha3d: "/assets/photos/Ruaha_National_Park_Ruaha_River_39.jpg",
   ruaha4d: "/assets/photos/Ruaha_National_Park_Hippos_47.jpg",
   ruaha5d: "/assets/photos/Ruaha_National_Park_Elephants_49.jpg",
-  ruaha7d: "/assets/photos/Udzungwa_Mountains_National_Park_01.jpg",
+  ruaha7d: "/assets/photos/Udzungwa_National_Park_Sanje_Waterfalls_21.jpg",
   ruaha10d: "/assets/photos/Nyerere_National_Park_Lions_102.jpg",
   serengeti3d: "/assets/photos/Serengeti_Wildebeests_03.jpg",
   ngorongoroDay: "/assets/photos/Ngorongoro_Crater_01_NCA.jpg",
@@ -18,7 +18,7 @@ export const NAV_IMAGES = {
   walkingSafaris: "/assets/about/walking safaris.jpg",
   migration: "/assets/photos/Serengeti_Wildebeests_03.jpg",
   olduvai: "/assets/photos/Olduvai_Gorge_NCA_2_1.jpg",
-  udzungwa: "/assets/photos/Udzungwa_Mountains_National_Park_01.jpg",
+  udzungwa: "/assets/photos/Udzungwa_National_Park_Sanje_Waterfalls_21.jpg",
 };
 
 function applyNavFallback(img) {

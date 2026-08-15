@@ -673,7 +673,7 @@ export const trekkingPackages = [
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 2",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Climb_3a.jpg",
+          src: "/assets/photos/Kilimanjaro_Climb_02.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route",
         },
         {
@@ -681,7 +681,7 @@ export const trekkingPackages = [
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 3",
         },
         {
-          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
           alt: "5 Days Kilimanjaro Trek via Umbwe Route – photo 4",
         },
         {
@@ -1131,7 +1131,7 @@ export const trekkingPackages = [
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 5",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_01.jpg",
           alt: "6 Days Kilimanjaro Trek via Umbwe Route – photo 7",
         },
         {
@@ -2005,10 +2005,10 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+      image: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_01.jpg",
       gallery: [
         {
-          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_01.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 7",
         },
         {
@@ -2016,7 +2016,7 @@ export const trekkingPackages = [
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2)",
         },
         {
-          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
           alt: "7 Days Kilimanjaro Trek via Machame Route (Option 2) – photo 2",
         },
         {
@@ -2041,7 +2041,7 @@ export const trekkingPackages = [
         },
       ],
       sectionId: "kilimanjaro-7-days",
-      listingImage: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+      listingImage: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_01.jpg",
       listingOrder: 13,
     },
     {
@@ -2172,7 +2172,7 @@ export const trekkingPackages = [
           alt: "8 Days Kilimanjaro Trek via Machame Route",
         },
         {
-          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
           alt: "8 Days Kilimanjaro Trek via Machame Route – photo 3",
         },
         {
@@ -2352,7 +2352,7 @@ export const trekkingPackages = [
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 7",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_03.jpg",
+          src: "/assets/photos/Kilimanjaro_Trek_Lemosho_Route_01.jpg",
           alt: "8 Days Kilimanjaro Trek via Lemosho Route – photo 8",
         },
       ],
@@ -2513,7 +2513,7 @@ export const trekkingPackages = [
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 6",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_14.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_12.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 1) – photo 7",
         },
         {
@@ -2647,10 +2647,10 @@ export const trekkingPackages = [
         "Optional activities not mentioned in the itinerary",
         "Gratuities for guides, drivers, and lodge staff",
       ],
-      image: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+      image: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
       gallery: [
         {
-          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+          src: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2)",
         },
         {
@@ -2674,7 +2674,7 @@ export const trekkingPackages = [
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 6",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_14.jpg",
+          src: "/assets/photos/Kilimanjaro_Climbi_via_Northern_Circuit_Route_12.jpg",
           alt: "9 Days Kilimanjaro Trek via Northern Route (Option 2) – photo 7",
         },
         {
@@ -2683,7 +2683,7 @@ export const trekkingPackages = [
         },
       ],
       sectionId: "kilimanjaro-8-9-days",
-      listingImage: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_05.jpg",
+      listingImage: "/assets/photos/Mount_Kilimanjaro_Kibo_Peak_06.jpg",
       listingOrder: 17,
     },
     {
@@ -2766,7 +2766,7 @@ export const trekkingPackages = [
           alt: "Kilimanjaro Trek via Western Breach – photo 2",
         },
         {
-          src: "/assets/photos/Kilimanjaro_Western_Breach_Route_05.jpg",
+          src: "/assets/photos/Kilimanjaro_Western_Breach_Route_01.jpg",
           alt: "Kilimanjaro Trek via Western Breach – photo 3",
         },
         {
@@ -3015,7 +3015,7 @@ export const trekkingPackages = [
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 5",
         },
         {
-          src: "/assets/photos/Mount_Oldonyo_Lengai_08.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_02.jpg",
           alt: "3 Days Ol Doinyo Lengai Mountain Climbing – photo 6",
         },
         {
@@ -3152,7 +3152,7 @@ export const trekkingPackages = [
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking",
         },
         {
-          src: "/assets/photos/Olmoti_Crater_NCA_4.jpg",
+          src: "/assets/photos/Olmoti_Crater_NCA_2.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 2",
         },
         {
@@ -3168,7 +3168,7 @@ export const trekkingPackages = [
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 6",
         },
         {
-          src: "/assets/photos/Mount_Oldonyo_Lengai_08.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_02.jpg",
           alt: "8 Days Hiking to Ngorongoro Highlands and Oldoinyo Lengai Trekking – photo 7",
         },
         {
@@ -3513,7 +3513,7 @@ export const trekkingPackages = [
           alt: "4 Days Mount Meru Climb – photo 8",
         },
         {
-          src: "/assets/photos/Arusha_National_Park_Mount_Meru_01.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_02.jpg",
           alt: "4 Days Mount Meru Climb",
         },
         {

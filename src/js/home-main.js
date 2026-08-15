@@ -48,11 +48,13 @@ function initDeferredHome() {
         import("./autoslider.js"),
         import("./slideshow.js"),
         import("./card-tilt.js"),
+        import("./card-motion.js"),
         import("./render-home.js"),
-      ]).then(([autoslider, slideshow, cardTilt, homeRender]) => {
+      ]).then(([autoslider, slideshow, cardTilt, cardMotion, homeRender]) => {
         autoslider.initAutoslider();
         slideshow.initSlideshows();
         cardTilt.initCardTilt();
+        cardMotion.initCardMotion();
         homeRender.renderSiteFooter();
         initLazyImages(document.getElementById("home-popular-destinations"));
         initLazyImages(document.getElementById("home-popular-itineraries"));

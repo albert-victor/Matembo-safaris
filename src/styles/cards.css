@@ -61,7 +61,6 @@
     box-shadow var(--duration-normal) var(--ease-out),
     transform 0.45s var(--ease-reveal);
   transform-style: preserve-3d;
-  will-change: transform;
 }
 
 .safari-card:hover .safari-card__frame,
@@ -192,6 +191,11 @@
 .safari-card__motion {
   position: absolute;
   inset: -3%;
+}
+
+.safari-card.is-motion-active .safari-card__motion,
+.safari-card:hover .safari-card__motion,
+.safari-card:focus-within .safari-card__motion {
   will-change: transform;
   animation: ken-burns-drift var(--ken-burns-duration) var(--ease-in-out) infinite;
 }

@@ -5,6 +5,7 @@ import { initSiteNav } from "./site-nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
 import { initLazyImages } from "./lazy-images.js";
 import { initCardTilt } from "./card-tilt.js";
+import { initCardMotion } from "./card-motion.js";
 import { trekkingPackages, trekkingSectionOrder } from "../data/trekking-packages.js";
 
 const GRID_BY_SECTION = {
@@ -43,6 +44,7 @@ async function init() {
 
   await renderTrekkingSections();
   initCardTilt();
+  initCardMotion();
   initLazyImages();
   initScrollReveal();
 }

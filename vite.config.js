@@ -71,6 +71,14 @@ export default defineConfig({
         ...getHtmlInputsFromDir("circuits", "circuit"),
         ...getHtmlInputsFromDir("packages", "pkg"),
       },
+      output: {
+        manualChunks(id) {
+          if (id.includes("safari-packages.js")) return "safari-packages";
+          if (id.includes("all-destinations.js")) return "destinations-data";
+          if (id.includes("game-drive-packages.js")) return "game-drive-packages";
+          if (id.includes("activity-packages.js")) return "activity-packages";
+        },
+      },
     },
   },
 });

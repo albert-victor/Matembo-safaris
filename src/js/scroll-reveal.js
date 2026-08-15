@@ -24,25 +24,32 @@ const STAGGER_MS = 40;
 const STAGGER_CAP_MS = 240;
 const SCROLL_OFFSET_PX = 120;
 
+const observed = new WeakSet();
+let sharedObserver = null;
+
 function collectRevealTargets(root) {
   const seen = new Set();
   const elements = [];
 
   root.querySelectorAll(REVEAL_SELECTORS).forEach((el) => {
-    if (seen.has(el) || el.classList.contains("is-visible")) return;
+    if (seen.has(el) || el.classList.contains("is-visible") || observed.has(el)) return;
     seen.add(el);
     elements.push(el);
   });
 
-  const topLevel = elements.filter(
-    (el) => !elements.some((other) => other !== el && other.contains(el))
-  );
-
-  return topLevel.sort(
-    (a, b) =>
-      a.getBoundingClientRect().top - b.getBoundingClientRect().top ||
-      (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1)
-  );
+  const set = new Set(elements);
+  return elements
+    .filter((el) => {
+      let parent = el.parentElement;
+      while (parent) {
+        if (set.has(parent)) return false;
+        parent = parent.parentElement;
+      }
+      return true;
+    })
+    .sort((a, b) =>
+      a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1
+    );
 }
 
 function isAboveFold(el, margin = 80) {
@@ -93,6 +100,37 @@ function revealWhenReady(el, batchIndex = 0) {
   }
 }
 
+function ensureObserver(onIntersect) {
+  if (sharedObserver) return sharedObserver;
+
+  let batchCounter = 0;
+  sharedObserver = new IntersectionObserver(
+    (entries) => {
+      const intersecting = entries
+        .filter((entry) => entry.isIntersecting)
+        .map((entry) => entry.target)
+        .sort((a, b) =>
+          a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1
+        );
+
+      if (!intersecting.length) return;
+
+      intersecting.forEach((el) => {
+        revealWhenReady(el, batchCounter);
+        batchCounter += 1;
+        sharedObserver.unobserve(el);
+        observed.add(el);
+      });
+    },
+    {
+      threshold: 0,
+      rootMargin: `0px 0px ${SCROLL_OFFSET_PX}px 0px`,
+    }
+  );
+
+  return sharedObserver;
+}
+
 export function initScrollReveal(root = document) {
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
@@ -107,6 +145,7 @@ export function initScrollReveal(root = document) {
     elements.forEach((el) => {
       el.classList.add("is-visible");
       cascadeRevealTargets(el);
+      observed.add(el);
     });
     return;
   }
@@ -114,36 +153,18 @@ export function initScrollReveal(root = document) {
   elements.filter(isAboveFold).forEach((el) => {
     el.classList.add("is-visible");
     cascadeRevealTargets(el);
+    observed.add(el);
   });
 
-  let batchCounter = 0;
   const pending = elements.filter((el) => !el.classList.contains("is-visible"));
+  if (!pending.length) return;
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const intersecting = entries
-        .filter((entry) => entry.isIntersecting)
-        .map((entry) => entry.target)
-        .sort(
-          (a, b) =>
-            a.getBoundingClientRect().top - b.getBoundingClientRect().top
-        );
-
-      if (!intersecting.length) return;
-
-      intersecting.forEach((el) => {
-        revealWhenReady(el, batchCounter);
-        batchCounter += 1;
-        observer.unobserve(el);
-      });
-    },
-    {
-      threshold: 0,
-      rootMargin: `0px 0px ${SCROLL_OFFSET_PX}px 0px`,
-    }
-  );
+  const observer = ensureObserver();
 
   requestAnimationFrame(() => {
-    pending.forEach((el) => observer.observe(el));
+    pending.forEach((el) => {
+      if (observed.has(el)) return;
+      observer.observe(el);
+    });
   });
 }

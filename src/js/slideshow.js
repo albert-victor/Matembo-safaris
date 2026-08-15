@@ -17,6 +17,7 @@ function initOneSlideshow(slideshow, prefersReducedMotion) {
 
   let current = 0;
   let timer = null;
+  let isVisible = true;
   const intervalMs = Number(slideshow.dataset.interval || 5000);
 
   const goTo = (index) => {
@@ -43,7 +44,7 @@ function initOneSlideshow(slideshow, prefersReducedMotion) {
   };
 
   const start = () => {
-    if (prefersReducedMotion) return;
+    if (prefersReducedMotion || !isVisible) return;
     stop();
     timer = setInterval(next, intervalMs);
   };
@@ -70,6 +71,16 @@ function initOneSlideshow(slideshow, prefersReducedMotion) {
   slideshow.addEventListener("focusin", stop);
   slideshow.addEventListener("focusout", start);
 
+  slideshow._slideshowControl = {
+    start,
+    stop,
+    setVisible(nextVisible) {
+      isVisible = nextVisible;
+      if (isVisible) start();
+      else stop();
+    },
+  };
+
   goTo(0);
   start();
 }
@@ -90,14 +101,19 @@ export function initSlideshows(root = document) {
   }
 
   const observer = new IntersectionObserver(
-    (entries, obs) => {
+    (entries) => {
       entries.forEach((entry) => {
+        const control = entry.target._slideshowControl;
+        if (control) {
+          control.setVisible(entry.isIntersecting);
+          return;
+        }
         if (!entry.isIntersecting) return;
         initOneSlideshow(entry.target, prefersReducedMotion);
-        obs.unobserve(entry.target);
+        observer.unobserve(entry.target);
       });
     },
-    { rootMargin: "200px 0px", threshold: 0.01 }
+    { rootMargin: "120px 0px", threshold: 0.01 }
   );
 
   slideshows.forEach((slideshow) => {

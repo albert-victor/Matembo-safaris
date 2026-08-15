@@ -2,11 +2,13 @@
  * Generic autoslider – one-card step with multi-visible viewport.
  */
 import { loadImagesIn } from "./lazy-images.js";
+import { syncCarouselCardMotion } from "./card-motion.js";
 
 function hydrateVisibleSlides(slides, index, visible) {
   for (let i = index; i < Math.min(index + visible, slides.length); i++) {
     loadImagesIn(slides[i], { priority: i === index });
   }
+  syncCarouselCardMotion(slides, index, visible);
 }
 
 function getVisibleCount(root) {
@@ -42,6 +44,8 @@ export function initAutoslider(root = document) {
     let pointerStart = null;
     let touchStartX = null;
     let touchDeltaX = 0;
+    let isInView = true;
+    let cachedStep = 0;
     const intervalMs = Number(slider.dataset.autoplay || 5000);
     const swipeThreshold = 42;
 
@@ -53,15 +57,29 @@ export function initAutoslider(root = document) {
     };
 
     const getStepOffset = () => {
+      if (cachedStep && ready) return cachedStep * index;
       const gap = parseFloat(getComputedStyle(track).gap) || 16;
       const slideWidth = slides[0]?.getBoundingClientRect().width || 0;
-      return index * (slideWidth + gap);
+      cachedStep = slideWidth + gap;
+      return index * cachedStep;
+    };
+
+    const bindDotListeners = () => {
+      dotsRoot?.querySelectorAll("[data-autoslider-dot]").forEach((dot) => {
+        dot.addEventListener("click", () => {
+          goTo(Number(dot.dataset.autosliderDot));
+          restart();
+        });
+      });
     };
 
     const renderDots = () => {
       if (!dotsRoot) return;
       const pages = maxIndex + 1;
-      dotsRoot.innerHTML = Array.from({ length: pages }, (_, i) => `
+      const existing = [...dotsRoot.querySelectorAll("[data-autoslider-dot]")];
+
+      if (existing.length !== pages) {
+        dotsRoot.innerHTML = Array.from({ length: pages }, (_, i) => `
         <button
           type="button"
           class="autoslider__dot ${i === index ? "is-active" : ""}"
@@ -71,12 +89,14 @@ export function initAutoslider(root = document) {
           aria-label="Go to slide ${i + 1}"
         ></button>
       `).join("");
+        bindDotListeners();
+        return;
+      }
 
-      dotsRoot.querySelectorAll("[data-autoslider-dot]").forEach((dot) => {
-        dot.addEventListener("click", () => {
-          goTo(Number(dot.dataset.autosliderDot));
-          restart();
-        });
+      existing.forEach((dot, i) => {
+        const active = i === index;
+        dot.classList.toggle("is-active", active);
+        dot.setAttribute("aria-selected", active ? "true" : "false");
       });
     };
 
@@ -109,6 +129,7 @@ export function initAutoslider(root = document) {
     };
 
     const applyLayout = () => {
+      cachedStep = 0;
       measure();
       renderDots();
       if (ready) requestAnimationFrame(() => goTo(index));
@@ -133,7 +154,7 @@ export function initAutoslider(root = document) {
     };
 
     const start = () => {
-      if (prefersReducedMotion || maxIndex <= 0) return;
+      if (prefersReducedMotion || maxIndex <= 0 || !isInView) return;
       stop();
       timer = setInterval(next, intervalMs);
     };
@@ -215,6 +236,19 @@ export function initAutoslider(root = document) {
 
     if ("ResizeObserver" in window) {
       new ResizeObserver(scheduleLayout).observe(track);
+    }
+
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            isInView = entry.isIntersecting;
+            if (isInView) start();
+            else stop();
+          });
+        },
+        { threshold: 0.05, rootMargin: "40px 0px" }
+      ).observe(slider);
     }
 
     measure();

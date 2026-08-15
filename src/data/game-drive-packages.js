@@ -1754,7 +1754,7 @@ export const gameDrivePackages = [
           alt: "4 Days to Lake Manyara, Serengeti National Parks and Ngorongoro Crater – photo 2",
         },
         {
-          src: "/assets/photos/Serengeti_National_Park_Leopard_20.jpg",
+          src: "/assets/photos/Serengeti_National_Park_Leopard_21.jpg",
           alt: "4 Days to Lake Manyara, Serengeti National Parks and Ngorongoro Crater – photo 3",
         },
         {
@@ -3606,7 +3606,7 @@ export const gameDrivePackages = [
           alt: "2 Days Safari to Saadani National Park",
         },
         {
-          src: "/assets/photos/Saadani_National_Park_Hippos_36.jpg",
+          src: "/assets/photos/Saadani_National_Park_Hippos_23.jpg",
           alt: "2 Days Safari to Saadani National Park",
         },
         {
@@ -3750,7 +3750,7 @@ export const gameDrivePackages = [
           alt: "3 Days Safari to Saadani National Park – photo 4",
         },
         {
-          src: "/assets/photos/Saadani_National_Park_Hippos_36.jpg",
+          src: "/assets/photos/Saadani_National_Park_Hippos_23.jpg",
           alt: "3 Days Safari to Saadani National Park – photo 5",
         },
         {
@@ -5071,7 +5071,7 @@ export const gameDrivePackages = [
           alt: "3 Days Safari to Udzungwa & Mikumi National Parks – photo 3",
         },
         {
-          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_112.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
           alt: "3 Days Safari to Udzungwa & Mikumi National Parks – photo 4",
         },
         {
@@ -5942,7 +5942,7 @@ export const gameDrivePackages = [
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 3",
         },
         {
-          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_112.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 5",
         },
         {

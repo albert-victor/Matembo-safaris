@@ -480,7 +480,7 @@ export const experiences = [
           alt: "Pink flamingos in Arusha National Park",
         },
         {
-          src: "/assets/photos/Lake_Manyara_Flamingos_01.jpg",
+          src: "/assets/photos/Lake_Manyara_National_Park_Flamingos_26.jpg",
           alt: "Lake Manyara flamingos",
         },
       ],

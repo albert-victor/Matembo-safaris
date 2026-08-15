@@ -22,7 +22,7 @@ export const heroSlides = [
     imageAlt: "Wildebeest and plains on the Serengeti",
     focus: "center 42%",
     motion: "zoom-in",
-    cta: { label: "Serengeti Safaris", href: "/destinations/serengeti-national-park.html" },
+    cta: { label: "Serengeti Safaris", href: "/destinations/serengeti.html" },
   },
   {
     id: "great-migration",
@@ -44,7 +44,7 @@ export const heroSlides = [
     imageAlt: "Panoramic view over Ngorongoro Crater",
     focus: "center 38%",
     motion: "zoom-out",
-    cta: { label: "Crater Safaris", href: "/destinations/ngorongoro-crater.html" },
+    cta: { label: "Crater Safaris", href: "/destinations/ngorongoro.html" },
   },
   {
     id: "kilimanjaro",

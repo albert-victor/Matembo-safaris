@@ -2390,7 +2390,7 @@ export const activityPackages = [
           alt: "5 - 6 Days Safari to Mahale National Park – photo 2",
         },
         {
-          src: "/assets/photos/Mahale_Mountains_National_Park_Chimp_19.jpg",
+          src: "/assets/photos/Mahale_Mountains_National_Park_Chimp_16.jpg",
           alt: "5 - 6 Days Safari to Mahale National Park",
         },
         {
@@ -2507,7 +2507,7 @@ export const activityPackages = [
           alt: "Jozani Chwaka Bay National Park – photo 4",
         },
         {
-          src: "/assets/photos/Zanzibar_Jozani_Forest_Red_Colobus_Monkey_05.jpg",
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Red_Colobus_Monkey_01.jpg",
           alt: "Jozani Chwaka Bay National Park – photo 5",
         },
         {
@@ -2627,7 +2627,7 @@ export const activityPackages = [
           alt: "3 Days Safari to Udzungwa & Mikumi National Parks – photo 3",
         },
         {
-          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_112.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
           alt: "3 Days Safari to Udzungwa & Mikumi National Parks – photo 4",
         },
         {
@@ -4341,7 +4341,7 @@ export const activityPackages = [
           alt: "Day Hike to North Pare Mountains",
         },
         {
-          src: "/assets/photos/North_Pare_Mountains_Kindoroko_Forest.jpg",
+          src: "/assets/photos/Northern_Pare.jpg",
           alt: "Day Hike to North Pare Mountains – photo 2",
         },
         {

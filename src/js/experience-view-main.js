@@ -12,6 +12,7 @@ import { initScrollReveal } from "./scroll-reveal.js";
 import { renderPackageCards } from "./render-cards.js";
 import { getActivityCollection, getActivityPackagesForCollection } from "../data/activity-packages.js";
 import { initCardTilt } from "./card-tilt.js";
+import { initCardMotion } from "./card-motion.js";
 
 const EXPERIENCE_PACKAGE_COLLECTIONS = {
   "bird-watching": "bird-watching",
@@ -107,7 +108,7 @@ async function renderExperiencePackages(experienceId) {
 
   await renderPackageCards("#experience-packages-grid", { packages, viewLabel: "View Safari" });
   initCardTilt();
-  initScrollReveal();
+  initCardMotion();
 }
 
 async function init() {

@@ -77,7 +77,7 @@ export function prefetchMegaMenuImages() {
   /* Mega menu images use native loading="lazy" with real src after hydration. */
 }
 
-function isNearViewport(el, margin = 480) {
+function isNearViewport(el, margin = 200) {
   const rect = el.getBoundingClientRect();
   const vh = window.innerHeight || document.documentElement.clientHeight;
   return rect.top <= vh + margin && rect.bottom >= -margin;
@@ -108,7 +108,7 @@ export function initLazyImages(root = document) {
           obs.unobserve(entry.target);
         });
     },
-    { rootMargin: "480px 0px", threshold: 0.01 }
+    { rootMargin: "200px 0px", threshold: 0.01 }
   );
 
   offscreen.forEach((img) => observer.observe(img));

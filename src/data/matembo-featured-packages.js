@@ -840,7 +840,7 @@ export const matemboFeaturedPackages = [
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 4",
         },
         {
-          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_112.jpg",
+          src: "/assets/photos/Udzungwa_National_Park_Sanje_Viewpoint_14.jpg",
           alt: "10 Days Safari to Nyerere, Mikumi Udzungwa & Ruaha National Parks – photo 5",
         },
         {

@@ -5,9 +5,9 @@ function initCardTilt() {
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   ).matches;
-  const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
+  const canHoverTilt = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
-  if (prefersReducedMotion || isCoarsePointer) return;
+  if (prefersReducedMotion || !canHoverTilt) return;
 
   document.querySelectorAll("[data-tilt]").forEach((frame) => {
     let rafId = null;

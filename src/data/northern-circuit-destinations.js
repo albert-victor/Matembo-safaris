@@ -270,7 +270,7 @@ export const northernCircuitDestinations = [
           alt: "Arusha National Park – view 7",
         },
         {
-          src: "/assets/photos/Arusha_National_Park_Giraffe_59.jpg",
+          src: "/assets/photos/Arusha_National_Park_Giraffes_102.jpg",
           alt: "Arusha National Park – view 8",
         },
         {
@@ -701,7 +701,7 @@ export const northernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mount-oldoinyo-lengai",
       images: [
         {
-          src: "/assets/photos/Mount_Oldonyo_Lengai_08.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_02.jpg",
           alt: "Mount Ol'doinyo Lengai",
         },
         {
@@ -715,7 +715,7 @@ export const northernCircuitDestinations = [
       ],
       gallery: [
         {
-          src: "/assets/photos/Mount_Oldonyo_Lengai_08.jpg",
+          src: "/assets/photos/Mount_Oldonyo_Lengai_02.jpg",
           alt: "Mount Ol'doinyo Lengai",
         },
         {
@@ -739,7 +739,7 @@ export const northernCircuitDestinations = [
           alt: "Mount Ol'doinyo Lengai – view 6",
         },
         {
-          src: "/assets/photos/Streams_Flowing_to_Lake_Natron_27.jpg",
+          src: "/assets/photos/Streams_Flowing_to_Lake_Natron_20.jpg",
           alt: "Mount Ol'doinyo Lengai – view 7",
         },
         {
@@ -1018,7 +1018,7 @@ export const northernCircuitDestinations = [
           alt: "Lake Chala – view 6",
         },
         {
-          src: "/assets/photos/Lake_Chala_Ecotour_Swimming_44.jpg",
+          src: "/assets/photos/Lake_Chala_Ecotour_03.jpg",
           alt: "Lake Chala – view 7",
         },
         {
@@ -1294,7 +1294,7 @@ export const northernCircuitDestinations = [
           alt: "Mount Meru – view 6",
         },
         {
-          src: "/assets/photos/Arusha_National_Park_Mount_Meru_01.jpg",
+          src: "/assets/photos/Arusha_National_Park_Mount_Meru_02.jpg",
           alt: "Mount Meru – view 7",
         },
         {
@@ -1442,7 +1442,7 @@ export const northernCircuitDestinations = [
           alt: "Rau Nature Forest Reserve – view 2",
         },
         {
-          src: "/assets/photos/Rau_Forest_Nature_Forest_Reserve_09.jpg",
+          src: "/assets/photos/Rau_Forest_Nature_Forest_Reserve_07.jpg",
           alt: "Rau Nature Forest Reserve – view 3",
         },
       ],
@@ -1456,7 +1456,7 @@ export const northernCircuitDestinations = [
           alt: "Rau Nature Forest Reserve – view 2",
         },
         {
-          src: "/assets/photos/Rau_Forest_Nature_Forest_Reserve_09.jpg",
+          src: "/assets/photos/Rau_Forest_Nature_Forest_Reserve_07.jpg",
           alt: "Rau Nature Forest Reserve – view 3",
         },
         {
@@ -1619,7 +1619,7 @@ export const northernCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/olkarien-gorge",
       images: [
         {
-          src: "/assets/photos/Olkarien_Gorge_NCA_1.jpg",
+          src: "/assets/photos/Olkarien_Gorge_NCA_2.jpg",
           alt: "Olkarien Gorge",
         },
         {
@@ -1633,7 +1633,7 @@ export const northernCircuitDestinations = [
       ],
       gallery: [
         {
-          src: "/assets/photos/Olkarien_Gorge_NCA_1.jpg",
+          src: "/assets/photos/Olkarien_Gorge_NCA_2.jpg",
           alt: "Olkarien Gorge",
         },
         {
@@ -1739,7 +1739,7 @@ export const northernCircuitDestinations = [
           alt: "Mount Hanang – view 4",
         },
         {
-          src: "/assets/photos/Mount_Hanang_Descending.jpg",
+          src: "/assets/photos/Mount_Hanang_3.jpg",
           alt: "Mount Hanang – view 5",
         },
         {
