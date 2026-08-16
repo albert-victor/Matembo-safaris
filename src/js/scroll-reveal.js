@@ -81,12 +81,8 @@ function revealElement(el, batchIndex = 0) {
 
   const delay = getRevealDelay(el, batchIndex);
   el.style.setProperty("--reveal-delay", `${delay}ms`);
-
-  window.setTimeout(() => {
-    if (el.classList.contains("is-visible")) return;
-    el.classList.add("is-visible");
-    cascadeRevealTargets(el);
-  }, delay);
+  el.classList.add("is-visible");
+  cascadeRevealTargets(el);
 }
 
 function isCardReveal(el) {

@@ -2,10 +2,46 @@
 import { socialLinks, siteMeta } from "../data/home-data.js";
 import { formatCopy, escapeHtml } from "./content-utils.js";
 
+function renderParkGallery(section, modifier) {
+  return `
+    <section
+      class="about-park-gallery home-section${modifier === "alt" ? " home-section--alt" : ""}"
+      id="${escapeHtml(section.id)}"
+      aria-labelledby="${escapeHtml(section.id)}-title"
+    >
+      <div class="container">
+        <header class="home-section__header section-reveal">
+          <span class="home-section__label">${formatCopy(section.label)}</span>
+          <h2 id="${escapeHtml(section.id)}-title" class="home-section__title">${formatCopy(section.title)}</h2>
+          <p class="home-section__desc">${formatCopy(section.desc)}</p>
+        </header>
+        <div class="about-park-gallery__grid">
+          ${section.images
+            .map(
+              (img, i) => `
+            <figure
+              class="about-park-gallery__item${i === 0 ? " about-park-gallery__item--hero" : ""}"
+              data-reveal
+              ${i % 4 ? `data-reveal-delay="${i % 4}"` : ""}
+            >
+              <img src="${escapeHtml(img.src)}" alt="${formatCopy(img.alt)}" loading="lazy" width="480" height="360" decoding="async" />
+            </figure>
+          `
+            )
+            .join("")}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
 export function renderAboutPage() {
   const hero = document.querySelector("#about-hero");
   const story = document.querySelector("#about-story");
   const moments = document.querySelector("#about-moments");
+  const iconic = document.querySelector("#about-iconic");
+  const ruahaGallery = document.querySelector("#about-ruaha-gallery");
+  const mikumiGallery = document.querySelector("#about-mikumi-gallery");
   const gallery = document.querySelector("#about-gallery");
   const team = document.querySelector("#about-team");
   const social = document.querySelector("#about-social");
@@ -64,12 +100,16 @@ export function renderAboutPage() {
             <h2 id="about-story-title" class="home-section__title">${formatCopy(d.story.title)}</h2>
             ${d.story.paragraphs.map((p) => `<p class="about-story__text">${formatCopy(p)}</p>`).join("")}
             <dl class="home-about__stats">
-              ${d.story.stats.map((s) => `
+              ${d.story.stats
+                .map(
+                  (s) => `
                 <div class="home-about__stat">
                   <dt>${formatCopy(s.label)}</dt>
                   <dd>${formatCopy(s.value)}</dd>
                 </div>
-              `).join("")}
+              `
+                )
+                .join("")}
             </dl>
           </div>
         </div>
@@ -87,15 +127,65 @@ export function renderAboutPage() {
             <p class="home-section__desc">${formatCopy(d.moments.desc)}</p>
           </header>
           <div class="about-moments__grid">
-            ${d.moments.images.map((img, i) => `
+            ${d.moments.images
+              .map(
+                (img, i) => `
               <figure class="about-moments__item" data-reveal ${i % 3 ? `data-reveal-delay="${i % 3}"` : ""}>
-                <img src="${escapeHtml(img.src)}" alt="${formatCopy(img.alt)}" loading="lazy" width="400" height="300" />
+                <img src="${escapeHtml(img.src)}" alt="${formatCopy(img.alt)}" loading="lazy" width="400" height="300" decoding="async" />
               </figure>
-            `).join("")}
+            `
+              )
+              .join("")}
           </div>
         </div>
       </section>
     `;
+  }
+
+  if (iconic && d.iconic) {
+    const ic = d.iconic;
+    iconic.innerHTML = `
+      <section class="about-iconic" aria-labelledby="about-iconic-title">
+        <div class="about-iconic__stage">
+          <div class="about-iconic__sticky" aria-hidden="true">
+            <img
+              class="about-iconic__sticky-img"
+              src="${escapeHtml(ic.stickyImage)}"
+              alt="${formatCopy(ic.stickyAlt)}"
+              width="1920"
+              height="1080"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="about-iconic__sticky-scrim"></div>
+          </div>
+          <div class="about-iconic__collage" aria-hidden="true">
+            ${ic.collage
+              .map(
+                (frame) => `
+              <figure class="about-iconic__frame about-iconic__frame--${escapeHtml(frame.slot)}">
+                <img src="${escapeHtml(frame.src)}" alt="" loading="lazy" decoding="async" />
+              </figure>
+            `
+              )
+              .join("")}
+          </div>
+          <div class="about-iconic__content section-reveal">
+            <span class="home-section__label about-iconic__label">${formatCopy(ic.label)}</span>
+            <h2 id="about-iconic-title" class="about-iconic__title">${formatCopy(ic.title)}</h2>
+            <p class="about-iconic__lead">${formatCopy(ic.lead)}</p>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  if (ruahaGallery && d.ruahaGallery) {
+    ruahaGallery.innerHTML = renderParkGallery(d.ruahaGallery, "");
+  }
+
+  if (mikumiGallery && d.mikumiGallery) {
+    mikumiGallery.innerHTML = renderParkGallery(d.mikumiGallery, "alt");
   }
 
   if (gallery) {
@@ -108,11 +198,15 @@ export function renderAboutPage() {
             <p class="home-section__desc">${formatCopy(d.gallery.desc)}</p>
           </header>
           <div class="about-gallery__grid">
-            ${d.gallery.images.map((img, i) => `
+            ${d.gallery.images
+              .map(
+                (img, i) => `
               <figure class="about-gallery__item${i % 5 === 0 ? " about-gallery__item--wide" : ""}" data-reveal ${i % 4 ? `data-reveal-delay="${i % 4}"` : ""}>
-                <img src="${escapeHtml(img.src)}" alt="${formatCopy(img.alt)}" loading="lazy" width="360" height="280" />
+                <img src="${escapeHtml(img.src)}" alt="${formatCopy(img.alt)}" loading="lazy" width="360" height="280" decoding="async" />
               </figure>
-            `).join("")}
+            `
+              )
+              .join("")}
           </div>
         </div>
       </section>
@@ -143,11 +237,15 @@ export function renderAboutPage() {
         <div class="container about-social__inner section-reveal">
           <span class="about-social__label">Follow Matembo</span>
           <div class="about-social__links">
-            ${socialLinks.map((item) => `
+            ${socialLinks
+              .map(
+                (item) => `
               <a href="${escapeHtml(item.href)}" target="_blank" rel="noopener noreferrer" class="about-social__link" aria-label="${escapeHtml(item.label)}">
                 <i class="${escapeHtml(item.icon)}" aria-hidden="true"></i>
               </a>
-            `).join("")}
+            `
+              )
+              .join("")}
           </div>
         </div>
       </section>

@@ -1,0 +1,46 @@
+# Cloudflare Pages – shrink upload before `npm run build`
+# Do NOT exclude assets/photos, src/, or scripts/generate-sitemap.mjs (Vite build needs them)
+
+# Regenerated in CI
+dist/
+node_modules/
+
+# IDE & logs
+.cursor/
+*.log
+agent-transcripts/
+
+# Dev-only HTML (not in production menu)
+ui-demo.html
+mega-dropdown-mockups.html
+
+# Unused hero picks (not referenced in site)
+assets/hero/_candidates/
+public/assets/hero/_candidates/
+
+# Dev import/probe tooling (not used by Vite build)
+scripts/import-*.mjs
+scripts/probe-*.mjs
+scripts/generate-activity-pages.mjs
+scripts/generate-circuit-pages.mjs
+scripts/generate-package-pages.mjs
+scripts/mirror-ttb-images.mjs
+scripts/replace-ttb-urls.mjs
+scripts/rebuild-manifest.mjs
+scripts/trim-galleries.mjs
+scripts/normalize-dashes.mjs
+scripts/optimize-images.mjs
+scripts/minify-html-source.mjs
+scripts/inject-root-seo.mjs
+scripts/data/
+scripts/tmp-*
+scripts/lib/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+.env
+.env.*

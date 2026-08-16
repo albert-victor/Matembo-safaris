@@ -1,4 +1,4 @@
-﻿/** Auto-generated from tanzaniatourism.com – run: npm run import:oceanic */
+/** Auto-generated from tanzaniatourism.com – run: npm run import:oceanic */
 export const TTB_OCEANIC_ORIGIN = "https://www.tanzaniatourism.com";
 
 export const oceanicCircuitMeta = {
@@ -11,14 +11,14 @@ export const oceanicCircuitMeta = {
 export const zanzibarCircuitMeta = {
   id: "zanzibar",
   name: "Zanzibar Island",
-  description: "Stone Town, spice tours, Jozani Forest & the classic Zanzibar coast",
+  description: "Stone Town, Jozani Forest, Nungwi, Kizimkazi dolphins & Prison Island – the classic spice island",
   sourceUrl: "https://www.tanzaniatourism.com/destinations/zanzibar-island",
 };
 
 export const mafiaCircuitMeta = {
   id: "mafia",
   name: "Mafia Island",
-  description: "Chole Bay, whale sharks, coral gardens & unhurried island life",
+  description: "Chole Bay reefs, Juani & Jibondo islands, Kua ruins & whale-shark waters",
   sourceUrl: "https://www.tanzaniatourism.com/destinations/mafia-island",
 };
 
@@ -34,7 +34,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Beach Holiday",
       bestSeason: "Jun – Mar",
-      journeys: "1 tours · 212 reviews",
+      journeys: "1 tours · 213 reviews",
       tagline: "Mbudya, an uninhabited island north of Tanzania’s major city, Dar es Salaam, is one of the four islands that make up the Dar es Salaam Marine Reserve.",
       description: "Mbudya, an uninhabited island north of Tanzania’s major city, Dar es Salaam, is one of the four islands that make up the Dar es Salaam Marine Reserve.",
       descriptions: [
@@ -51,65 +51,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mbudya-island-marine-reserve",
       images: [
         {
-          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_1.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Dar-es-Salaam_1.jpg",
           alt: "Mbudya Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Boats_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Boats_01.jpg",
           alt: "Mbudya Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_08.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_08.jpg",
           alt: "Mbudya Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_1.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Dar-es-Salaam_1.jpg",
           alt: "Mbudya Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Boats_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Boats_01.jpg",
           alt: "Mbudya Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_08.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_08.jpg",
           alt: "Mbudya Island Marine Reserve – view 3",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_06.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_06.jpg",
           alt: "Mbudya Island Marine Reserve – view 4",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_07.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_07.jpg",
           alt: "Mbudya Island Marine Reserve – view 5",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_05.jpg",
           alt: "Mbudya Island Marine Reserve – view 6",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Snorkeling_01.jpg",
           alt: "Mbudya Island Marine Reserve – view 7",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_03.jpg",
           alt: "Mbudya Island Marine Reserve – view 8",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_Tanzania_11.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Dar-es-Salaam_Tanzania_11.jpg",
           alt: "Mbudya Island Marine Reserve – view 9",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Dar-es-Salaam_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Dar-es-Salaam_05.jpg",
           alt: "Mbudya Island Marine Reserve – view 10",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbudya_Island_Marine_Reserve_x_01.jpg",
           alt: "Mbudya Island Marine Reserve – view 11",
         },
         {
-          src: "/assets/photos/Mbuday_Island_Historical_Site.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mbuday_Island_Historical_Site.jpg",
           alt: "Mbudya Island Marine Reserve – view 12",
         },
       ],
@@ -125,7 +125,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Beach Holiday",
       bestSeason: "Jun – Mar",
-      journeys: "1 tours · 219 reviews",
+      journeys: "1 tours · 220 reviews",
       tagline: "Bongoyo Island Marine Reserve is uninhabited Island, located 2.5km north of the country capital city, Dar es Salaam. It is the most frequently visited island…",
       description: "Bongoyo Island Marine Reserve is uninhabited Island, located 2.5km north of the country capital city, Dar es Salaam. It is the most frequently visited island of the Dar es Salaam Marine Reserves System (DMRS).",
       descriptions: [
@@ -146,65 +146,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/bongoyo-island-marine-reserve",
       images: [
         {
-          src: "/assets/photos/Bongoyo_Island__Aerial_View_Tanzania_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island__Aerial_View_Tanzania_01.jpg",
           alt: "Bongoyo Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Bongoyo_Island__Aerial_View_Tanzania_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island__Aerial_View_Tanzania_02.jpg",
           alt: "Bongoyo Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_Snorkeling_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Snorkeling_02.jpg",
           alt: "Bongoyo Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Bongoyo_Island__Aerial_View_Tanzania_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island__Aerial_View_Tanzania_01.jpg",
           alt: "Bongoyo Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Bongoyo_Island__Aerial_View_Tanzania_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island__Aerial_View_Tanzania_02.jpg",
           alt: "Bongoyo Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_Snorkeling_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Snorkeling_02.jpg",
           alt: "Bongoyo Island Marine Reserve – view 3",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_Swimming.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Swimming.jpg",
           alt: "Bongoyo Island Marine Reserve – view 4",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_02.jpg",
           alt: "Bongoyo Island Marine Reserve – view 5",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_Crabs.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Crabs.jpg",
           alt: "Bongoyo Island Marine Reserve – view 6",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_Migratory_Birds.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Migratory_Birds.jpg",
           alt: "Bongoyo Island Marine Reserve – view 7",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_Snorkeling_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Snorkeling_01.jpg",
           alt: "Bongoyo Island Marine Reserve – view 8",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_01.jpg",
           alt: "Bongoyo Island Marine Reserve – view 9",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_03.jpg",
           alt: "Bongoyo Island Marine Reserve – view 10",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_04.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_04.jpg",
           alt: "Bongoyo Island Marine Reserve – view 11",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_Dar-es-Salaam_Tanzania_12.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Bongoyo_Island_Dar-es-Salaam_Tanzania_12.jpg",
           alt: "Bongoyo Island Marine Reserve – view 12",
         },
       ],
@@ -220,7 +220,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Beach Holiday",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 201 reviews",
+      journeys: "0 tours · 202 reviews",
       tagline: "Pangavini Island Marine Reserve is another uninhabited island located in the northern of the country capital city, Dar es Salaam and is one of the seven isla…",
       description: "Pangavini Island Marine Reserve is another uninhabited island located in the northern of the country capital city, Dar es Salaam and is one of the seven islands of the Dar es Salaam Marine Reserve System (DMRS). The island is small, only about 250 m long; it has a rocky coastline without beaches.",
       descriptions: [
@@ -237,61 +237,61 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/pangavini-island-marine-reserve",
       images: [
         {
-          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island.jpg",
           alt: "Pangavini Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Pangavini_Island_Marine_Reserve_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Pangavini_Island_Marine_Reserve_05.jpg",
           alt: "Pangavini Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Pangavini_Island_Marine_Reserve_04.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Pangavini_Island_Marine_Reserve_04.jpg",
           alt: "Pangavini Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island.jpg",
           alt: "Pangavini Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Pangavini_Island_Marine_Reserve_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Pangavini_Island_Marine_Reserve_05.jpg",
           alt: "Pangavini Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Pangavini_Island_Marine_Reserve_04.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Pangavini_Island_Marine_Reserve_04.jpg",
           alt: "Pangavini Island Marine Reserve – view 3",
         },
         {
-          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Pangavini_Island_750_550shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 4",
         },
         {
-          src: "/assets/photos/Pangavini_Island_Marine_Reserve_05_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangavini_Island_Marine_Reserve_05_750_550shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 5",
         },
         {
-          src: "/assets/photos/Pangavini_Island_Marine_Reserve_04_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangavini_Island_Marine_Reserve_04_750_550shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 6",
         },
         {
-          src: "/assets/photos/Pugu_Hill_Nature_Forest_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Kunduchi_Ruins_Tombs_03_286_300shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 7",
         },
         {
-          src: "/assets/photos/Kunduchi_Ruins_Tomb_with_Coffin_Shape.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mbudya_Island_Beach_Bandas_01_286_300shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 8",
         },
         {
-          src: "/assets/photos/Bongoyo_Island_Snorkeling_01_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Bongoyo_Island__Aerial_View_Tanzania_01_286_300shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 9",
         },
         {
-          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini_286_300shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 10",
         },
         {
-          src: "/assets/photos/Mbudya_Island_Marine_Reserve_x_08_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pugu_Hill_Nature_Forest_286_300shar-50brig-20_c1.jpg",
           alt: "Pangavini Island Marine Reserve – view 11",
         },
       ],
@@ -307,7 +307,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Beach Holiday",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 193 reviews",
+      journeys: "0 tours · 194 reviews",
       tagline: "This is unique Marine Reserve which is an island of sand bank seen only during low tide and is devoid of vegetation. It is located in the northern part of Da…",
       description: "This is unique Marine Reserve which is an island of sand bank seen only during low tide and is devoid of vegetation. It is located in the northern part of Dar es Salaam after Mbudya Island Marine Reserve. The lower intertidal zone on the west and north is sandy with abundant sea grass mixed together with coral patches. The southeast lower intertidal areas are rocky.",
       descriptions: [
@@ -323,65 +323,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/fungu-yasin-sand-bar",
       images: [
         {
-          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini.jpg",
           alt: "Fungu Yasin Sand Bar",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02.jpg",
           alt: "Fungu Yasin Sand Bar – view 2",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_03.jpg",
           alt: "Fungu Yasin Sand Bar – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini.jpg",
           alt: "Fungu Yasin Sand Bar",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02.jpg",
           alt: "Fungu Yasin Sand Bar – view 2",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_03.jpg",
           alt: "Fungu Yasin Sand Bar – view 3",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Picniking.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_Picniking.jpg",
           alt: "Fungu Yasin Sand Bar – view 4",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Dar-es-Salaam.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_Dar-es-Salaam.jpg",
           alt: "Fungu Yasin Sand Bar – view 5",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Crab.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Fungu_Yasin_Sand_Bar_Crab.jpg",
           alt: "Fungu Yasin Sand Bar – view 6",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_02_750_550shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 7",
         },
         {
-          src: "/assets/photos/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Tanzania_Dar_es_Salaam_Marine_Reserve_Fungu_Yasini_750_550shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 8",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_03_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Fungu_Yasin_Sand_Bar_03_750_550shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 9",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Picniking_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Fungu_Yasin_Sand_Bar_Picniking_750_550shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 10",
         },
         {
-          src: "/assets/photos/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Fungu_Yasin_Sand_Bar_Dar-es-Salaam_750_550shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 11",
         },
         {
-          src: "/assets/photos/Pugu_Hill_Nature_Forest_with_Lake_Minaki.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangavini_Island_Marine_Reserve_05_286_300shar-50brig-20_c1.jpg",
           alt: "Fungu Yasin Sand Bar – view 12",
         },
       ],
@@ -397,7 +397,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Beach Holiday",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 197 reviews",
+      journeys: "0 tours · 198 reviews",
       tagline: "This reserve is found in the Southern Coast of Dar es Salaam (Kigamboni).Inner and Outer Sinda Islands Marine Reserve was about 288.7 Hectares, Inner and Out…",
       description: "This reserve is found in the Southern Coast of Dar es Salaam (Kigamboni).Inner and Outer Sinda Islands Marine Reserve was about 288.7 Hectares, Inner and Outer Sinda Islands cover an area of 23.31 and 23.96 Hectares, respectively. Sinda Islands coastlines include rocky cliffs and sandy beaches",
       descriptions: [
@@ -414,65 +414,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/sinda-island-marine-reserve",
       images: [
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_03.jpg",
           alt: "Sinda Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_02.jpg",
           alt: "Sinda Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_05.jpg",
           alt: "Sinda Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_03.jpg",
           alt: "Sinda Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_02.jpg",
           alt: "Sinda Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_05.jpg",
           alt: "Sinda Island Marine Reserve – view 3",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_01.jpg",
           alt: "Sinda Island Marine Reserve – view 4",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_04.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_04.jpg",
           alt: "Sinda Island Marine Reserve – view 5",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_59.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_59.jpg",
           alt: "Sinda Island Marine Reserve – view 6",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_60.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_60.jpg",
           alt: "Sinda Island Marine Reserve – view 7",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_56.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_56.jpg",
           alt: "Sinda Island Marine Reserve – view 8",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_57.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_57.jpg",
           alt: "Sinda Island Marine Reserve – view 9",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_58.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_58.jpg",
           alt: "Sinda Island Marine Reserve – view 10",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_54.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_54.jpg",
           alt: "Sinda Island Marine Reserve – view 11",
         },
         {
-          src: "/assets/photos/Sinda_Island_Marine_Reserve_52.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sinda_Island_Marine_Reserve_52.jpg",
           alt: "Sinda Island Marine Reserve – view 12",
         },
       ],
@@ -488,7 +488,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Beach Holiday",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 142 reviews",
+      journeys: "0 tours · 143 reviews",
       tagline: "Maziwe Island is a very small submerged, unvegetated island surrounded by coral reefs located about 8 kilometres (5.0 mi) South East of the Town of Pangani o…",
       description: "Maziwe Island is a very small submerged, unvegetated island surrounded by coral reefs located about 8 kilometres (5.0 mi) South East of the Town of Pangani off the northern coast of Tanzania.",
       descriptions: [
@@ -508,65 +508,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/maziwe-island-marine-reserve",
       images: [
         {
-          src: "/assets/photos/Maziwe_Island_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_02.jpg",
           alt: "Maziwe Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_18.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_18.jpg",
           alt: "Maziwe Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_11.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_12.jpg",
           alt: "Maziwe Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Maziwe_Island_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_02.jpg",
           alt: "Maziwe Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_18.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_18.jpg",
           alt: "Maziwe Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_11.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_12.jpg",
           alt: "Maziwe Island Marine Reserve – view 3",
         },
         {
-          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_15.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_15.jpg",
           alt: "Maziwe Island Marine Reserve – view 4",
         },
         {
-          src: "/assets/photos/Maziwe_Island_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_03.jpg",
           alt: "Maziwe Island Marine Reserve – view 5",
         },
         {
-          src: "/assets/photos/Maziwe_Island_Canoeing_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_Canoeing_03.jpg",
           alt: "Maziwe Island Marine Reserve – view 6",
         },
         {
-          src: "/assets/photos/Maziwe_Island.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island.jpg",
           alt: "Maziwe Island Marine Reserve – view 7",
         },
         {
-          src: "/assets/photos/Maziwe_Island_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_05.jpg",
           alt: "Maziwe Island Marine Reserve – view 8",
         },
         {
-          src: "/assets/photos/Maziwe_Island_Crabs_04.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_Crabs_04.jpg",
           alt: "Maziwe Island Marine Reserve – view 9",
         },
         {
-          src: "/assets/photos/Maziwe_Island_Sea_Turtle.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Island_Sea_Turtle.jpg",
           alt: "Maziwe Island Marine Reserve – view 10",
         },
         {
-          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_14.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_14.jpg",
           alt: "Maziwe Island Marine Reserve – view 11",
         },
         {
-          src: "/assets/photos/Maziwe_Marine_Reserve_Pangani_Tanga_11.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_11.jpg",
           alt: "Maziwe Island Marine Reserve – view 12",
         },
       ],
@@ -582,7 +582,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Tourist Attractions",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 138 reviews",
+      journeys: "0 tours · 139 reviews",
       tagline: "Ulenge Island or Ulenge Island Marine Reserve is a 3.151 km 2 protected, seasonally inhabited island in the Pemba Channel under the Tanga Marine Reserves (TM…",
       description: "Ulenge Island or Ulenge Island Marine Reserve is a 3.151 km 2 protected, seasonally inhabited island in the Pemba Channel under the Tanga Marine Reserves (TMRS) with the IUCN category II bordering Tanga Bay and Kwale Bay at the north of Tanga. Ulenge Island is nicknamed as Bird Island due to its importance as a seabird sanctuary and contains a diverse range of bird species, including Greater Sand Plover, Curlew Sandpiper, Crab Plover, Migrating Waders, and many more. Ulenge Island is also bordered by a healthy coral reef that offers great snorkeling and diving over its shallow reef crest and down into the drop off the Pemba channel.",
       descriptions: [
@@ -597,62 +597,66 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/ulenge-island-marine-reserve",
       images: [
         {
-          src: "/assets/photos/Marine_Island_Reserve_011.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_022.jpg",
           alt: "Ulenge Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Egret_in_Marine_Reserves_2.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Egret_in_Marine_Reserves_2.jpg",
           alt: "Ulenge Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_022_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_022_750_550shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Marine_Island_Reserve_011.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_022.jpg",
           alt: "Ulenge Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Egret_in_Marine_Reserves_2.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Egret_in_Marine_Reserves_2.jpg",
           alt: "Ulenge Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_022_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_022_750_550shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 3",
         },
         {
-          src: "/assets/photos/Egret_in_Marine_Reserves_2.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Egret_in_Marine_Reserves_2_750_550shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 4",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_071_Mangroves.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Birdslife_Common_Bulbul_Usambara_Mountains_1_286_300shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 5",
         },
         {
-          src: "/assets/photos/Egret_in_Marine_Reserves.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangani/Historical_Buildings_in_Pangani_2_286_300shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 6",
         },
         {
-          src: "/assets/photos/Amani_Nature_Forest_Reserves_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_011_286_300shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 7",
         },
         {
-          src: "/assets/photos/Amboni_Caves_Tanga_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Yambe_Island_Marine_Reserve_Crab_286_300shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 8",
         },
         {
-          src: "/assets/photos/Pangani_Tanzania.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Reserve_Tanga_01_286_300shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 9",
         },
         {
-          src: "/assets/photos/Maziwe_Island_Canoeing_03_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amboni_Caves_Tanga_13_286_300shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 10",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_072_Mangroves.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Maziwe_Island_Canoeing_03_286_300shar-50brig-20_c1.jpg",
           alt: "Ulenge Island Marine Reserve – view 11",
+        },
+        {
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_2_286_300shar-50brig-20_c1.jpg",
+          alt: "Ulenge Island Marine Reserve – view 12",
         },
       ],
     },
@@ -667,7 +671,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Tourist Attractions",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 139 reviews",
+      journeys: "0 tours · 140 reviews",
       tagline: "Kwale Island or Kwale Island Marine Reserve is a protected, seasonally inhabited island in the Pemba Channel under the Tanga Marine Reserves (TMRS) with the…",
       description: "Kwale Island or Kwale Island Marine Reserve is a protected, seasonally inhabited island in the Pemba Channel under the Tanga Marine Reserves (TMRS) with the IUCN category II located inside Kwale, Mkinga District in Tanga. The coral island, located approximately a kilometer offshore in Manza Bay, 86.2% of the 12.128 km 2 of Kwale Island, is covered with mangroves.",
       descriptions: [
@@ -683,65 +687,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kwale-island-marine-reserve",
       images: [
         {
-          src: "/assets/photos/Marine_Island_Reserve_011.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_011.jpg",
           alt: "Kwale Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Egret_in_Marine_Reserves.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Egret_in_Marine_Reserves.jpg",
           alt: "Kwale Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_011_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_011_750_550shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Marine_Island_Reserve_011.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_011.jpg",
           alt: "Kwale Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Egret_in_Marine_Reserves.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Egret_in_Marine_Reserves.jpg",
           alt: "Kwale Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_011_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_011_750_550shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 3",
         },
         {
-          src: "/assets/photos/Egret_in_Marine_Reserves_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Egret_in_Marine_Reserves_750_550shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 4",
         },
         {
-          src: "/assets/photos/Maziwe_Island_05_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Tanga_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 5",
         },
         {
-          src: "/assets/photos/Amboni_Caves_Tanga_09.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mtae_Village_Usambara_Mountains_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 6",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab_2.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_2_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 7",
         },
         {
-          src: "/assets/photos/Chamelion_in_Amani_Nature_Reserve_in_Usambara.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_02_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 8",
         },
         {
-          src: "/assets/photos/Pangani/King_Fisher_in_Pangani_1_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Maziwe_Island_Sea_Turtle_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 9",
         },
         {
-          src: "/assets/photos/Toten_Island_Reserve_Tanga_07.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amboni_Caves_Tanga_06_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 10",
         },
         {
-          src: "/assets/photos/Egret_in_Marine_Reserves_2_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserver_044_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 11",
         },
         {
-          src: "/assets/photos/Maziwe_Island_02_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Yambe_Island_Tanga_02_286_300shar-50brig-20_c1.jpg",
           alt: "Kwale Island Marine Reserve – view 12",
         },
       ],
@@ -757,7 +761,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Tourist Attractions",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 142 reviews",
+      journeys: "0 tours · 143 reviews",
       tagline: "Kirui Island or Kirui Island Marine Reserve is a 36.095 km 2 protected, uninhabited island in the Pemba Channel under the Tanga Marine Reserves (TMRS) with t…",
       description: "Kirui Island or Kirui Island Marine Reserve is a 36.095 km 2 protected, uninhabited island in the Pemba Channel under the Tanga Marine Reserves (TMRS) with the IUCN category II located within Mkinga District in Tanga. The Island is the largest in Tanga and one of the largest protected marine Islands in Tanzania Mangroves are thought to cover 680 ha (ha) of the island of Kirui, with the largest mangrove area (557 ha) being on the north also the Tanzania‐Kenya border and west sides, Kigomeni mangrove (60 ha) being on the east coast, and Kirui South Mangrove (63 ha) being on the south.",
       descriptions: [
@@ -773,65 +777,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/kirui-island-marine-reserve",
       images: [
         {
-          src: "/assets/photos/Marine_Island_Reserve_071_Mangroves.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_071_Mangroves.jpg",
           alt: "Kirui Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab_2.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserves_Crab_2.jpg",
           alt: "Kirui Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_071_Mangroves_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_071_Mangroves_750_550shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Marine_Island_Reserve_071_Mangroves.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_071_Mangroves.jpg",
           alt: "Kirui Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab_2.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserves_Crab_2.jpg",
           alt: "Kirui Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_071_Mangroves_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_071_Mangroves_750_550shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 3",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab_2_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_2_750_550shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 4",
         },
         {
-          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_06.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amboni_Caves_Tanga_Tanzania_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 5",
         },
         {
-          src: "/assets/photos/Pangani/Pangani_River_Tour_4_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Maziwe_Island_02_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 6",
         },
         {
-          src: "/assets/photos/Yambe_Island_Tanga_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Reserve_Tanga_02_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 7",
         },
         {
-          src: "/assets/photos/Maziwe_Island_Crabs_04_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Maziwe_Marine_Reserve_Pangani_Tanga_18_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 8",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_022_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amani_Nature_Reserves_04a_in_Usambara_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 9",
         },
         {
-          src: "/assets/photos/Egret_in_Marine_Reserves.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Butterfly_Usambara_Mountains_1_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 10",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Egret_in_Marine_Reserves_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 11",
         },
         {
-          src: "/assets/photos/Irente_View_Point_Usambara_Mountains_14.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangani/Historical_Buildings_in_Pangani_2_286_300shar-50brig-20_c1.jpg",
           alt: "Kirui Island Marine Reserve – view 12",
         },
       ],
@@ -847,7 +851,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Beach Holiday",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 142 reviews",
+      journeys: "0 tours · 143 reviews",
       tagline: "Yambe Island borders the southeast coast of Tanga Bay opposite of the Ras Nyamakuu peninsula. The island is surrounded by coral reefs and totally covered by…",
       description: "Yambe Island borders the southeast coast of Tanga Bay opposite of the Ras Nyamakuu peninsula. The island is surrounded by coral reefs and totally covered by coastal rag and mangrove forests. Uninhabited today, German records of the 19th century mention a small resident village of a local Arab ruler with his slaves. Maybe from his time or earlier, the island has ruins hidden in the forest, a walled grave and pillar tomb with large panels, enclosed by stones decorated with a herringbone pattern and a frieze of small panels. The herringbone pattern is a rare and unique feature Yambe Island in such tombs, but also sometimes found in ‘mihrabs’ of mosques.",
       descriptions: [
@@ -861,65 +865,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/yambe-island",
       images: [
         {
-          src: "/assets/photos/Yambe_Island_Tanga_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Island_Tanga_01.jpg",
           alt: "Yambe Island",
         },
         {
-          src: "/assets/photos/Yambe_Island_Tanga_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Island_Tanga_02.jpg",
           alt: "Yambe Island – view 2",
         },
         {
-          src: "/assets/photos/Sandbank_in_Yambe_Island_Tanga_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sandbank_in_Yambe_Island_Tanga_05.jpg",
           alt: "Yambe Island – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Yambe_Island_Tanga_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Island_Tanga_01.jpg",
           alt: "Yambe Island",
         },
         {
-          src: "/assets/photos/Yambe_Island_Tanga_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Island_Tanga_02.jpg",
           alt: "Yambe Island – view 2",
         },
         {
-          src: "/assets/photos/Sandbank_in_Yambe_Island_Tanga_05.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sandbank_in_Yambe_Island_Tanga_05.jpg",
           alt: "Yambe Island – view 3",
         },
         {
-          src: "/assets/photos/Sandbank_in_Yambe_Island_Tanga_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Sandbank_in_Yambe_Island_Tanga_03.jpg",
           alt: "Yambe Island – view 4",
         },
         {
-          src: "/assets/photos/Yambe_Island_Marine_Reserve_Crab.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Yambe_Island_Marine_Reserve_Crab.jpg",
           alt: "Yambe Island – view 5",
         },
         {
-          src: "/assets/photos/Yambe_Island_Tanga_01_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Yambe_Island_Tanga_01_750_550shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 6",
         },
         {
-          src: "/assets/photos/Yambe_Island_Tanga_02_550_309shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Yambe_Island_Tanga_02_550_309shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 7",
         },
         {
-          src: "/assets/photos/Yambe_Island_Marine_Reserve_Crab_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Yambe_Island_Marine_Reserve_Crab_750_550shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 8",
         },
         {
-          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_04.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Mombo_View_Point_Usambara_Mountains_01_286_300shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 9",
         },
         {
-          src: "/assets/photos/Bangala_River_Usambara_Mountains_1_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangani/Historical_Buildings_in_Pangani_2_286_300shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 10",
         },
         {
-          src: "/assets/photos/Toten_Island_Reserve_Tanga_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Reserve_Tanga_07_286_300shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 11",
         },
         {
-          src: "/assets/photos/Tanga_Coelacanth_Marine_Park.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Colubus_Monkeys_in_Amani_Nature_Reserve_in_Usambara_286_300shar-50brig-20_c1.jpg",
           alt: "Yambe Island – view 12",
         },
       ],
@@ -935,7 +939,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Tourist Attractions",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 140 reviews",
+      journeys: "0 tours · 142 reviews",
       tagline: "Mwewe Island or Mwewe Island Marine Reserve is a 0.424 km 2 protected, uninhabited island in the Pemba Channel under the Tanga Marine Reserves (TMRS) with th…",
       description: "Mwewe Island or Mwewe Island Marine Reserve is a 0.424 km 2 protected, uninhabited island in the Pemba Channel under the Tanga Marine Reserves (TMRS) with the IUCN category II located within Mkinga District in Tanga. According to oral Digo history, the island was used by some Kirui Island residents, at one time Mwewe Island was eventually purchased by Sultan Bin Athmani of Moa before being a Marine Reserve. Mwewe Island is also surrounded by mangroves, which covers an area of 14 Ha, about 68 % of the Island.",
       descriptions: [
@@ -949,65 +953,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mwewe-island-marine-reserve",
       images: [
         {
-          src: "/assets/photos/Marine_Island_Reserve_072_Mangroves.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_072_Mangroves.jpg",
           alt: "Mwewe Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserver_044.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserver_044.jpg",
           alt: "Mwewe Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserves_Crab.jpg",
           alt: "Mwewe Island Marine Reserve – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Marine_Island_Reserve_072_Mangroves.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserve_072_Mangroves.jpg",
           alt: "Mwewe Island Marine Reserve",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserver_044.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserver_044.jpg",
           alt: "Mwewe Island Marine Reserve – view 2",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserves_Crab.jpg",
           alt: "Mwewe Island Marine Reserve – view 3",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_072_Mangroves_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserve_072_Mangroves_750_550shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 4",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserver_044_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserver_044_750_550shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 5",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_750_550shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 6",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab_2.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Pangani/Pangani_Tour_Mawize_Island_1_286_300shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 7",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserve_011_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Tanga_286_300shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 8",
         },
         {
-          src: "/assets/photos/Birdslife_Common_Bulbul_Usambara_Mountains_1_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Maziwe_Island_05_286_300shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 9",
         },
         {
-          src: "/assets/photos/Yambe_Island_Tanga_02_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Amani_Nature_Forest_Reserves_in_Usambara_06_286_300shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 10",
         },
         {
-          src: "/assets/photos/Maziwe_Island_05_286_300shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Reserve_Tanga_02_286_300shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 11",
         },
         {
-          src: "/assets/photos/Amani_Nature_Forest_Reserves_in_Usambara_06.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Usambara_Mountains_Sunset_in_Irente_Viewpint_286_300shar-50brig-20_c1.jpg",
           alt: "Mwewe Island Marine Reserve – view 12",
         },
       ],
@@ -1023,7 +1027,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Beach Holiday",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 141 reviews",
+      journeys: "0 tours · 142 reviews",
       tagline: "Toten Island is located in Tanga Bay directly opposite Tanga Harbour. The island is covered by a lush coastal forest with huge baobab trees and has also ruin…",
       description: "Toten Island is located in Tanga Bay directly opposite Tanga Harbour. The island is covered by a lush coastal forest with huge baobab trees and has also ruins of early settlements. When the Portuguese controlled part of the coast, Toten Island seems to have been used for a prison. Later, according to historical records, the island was around 1854 occupied by a considerable number of inhabitants. Islamic monochrome and Chinese blue and white shards mostly of the 15th, 16th and late 18th and 19th centuries have been found here.",
       descriptions: [
@@ -1038,65 +1042,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/toten-island",
       images: [
         {
-          src: "/assets/photos/Toten_Island_Tanga.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Tanga.jpg",
           alt: "Toten Island",
         },
         {
-          src: "/assets/photos/Toten_Island_Reserve_Tanga_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Reserve_Tanga_01.jpg",
           alt: "Toten Island – view 2",
         },
         {
-          src: "/assets/photos/Toten_Island_Tanga_Tanzania.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Tanga_Tanzania.jpg",
           alt: "Toten Island – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Toten_Island_Tanga.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Tanga.jpg",
           alt: "Toten Island",
         },
         {
-          src: "/assets/photos/Toten_Island_Reserve_Tanga_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Reserve_Tanga_01.jpg",
           alt: "Toten Island – view 2",
         },
         {
-          src: "/assets/photos/Toten_Island_Tanga_Tanzania.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Tanga_Tanzania.jpg",
           alt: "Toten Island – view 3",
         },
         {
-          src: "/assets/photos/Toten_Island_Reserve_Tanga_06.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Reserve_Tanga_06.jpg",
           alt: "Toten Island – view 4",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Marine_Island_Reserves_Crab.jpg",
           alt: "Toten Island – view 5",
         },
         {
-          src: "/assets/photos/Toten_Island_Reserve_Tanga_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Reserve_Tanga_02.jpg",
           alt: "Toten Island – view 6",
         },
         {
-          src: "/assets/photos/Toten_Island_Reserve_Tanga_07.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Toten_Island_Reserve_Tanga_07.jpg",
           alt: "Toten Island – view 7",
         },
         {
-          src: "/assets/photos/Toten_Island_Tanga_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Tanga_750_550shar-50brig-20_c1.jpg",
           alt: "Toten Island – view 8",
         },
         {
-          src: "/assets/photos/Toten_Island_Reserve_Tanga_01_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Reserve_Tanga_01_750_550shar-50brig-20_c1.jpg",
           alt: "Toten Island – view 9",
         },
         {
-          src: "/assets/photos/Toten_Island_Tanga_Tanzania_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Tanga_Tanzania_750_550shar-50brig-20_c1.jpg",
           alt: "Toten Island – view 10",
         },
         {
-          src: "/assets/photos/Toten_Island_Reserve_Tanga_06_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Toten_Island_Reserve_Tanga_06_750_550shar-50brig-20_c1.jpg",
           alt: "Toten Island – view 11",
         },
         {
-          src: "/assets/photos/Marine_Island_Reserves_Crab_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Marine_Island_Reserves_Crab_750_550shar-50brig-20_c1.jpg",
           alt: "Toten Island – view 12",
         },
       ],
@@ -1112,7 +1116,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Beach Holiday, Walking Safaris",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 198 reviews",
+      journeys: "0 tours · 199 reviews",
       tagline: "Chumbe offers some of the most pristine and colourful coral reefs in the world, with over 200 species of coral providing a sanctuary for more than 400 specie…",
       description: "Chumbe offers some of the most pristine and colourful coral reefs in the world, with over 200 species of coral providing a sanctuary for more than 400 species of colourful fish.",
       descriptions: [
@@ -1130,65 +1134,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/chumbe-island-marine-sanctuary",
       images: [
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_03.jpg",
           alt: "Chumbe Island Marine Sanctuary",
         },
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_01.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 2",
         },
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_Coral_Reefs_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_Coral_Reefs_01.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_03.jpg",
           alt: "Chumbe Island Marine Sanctuary",
         },
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_01.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 2",
         },
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_Coral_Reefs_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_Coral_Reefs_01.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 3",
         },
         {
-          src: "/assets/photos/Zanzibar_Dhow_Safari_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Dhow_Safari_01.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 4",
         },
         {
-          src: "/assets/photos/Zanzibar_Coconut_Crab_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Coconut_Crab_03.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 5",
         },
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_Oriental__Sweetlips.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_Oriental__Sweetlips.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 6",
         },
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_Porcelain_Crab_and_Anemone_Frida_Lanshammar.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_Porcelain_Crab_and_Anemone_Frida_Lanshammar.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 7",
         },
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Chumbe_Island_02.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 8",
         },
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_01_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Chumbe_Island_01_750_550shar-50brig-20_c1.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 9",
         },
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_03_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Chumbe_Island_03_750_550shar-50brig-20_c1.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 10",
         },
         {
-          src: "/assets/photos/Zanzibar_Chumbe_Island_Coral_Reefs_01_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Chumbe_Island_Coral_Reefs_01_750_550shar-50brig-20_c1.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 11",
         },
         {
-          src: "/assets/photos/Zanzibar_Dhow_Safari_01_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Dhow_Safari_01_750_550shar-50brig-20_c1.jpg",
           alt: "Chumbe Island Marine Sanctuary – view 12",
         },
       ],
@@ -1204,7 +1208,7 @@ export const oceanicCircuitDestinations = [
       region: "Indian Ocean Tanzania",
       category: "Ocean Islands | Beach Holiday",
       bestSeason: "Jun – Mar",
-      journeys: "0 tours · 197 reviews",
+      journeys: "0 tours · 198 reviews",
       tagline: "Mnemba Island is a single small island located about 3 km off the northeast coast of Unguja, the largest island of the Zanzibar Archipelago, Tanzania, opposi…",
       description: "Mnemba Island is a single small island located about 3 km off the northeast coast of Unguja, the largest island of the Zanzibar Archipelago, Tanzania, opposite Muyuni Beach. It is roughly triangular in shape, about 500 m in diameter and about 1.5 km in circumference. It is surrounded by an oval reef seven by four kilometres in extent. These reefs have been declared a Marine Conservation area. Mnemba Island and its reef are sometimes called Mnemba Atoll which is incorrect because an atoll is an island that encircles a lagoon, which is not the case for Mnemba Island.",
       descriptions: [
@@ -1225,65 +1229,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mnemba-island-conservation-area",
       images: [
         {
-          src: "/assets/photos/Zanzibar_Island_Mnemba_Island.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Mnemba_Island.jpg",
           alt: "Mnemba Island Conservation Area",
         },
         {
-          src: "/assets/photos/Zanzibar_Mnemba_Island_Coloful_Fish.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Mnemba_Island_Coloful_Fish.jpg",
           alt: "Mnemba Island Conservation Area – view 2",
         },
         {
-          src: "/assets/photos/Zanzibar_Prestine_Beach_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Prestine_Beach_02.jpg",
           alt: "Mnemba Island Conservation Area – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Zanzibar_Island_Mnemba_Island.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Mnemba_Island.jpg",
           alt: "Mnemba Island Conservation Area",
         },
         {
-          src: "/assets/photos/Zanzibar_Mnemba_Island_Coloful_Fish.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Mnemba_Island_Coloful_Fish.jpg",
           alt: "Mnemba Island Conservation Area – view 2",
         },
         {
-          src: "/assets/photos/Zanzibar_Prestine_Beach_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Prestine_Beach_02.jpg",
           alt: "Mnemba Island Conservation Area – view 3",
         },
         {
-          src: "/assets/photos/Zanzibar_Skul_of_Fish_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Skul_of_Fish_03.jpg",
           alt: "Mnemba Island Conservation Area – view 4",
         },
         {
-          src: "/assets/photos/Zanzibar_Prestine_Beach_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Prestine_Beach_03.jpg",
           alt: "Mnemba Island Conservation Area – view 5",
         },
         {
-          src: "/assets/photos/Zanzibar_Snorkeling_in_Mnemba_Island.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Snorkeling_in_Mnemba_Island.jpg",
           alt: "Mnemba Island Conservation Area – view 6",
         },
         {
-          src: "/assets/photos/Zanzibar_Corals_04.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Corals_04.jpg",
           alt: "Mnemba Island Conservation Area – view 7",
         },
         {
-          src: "/assets/photos/Zanzibar_Coconut_Crab_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Hermit_Crab_on_the_Beach.jpg",
           alt: "Mnemba Island Conservation Area – view 8",
         },
         {
-          src: "/assets/photos/Zanzibar_Mnemba_Island_Clown_Fish.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Mnemba_Island_Clown_Fish.jpg",
           alt: "Mnemba Island Conservation Area – view 9",
         },
         {
-          src: "/assets/photos/Zanzibar_Island_Mnemba_Island_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Island_Mnemba_Island_750_550shar-50brig-20_c1.jpg",
           alt: "Mnemba Island Conservation Area – view 10",
         },
         {
-          src: "/assets/photos/Zanzibar_Mnemba_Island_Coloful_Fish_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Mnemba_Island_Coloful_Fish_750_550shar-50brig-20_c1.jpg",
           alt: "Mnemba Island Conservation Area – view 11",
         },
         {
-          src: "/assets/photos/Zanzibar_Prestine_Beach_02_750_550shar-50brig-20_c1.jpg",
+          src: "https://www.tanzaniatourism.com/images/made/images/uploads/Zanzibar_Prestine_Beach_02_750_550shar-50brig-20_c1.jpg",
           alt: "Mnemba Island Conservation Area – view 12",
         },
       ],
@@ -1299,7 +1303,7 @@ export const oceanicCircuitDestinations = [
       region: "Zanzibar Archipelago",
       category: "Zanzibar Island | Beach Holiday, Tourist Attractions",
       bestSeason: "Jun – Mar",
-      journeys: "14 tours · 266 reviews",
+      journeys: "14 tours · 267 reviews",
       tagline: "Also known as the Spice Island, the beautiful island of Zanzibar is full of culture and history, shinning white-sand beaches with palms swaying lazily in the…",
       description: "Also known as the Spice Island, the beautiful island of Zanzibar is full of culture and history, shinning white-sand beaches with palms swaying lazily in the sea breeze, together makes Zanzibar a fabulous place to explore as well as a dream to relax and unwind.",
       descriptions: [
@@ -1317,65 +1321,65 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/zanzibar-island",
       images: [
         {
-          src: "/assets/photos/Zanzibar_Stone_Town_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_01.jpg",
           alt: "Zanzibar Island",
         },
         {
-          src: "/assets/photos/Zanzibar_Island_Stone_Town_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town_02.jpg",
           alt: "Zanzibar Island – view 2",
         },
         {
-          src: "/assets/photos/Zanzibar_Prestine_Beach_04.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Prestine_Beach_04.jpg",
           alt: "Zanzibar Island – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Zanzibar_Stone_Town_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_01.jpg",
           alt: "Zanzibar Island",
         },
         {
-          src: "/assets/photos/Zanzibar_Island_Stone_Town_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town_02.jpg",
           alt: "Zanzibar Island – view 2",
         },
         {
-          src: "/assets/photos/Zanzibar_Prestine_Beach_04.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Prestine_Beach_04.jpg",
           alt: "Zanzibar Island – view 3",
         },
         {
-          src: "/assets/photos/Zanzibar_Island_Stone_Town_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town_03.jpg",
           alt: "Zanzibar Island – view 4",
         },
         {
-          src: "/assets/photos/Zanzibar_Stone_Town_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_02.jpg",
           alt: "Zanzibar Island – view 5",
         },
         {
-          src: "/assets/photos/Zanzibar_Island_Stone_Town_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town_01.jpg",
           alt: "Zanzibar Island – view 6",
         },
         {
-          src: "/assets/photos/Zanzibar_Stone_Town_03.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_03.jpg",
           alt: "Zanzibar Island – view 7",
         },
         {
-          src: "/assets/photos/Zanzibar_Stone_Town_Tour_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_Tour_01.jpg",
           alt: "Zanzibar Island – view 8",
         },
         {
-          src: "/assets/photos/Zanzibar_Beach_Holiday.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Beach_Holiday.jpg",
           alt: "Zanzibar Island – view 9",
         },
         {
-          src: "/assets/photos/Nakupenda_Sandbank_Zanzibar.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Nakupenda_Sandbank_Zanzibar.jpg",
           alt: "Zanzibar Island – view 10",
         },
         {
-          src: "/assets/photos/Zanzibar_Island_Stone_Town.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town.jpg",
           alt: "Zanzibar Island – view 11",
         },
         {
-          src: "/assets/photos/Zanzibar_Beach_Holidays_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Beach_Holidays_01.jpg",
           alt: "Zanzibar Island – view 12",
         },
       ],
@@ -1391,7 +1395,7 @@ export const oceanicCircuitDestinations = [
       region: "Mafia Archipelago",
       category: "Mafia Island | Beach Holiday",
       bestSeason: "Jun – Mar",
-      journeys: "17 tours · 217 reviews",
+      journeys: "17 tours · 218 reviews",
       tagline: "Mafia Island (394 km2) is located in the east coast of Tanzania opposite the delta of the Rufiji River. The 20 kilometres wide stretch of water between the d…",
       description: "Mafia Island (394 km2) is located in the east coast of Tanzania opposite the delta of the Rufiji River. The 20 kilometres wide stretch of water between the delta and the island is called the Mafia Channel. Mafia Island is part of a small Tanzania’s Mafia archipelago in the Indian Ocean consists of one large island and several smaller islands, including Jibondo, Chole, Juani, Bwejuu, Mbarakuni, Shungumbili and Nyororo. Some of which are inhabited. The main town on Mafia is Kilindoni on the west coast. In the south beaches include secluded Ras Kisimani, just across from Bwejuu Island and Utende. On the east coast is Chole Bay, Mafia's protected deep-water anchorage and original harbour. The bay is studded with islets, sandbanks and beaches, and is protected from the east by coral reefs and Juani Island.",
       descriptions: [
@@ -1412,66 +1416,812 @@ export const oceanicCircuitDestinations = [
       sourceUrl: "https://www.tanzaniatourism.com/destination/mafia-island",
       images: [
         {
-          src: "/assets/photos/Mafia_Island_Chole_Mjini.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Chole_Mjini.jpg",
           alt: "Mafia Island",
         },
         {
-          src: "/assets/photos/Mafia_Island_Diving_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Diving_01.jpg",
           alt: "Mafia Island – view 2",
         },
         {
-          src: "/assets/photos/Mafia_Island_Tanzania_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Tanzania_01.jpg",
           alt: "Mafia Island – view 3",
         },
       ],
       gallery: [
         {
-          src: "/assets/photos/Mafia_Island_Chole_Mjini.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Chole_Mjini.jpg",
           alt: "Mafia Island",
         },
         {
-          src: "/assets/photos/Mafia_Island_Diving_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Diving_01.jpg",
           alt: "Mafia Island – view 2",
         },
         {
-          src: "/assets/photos/Mafia_Island_Tanzania_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Tanzania_01.jpg",
           alt: "Mafia Island – view 3",
         },
         {
-          src: "/assets/photos/Mafia_Island_Whale_Shark_04.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Whale_Shark_04.jpg",
           alt: "Mafia Island – view 4",
         },
         {
-          src: "/assets/photos/School_of_yellow-spot_emperors_swarm_over_fire_coral_on_reefs_in_Chole_Bay_Mafia_Islan.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/School_of_yellow-spot_emperors_swarm_over_fire_coral_on_reefs_in_Chole_Bay_Mafia_Islan.jpg",
           alt: "Mafia Island – view 5",
         },
         {
-          src: "/assets/photos/Underwater_Corals_Mafia_Island_Marine_Park_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Underwater_Corals_Mafia_Island_Marine_Park_01.jpg",
           alt: "Mafia Island – view 6",
         },
         {
-          src: "/assets/photos/Mafia_Island_Marine_Reserve_Sea_Turtle_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Marine_Reserve_Sea_Turtle_01.jpg",
           alt: "Mafia Island – view 7",
         },
         {
-          src: "/assets/photos/Mafia_Island_Tanzania_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Tanzania_02.jpg",
           alt: "Mafia Island – view 8",
         },
         {
-          src: "/assets/photos/Mafia_Island_Humpback_Whale_01.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Humpback_Whale_01.jpg",
           alt: "Mafia Island – view 9",
         },
         {
-          src: "/assets/photos/Coral_Bommie_in_the_Mafia_Island_Marine_Park.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Coral_Bommie_in_the_Mafia_Island_Marine_Park.jpg",
           alt: "Mafia Island – view 10",
         },
         {
-          src: "/assets/photos/Anemonefish_hidden_in_bubble_anemone_in_Chole_Bay_Mafia_Island.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Anemonefish_hidden_in_bubble_anemone_in_Chole_Bay_Mafia_Island.jpg",
           alt: "Mafia Island – view 11",
         },
         {
-          src: "/assets/photos/Mafia_Island_Ancient_Hindu_Temple_Built_in_1890_Under_Ficus_Roots_02.jpg",
+          src: "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Ancient_Hindu_Temple_Built_in_1890_Under_Ficus_Roots_02.jpg",
           alt: "Mafia Island – view 12",
+        },
+      ],
+    },
+    {
+      id: "stone-town",
+      slug: "stone-town-zanzibar",
+      circuit: "zanzibar",
+      circuitLabel: "Zanzibar Island",
+      name: "Stone Town",
+      fullName: "Stone Town",
+      scriptLabel: "UNESCO Old Town",
+      region: "Zanzibar Archipelago",
+      category: "Zanzibar Island | Tourist Attractions",
+      bestSeason: "Jun – Mar",
+      journeys: "5 tours · 193 reviews",
+      tagline: "The stone town tour, the city tour, takes you around the capital town to experience historically, culturally and architecturally richness of Zanzibar Islands…",
+      description: "The stone town tour, the city tour, takes you around the capital town to experience historically, culturally and architecturally richness of Zanzibar Islands. The tour takes 2 to 3 hours depend on the places to be visited.",
+      descriptions: [
+        "The stone town tour, the city tour, takes you around the capital town to experience historically, culturally and architecturally richness of Zanzibar Islands. The tour takes 2 to 3 hours depend on the places to be visited.",
+        "Most of the important buildings and places (historical monuments) are within the town’s municipal environs such as Anglican Cathedral built on the former slave market, the house of the famous slave trader (Tip Tip house), Hamamni Bath, Darajani market (fish and fruits market), the Old Portuguese Fort, the house of wonders (Zanzibar National Museum of History & Culture) and the home of world famous musician, Freddy Mercury .",
+        "The guide will also show you the beautiful pattern of Zanzibar door and on the way; you will have a chance to walk around the narrow streets of Stone Town where most of the houses date back more than 150 years. This Tour can be combined with Sunset tour or Prison Island tour.",
+      ],
+      highlights: [
+        "Culture & heritage",
+        "Island escapes",
+        "Tourist Attractions",
+      ],
+      sourceUrl: "https://www.tanzaniatourism.com/safari/stone-town-tour",
+      images: [
+        {
+          src: "/assets/photos/Zanzibar_House_of_Wonders_Stone_Town_01.jpg",
+          alt: "Stone Town Tour",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Anglican_Church_or_Former_Slave_Market_Stone_Town_03.jpg",
+          alt: "Stone Town Tour – photo 2",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Forodhani_Gardens_Canons_Stone_Town_05.jpg",
+          alt: "Stone Town Tour – photo 3",
+        },
+      ],
+      gallery: [
+        {
+          src: "/assets/photos/Zanzibar_House_of_Wonders_Stone_Town_01.jpg",
+          alt: "Stone Town Tour",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Anglican_Church_or_Former_Slave_Market_Stone_Town_03.jpg",
+          alt: "Stone Town Tour – photo 2",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Forodhani_Gardens_Canons_Stone_Town_05.jpg",
+          alt: "Stone Town Tour – photo 3",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Forodhani_Gardens_Stone_Town_01.jpg",
+          alt: "Stone Town Tour – photo 4",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Forodhani_Gardens_Stone_Town_03.jpg",
+          alt: "Stone Town Tour – photo 5",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Forodhani_Gardens_Stone_Town_04.jpg",
+          alt: "Stone Town Tour – photo 6",
+        },
+        {
+          src: "/assets/photos/Zanzibar_House_of_Wonders_Stone_Town_02.jpg",
+          alt: "Stone Town Tour – photo 7",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Old_Fort_Stone_Town.jpg",
+          alt: "Stone Town Tour – photo 8",
+        },
+      ],
+    },
+    {
+      id: "jozani-forest",
+      slug: "jozani-chwaka-bay-national-park",
+      circuit: "zanzibar",
+      circuitLabel: "Zanzibar Island",
+      name: "Jozani Forest",
+      fullName: "Jozani Chwaka Bay National Park",
+      scriptLabel: "Red Colobus Forest",
+      region: "Zanzibar Archipelago",
+      category: "Zanzibar Island | Tourist Attractions",
+      bestSeason: "Jun – Mar",
+      journeys: "5 tours · 211 reviews",
+      tagline: "Jozani Forest is the largest area of nature forest on Zanzibar Island. Situated south of Chwaka Bay about 40 km from Stone Town on low-lying land, the area i…",
+      description: "Jozani Forest is the largest area of nature forest on Zanzibar Island. Situated south of Chwaka Bay about 40 km from Stone Town on low-lying land, the area is prone to flooding, which nurtures a lush swamplike environment of moisture-loving trees and ferns. The whole area is protected as Jozani-Chwaka National Park, and is famously home to populations of Zanzibar red colobus monkey (an endangered species found only on Zanzibar) as well as other monkey species (like Zanzibar Sykes’ monkey), bushbabies, duikers and more than 40 species of birds.",
+      descriptions: [
+        "Jozani Forest is the largest area of nature forest on Zanzibar Island. Situated south of Chwaka Bay about 40 km from Stone Town on low-lying land, the area is prone to flooding, which nurtures a lush swamplike environment of moisture-loving trees and ferns. The whole area is protected as Jozani-Chwaka National Park, and is famously home to populations of Zanzibar red colobus monkey (an endangered species found only on Zanzibar) as well as other monkey species (like Zanzibar Sykes’ monkey), bushbabies, duikers and more than 40 species of birds.",
+        "With the total area of 50 km2 (19 sq mi) Jozani Forest is excellent home to many beautiful species of wildlife, birds and rare medicinal plants and natural Mangroves. The park is home to over 100 species of breathtaking exotic and migratory birds, such as guineafowl, coucals, doves, pigeons, turacos, cuckoos, swifts, lapwings, sandpipers, herons, egrets, bee-eaters, ducks, cormorants, ibises, vultures, kingfishers, owls, goshawks, woodpeckers, robins, swallows, starlings, weavers, and hornbills.",
+        "The park is home to over 50 species of butterflies, as well as beautiful and unique animals such as Sykes monkeys, bush babies, antelopes, squirrels, snakes, geckos, chameleons, squirrels, and red colobus monkeys. Jozani Forest is also a breeding ground for sea turtles, and giant tortoises. The flora of the forest is remarkable, as it is home to sycamores, mangroves, acacias, bamboos, jasmine, guava trees, dayflowers, swamp ferns, figs, forest olives, palm trees, mangroves ferns, and red mahoganies.",
+        "A visit to Jozani Forest is a great idea, as tourists can enjoy the view of the lush vegetation, and can spot stunning flora and fauna on their walks through the park! Jozani Forest is a breathtaking location and a visit here can be memorable and extraordinary for nature lovers and travel lovers!",
+        "Jozani Forest Tour can be done en route to Paje and southeastern places on Zanzibar.",
+      ],
+      highlights: [
+        "Culture & heritage",
+        "Nature & wildlife",
+        "Island escapes",
+      ],
+      sourceUrl: "https://www.tanzaniatourism.com/safari/jozani-chwaka-bay-national-park",
+      images: [
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Red_Colobus_Monkey_07.jpg",
+          alt: "Jozani Chwaka Bay National Park",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Magrooves_07.jpg",
+          alt: "Jozani Chwaka Bay National Park – photo 2",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Red_Colobus_Monkey_02.jpg",
+          alt: "Jozani Chwaka Bay National Park – photo 3",
+        },
+      ],
+      gallery: [
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Red_Colobus_Monkey_07.jpg",
+          alt: "Jozani Chwaka Bay National Park",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Magrooves_07.jpg",
+          alt: "Jozani Chwaka Bay National Park – photo 2",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Red_Colobus_Monkey_02.jpg",
+          alt: "Jozani Chwaka Bay National Park – photo 3",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_03.jpg",
+          alt: "Jozani Chwaka Bay National Park – photo 4",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Red_Colobus_Monkey_01.jpg",
+          alt: "Jozani Chwaka Bay National Park – photo 5",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Mangrooves_01.jpg",
+          alt: "Jozani Chwaka Bay National Park – photo 6",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Red_Colobus_Monkey_01.jpg",
+          alt: "Jozani Chwaka Bay National Park – photo 7",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Jozani_Forest_Boardwalk_08.jpg",
+          alt: "Jozani Chwaka Bay National Park – photo 8",
+        },
+      ],
+    },
+    {
+      id: "nungwi-beach",
+      slug: "nungwi-beach",
+      circuit: "zanzibar",
+      circuitLabel: "Zanzibar Island",
+      name: "Nungwi",
+      fullName: "Nungwi Beach",
+      scriptLabel: "Northern Shores",
+      region: "Zanzibar Archipelago",
+      category: "Zanzibar Island | Beach Holiday",
+      bestSeason: "Jun – Mar",
+      journeys: "5 tours · 191 reviews",
+      tagline: "Nungwi, Matemwe and Kendwa are the name of the villages at the north-east part of Zanzibar Island. This part of the trip mainly focuses on snorkeling experie…",
+      description: "Nungwi, Matemwe and Kendwa are the name of the villages at the north-east part of Zanzibar Island. This part of the trip mainly focuses on snorkeling experience at Mnemba Atoll and Cultural village visit of the Nungwi Village, sightseeing and free time to relax at the white sand beach of the north. At Nungwi there are number of very interesting things to see and do including Baraka Natural Aquarium and Kendwa Rock Beach.",
+      descriptions: [
+        "Nungwi, Matemwe and Kendwa are the name of the villages at the north-east part of Zanzibar Island. This part of the trip mainly focuses on snorkeling experience at Mnemba Atoll and Cultural village visit of the Nungwi Village, sightseeing and free time to relax at the white sand beach of the north. At Nungwi there are number of very interesting things to see and do including Baraka Natural Aquarium and Kendwa Rock Beach.",
+        "If you’ve ever been snorkeling or scuba diving before in Zanzibar, it's a fun and indescribable experience at Mnemba Atoll. Your private guide with a private fiber boat will take you on a half an hour ride from Matemwe beach to Mnemba Island, a jewel sitting in the sea. Its vast coral reef, measuring several kilometres in diameter, listed as a marine reserve, is the most popular snorkeling spot in Zanzibar. And with a reason - its shallow waters, from 2 to 4 metres deep, burst with life. Moorish idols, blue tang, snappers, and clownfish are easy to see in a few feet of water, above a colorful, well-preserved reef.",
+        "Start exploring Nungwi Village by visiting Baraka Natural Aquarium in which is a home endangered sea turtles and a variety of fish. The aquarium itself is a natural formation carved out from the coral bedrock by the erosion of millions of waves crashing against the shore. The depth of the water rises and falls with the tides providing a natural environment for its inhabitants. Use the unique opportunity to swim with sea turtles. During the visit you can also feed turtles with sea weed or just spend your time in the water. Also, you can take snorkelling mask to dive and watch them in their natural environment.",
+        "We will end your day by exploring Kendwa Rock Beach where you’ll have free time to explore and play. The Kendwa Beach is located in the same-name village in the northwest of Zanzibar, it is popular with travelers from all over the world. This is one of the best resorts in Zanzibar. It is calm, quiet and peaceful. Kendwa is a wide and long beach, so there is enough space for all vacationers and suitable for both adults and children. The slope is flat, the water deepens gradually and quickly. There is no shallow water, shells, stones and algae. On the coast fine white sand lies and tall perennial palms grow. The ocean is calm with azure, clear and transparent water.",
+      ],
+      highlights: [
+        "Marine life & reefs",
+        "Beaches & coast",
+        "Island escapes",
+      ],
+      sourceUrl: "https://www.tanzaniatourism.com/safari/nungwi-experience",
+      images: [
+        {
+          src: "/assets/photos/Zanzibar_Grand_Cayman_Turtle_Farm.jpg",
+          alt: "Nungwi Experience",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Hawksbill_Turtle_01.jpg",
+          alt: "Nungwi Experience – photo 2",
+        },
+        {
+          src: "/assets/photos/Nungwi_Mnarani_Turtle_Aquarium_Conservation_02_.jpg",
+          alt: "Nungwi Experience – photo 3",
+        },
+      ],
+      gallery: [
+        {
+          src: "/assets/photos/Zanzibar_Grand_Cayman_Turtle_Farm.jpg",
+          alt: "Nungwi Experience",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Hawksbill_Turtle_01.jpg",
+          alt: "Nungwi Experience – photo 2",
+        },
+        {
+          src: "/assets/photos/Nungwi_Mnarani_Turtle_Aquarium_Conservation_02_.jpg",
+          alt: "Nungwi Experience – photo 3",
+        },
+        {
+          src: "/assets/photos/Nungwi_Mnarani_Turtle_Aquarium_Conservation_03.jpg",
+          alt: "Nungwi Experience – photo 4",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Hawksbill_Turtle_02.jpg",
+          alt: "Nungwi Experience – photo 5",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Grand_Cayman_Turtle_Farm_750_550shar-50brig-20_c1.jpg",
+          alt: "Nungwi Experience – photo 6",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Hawksbill_Turtle_01_750_550shar-50brig-20_c1.jpg",
+          alt: "Nungwi Experience – photo 7",
+        },
+        {
+          src: "/assets/photos/Nungwi_Mnarani_Turtle_Aquarium_Conservation_02__750_550shar-50brig-20_c1.jpg",
+          alt: "Nungwi Experience – photo 8",
+        },
+      ],
+    },
+    {
+      id: "changuu-island",
+      slug: "prison-island-changuu",
+      circuit: "zanzibar",
+      circuitLabel: "Zanzibar Island",
+      name: "Changuu Island",
+      fullName: "Prison Island (Changuu)",
+      scriptLabel: "Giant Tortoises",
+      region: "Zanzibar Archipelago",
+      category: "Zanzibar Island | Beach Holiday",
+      bestSeason: "Jun – Mar",
+      journeys: "5 tours · 217 reviews",
+      tagline: "The Prison Island, also known as Changuu Island which is located on the western part of Zanzibar Island, just off Stone Town and bordering three islands name…",
+      description: "The Prison Island, also known as Changuu Island which is located on the western part of Zanzibar Island, just off Stone Town and bordering three islands namely Grave Island, Snake Island and Bawe Island. It takes around 25 minutes by local boat riding from the Stone Town beach. The island’s main attraction is the popular Giant Tortoises, who can live up to 200 years.",
+      descriptions: [
+        "The Prison Island, also known as Changuu Island which is located on the western part of Zanzibar Island, just off Stone Town and bordering three islands namely Grave Island, Snake Island and Bawe Island. It takes around 25 minutes by local boat riding from the Stone Town beach. The island’s main attraction is the popular Giant Tortoises, who can live up to 200 years.",
+        "A prison built in 1892. It was never actually used as a prison and currently an attraction for tourists as it is known as a famous place for the giant tortoise.",
+        "Island was used as a penitentiary for rebel slaves by the sultans from the 1860s until the end of the slave trade. After which the British began building a prison on the island under the guidance of First Governor, Lloyd Matthews. This was completed in 1894. However, the ‘prison’ was only ever used as a quarantine Centre for possible yellow-fever victims.",
+        "There you will be able to see the giant tortoises that were imported from Seychelles in the 19th Century. Also beautiful marine creatures, coral reef and it’s also a best site for doing Snorkelling. Once on the island, you have the opportunity to feed and pet the tortoises, some of which are over a hundred years old. If you have time you may also like to take a stroll through the forested interior where you will see a wide variety of birds, colourful peacocks, bats and beautiful butterflies.",
+        "1- Chill at the beach: the sandy beach on the island is a perfect place to relax, enjoy the tranquility, and have a sunbath.",
+        "2- Snorkeling: it is an activity that you should not miss. The boat will take off shore to enjoy the deeper water level with a small area of coral.",
+        "3- A walk: having a walk to look back at Changuu Island at the end of the wooden bridge is charming and rewarding.",
+      ],
+      highlights: [
+        "Beaches & coast",
+        "Culture & heritage",
+        "Island escapes",
+      ],
+      sourceUrl: "https://www.tanzaniatourism.com/safari/prison-island-zanzibar",
+      images: [
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island.jpg",
+          alt: "Prison Island, Zanzibar",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island_02.jpg",
+          alt: "Prison Island, Zanzibar – photo 2",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island_Aldabra_Giant_Tortoise_03.jpg",
+          alt: "Prison Island, Zanzibar – photo 3",
+        },
+      ],
+      gallery: [
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island.jpg",
+          alt: "Prison Island, Zanzibar",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island_02.jpg",
+          alt: "Prison Island, Zanzibar – photo 2",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island_Aldabra_Giant_Tortoise_03.jpg",
+          alt: "Prison Island, Zanzibar – photo 3",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island_03.jpg",
+          alt: "Prison Island, Zanzibar – photo 4",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island_Aldabra_Giant_Tortoise_02.jpg",
+          alt: "Prison Island, Zanzibar – photo 5",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island_01.jpg",
+          alt: "Prison Island, Zanzibar – photo 6",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island_Aldabra_Giant_Tortoise_01.jpg",
+          alt: "Prison Island, Zanzibar – photo 7",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Prison_Island_750_550shar-50brig-20_c1.jpg",
+          alt: "Prison Island, Zanzibar – photo 8",
+        },
+      ],
+    },
+    {
+      id: "kizimkazi",
+      slug: "kizimkazi",
+      circuit: "zanzibar",
+      circuitLabel: "Zanzibar Island",
+      name: "Kizimkazi",
+      fullName: "Kizimkazi",
+      scriptLabel: "Dolphin Coast",
+      region: "Zanzibar Archipelago",
+      category: "Zanzibar Island | Beach Holiday",
+      bestSeason: "Jun – Mar",
+      journeys: "5 tours · 193 reviews",
+      tagline: "Kizimkazi Zanzibar Dolphin Tour offers you the experience of a lifetime, a chance to swim with dolphins in their natural habitat. The seashore of the fishing…",
+      description: "Kizimkazi Zanzibar Dolphin Tour offers you the experience of a lifetime, a chance to swim with dolphins in their natural habitat. The seashore of the fishing village Kizimkazi is the home of several pods of humpback and bottlenose dolphins. The dolphins are officially protected by the 420 km2 Menai Bay Conservation Area, which was set up in 1997 to stop the rapid depletion of fish stocks.",
+      descriptions: [
+        "Kizimkazi Zanzibar Dolphin Tour offers you the experience of a lifetime, a chance to swim with dolphins in their natural habitat. The seashore of the fishing village Kizimkazi is the home of several pods of humpback and bottlenose dolphins. The dolphins are officially protected by the 420 km2 Menai Bay Conservation Area, which was set up in 1997 to stop the rapid depletion of fish stocks.",
+        "With our Snorkelling gear we depart from the shores of Kizimkazi fishing village in search of dolphins. The boat will take us out into the clear turquoise blue Indian Ocean where the odds of meetings dolphins are about 80%.",
+        "We encourage our skippers not to chase the dolphins and we advise visitors to enter the water away from the dolphins with as little disturbance as possible, staying close to the boat, avoiding sudden movement and allowing the dolphins to come to you. On busy days with many tourists, this however is not possible. After the exhilarating experience of swimming with the dolphins, you can also do snorkelling for a while before we will head back to shore. The trip takes about 4 hours from early in the morning.",
+        "Dolphins are amicable, sweet and playful. They like to have people around them and are good in socializing. Being able to see them up close, possibly even touch them gently and look into their beautiful eyes is simply an amazing experience, and one which you will be able to cherish forever as probably this could be a once in a lifetime opportunity. This Zanzibar dolphin tour is perfect for a family with kids, couples, as well as for lovers of sea creatures. It is a unique and memorable experience that you will be happy to recall with friends and family.",
+      ],
+      highlights: [
+        "Marine life & reefs",
+        "Beaches & coast",
+        "Beach Holiday",
+      ],
+      sourceUrl: "https://www.tanzaniatourism.com/safari/dolphin-tour-zanzibar",
+      images: [
+        {
+          src: "/assets/photos/Zanzibar_Bottle_Nose_Dolphins_02.jpg",
+          alt: "Dolphin Tour, Zanzibar",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Bottlenose_Dolphin_Tour_in_Kizimkazi_02.jpg",
+          alt: "Dolphin Tour, Zanzibar – photo 2",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Bottlenose_Dolphin_Tour_in_Kizimkazi_01.jpg",
+          alt: "Dolphin Tour, Zanzibar – photo 3",
+        },
+      ],
+      gallery: [
+        {
+          src: "/assets/photos/Zanzibar_Bottle_Nose_Dolphins_02.jpg",
+          alt: "Dolphin Tour, Zanzibar",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Bottlenose_Dolphin_Tour_in_Kizimkazi_02.jpg",
+          alt: "Dolphin Tour, Zanzibar – photo 2",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Bottlenose_Dolphin_Tour_in_Kizimkazi_01.jpg",
+          alt: "Dolphin Tour, Zanzibar – photo 3",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Bottlenose_Dolphins_Tour_in_01.jpg",
+          alt: "Dolphin Tour, Zanzibar – photo 4",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Bottle_Nose_Dolphins_01.jpg",
+          alt: "Dolphin Tour, Zanzibar – photo 5",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Bottle_Nose_Dolphins_02_750_550shar-50brig-20_c1.jpg",
+          alt: "Dolphin Tour, Zanzibar – photo 6",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Bottlenose_Dolphin_Tour_in_Kizimkazi_02_750_550shar-50brig-20_c1.jpg",
+          alt: "Dolphin Tour, Zanzibar – photo 7",
+        },
+        {
+          src: "/assets/photos/Zanzibar_Bottlenose_Dolphin_Tour_in_Kizimkazi_01_750_550shar-50brig-20_c1.jpg",
+          alt: "Dolphin Tour, Zanzibar – photo 8",
+        },
+      ],
+    },
+    {
+      id: "chole-bay",
+      slug: "chole-bay",
+      circuit: "mafia",
+      circuitLabel: "Mafia Island",
+      name: "Chole Bay",
+      fullName: "Chole Bay",
+      scriptLabel: "Coral Harbour",
+      region: "Mafia Archipelago",
+      category: "Mafia Island | Beach Holiday",
+      bestSeason: "Oct – Mar · Jun – Sep",
+      journeys: "5 tours · 191 reviews",
+      tagline: "Snorkelling in Chole bay is a fantastic, colourfully exuberant experience accompanied by hoards of fish, all with different shapes, colours and sizes. The wa…",
+      description: "Snorkelling in Chole bay is a fantastic, colourfully exuberant experience accompanied by hoards of fish, all with different shapes, colours and sizes. The waters surrounding Mafia Island offer an extraordinary variety of marine diversity, with over 400 species of fish, 5 species of marine turtle and 48 species of coral. All of our snorkel sites are a 30 minute boat journey from the beach, one that offers us fantastic views as we slowly make our way out into the bay. You will always be accompanied by an experienced snorkel guide who leads you on your journey through the aquamarine waters of the marine park.",
+      descriptions: [
+        "Snorkelling in Chole bay is a fantastic, colourfully exuberant experience accompanied by hoards of fish, all with different shapes, colours and sizes. The waters surrounding Mafia Island offer an extraordinary variety of marine diversity, with over 400 species of fish, 5 species of marine turtle and 48 species of coral. All of our snorkel sites are a 30 minute boat journey from the beach, one that offers us fantastic views as we slowly make our way out into the bay. You will always be accompanied by an experienced snorkel guide who leads you on your journey through the aquamarine waters of the marine park.",
+        "This snorkel trip normally last a few hours but it’s advisable to stay as long as tide is still low and head back to the shore before high tide. It’s encouraged that to do snorkelling trip to see the magical underwater scenery that Mafia has to offer even if you’re an inexperienced swimmer.",
+      ],
+      highlights: [
+        "Marine life & reefs",
+        "Beaches & coast",
+        "Island escapes",
+      ],
+      sourceUrl: "https://www.tanzaniatourism.com/safari/chole-bay-snorkelling-mafia-island",
+      images: [
+        {
+          src: "/assets/photos/Chole_Bay_Snorkeling_Mafia_Island.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island",
+        },
+        {
+          src: "/assets/photos/Anemonefish_hidden_in_bubble_anemone_in_Chole_Bay_Mafia_Island.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island – photo 2",
+        },
+        {
+          src: "/assets/photos/School_of_yellow-spot_emperors_swarm_over_fire_coral_on_reefs_in_Chole_Bay_Mafia_Islan.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island – photo 3",
+        },
+      ],
+      gallery: [
+        {
+          src: "/assets/photos/Chole_Bay_Snorkeling_Mafia_Island.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island",
+        },
+        {
+          src: "/assets/photos/Anemonefish_hidden_in_bubble_anemone_in_Chole_Bay_Mafia_Island.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island – photo 2",
+        },
+        {
+          src: "/assets/photos/School_of_yellow-spot_emperors_swarm_over_fire_coral_on_reefs_in_Chole_Bay_Mafia_Islan.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island – photo 3",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Diving_02.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island – photo 4",
+        },
+        {
+          src: "/assets/photos/A_shoal_of_Glowfish_in_Mafia_Island_Marine_Park_02.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island – photo 5",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Kitutia_Samoilys_Caesionidae_Pterocaesio.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island – photo 6",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Marine_Reserve_Corals_01.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island – photo 7",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Marine_Reserve_Corals_03.jpg",
+          alt: "Chole Bay Snorkelling, Mafia Island – photo 8",
+        },
+      ],
+    },
+    {
+      id: "juani-island",
+      slug: "juani-island",
+      circuit: "mafia",
+      circuitLabel: "Mafia Island",
+      name: "Juani Island",
+      fullName: "Juani Island",
+      scriptLabel: "Forest & Turtles",
+      region: "Mafia Archipelago",
+      category: "Mafia Island | Beach Holiday",
+      bestSeason: "Oct – Mar · Jun – Sep",
+      journeys: "5 tours · 194 reviews",
+      tagline: "Between June and September hundreds of baby turtles make their instinctive scramble from the white sandy beaches to the warm Indian Ocean waters. In Mafia it…",
+      description: "Between June and September hundreds of baby turtles make their instinctive scramble from the white sandy beaches to the warm Indian Ocean waters. In Mafia it’s fortunate enough to be able to witness this natural spectacle from the Eastern beach of Juani, an island bursting with nature from the tiniest of butterflies to giant cascading trees.",
+      descriptions: [
+        "Between June and September hundreds of baby turtles make their instinctive scramble from the white sandy beaches to the warm Indian Ocean waters. In Mafia it’s fortunate enough to be able to witness this natural spectacle from the Eastern beach of Juani, an island bursting with nature from the tiniest of butterflies to giant cascading trees.",
+        "The turtle conservation programme of these amazing creatures, particularly the Hawksbill Turtle has been one of Mafia’s outstanding successes through the combined efforts of Sea Sense, local community and Mafia Island Marine Park since 2001.",
+        "The adventure starts with a lovely dhow trip across Chole Bay, landing on the shielded Western side of Juani Island. On arrival, a 45 minute walk across the island reveals the islands true beauty of the Island itself with towering trees and green foliage.",
+        "On the hatchling site we may experience the little hatchlings emerge from their sandy burrow, scrambling out of their nest, flapping their fins vivaciously, racing to reach the surf and start the next step of their incredible journey. It is a truly heart wrenching experience to watch these ancient reptiles fight for survival in their first moments among the living. After experiencing one of nature’s most harrowing hurdles, we make our way back.",
+      ],
+      highlights: [
+        "Marine life & reefs",
+        "Beaches & coast",
+        "Island escapes",
+      ],
+      sourceUrl: "https://www.tanzaniatourism.com/safari/turtle-hatchling-mafia-island",
+      images: [
+        {
+          src: "/assets/photos/A_Young_Turtle_Just_Hatched_on_its_Way_to_the_Sea_in_Mafia_Island.jpg",
+          alt: "Turtle Hatchling, Mafia Island",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Marine_Reserve_Sea_Turtle_01.jpg",
+          alt: "Turtle Hatchling, Mafia Island – photo 2",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Marine_Reserve_Sea_Turtle_02.jpg",
+          alt: "Turtle Hatchling, Mafia Island – photo 3",
+        },
+      ],
+      gallery: [
+        {
+          src: "/assets/photos/A_Young_Turtle_Just_Hatched_on_its_Way_to_the_Sea_in_Mafia_Island.jpg",
+          alt: "Turtle Hatchling, Mafia Island",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Marine_Reserve_Sea_Turtle_01.jpg",
+          alt: "Turtle Hatchling, Mafia Island – photo 2",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Marine_Reserve_Sea_Turtle_02.jpg",
+          alt: "Turtle Hatchling, Mafia Island – photo 3",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Marine_Reserve_Sea_Turtle_03.jpg",
+          alt: "Turtle Hatchling, Mafia Island – photo 4",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Marine_Reserve_Sea_Turtle_04.jpg",
+          alt: "Turtle Hatchling, Mafia Island – photo 5",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Sea_Turtle.jpg",
+          alt: "Turtle Hatchling, Mafia Island – photo 6",
+        },
+        {
+          src: "/assets/photos/A_Young_Turtle_Just_Hatched_on_its_Way_to_the_Sea_in_Mafia_Island_750_550shar-50brig-20_c1.jpg",
+          alt: "Turtle Hatchling, Mafia Island – photo 7",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Marine_Reserve_Sea_Turtle_01_750_550shar-50brig-20_c1.jpg",
+          alt: "Turtle Hatchling, Mafia Island – photo 8",
+        },
+      ],
+    },
+    {
+      id: "jibondo-island",
+      slug: "jibondo-island",
+      circuit: "mafia",
+      circuitLabel: "Mafia Island",
+      name: "Jibondo Island",
+      fullName: "Jibondo Island",
+      scriptLabel: "Boat-Building Village",
+      region: "Mafia Archipelago",
+      category: "Mafia Island | Tourist Attractions",
+      bestSeason: "Oct – Mar · Jun – Sep",
+      journeys: "5 tours · 187 reviews",
+      tagline: "About an hour’s sail south of Chole, Jibondo Island is the most traditional of the archipelago’s settlements, and most of its two thousand inhabitants engage…",
+      description: "About an hour’s sail south of Chole, Jibondo Island is the most traditional of the archipelago’s settlements, and most of its two thousand inhabitants engage in fishing, especially for sharks, and octopus-baiting.",
+      descriptions: [
+        "About an hour’s sail south of Chole, Jibondo Island is the most traditional of the archipelago’s settlements, and most of its two thousand inhabitants engage in fishing, especially for sharks, and octopus-baiting.",
+        "Jibondo is renowned as a boat-building centre, with much of the wood coming from forests around mainland Kilwa. In Jibondo’s village centre, look for the carved door frame on the mosque, said to come from the old settlement at Kua on Juani.",
+      ],
+      highlights: [
+        "Island escapes",
+        "Tourist Attractions",
+      ],
+      sourceUrl: "https://www.tanzaniatourism.com/safari/jibondo-island-mafia",
+      images: [
+        {
+          src: "/assets/photos/Jibondo_Island_Coconut_Trees_in_Mafia_Islands.jpg",
+          alt: "Jibondo Island, Mafia",
+        },
+        {
+          src: "/assets/photos/Jibondo_Island_Boat_Building_in_Mafia_Islands.jpg",
+          alt: "Jibondo Island, Mafia – photo 2",
+        },
+        {
+          src: "/assets/photos/Jibondo_Island_in_Mafia_Island.jpg",
+          alt: "Jibondo Island, Mafia – photo 3",
+        },
+      ],
+      gallery: [
+        {
+          src: "/assets/photos/Jibondo_Island_Coconut_Trees_in_Mafia_Islands.jpg",
+          alt: "Jibondo Island, Mafia",
+        },
+        {
+          src: "/assets/photos/Jibondo_Island_Boat_Building_in_Mafia_Islands.jpg",
+          alt: "Jibondo Island, Mafia – photo 2",
+        },
+        {
+          src: "/assets/photos/Jibondo_Island_in_Mafia_Island.jpg",
+          alt: "Jibondo Island, Mafia – photo 3",
+        },
+        {
+          src: "/assets/photos/Jibondo_Island_Coconut_Trees_in_Mafia_Islands_750_550shar-50brig-20_c1.jpg",
+          alt: "Jibondo Island, Mafia – photo 4",
+        },
+        {
+          src: "/assets/photos/Jibondo_Island_Boat_Building_in_Mafia_Islands_750_550shar-50brig-20_c1.jpg",
+          alt: "Jibondo Island, Mafia – photo 5",
+        },
+        {
+          src: "/assets/photos/Jibondo_Island_in_Mafia_Island_750_550shar-50brig-20_c1.jpg",
+          alt: "Jibondo Island, Mafia – photo 6",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Chole_Mjini.jpg",
+          alt: "Jibondo Island, Mafia – photo 7",
+        },
+        {
+          src: "/assets/photos/Nyerere_National_Park_Sunset_115_450_450shar-50brig-20_c1.jpg",
+          alt: "Jibondo Island, Mafia – photo 8",
+        },
+      ],
+    },
+    {
+      id: "kua-ruins",
+      slug: "kua-ruins",
+      circuit: "mafia",
+      circuitLabel: "Mafia Island",
+      name: "Kua Ruins",
+      fullName: "Kua Ruins",
+      scriptLabel: "Swahili Heritage",
+      region: "Mafia Archipelago",
+      category: "Mafia Island | Tourist Attractions",
+      bestSeason: "Oct – Mar · Jun – Sep",
+      journeys: "5 tours · 196 reviews",
+      tagline: "Nestled amongst the overgrown forests in the South of Juani Island are a set of ruins, the last remnants of the ancient city of Kua dating back to the early…",
+      description: "Nestled amongst the overgrown forests in the South of Juani Island are a set of ruins, the last remnants of the ancient city of Kua dating back to the early 12th century. Kua is an identified archaeological site which still has no firm reasoning as to why all of a sudden the civilisation ceased to exist, although there are various legends. The destruction of Kua is said to have been by the sultan’s enemies, the Sakalava tribe from Madagascar during the fifteenth century.",
+      descriptions: [
+        "Nestled amongst the overgrown forests in the South of Juani Island are a set of ruins, the last remnants of the ancient city of Kua dating back to the early 12th century. Kua is an identified archaeological site which still has no firm reasoning as to why all of a sudden the civilisation ceased to exist, although there are various legends. The destruction of Kua is said to have been by the sultan’s enemies, the Sakalava tribe from Madagascar during the fifteenth century.",
+        "The ruins cover a large area of the South western side of Juani Island and are located close to the shore. As you wander between crumbling walls smothered by the roots of strangler figs, you will pass several mosques, a cemetery, a palace with large storeroom, a dispensary and a school, all which were funded by the then-lucrative trade in cowrie shells. From these one can tell that Kua was once a place of considerable local importance.",
+        "The city of Kua was established by settlers from Kilwa, and was heavily involved in trade. All over the ruins you can readily dig up pottery sherds, some dating several hundreds of years to Chinese and Persian origins. Vervet monkeys scamper among the fallen buildings and plenty of haunting cries from surrounding birds will add to the mysterious atmosphere, letting your imagination run wild. This is a wonderful excursion to plan for the late afternoon, when the afternoon light illuminates the ruins in a beautiful yet spooky ambience.",
+      ],
+      highlights: [
+        "Nature & wildlife",
+        "Island escapes",
+        "Tourist Attractions",
+      ],
+      sourceUrl: "https://www.tanzaniatourism.com/safari/kua-ruins-tour-mafia-island",
+      images: [
+        {
+          src: "/assets/photos/Kua_Ruins_Mosque_Mafia_2_2018.jpg",
+          alt: "Kua Ruins Tour, Mafia Island",
+        },
+        {
+          src: "/assets/photos/Kua_Ruins_Mafia_1.jpg",
+          alt: "Kua Ruins Tour, Mafia Island – photo 2",
+        },
+        {
+          src: "/assets/photos/Kua_Ruins_Mafia_2.jpg",
+          alt: "Kua Ruins Tour, Mafia Island – photo 3",
+        },
+      ],
+      gallery: [
+        {
+          src: "/assets/photos/Kua_Ruins_Mosque_Mafia_2_2018.jpg",
+          alt: "Kua Ruins Tour, Mafia Island",
+        },
+        {
+          src: "/assets/photos/Kua_Ruins_Mafia_1.jpg",
+          alt: "Kua Ruins Tour, Mafia Island – photo 2",
+        },
+        {
+          src: "/assets/photos/Kua_Ruins_Mafia_2.jpg",
+          alt: "Kua Ruins Tour, Mafia Island – photo 3",
+        },
+        {
+          src: "/assets/photos/Kua_Ruins_Mafia_3.jpg",
+          alt: "Kua Ruins Tour, Mafia Island – photo 4",
+        },
+        {
+          src: "/assets/photos/Kua_Ruins_Mosque_Mafia_1.jpg",
+          alt: "Kua Ruins Tour, Mafia Island – photo 5",
+        },
+        {
+          src: "/assets/photos/Kua_Ruins_Mosque_Mafia_2_2018_750_550shar-50brig-20_c1.jpg",
+          alt: "Kua Ruins Tour, Mafia Island – photo 6",
+        },
+        {
+          src: "/assets/photos/Kua_Ruins_Mafia_1_750_550shar-50brig-20_c1.jpg",
+          alt: "Kua Ruins Tour, Mafia Island – photo 7",
+        },
+        {
+          src: "/assets/photos/Kua_Ruins_Mafia_2_750_550shar-50brig-20_c1.jpg",
+          alt: "Kua Ruins Tour, Mafia Island – photo 8",
+        },
+      ],
+    },
+    {
+      id: "mafia-marine",
+      slug: "mafia-island-marine-park",
+      circuit: "mafia",
+      circuitLabel: "Mafia Island",
+      name: "Marine Park",
+      fullName: "Mafia Island Marine Park",
+      scriptLabel: "Whale Shark Waters",
+      region: "Mafia Archipelago",
+      category: "Mafia Island | Beach Holiday",
+      bestSeason: "Oct – Mar · Jun – Sep",
+      journeys: "5 tours · 191 reviews",
+      tagline: "Snorkeling or Swimming with whale sharks is one of the best experiences Mafia Island has to offer. Whale Sharks are the largest fish in the ocean and their d…",
+      description: "Snorkeling or Swimming with whale sharks is one of the best experiences Mafia Island has to offer. Whale Sharks are the largest fish in the ocean and their docile and curious nature make them a pleasure to swim with. It is a lifetime experience that you cannot miss.",
+      descriptions: [
+        "Snorkeling or Swimming with whale sharks is one of the best experiences Mafia Island has to offer. Whale Sharks are the largest fish in the ocean and their docile and curious nature make them a pleasure to swim with. It is a lifetime experience that you cannot miss.",
+        "The best season begins from October to end of February when the “Dominos” (nickname for the Whale Sharks) flock to the archipelago to feast among plankton rich waters in large numbers before drifting back to the depths of the ocean. Whale sharks are not whales and are not your typical shark, It is a filter feeder and therefore has no teeth. They are the largest fish in the sea measuring up to 20m. Little is known about these gentle giants by scientists, which is what adds to the overwhelming feeling you have when you swim alongisde them.",
+        "This tour starts early in the morning and will take between 2-5 hours. Whale sharks are wild animals so there is no guarantee that they will be found, however there is a great chance that they will. Mafia Island follows the “Code of Conduct” which is a set of guidelines used all over the world. Your guide will make you aware of these guidelines for safely interacting with these whales.",
+      ],
+      highlights: [
+        "Marine life & reefs",
+        "Island escapes",
+        "Beach Holiday",
+      ],
+      sourceUrl: "https://www.tanzaniatourism.com/safari/whale-sharks-snorkeling",
+      images: [
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_04.jpg",
+          alt: "Whale Sharks Snorkeling",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_02.jpg",
+          alt: "Whale Sharks Snorkeling – photo 2",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_03.jpg",
+          alt: "Whale Sharks Snorkeling – photo 3",
+        },
+      ],
+      gallery: [
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_04.jpg",
+          alt: "Whale Sharks Snorkeling",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_02.jpg",
+          alt: "Whale Sharks Snorkeling – photo 2",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_03.jpg",
+          alt: "Whale Sharks Snorkeling – photo 3",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_06.jpg",
+          alt: "Whale Sharks Snorkeling – photo 4",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_07.jpg",
+          alt: "Whale Sharks Snorkeling – photo 5",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_08.jpg",
+          alt: "Whale Sharks Snorkeling – photo 6",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_09.jpg",
+          alt: "Whale Sharks Snorkeling – photo 7",
+        },
+        {
+          src: "/assets/photos/Mafia_Island_Whale_Shark_04_750_550shar-50brig-20_c1.jpg",
+          alt: "Whale Sharks Snorkeling – photo 8",
         },
       ],
     },

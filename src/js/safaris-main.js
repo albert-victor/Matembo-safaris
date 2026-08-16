@@ -19,7 +19,13 @@ const GRID_BY_CIRCUIT = {
 };
 
 async function renderCircuitSections() {
-  const { safariPackages, safariCircuitOrder } = await import("../data/safari-packages.js");
+  const { safariPackages, safariCircuitOrder, safariPackagesMeta } = await import("../data/all-safari-packages.js");
+
+  const heroScript = document.querySelector(".dest-listing-hero__script");
+  if (heroScript && safariPackagesMeta?.count) {
+    heroScript.textContent = `${safariPackagesMeta.count} Real Itineraries`;
+  }
+
   const circuits =
     safariCircuitOrder?.length > 0
       ? safariCircuitOrder

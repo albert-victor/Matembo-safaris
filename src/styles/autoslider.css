@@ -319,6 +319,31 @@
   margin-top: 1.25rem;
 }
 
+/* Homepage itinerary rows */
+.itinerary-rows {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.75rem, 3vw, 2.75rem);
+}
+
+.itinerary-row__label {
+  margin: 0 0 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-brand-dark);
+}
+
+.itinerary-row .autoslider {
+  padding-bottom: 0.85rem;
+}
+
+.itinerary-row + .itinerary-row {
+  padding-top: 0.15rem;
+  border-top: 1px solid rgba(201, 169, 98, 0.18);
+}
+
 /* Itinerary slides inherit safari-card sizing */
 .autoslider__track .safari-card,
 .autoslider__track .safari-card--carousel {

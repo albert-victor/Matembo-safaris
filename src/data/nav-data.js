@@ -72,7 +72,7 @@ export const navAboutLinks = [
   {
     name: "Gallery & Moments",
     href: "/about.html#about-gallery",
-    desc: "Ruaha, Serengeti & coast scenes",
+    desc: "Ruaha, Mikumi & coast scenes",
     image: ABOUT_MAIN_IMAGES.gallery,
   },
   {
@@ -169,7 +169,7 @@ export const megaMenuPanels = {
     items: navSafariTypes,
     aside: {
       label: "Every circuit",
-      title: "141 real itineraries",
+      title: "205 real itineraries",
       tags: "North · South · East · West",
       quote: "Wildlife, coast, mountains and culture – grouped by circuit on the full index.",
       ctaText: "Game drives catalog",
@@ -217,6 +217,7 @@ export const megaMenuPanels = {
       navItem("Southern Icons", "Mikumi + Ruaha", packagePageUrl("5-days-safari-to-mikumi-ruaha-national-parks"), IMG.ruaha5d),
       navItem("Southern Classic", "Ruaha + Udzungwa + Mikumi", packagePageUrl("7-days-safari-to-ruaha-udzungwa-and-mikumi-national-parks"), IMG.ruaha7d),
       navItem("Grand Southern", "Nyerere + Ruaha route", packagePageUrl("10-days-safari-to-nyerere-mikumi-udzungwa-ruaha-national-parks"), IMG.ruaha10d),
+      navItem("View Ruaha Gallery", "Field photography", "/about.html#about-ruaha-gallery", "/assets/about/ruaha 1.jpg"),
     ],
     aside: {
       label: "Matembo home park",

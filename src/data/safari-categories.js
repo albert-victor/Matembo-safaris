@@ -11,7 +11,7 @@ export const SAFARI_CATEGORIES = [
     href: "/safaris.html",
     heroLabel: "Tanzania Safaris",
     heroTitle: "Every Circuit",
-    heroScript: "141 Real Itineraries",
+    heroScript: "205 Real Itineraries",
     heroLead:
       "Browse wildlife, coast, mountains and culture across Tanzania – grouped by circuit and ready to tailor from Iringa.",
   },

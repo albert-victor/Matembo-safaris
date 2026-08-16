@@ -14,7 +14,7 @@ export async function loadSearchIndex() {
   ] = await Promise.all([
     import("./all-destinations.js"),
     import("./experiences-data.js"),
-    import("./safari-packages.js"),
+    import("./all-safari-packages.js"),
     import("./circuit-nav.js"),
     import("./circuits-page-data.js"),
   ]);

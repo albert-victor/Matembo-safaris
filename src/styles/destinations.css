@@ -10,6 +10,10 @@
   position: relative;
 }
 
+[data-slideshow]:not(.is-slideshow-visible) .dest-slideshow__slide--motion.is-active img {
+  animation-play-state: paused;
+}
+
 .dest-slideshow__track {
   position: absolute;
   inset: 0;
@@ -25,7 +29,7 @@
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 0.9s var(--ease-reveal);
+  transition: opacity 0.55s var(--ease-reveal);
 }
 
 .dest-slideshow__slide.is-active {
@@ -74,8 +78,7 @@
   height: 1.75rem;
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.38);
   color: var(--color-white);
   font-size: 1rem;
   line-height: 1;
@@ -228,6 +231,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 16.5rem), 1fr));
   gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.dest-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 26rem;
 }
 
 /* ── Style A — Expedition craft + slideshow ───────────────── */

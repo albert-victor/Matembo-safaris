@@ -1,7 +1,8 @@
 ﻿import { renderAutosliderShell } from "./autoslider.js";
-import { renderCard } from "./render-cards.js";
+import { renderCard, enrichPackageFromCatalogue } from "./render-cards.js";
 import { homePopularDestinations } from "../data/home-popular-destinations.js";
 import { homePopularPackages } from "../data/home-popular-packages.js";
+import { homePopularSouthernPackages } from "../data/home-popular-southern-packages.js";
 import {
   popularDestinationsIntro,
   popularItinerariesIntro,
@@ -13,7 +14,8 @@ import {
   tripAdvisorReviewsIntro,
   tripAdvisorListingUrl,
 } from "../data/tripadvisor-reviews.js";
-import { tripAdvisorUrl, contactCopy, siteMeta } from "../data/home-data.js";
+import { tripAdvisorUrl, contactCopy, siteMeta, whatsAppUrl, whatsAppNumber } from "../data/home-data.js";
+import { safariPackages } from "../data/all-safari-packages.js";
 import { formatCopy } from "./content-utils.js";
 
 function renderStars(rating) {
@@ -139,13 +141,41 @@ export function renderPopularDestinations() {
   `;
 }
 
+function renderItineraryRow(packages, options = {}) {
+  const {
+    id = "",
+    label = "Popular itineraries",
+    rowLabel = "",
+    autoplay = 5500,
+    autoplayDelay = 600,
+    visible = "3",
+    catalogue = [],
+  } = options;
+
+  const enriched = packages.map((pkg) => enrichPackageFromCatalogue(pkg, catalogue));
+
+  const trackHtml = enriched
+    .map((pkg, i) => renderCard(pkg, i, { inCarousel: true }))
+    .join("");
+
+  return `
+    <div class="itinerary-row section-reveal"${rowLabel ? ` aria-labelledby="${id}-label"` : ""}>
+      ${rowLabel ? `<p class="itinerary-row__label" id="${id}-label">${rowLabel}</p>` : ""}
+      ${renderAutosliderShell({
+        id,
+        label,
+        autoplay,
+        autoplayDelay,
+        visible,
+        trackHtml,
+      })}
+    </div>
+  `;
+}
+
 export function renderPopularItineraries() {
   const root = document.querySelector("#home-popular-itineraries");
   if (!root) return;
-
-  const trackHtml = homePopularPackages
-    .map((pkg, i) => renderCard(pkg, i, { inCarousel: true }))
-    .join("");
 
   root.innerHTML = `
     <section class="home-section" id="itineraries" aria-labelledby="itineraries-title">
@@ -155,12 +185,26 @@ export function renderPopularItineraries() {
           <h2 id="itineraries-title" class="home-section__title">${formatCopy(popularItinerariesIntro.title)}</h2>
           <p class="home-section__desc">${formatCopy(popularItinerariesIntro.desc)}</p>
         </header>
-        ${renderAutosliderShell({
-          label: "Popular itineraries",
-          autoplay: 5500,
-          visible: "3",
-          trackHtml,
-        })}
+        <div class="itinerary-rows">
+          ${renderItineraryRow(homePopularPackages, {
+            id: "popular-itineraries-featured",
+            label: "Featured safari itineraries",
+            rowLabel: "Featured safaris",
+            autoplay: 5500,
+            autoplayDelay: 600,
+            visible: "3",
+            catalogue: safariPackages,
+          })}
+          ${renderItineraryRow(homePopularSouthernPackages, {
+            id: "popular-itineraries-southern",
+            label: "Southern circuit safari itineraries",
+            rowLabel: "Southern Circuit",
+            autoplay: 6500,
+            autoplayDelay: 3200,
+            visible: "3",
+            catalogue: safariPackages,
+          })}
+        </div>
         <div class="home-section__actions section-reveal">
           <a href="/safaris.html" class="btn btn--secondary">All Safari Packages</a>
           <a href="/contact.html" class="btn btn--primary">Enquire</a>
@@ -290,11 +334,11 @@ export function renderWhatsAppFloat() {
 
   const el = document.createElement("a");
   el.className = "wa-float";
-  el.href = "/contact.html";
+  el.href = whatsAppUrl;
   el.target = "_blank";
   el.rel = "noopener noreferrer";
   el.setAttribute("data-wa-float", "");
-  el.setAttribute("aria-label", "WhatsApp safari enquiry");
+  el.setAttribute("aria-label", `WhatsApp Matembo Safaris ${whatsAppNumber}`);
   el.innerHTML = `
     <span class="wa-float__tab">
       <span class="wa-float__pulse" aria-hidden="true"></span>
@@ -328,4 +372,4 @@ export function renderHomeContact() {
   `;
 }
 
-export { renderSiteFooter } from "./render-home.js";
+export { 

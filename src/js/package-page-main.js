@@ -1,5 +1,5 @@
-﻿import {
-  getSafariPackageById,
+﻿import { getSafariPackageById } from "../data/all-safari-packages.js";
+import {
   renderPackagePage,
   renderPackageNotFound,
 } from "./render-package-view.js";

@@ -76,8 +76,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  min-height: 3.5rem;
-  padding-block: 0.5rem;
+  min-height: 4rem;
+  padding-block: 0.65rem;
 }
 
 .site-header__brand {
@@ -93,8 +93,8 @@
   position: relative;
   display: grid;
   place-items: center;
-  width: 2.85rem;
-  height: 2.85rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   padding: 0.14rem;
   background:
@@ -125,7 +125,7 @@
 
 .site-header__brand-wordmark {
   font-family: var(--font-signature);
-  font-size: 1.58rem;
+  font-size: 1.68rem;
   font-weight: 400;
   letter-spacing: 0.02em;
   text-transform: none;
@@ -136,7 +136,7 @@
 
 .site-header__brand-sub {
   font-family: var(--font-body);
-  font-size: 0.54rem;
+  font-size: 0.58rem;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1169,7 +1169,8 @@ html.is-nav-locked {
 
 @media (max-width: 900px) {
   .site-header__inner {
-    min-height: 3.5rem;
+    min-height: 4.25rem;
+    padding-block: 0.75rem;
   }
 
   .site-header__brand {
@@ -1433,16 +1434,16 @@ html.is-nav-locked {
   }
 
   .site-header__brand-wordmark {
-    font-size: 1.5rem;
+    font-size: 1.58rem;
   }
 
   .site-header__brand-sub {
-    font-size: 0.52rem;
+    font-size: 0.55rem;
   }
 
   .site-header__brand-emblem-wrap {
-    width: 2.95rem;
-    height: 2.95rem;
+    width: 3.1rem;
+    height: 3.1rem;
   }
 }
 

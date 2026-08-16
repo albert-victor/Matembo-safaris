@@ -11,6 +11,7 @@ function initCardTilt() {
 
   document.querySelectorAll("[data-tilt]").forEach((frame) => {
     let rafId = null;
+    let listening = false;
 
     const reset = () => {
       if (rafId) cancelAnimationFrame(rafId);
@@ -34,9 +35,22 @@ function initCardTilt() {
       });
     };
 
-    frame.addEventListener("mousemove", update, { passive: true });
-    frame.addEventListener("mouseleave", reset);
-    frame.addEventListener("blur", reset, true);
+    const onEnter = () => {
+      if (listening) return;
+      listening = true;
+      frame.addEventListener("mousemove", update, { passive: true });
+    };
+
+    const onLeave = () => {
+      if (!listening) return;
+      listening = false;
+      frame.removeEventListener("mousemove", update);
+      reset();
+    };
+
+    frame.addEventListener("mouseenter", onEnter);
+    frame.addEventListener("mouseleave", onLeave);
+    frame.addEventListener("blur", onLeave, true);
   });
 }
 

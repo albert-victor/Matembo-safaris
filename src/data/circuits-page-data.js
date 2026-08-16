@@ -4,7 +4,7 @@
   getDestinationById,
 } from "./all-destinations.js";
 import { DESTINATION_CIRCUITS, safarisCircuitHref, circuitPageHref } from "./circuit-nav.js";
-import { safariPackages } from "./safari-packages.js";
+import { safariPackages } from "./all-safari-packages.js";
 
 const HERO_DESTINATION_IDS = {
   northern: "serengeti",

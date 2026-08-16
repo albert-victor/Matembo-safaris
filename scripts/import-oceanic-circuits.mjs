@@ -1,5 +1,7 @@
 import { writeFileSync, mkdirSync } from "node:fs";
 import { extractListingCards as parseListingCards } from "./lib/ttb-listing.mjs";
+import { OCEANIC_DESTINATION_SEEDS } from "./lib/oceanic-destination-seeds.mjs";
+import { safariPackages } from "../src/data/safari-packages.js";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -112,7 +114,10 @@ function slugToId(slug) {
     "jambiani-beach": "jambiani-beach",
     "kizimkazi": "kizimkazi",
     "kizimkazi-dolphin-tours": "kizimkazi",
-    "mnazi-bay-ruvuma-estuary-marine-park": "mnazi-bay",
+    "kua-ruins": "kua-ruins",
+    "jibondo-island": "jibondo-island",
+    "juani-island": "juani-island",
+    "mafia-island-marine-park": "mafia-marine",
   };
   return map[slug] || slug.replace(/-national-park$/, "").replace(/-marine-park$/, "");
 }
@@ -334,6 +339,153 @@ function pickCardImages(imageEntries) {
   return picked;
 }
 
+function extractPageTitle(html = "") {
+  const og = html.match(/property="og:title"\s+content="([^"]+)"/i)?.[1];
+  const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1];
+  const cleaned = stripHtml(h1 || og || "");
+  return cleaned.replace(/\s*\|\s*Tanzania Tourism.*$/i, "").trim();
+}
+
+function isBrokenTtbPage(html, expectedName = "") {
+  const title = extractPageTitle(html).toLowerCase();
+  if (!title) return true;
+  if (/serengeti national park/i.test(title) && !/serengeti/i.test(expectedName)) return true;
+  const needle = expectedName.toLowerCase().split(/\s+/).filter((w) => w.length > 3)[0];
+  if (needle && title.includes(needle)) return false;
+  return /serengeti national park/i.test(title);
+}
+
+function splitOverviewToParagraphs(text = "", maxChars = 320) {
+  if (!text?.trim()) return [];
+  const normalized = text.replace(/\s+/g, " ").trim();
+  const sentences = normalized.match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g) || [normalized];
+  const paragraphs = [];
+  let current = "";
+
+  for (const sentence of sentences) {
+    const trimmed = sentence.trim();
+    if (!trimmed) continue;
+    if (current && (current + " " + trimmed).length > maxChars) {
+      paragraphs.push(current.trim());
+      current = trimmed;
+    } else {
+      current = current ? `${current} ${trimmed}` : trimmed;
+    }
+  }
+
+  if (current.trim()) paragraphs.push(current.trim());
+  return paragraphs.slice(0, 8);
+}
+
+function galleryFromPackage(pkg, altBase) {
+  const entries = (pkg?.gallery || []).map((item, i) => ({
+    src: item.src.startsWith("http") ? item.src : item.src,
+    alt: item.alt || `${altBase}${i ? ` – view ${i + 1}` : ""}`,
+  }));
+  return entries;
+}
+
+async function buildSeedDestination(seed, urlCache) {
+  const pkg = safariPackages.find((entry) => entry.id === seed.packageId);
+  let paragraphs = [];
+  let sourceUrl = seed.destinationUrl;
+  let journeys = pkg
+    ? `${Math.max(1, Math.round(pkg.reviewCount / 40))} tours · ${pkg.reviewCount} reviews`
+    : "Tailor-made journeys";
+
+  for (const url of seed.sourceUrls) {
+    try {
+      const html = await fetchHtml(url);
+      if (isBrokenTtbPage(html, seed.fullName)) continue;
+      const fetched = extractParagraphs(html);
+      if (fetched.length) {
+        paragraphs = fetched;
+        sourceUrl = url.startsWith(BASE) ? url : absUrl(url);
+        break;
+      }
+    } catch {
+      /* try next source */
+    }
+  }
+
+  if (!paragraphs.length && pkg?.overview) {
+    paragraphs = splitOverviewToParagraphs(pkg.overview);
+  }
+
+  const packageGallery = galleryFromPackage(pkg, seed.fullName);
+  let imageEntries = packageGallery.slice(0, MAX_GALLERY);
+
+  if (imageEntries.length < MIN_GALLERY) {
+    for (const url of seed.sourceUrls) {
+      try {
+        const html = await fetchHtml(url);
+        if (isBrokenTtbPage(html, seed.fullName)) continue;
+        const rawUrls = extractRawImageUrls(html, packageGallery[0]?.src || "");
+        const verified = await buildVerifiedGallery(rawUrls, urlCache, MAX_GALLERY);
+        if (verified.length >= MIN_GALLERY) {
+          imageEntries = verified.map((src, i) => ({
+            src,
+            alt: `${seed.fullName}${i ? ` – view ${i + 1}` : ""}`,
+          }));
+          break;
+        }
+      } catch {
+        /* continue */
+      }
+    }
+  }
+
+  if (imageEntries.length < MIN_GALLERY) {
+    console.warn(`⚠ ${seed.fullName}: only ${imageEntries.length} images (need ${MIN_GALLERY}) – skipped`);
+    return null;
+  }
+
+  const uniqueForCards = pickCardImages(imageEntries);
+  const tagline =
+    paragraphs[0]?.length > 160 ? `${paragraphs[0].slice(0, 157).trim()}…` : paragraphs[0] || "";
+
+  return {
+    id: seed.id,
+    slug: seed.slug,
+    circuit: seed.circuit,
+    circuitLabel: seed.circuitLabel,
+    name: seed.name,
+    fullName: seed.fullName,
+    scriptLabel: seed.scriptLabel || guessScriptLabel(seed.id, seed.fullName),
+    region: seed.region,
+    category: seed.category,
+    bestSeason: seed.circuit === "mafia" ? "Oct – Mar · Jun – Sep" : "Jun – Mar",
+    journeys,
+    tagline,
+    description: paragraphs[0] || "",
+    descriptions: paragraphs.slice(0, 8),
+    highlights: highlightsFromText(paragraphs[0] || "", seed.category),
+    sourceUrl,
+    images: uniqueForCards,
+    gallery: imageEntries,
+  };
+}
+
+async function loadSeedDestinations(urlCache, seenIds) {
+  const seeded = [];
+
+  for (const seed of OCEANIC_DESTINATION_SEEDS) {
+    if (seenIds.has(seed.id)) {
+      console.warn(`⚠ Seed id "${seed.id}" already imported – skipped`);
+      continue;
+    }
+
+    const dest = await buildSeedDestination(seed, urlCache);
+    if (!dest) continue;
+
+    seenIds.add(dest.id);
+    seeded.push(dest);
+    console.log(`  ✓ [seed · ${seed.circuitLabel}] ${dest.fullName} – ${dest.gallery.length} photos kept`);
+  }
+
+  return seeded;
+}
+
 function serialize(obj, indent = 0) {
   const pad = "  ".repeat(indent);
   const padIn = "  ".repeat(indent + 1);
@@ -459,6 +611,10 @@ for (const { card, source } of listing) {
   console.log(`  ✓ [${source.circuitLabel}] ${card.name} – ${imageEntries.length} photos kept`);
 }
 
+console.log("\nImporting seeded Zanzibar & Mafia sub-destinations…");
+const seedDestinations = await loadSeedDestinations(urlCache, seenIds);
+destinations.push(...seedDestinations);
+
 const file = `/** Auto-generated from tanzaniatourism.com – run: npm run import:oceanic */
 export const TTB_OCEANIC_ORIGIN = ${JSON.stringify(BASE)};
 
@@ -472,14 +628,14 @@ export const oceanicCircuitMeta = {
 export const zanzibarCircuitMeta = {
   id: "zanzibar",
   name: "Zanzibar Island",
-  description: "Stone Town, spice tours, Jozani Forest & the classic Zanzibar coast",
+  description: "Stone Town, Jozani Forest, Nungwi, Kizimkazi dolphins & Prison Island – the classic spice island",
   sourceUrl: ${JSON.stringify(`${BASE}/destinations/zanzibar-island`)},
 };
 
 export const mafiaCircuitMeta = {
   id: "mafia",
   name: "Mafia Island",
-  description: "Chole Bay, whale sharks, coral gardens & unhurried island life",
+  description: "Chole Bay reefs, Juani & Jibondo islands, Kua ruins & whale-shark waters",
   sourceUrl: ${JSON.stringify(`${BASE}/destinations/mafia-island`)},
 };
 

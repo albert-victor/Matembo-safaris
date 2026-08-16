@@ -19,7 +19,7 @@ export const popularDestinationIds = [
   "katavi",
   "arusha",
   "mafia",
-  "pemba",
+  "stone-town",
 ];
 
 export const popularItinerariesIntro = {

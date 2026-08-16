@@ -1,4 +1,4 @@
-/** Lightweight home teaser data – auto-generated */
+/** Lightweight home teaser data */
 export const homePopularDestinations = [
   {
     "id": "serengeti",
@@ -125,7 +125,7 @@ export const homePopularDestinations = [
     "id": "zanzibar",
     "name": "Zanzibar Island",
     "scriptLabel": "Spice Island Escape",
-    "journeys": "14 tours · 266 reviews",
+    "journeys": "14 tours · 267 reviews",
     "highlights": [
       "Beaches & coast",
       "Culture & heritage",
@@ -133,11 +133,11 @@ export const homePopularDestinations = [
     ],
     "images": [
       {
-        "src": "/assets/photos/Zanzibar_Stone_Town_01.jpg",
+        "src": "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Stone_Town_01.jpg",
         "alt": "Zanzibar Island"
       },
       {
-        "src": "/assets/photos/Zanzibar_Island_Stone_Town_02.jpg",
+        "src": "https://www.tanzaniatourism.com/images/uploads/Zanzibar_Island_Stone_Town_02.jpg",
         "alt": "Zanzibar Island – view 2"
       }
     ]
@@ -246,7 +246,7 @@ export const homePopularDestinations = [
     "id": "mafia",
     "name": "Mafia Island",
     "scriptLabel": "Marine Paradise",
-    "journeys": "17 tours · 217 reviews",
+    "journeys": "17 tours · 218 reviews",
     "highlights": [
       "Marine life & reefs",
       "Beaches & coast",
@@ -254,12 +254,33 @@ export const homePopularDestinations = [
     ],
     "images": [
       {
-        "src": "/assets/photos/Mafia_Island_Chole_Mjini.jpg",
+        "src": "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Chole_Mjini.jpg",
         "alt": "Mafia Island"
       },
       {
-        "src": "/assets/photos/Mafia_Island_Diving_01.jpg",
+        "src": "https://www.tanzaniatourism.com/images/uploads/Mafia_Island_Diving_01.jpg",
         "alt": "Mafia Island – view 2"
+      }
+    ]
+  },
+  {
+    "id": "stone-town",
+    "name": "Stone Town",
+    "scriptLabel": "UNESCO Old Town",
+    "journeys": "5 tours · 193 reviews",
+    "highlights": [
+      "Culture & heritage",
+      "Island escapes",
+      "Tourist Attractions"
+    ],
+    "images": [
+      {
+        "src": "/assets/photos/Zanzibar_House_of_Wonders_Stone_Town_01.jpg",
+        "alt": "Stone Town Tour"
+      },
+      {
+        "src": "/assets/photos/Zanzibar_Anglican_Church_or_Former_Slave_Market_Stone_Town_03.jpg",
+        "alt": "Stone Town Tour – photo 2"
       }
     ]
   }

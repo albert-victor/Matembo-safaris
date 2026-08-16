@@ -47,6 +47,7 @@ export function initAutoslider(root = document) {
     let isInView = true;
     let cachedStep = 0;
     const intervalMs = Number(slider.dataset.autoplay || 5000);
+    const startDelayMs = Number(slider.dataset.autoplayDelay || 600);
     const swipeThreshold = 42;
 
     const measure = () => {
@@ -257,7 +258,7 @@ export function initAutoslider(root = document) {
       goTo(0);
       hydrateVisibleSlides(slides, 0, visible);
       ready = true;
-      setTimeout(start, 600);
+      setTimeout(start, startDelayMs);
     });
   });
 }
@@ -267,6 +268,7 @@ export function renderAutosliderShell(options = {}) {
     id = "",
     label = "Carousel",
     autoplay = 5000,
+    autoplayDelay = 600,
     visible = "",
     showArrows = true,
     showCount = true,
@@ -278,6 +280,7 @@ export function renderAutosliderShell(options = {}) {
       class="autoslider"
       data-autoslider
       data-autoplay="${autoplay}"
+      data-autoplay-delay="${autoplayDelay}"
       ${visible ? `data-visible="${visible}"` : ""}
       ${id ? `id="${id}"` : ""}
     >

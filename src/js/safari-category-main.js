@@ -32,7 +32,7 @@ async function renderPackages(category) {
   const empty = document.querySelector("[data-category-empty]");
   if (!grid) return;
 
-  const { safariPackages } = await import("../data/safari-packages.js");
+  const { safariPackages } = await import("../data/all-safari-packages.js");
   const packages = filterPackagesBySafariType(safariPackages, category.matchType);
 
   if (!packages.length) {

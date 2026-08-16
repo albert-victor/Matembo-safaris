@@ -1,4 +1,4 @@
-﻿import { getSafariPackageById, safariPackages } from "../data/safari-packages.js";
+﻿import { getSafariPackageById, safariPackages } from "../data/all-safari-packages.js";
 import {
   splitIntoParagraphs,
   extractActivitySections,
@@ -172,13 +172,20 @@ export function renderPackagePage(containerSelector, pkg) {
     <article class="pkg-page">
       <header class="pkg-page__hero">
         <div class="pkg-page__hero-media">
-          <img src="${escapeHtml(hero.src)}" alt="${escapeHtml(hero.alt)}" width="1600" height="680" loading="eager" decoding="async" />
+          <img src="${escapeHtml(hero.src)}" alt="${escapeHtml(hero.alt)}" width="1920" height="820" loading="eager" decoding="async" fetchpriority="high" />
           <div class="pkg-page__hero-shade" aria-hidden="true"></div>
         </div>
-        <div class="container pkg-page__hero-inner section-reveal">
+        <div class="container pkg-page__hero-inner">
           <p class="pkg-page__eyebrow">${escapeHtml(pkg.circuit)} · ${escapeHtml(pkg.duration)}</p>
           <h1 class="pkg-page__title">${escapeHtml(pkg.title)}</h1>
           <p class="pkg-page__script">${escapeHtml(scriptLabelFor(pkg))}</p>
+          ${
+            pkg.priceLabel && !pkg.priceOnRequest
+              ? `<p class="pkg-page__price-stamp" aria-label="Price">${escapeHtml(pkg.priceLabel)}</p>`
+              : pkg.priceOnRequest
+                ? `<p class="pkg-page__price-stamp pkg-page__price-stamp--on-request">Price on request</p>`
+                : ""
+          }
           ${
             pkg.badge
               ? `<span class="pkg-page__badge">${escapeHtml(pkg.badge)}</span>`
@@ -229,6 +236,19 @@ export function renderPackagePage(containerSelector, pkg) {
           <aside class="pkg-page__sidebar section-reveal">
             <div class="pkg-sidebar-card">
               <h2 class="pkg-sidebar-card__title">${escapeHtml(pkg.title)}</h2>
+              ${
+                pkg.priceLabel
+                  ? `<div class="pkg-sidebar-card__price-box${
+                      pkg.priceOnRequest ? " pkg-sidebar-card__price-box--on-request" : ""
+                    }">
+                      <span class="pkg-sidebar-card__price-label">${
+                        pkg.priceOnRequest ? "Tailor-made quote" : "Indicative price"
+                      }</span>
+                      <p class="pkg-sidebar-card__price">${escapeHtml(pkg.priceLabel)}</p>
+                      <span class="pkg-sidebar-card__price-note">Per person · private safari</span>
+                    </div>`
+                  : ""
+              }
               <p class="pkg-sidebar-card__duration">${escapeHtml(pkg.duration)}</p>
               <div class="pkg-facts">${renderQuickFacts(pkg.quickFacts)}</div>
               <div class="pkg-sidebar-card__actions">

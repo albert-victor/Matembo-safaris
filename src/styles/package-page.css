@@ -56,6 +56,28 @@
   margin: 0 0 0.75rem;
 }
 
+.pkg-page__price-stamp {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 1rem;
+  padding: 0.42rem 0.85rem;
+  background: rgba(38, 136, 72, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  font-size: clamp(0.72rem, 1.4vw, 0.82rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(38, 136, 72, 0.32);
+}
+
+.pkg-page__price-stamp--on-request {
+  background: rgba(201, 169, 98, 0.88);
+  border-color: rgba(255, 255, 255, 0.42);
+  box-shadow: 0 4px 14px rgba(201, 169, 98, 0.28);
+}
+
 .pkg-page__badge {
   display: inline-block;
   margin-bottom: 0.75rem;

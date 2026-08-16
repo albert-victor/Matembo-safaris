@@ -18,7 +18,8 @@
     "generate:packages": "node scripts/generate-package-pages.mjs",
     "generate:circuits": "node scripts/generate-circuit-pages.mjs",
     "trim:galleries": "node scripts/trim-galleries.mjs",
-    "fix:images": "node scripts/fix-broken-images.mjs",
+    "import:southern-safaris": "node scripts/import-southern-safari-packages.mjs",
+    "import:tanzania-specialist": "node scripts/import-tanzania-specialist-packages.mjs",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "minify:html": "node scripts/minify-html-source.mjs",
     "inject:seo": "node scripts/inject-root-seo.mjs",
@@ -27,9 +28,11 @@
     "localize:images": "node scripts/mirror-ttb-images.mjs && node scripts/rebuild-manifest.mjs && node scripts/replace-ttb-urls.mjs",
     "rebuild:manifest": "node scripts/rebuild-manifest.mjs",
     "normalize:dashes": "node scripts/normalize-dashes.mjs",
+    "optimize:images": "node scripts/optimize-images.mjs",
     "generate:home-destinations": "node --input-type=module -e \"import { writeFileSync } from 'fs'; import { allDestinations } from './src/data/all-destinations.js'; import { popularDestinationIds } from './src/data/home-sections-data.js'; const picks = popularDestinationIds.map((id) => { const d = allDestinations.find((x) => x.id === id); if (!d) return null; return { id: d.id, name: d.name, scriptLabel: d.scriptLabel, journeys: d.journeys, highlights: (d.highlights || []).slice(0, 3), images: (d.images || []).slice(0, 2).map(({ src, alt }) => ({ src, alt })) }; }).filter(Boolean); writeFileSync('src/data/home-popular-destinations.js', '/** Lightweight home teaser data */\\nexport const homePopularDestinations = ' + JSON.stringify(picks, null, 2) + ';\\n');\""
   },
   "devDependencies": {
+    "sharp": "^0.35.3",
     "vite": "^6.0.7"
   }
 }

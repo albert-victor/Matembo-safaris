@@ -54,15 +54,17 @@ const ZANZIBAR_FEATURED = [
   "stone-town",
   "jozani-forest",
   "nungwi-beach",
-  "pemba",
-  "chumbe-island",
+  "changuu-island",
+  "kizimkazi",
 ];
 
 const MAFIA_FEATURED = [
   "mafia",
   "chole-bay",
   "juani-island",
-  "misali-island",
+  "jibondo-island",
+  "kua-ruins",
+  "mafia-marine",
 ];
 
 const OCEANIC_FEATURED = [

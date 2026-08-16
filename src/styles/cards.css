@@ -16,6 +16,8 @@
   position: relative;
   overflow: visible;
   padding-bottom: 0.5rem;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 24rem;
 }
 
 .safari-card__glow {
@@ -193,16 +195,13 @@
   inset: -3%;
 }
 
-.safari-card.is-motion-active .safari-card__motion,
-.safari-card:hover .safari-card__motion,
-.safari-card:focus-within .safari-card__motion {
-  will-change: transform;
+.safari-card.is-motion-active .safari-card__motion {
   animation: ken-burns-drift var(--ken-burns-duration) var(--ease-in-out) infinite;
 }
 
 .safari-card:hover .safari-card__motion,
 .safari-card:focus-within .safari-card__motion {
-  animation-duration: 18s;
+  animation: ken-burns-drift 18s var(--ease-in-out) infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -305,6 +304,43 @@
 .safari-card:hover .safari-card__duration-stamp,
 .safari-card:focus-within .safari-card__duration-stamp {
   transform: rotate(1deg) scale(1.03);
+}
+
+.safari-card__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.45rem;
+  margin: 0.15rem 0 0.35rem 0.15rem;
+  padding: 0;
+}
+
+.safari-card__price-lead,
+.safari-card__price-note {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.safari-card__price-lead {
+  color: var(--color-gold-dark);
+}
+
+.safari-card__price-amount {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-brand-dark);
+}
+
+.safari-card__price-note {
+  color: var(--color-muted);
+}
+
+.safari-card[data-accent="gold"] .safari-card__price-amount {
+  color: var(--color-gold-dark);
 }
 
 .safari-card__circuit-script {

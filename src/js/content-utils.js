@@ -181,11 +181,73 @@ export function extractActivitySections(text, fallbackActivities = []) {
   return sections.slice(0, 8);
 }
 
+const LOW_RES_HERO_PREFIXES = ["/assets/photos/safaris/"];
+
+const HERO_PHOTO_FALLBACKS = [
+  [/nyerere|selous/, "Nyerere_National_Park_Crocodiles_101.jpg"],
+  [/mikumi/, "Mikumi_National_Park_Elephants_101.jpg"],
+  [/ruaha/, "Ruaha_National_Park_Hippos_47.jpg"],
+  [/udzungwa/, "Udzungwa_National_Park_Sanje_Waterfalls_21.jpg"],
+  [/serengeti|migration|mara river/, "Serengeti_Gnus_7765.jpg"],
+  [/ngorongoro/, "Ngorongoro_Crater_View_NCA.jpg"],
+  [/tarangire/, "Tarangire_National_Park_Elephants_in_Trangire_River_35.jpg"],
+  [/manyara/, "Lake_Manyara_National_Park_Flamingos_26.jpg"],
+  [/kilwa|songomnara/, "Kilwa_Kisiwani_Ruins_01.jpg"],
+  [/zanzibar|beach|honeymoon/, "Zanzibar_Stone_Town_01.jpg"],
+  [/dar es salaam|city tour/, "Dar_es_Salaam_Skyline_01.jpg"],
+  [/uluguru|morogoro/, "Uluguru_Mountains_from_Morogoro_01.jpg"],
+  [/kilimanjaro|arusha|northern circuit|big five/, "Mount_Kilimanjaro_from_Amboseli.jpg"],
+  [/southern circuit|eastern circuit/, "Mikumi_National_Park_Elephants_101.jpg"],
+];
+
+function isLowResHeroSrc(src = "") {
+  return LOW_RES_HERO_PREFIXES.some((prefix) => src.startsWith(prefix));
+}
+
+function heroContext(pkg) {
+  return [
+    pkg.title,
+    pkg.circuit,
+    pkg.overview,
+    ...(pkg.destinations || []),
+    ...(pkg.activities || []),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function highResHeroFallback(pkg) {
+  const context = heroContext(pkg);
+  for (const [pattern, file] of HERO_PHOTO_FALLBACKS) {
+    if (pattern.test(context)) return `/assets/photos/${file}`;
+  }
+  return "/assets/photos/Mikumi_National_Park_Elephants_101.jpg";
+}
+
+/** Prefer full-size catalogue photos over ~600px imported card art for desktop heroes. */
+export function resolveHeroImage(pkg) {
+  const alt = pkg.alt || pkg.title;
+  const candidates = [pkg.image, ...(pkg.gallery || []).map((item) => item.src)].filter(Boolean);
+  const hiResCandidate = candidates.find(
+    (src) => src.startsWith("/assets/photos/") && !isLowResHeroSrc(src)
+  );
+
+  if (hiResCandidate) {
+    return { src: hiResCandidate, alt };
+  }
+
+  if (isLowResHeroSrc(pkg.image || candidates[0] || "")) {
+    return { src: highResHeroFallback(pkg), alt };
+  }
+
+  return { src: pkg.image || pkg.gallery?.[0]?.src || highResHeroFallback(pkg), alt };
+}
+
 export function packagePhotos(pkg, maxExtra = 3) {
-  const heroSrc = pkg.image || pkg.gallery?.[0]?.src || "";
-  const hero = { src: heroSrc, alt: pkg.alt || pkg.title };
+  const hero = resolveHeroImage(pkg);
   const extras = dedupePhotos(pkg.gallery || [], {
-    excludeSrc: heroSrc,
+    excludeSrc: hero.src,
     max: maxExtra,
   });
   return { hero, extras };

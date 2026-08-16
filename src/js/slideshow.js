@@ -1,5 +1,32 @@
 ﻿import { hydrateSlideImage } from "./lazy-images.js";
 
+const TICK_MS = 400;
+const registry = new Set();
+let masterTimer = null;
+
+function syncMasterTimer() {
+  if (!registry.size) {
+    if (masterTimer) {
+      clearInterval(masterTimer);
+      masterTimer = null;
+    }
+    return;
+  }
+
+  if (masterTimer) return;
+
+  masterTimer = setInterval(() => {
+    const now = Date.now();
+    registry.forEach((ctrl) => {
+      if (!ctrl.isVisible || ctrl.prefersReducedMotion || ctrl.paused) return;
+      if (now - ctrl.lastAdvance >= ctrl.intervalMs) {
+        ctrl.advance();
+        ctrl.lastAdvance = now;
+      }
+    });
+  }, TICK_MS);
+}
+
 function initOneSlideshow(slideshow, prefersReducedMotion) {
   if (slideshow.dataset.slideshowReady === "true") return;
   slideshow.dataset.slideshowReady = "true";
@@ -16,8 +43,6 @@ function initOneSlideshow(slideshow, prefersReducedMotion) {
   if (slides.length <= 1) return;
 
   let current = 0;
-  let timer = null;
-  let isVisible = true;
   const intervalMs = Number(slideshow.dataset.interval || 5000);
 
   const goTo = (index) => {
@@ -36,53 +61,58 @@ function initOneSlideshow(slideshow, prefersReducedMotion) {
   const next = () => goTo(current + 1);
   const prev = () => goTo(current - 1);
 
-  const stop = () => {
-    if (timer) {
-      clearInterval(timer);
-      timer = null;
-    }
-  };
-
-  const start = () => {
-    if (prefersReducedMotion || !isVisible) return;
-    stop();
-    timer = setInterval(next, intervalMs);
+  const ctrl = {
+    intervalMs,
+    prefersReducedMotion,
+    isVisible: false,
+    paused: false,
+    lastAdvance: Date.now(),
+    advance: next,
+    setVisible(nextVisible) {
+      ctrl.isVisible = nextVisible;
+      slideshow.classList.toggle("is-slideshow-visible", nextVisible);
+      if (nextVisible) {
+        ctrl.lastAdvance = Date.now();
+        registry.add(ctrl);
+      } else {
+        registry.delete(ctrl);
+      }
+      syncMasterTimer();
+    },
+    setPaused(nextPaused) {
+      ctrl.paused = nextPaused;
+      if (!nextPaused && ctrl.isVisible) ctrl.lastAdvance = Date.now();
+    },
+    bumpTimer() {
+      ctrl.lastAdvance = Date.now();
+    },
   };
 
   dots.forEach((dot, i) => {
     dot.addEventListener("click", () => {
       goTo(i);
-      start();
+      ctrl.bumpTimer();
     });
   });
 
   prevBtn?.addEventListener("click", () => {
     prev();
-    start();
+    ctrl.bumpTimer();
   });
 
   nextBtn?.addEventListener("click", () => {
     next();
-    start();
+    ctrl.bumpTimer();
   });
 
-  slideshow.addEventListener("mouseenter", stop);
-  slideshow.addEventListener("mouseleave", start);
-  slideshow.addEventListener("focusin", stop);
-  slideshow.addEventListener("focusout", start);
+  slideshow.addEventListener("mouseenter", () => ctrl.setPaused(true));
+  slideshow.addEventListener("mouseleave", () => ctrl.setPaused(false));
+  slideshow.addEventListener("focusin", () => ctrl.setPaused(true));
+  slideshow.addEventListener("focusout", () => ctrl.setPaused(false));
 
-  slideshow._slideshowControl = {
-    start,
-    stop,
-    setVisible(nextVisible) {
-      isVisible = nextVisible;
-      if (isVisible) start();
-      else stop();
-    },
-  };
+  slideshow._slideshowControl = ctrl;
 
   goTo(0);
-  start();
 }
 
 export { hydrateSlideImage };
@@ -96,7 +126,10 @@ export function initSlideshows(root = document) {
   const slideshows = [...root.querySelectorAll("[data-slideshow]")];
 
   if (!("IntersectionObserver" in window)) {
-    slideshows.forEach((s) => initOneSlideshow(s, prefersReducedMotion));
+    slideshows.forEach((s) => {
+      initOneSlideshow(s, prefersReducedMotion);
+      s._slideshowControl?.setVisible(true);
+    });
     return;
   }
 
@@ -110,10 +143,10 @@ export function initSlideshows(root = document) {
         }
         if (!entry.isIntersecting) return;
         initOneSlideshow(entry.target, prefersReducedMotion);
-        observer.unobserve(entry.target);
+        entry.target._slideshowControl?.setVisible(true);
       });
     },
-    { rootMargin: "120px 0px", threshold: 0.01 }
+    { rootMargin: "80px 0px", threshold: 0.05 }
   );
 
   slideshows.forEach((slideshow) => {

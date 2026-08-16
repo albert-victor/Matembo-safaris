@@ -32,7 +32,7 @@ async function renderPackages(activity) {
   const empty = document.querySelector("[data-activity-empty]");
   if (!grid) return;
 
-  const { safariPackages } = await import("../data/safari-packages.js");
+  const { safariPackages } = await import("../data/all-safari-packages.js");
   const packages = filterPackagesByActivity(safariPackages, activity.label);
 
   if (!packages.length) {

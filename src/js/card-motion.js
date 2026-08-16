@@ -1,13 +1,37 @@
-/** Toggle Ken Burns on safari cards only when visible in viewport. */
+/** Toggle Ken Burns on safari cards only when visible — max 4 concurrent. */
+const MAX_MOTION = 4;
+const cardStates = new Map();
+
+function applyMotionCap() {
+  const ranked = [...cardStates.entries()]
+    .filter(([, state]) => state.intersecting)
+    .sort((a, b) => b[1].ratio - a[1].ratio);
+
+  const active = new Set(ranked.slice(0, MAX_MOTION).map(([card]) => card));
+
+  cardStates.forEach((_, card) => {
+    card.classList.toggle("is-motion-active", active.has(card));
+  });
+}
+
 const motionObserver =
   typeof IntersectionObserver !== "undefined"
     ? new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            entry.target.classList.toggle("is-motion-active", entry.isIntersecting);
+            if (entry.isIntersecting) {
+              cardStates.set(entry.target, {
+                intersecting: true,
+                ratio: entry.intersectionRatio,
+              });
+            } else {
+              cardStates.delete(entry.target);
+              entry.target.classList.remove("is-motion-active");
+            }
           });
+          applyMotionCap();
         },
-        { rootMargin: "80px 0px", threshold: 0.08 }
+        { rootMargin: "60px 0px", threshold: [0, 0.1, 0.35, 0.6] }
       )
     : null;
 

@@ -10,6 +10,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -29,6 +31,8 @@ body {
   color: var(--color-ink);
   background: var(--color-cream);
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 img,
@@ -43,6 +47,8 @@ a {
 
 main {
   flex: 1;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 .container {
@@ -164,7 +170,7 @@ html.js-enhanced .section-reveal.is-visible .home-about__stat {
   pointer-events: auto;
 }
 
-[data-reveal].is-visible,
+[data-reveal]:not(.dest-card):not(.safari-card).is-visible,
 .section-reveal.is-visible,
 .reveal-on-scroll.is-visible,
 .home-about__text.is-visible,
@@ -191,6 +197,25 @@ html.js-enhanced .section-reveal.is-visible .home-about__stat {
   pointer-events: auto;
   animation: reveal-fade-up 0.95s cubic-bezier(0.19, 1, 0.22, 1) both;
   animation-delay: var(--reveal-delay, 0ms);
+}
+
+.dest-card.is-visible,
+.safari-card.is-visible {
+  pointer-events: auto;
+  animation: reveal-card-in 0.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+@keyframes reveal-card-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 [data-reveal-delay="1"],

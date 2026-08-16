@@ -20,6 +20,48 @@ function renderHighlights(pkg) {
     .join("");
 }
 
+function hasDisplayPrice(pkg) {
+  return Boolean(pkg.priceLabel && !pkg.priceOnRequest);
+}
+
+function parsePriceLabel(priceLabel = "") {
+  const match = String(priceLabel).match(/^From\s+(€[\d,]+)\s*(?:\/\s*person)?$/i);
+  if (!match) return null;
+  return match[1];
+}
+
+function renderPriceElements(pkg) {
+  if (!hasDisplayPrice(pkg)) {
+    return "";
+  }
+
+  const amount = parsePriceLabel(pkg.priceLabel);
+  if (!amount) {
+    return `<p class="safari-card__price" aria-label="Price">${escapeHtml(pkg.priceLabel)}</p>`;
+  }
+
+  return `
+    <p class="safari-card__price" aria-label="Price">
+      <span class="safari-card__price-lead">From</span>
+      <span class="safari-card__price-amount">${escapeHtml(amount)}</span>
+      <span class="safari-card__price-note">per person</span>
+    </p>
+  `;
+}
+
+export function enrichPackageFromCatalogue(pkg, catalogue = []) {
+  if (!pkg?.id || hasDisplayPrice(pkg)) return pkg;
+
+  const full = catalogue.find((entry) => entry.id === pkg.id);
+  if (!full?.priceLabel) return pkg;
+
+  return {
+    ...pkg,
+    priceLabel: full.priceLabel,
+    priceOnRequest: full.priceOnRequest,
+  };
+}
+
 export function renderCard(pkg, index, options = {}) {
   const viewLabel = options.viewLabel || "View Safari";
   const displayTitle = pkg.matemboLabel || pkg.title;
@@ -28,6 +70,7 @@ export function renderCard(pkg, index, options = {}) {
   const badge = pkg.badge
     ? `<span class="safari-card__badge">${escapeHtml(pkg.badge)}</span>`
     : "";
+  const priceBody = renderPriceElements(pkg);
   const objectPosition = pkg.objectPosition || "center center";
   const accent = index % 2 === 0 ? "green" : "gold";
   const indexLabel = padIndex(index);
@@ -83,6 +126,8 @@ export function renderCard(pkg, index, options = {}) {
               </h3>
             </div>
 
+            ${priceBody}
+
             <ul class="safari-card__highlights">
               ${renderHighlights(pkg)}
             </ul>
@@ -109,15 +154,20 @@ export async function renderPackageCards(containerTarget, options = {}) {
   let packages = customPackages;
 
   if (!packages?.length) {
-    const { safariPackages } = await import("../data/safari-packages.js");
+    const { safariPackages } = await import("../data/all-safari-packages.js");
     packages = safariPackages;
   }
 
   if (ids?.length) {
-    const { safariPackages } = await import("../data/safari-packages.js");
+    const { safariPackages } = await import("../data/all-safari-packages.js");
     packages = ids
       .map((id) => safariPackages.find((pkg) => pkg.id === id))
       .filter(Boolean);
+  }
+
+  if (packages?.length) {
+    const { safariPackages } = await import("../data/all-safari-packages.js");
+    packages = packages.map((pkg) => enrichPackageFromCatalogue(pkg, safariPackages));
   }
 
   container.innerHTML = packages

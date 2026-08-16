@@ -11,6 +11,8 @@ export { packagePageUrl } from "../js/paths.js";
 export { siteMeta, logoPath, brandEmblemPath } from "./nav-data.js";
 export const tripAdvisorUrl =
   "https://www.tripadvisor.com/Attraction_Review-g297913-d29014688-Reviews-MATEMBO_SAFARIS_AND_TOURS-Arusha_Arusha_Region.html";
+export const whatsAppUrl = "https://wa.me/255679529700";
+export const whatsAppNumber = "+255 679 529 700";
 export const socialLinks = [
   {
     label: "TripAdvisor reviews",
@@ -20,17 +22,22 @@ export const socialLinks = [
   },
   {
     label: "Facebook",
-    href: "https://www.facebook.com/MatemboSafarisAndTours",
+    href: "https://www.facebook.com/share/1EZKbSs1Dr/",
     icon: "fab fa-facebook-f",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/matembosafaris",
+    href: "https://www.instagram.com/matembosafarisandtours",
     icon: "fab fa-instagram",
   },
   {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@matembosafarisandtours",
+    icon: "fab fa-tiktok",
+  },
+  {
     label: "WhatsApp",
-    href: "https://wa.me/255679529700",
+    href: whatsAppUrl,
     icon: "fab fa-whatsapp",
   },
 ];
@@ -237,7 +244,7 @@ export const contactCopy = {
   title: "Plan your safari with Matembo",
   text: "Share your travel dates, group size, and parks you have in mind. We reply with a route outline and lodge options. Prices are quoted directly – not listed on this site.",
   ctaPrimary: { label: "Plan your safari", href: "/contact.html" },
-  ctaSecondary: { label: "WhatsApp", href: "https://wa.me/255679529700" },
+  ctaSecondary: { label: "WhatsApp", href: whatsAppUrl },
 };
 
-export const popularDestinationIds = ["serengeti", "ngorongoro", "kilimanjaro", "tarangire", "manyara", "arusha"];
+export const popularDestinationIds = ["se
