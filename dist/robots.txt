@@ -1,4 +1,9 @@
+# Matembo Safari & Tours — https://matembosafaris.com
 User-agent: *
 Allow: /
 
-Sitemap: https://www.matembosafaris.com/sitemap.xml
+Disallow: /package-view.html
+Disallow: /ui-demo.html
+Disallow: /mega-dropdown-mockups.html
+
+Sitemap: https://matembosafaris.com/sitemap.xml

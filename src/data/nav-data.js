@@ -16,7 +16,7 @@ export const siteMeta = {
   location: "Gangilonga, Iringa, Tanzania",
   phone: "+255 679 529 700",
   email: "info@matembosafaris.com",
-  website: "https://www.matembosafaris.com",
+  website: "https://matembosafaris.com",
 };
 
 function circuitCoverImage(circuitId, fallback = "/assets/about/main3.jpg") {

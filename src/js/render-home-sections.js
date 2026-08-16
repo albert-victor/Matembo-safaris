@@ -372,4 +372,4 @@ export function renderHomeContact() {
   `;
 }
 
-export { 
+export { renderSiteFooter } from "./render-home.js";

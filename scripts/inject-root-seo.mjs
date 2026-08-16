@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from "node:fs";
 
-const SITE_URL = "https://www.matembosafaris.com";
+import { SITE_URL } from "./site-url.mjs";
 const DEFAULT_OG = `${SITE_URL}/assets/hero/new%20hero.jpg`;
 
 const ROOT_PAGES = [

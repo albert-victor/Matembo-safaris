@@ -111,4 +111,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .wa-float_
+  .wa-float__pulse {
+    animation: none;
+  }
+}

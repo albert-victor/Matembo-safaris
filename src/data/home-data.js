@@ -247,4 +247,4 @@ export const contactCopy = {
   ctaSecondary: { label: "WhatsApp", href: whatsAppUrl },
 };
 
-export const popularDestinationIds = ["se
+export const popularDestinationIds = ["serengeti", "ngorongoro", "kilimanjaro", "tarangire", "manyara", "arusha"];
