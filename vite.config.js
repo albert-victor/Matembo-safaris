@@ -63,6 +63,7 @@ export default defineConfig({
         touristAttractions: resolve("tourist-attractions.html"),
         adventureSafaris: resolve("adventure-safaris.html"),
         ruahaSafaris: resolve("ruaha-safaris.html"),
+        bcard: resolve("bcard.html"),
         ...getHtmlInputsFromDir("activities", "activity"),
         packageView: resolve("package-view.html"),
         uiDemo: resolve("ui-demo.html"),

@@ -495,6 +495,10 @@ export function renderSiteFooter() {
               <i class="fab fa-whatsapp" aria-hidden="true"></i>
               WhatsApp enquiry
             </a>
+            <a class="site-footer__link" href="/bcard.html">
+              <i class="fas fa-id-card" aria-hidden="true"></i>
+              Digital business card
+            </a>
           </div>
         </div>
       </div>
