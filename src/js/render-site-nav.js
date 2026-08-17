@@ -1,10 +1,12 @@
 ﻿import { renderSiteNavShell, scheduleMegaMenuHydration } from "./render-site-nav-shell.js";
 import { bindNavImageFallbacks } from "../data/nav-images.js";
 import { initSiteSearch } from "./site-search.js";
+import { ensureFontAwesome } from "./ensure-font-awesome.js";
 
 export { renderSiteNavShell, scheduleMegaMenuHydration } from "./render-site-nav-shell.js";
 
 export function renderSiteNav(containerSelector = "#site-nav-root") {
+  ensureFontAwesome();
   const root = document.querySelector(containerSelector);
   if (!root) return;
 

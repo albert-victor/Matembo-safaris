@@ -12,6 +12,7 @@
 } from "../data/home-data.js";
 import { heroSlides } from "../data/hero-slides-data.js";
 import { formatCopy, escapeHtml } from "./content-utils.js";
+import { ensureFontAwesome } from "./ensure-font-awesome.js";
 
 function escapeHtmlAttr(text) {
   return escapeHtml(text);
@@ -408,6 +409,7 @@ export function renderContactCta() {
 }
 
 export function renderSiteFooter() {
+  ensureFontAwesome();
   const root = document.querySelector("#site-footer");
   if (!root) return;
 

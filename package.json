@@ -23,6 +23,7 @@
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "minify:html": "node scripts/minify-html-source.mjs",
     "inject:seo": "node scripts/inject-root-seo.mjs",
+    "inject:fontawesome": "node scripts/inject-font-awesome.mjs",
     "mirror:ttb": "node scripts/mirror-ttb-images.mjs",
     "replace:ttb": "node scripts/replace-ttb-urls.mjs",
     "localize:images": "node scripts/mirror-ttb-images.mjs && node scripts/rebuild-manifest.mjs && node scripts/replace-ttb-urls.mjs",
