@@ -291,3 +291,17 @@ html.js-enhanced .section-reveal.is-visible .home-about__stat {
     margin: 0 0 0.5rem;
   }
 }
+
+/* Mobile: keep fixed nav brand from overlapping cinematic hero copy */
+@media (max-width: 900px) {
+  [data-hero].circuit-page__hero,
+  [data-hero].dest-page__hero {
+    align-items: flex-start;
+    min-height: clamp(19rem, 58vw, 26rem);
+  }
+
+  [data-hero].circuit-page__hero .circuit-page__hero-inner,
+  [data-hero].dest-page__hero .dest-page__hero-inner {
+    padding-top: 4.85rem;
+  }
+}

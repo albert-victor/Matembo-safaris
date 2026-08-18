@@ -6,7 +6,7 @@
   bottom: clamp(4rem, 10vh, 5.5rem);
   z-index: 850;
   text-decoration: none;
-  transform: translateX(calc(100% - 2.35rem));
+  transform: translateX(calc(100% - 2.85rem));
   transition: transform 0.4s var(--ease-out);
   max-width: 100vw;
 }
@@ -95,7 +95,7 @@
 @media (max-width: 640px) {
   .wa-float {
     bottom: 1rem;
-    transform: translateX(calc(100% - 2.15rem));
+    transform: translateX(calc(100% - 2.65rem));
   }
 
   .wa-float__icon {
